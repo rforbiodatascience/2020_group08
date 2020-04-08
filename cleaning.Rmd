@@ -34,5 +34,19 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 ```{r}
 install.packages("tidyverse")
 install.packages("dplyr")
+install.packages("readxl")
+library(readxl)
+library(xlsx)
+
 ```
+
+```{r}
+#getwd() getting file directory
+setwd("/cloud/project/_raw")
+read_excel(path = "_raw/prostate.xlsx")
+getwd()
+prostate_data1 <- read.xlsx(file.choose(), 2)
+```
+
+
 
