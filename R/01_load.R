@@ -2,13 +2,12 @@
 # ------------------------------------------------------------------------------
 rm(list = ls())
 
-# Install packages and load libraries
+# load libraries
 # ------------------------------------------------------------------------------
-install.packages("xlsx")
-library(xlsx)
 
-install.packages("tidyverse")
+library(xlsx)
 library(tidyverse)
+
 
 # Load data
 # ------------------------------------------------------------------------------

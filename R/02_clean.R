@@ -5,11 +5,10 @@ rm(list = ls())
 # Load libraries
 # ------------------------------------------------------------------------------
 library(tidyverse)
-
-install.packages("tibble")
 library(tibble)
-
+library(dplyr)
 library(stringr)
+library(readr)
 
 # Load data
 # ------------------------------------------------------------------------------
@@ -22,7 +21,7 @@ prostate_data <- read_tsv(file = "Data/01_prostate_data.tsv") %>%
 #Add columns
 prostate_data_clean <- 
   prostate_data %>%
-  mutate(estrogen_mg = case_when(rx == "0.2 mg estrogen" ~ 0.2,
+      mutate(estrogen_mg = case_when(rx == "0.2 mg estrogen" ~ 0.2,
                                  rx == "1.0 mg estrogen" ~ 1,
                                  rx == "5.0 mg estrogen" ~ 5,
                                  rx == "placebo" ~ 0),
@@ -52,3 +51,8 @@ prostate_data_clean <- prostate_data_clean %>%
 
 #Convert value to NA, which was wrongly assigned a value according to the authors of the study
 prostate_data_clean <- na_if(prostate_data_clean, 999.87500000)
+
+# Write data
+# ------------------------------------------------------------------------------
+write_tsv(x = prostate_data_clean,
+          path = "Data/02_prostate_data_clean.tsv")
