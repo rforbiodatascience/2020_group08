@@ -6,5 +6,8 @@ install.packages("tidyverse")
 #recent MIS, 
 install.packages("chron")
 library(chron)
- as.Date(prostate$sdate)
+ as.Date.numeric(prostate$sdate, origin())
 ?as.Date
+
+ 
+ 
