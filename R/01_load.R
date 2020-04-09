@@ -2,15 +2,13 @@
 # ------------------------------------------------------------------------------
 rm(list = ls())
 
-# Install packages and load libraries
+# load libraries
 # ------------------------------------------------------------------------------
-install.packages("xlsx")
-library(xlsx)
 
-install.packages("tidyverse")
+library(xlsx)
 library(tidyverse)
 
-install.packages("dplyr")
+
 # Load data
 # ------------------------------------------------------------------------------
 prostate_data <- read.xlsx("Data/_raw/prostate.xlsx", sheetIndex = 1)
