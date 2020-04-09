@@ -42,7 +42,7 @@ prostate_data_clean <-
 prostate_data_clean$rx <- NULL
 prostate_data_clean$status <- NULL
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 #variables to be changed- rx--> placebo, 
 #recent MIS, 
 install.packages("chron")
@@ -52,5 +52,5 @@ library(chron)
 
  
  
-=======
->>>>>>> aa1ac954e1f2603a4bc95ddea636745a15b3d614
+# =======
+# >>>>>>> aa1ac954e1f2603a4bc95ddea636745a15b3d614
