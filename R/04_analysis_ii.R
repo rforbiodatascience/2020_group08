@@ -24,30 +24,62 @@ prostate_data <- read_tsv(file = "Data/02_prostate_data_clean.tsv") %>%
 # Scatter plots
 # ------------------------------------------------------------------------------
 
-# Scatter plots for systolic_bp correlations
-ggplot(data = prostate_data, mapping = aes(x = months_of_follow_up, y = systolic_bp)) +
-  geom_point()
 
-ggplot(data = prostate_data, mapping = aes(x = age, y = systolic_bp, color = history_of_CD)) +
-  geom_point()
+# Wrangle data
+# ------------------------------------------------------------------------------
 
-ggplot(data = prostate_data, mapping = aes(x = weight_index, y = systolic_bp)) +
-  geom_point()
+# Wrangle to long format omitting systolic_bp, since this variable is investigated
+# All character columns are also omitted as these are used for stratification
+pdc_long_systolic_bp <- prostate_data %>% 
+  pivot_longer(-c(patno, systolic_bp, activity, status_, cause_of_death, ekg, sdate),
+               names_to = "variable",
+               values_to = "value")
 
-ggplot(data = prostate_data, mapping = aes(x = diastolic_bp, y = systolic_bp, color = ekg)) +
-  geom_point()
+pdc_long_systolic_bp %>% 
+  ggplot(aes(y = systolic_bp, x = value, color = activity)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
 
-ggplot(data = prostate_data, mapping = aes(x = serum_hemoglobin, y = systolic_bp)) +
-  geom_point()
+pdc_long_systolic_bp %>% 
+  ggplot(aes(y = systolic_bp, x = value, color = ekg)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
 
-ggplot(data = prostate_data, mapping = aes(x = tumor_size, y = systolic_bp)) +
-  geom_point()
+pdc_long_systolic_bp %>% 
+  ggplot(aes(y = systolic_bp, x = value, color = status_)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
 
-ggplot(data = prostate_data, mapping = aes(x = stage_grade_index, y = systolic_bp)) +
-  geom_point()
+pdc_long_systolic_bp %>% 
+  ggplot(aes(y = systolic_bp, x = value, color = cause_of_death)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
 
-ggplot(data = prostate_data, mapping = aes(x = PA_phosphatase, y = systolic_bp)) +
-  geom_point()
 
-ggplot(data = prostate_data, mapping = aes(x = estrogen_mg, y = systolic_bp)) +
-  geom_point()
+# Wrangle to long format omitting systolic_bp, since this variable is investigated
+# All character columns are also omitted as these are used for stratification
+pdc_long_diastolic_bp <- prostate_data %>% 
+  pivot_longer(-c(patno, diastolic_bp, activity, status_, cause_of_death, ekg, sdate),
+               names_to = "variable",
+               values_to = "value")
+
+pdc_long_diastolic_bp %>% 
+  ggplot(aes(y = diastolic_bp, x = value, color = activity)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
+
+pdc_long_diastolic_bp %>% 
+  ggplot(aes(y = diastolic_bp, x = value, color = ekg)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
+
+pdc_long_diastolic_bp %>% 
+  ggplot(aes(y = diastolic_bp, x = value, color = status_)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
+
+pdc_long_diastolic_bp %>% 
+  ggplot(aes(y = diastolic_bp, x = value, color = cause_of_death)) +
+  geom_point() +
+  facet_wrap(~ variable, ncol = 3)
+
