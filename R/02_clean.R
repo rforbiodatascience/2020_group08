@@ -50,6 +50,7 @@ prostate_data_clean <- prostate_data_clean %>%
          bone_metastases = bm, systolic_bp = sbp, diastolic_bp = dbp)
 
 #Convert value to NA, which was wrongly assigned a value according to the authors of the study
+#http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/prostate.notes.txt
 prostate_data_clean <- na_if(prostate_data_clean, 999.87500000)
 
 # Write data
