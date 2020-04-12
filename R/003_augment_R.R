@@ -59,13 +59,47 @@ pred %>%
   geom_line()+
   facet_wrap(~status_)
 
+pred %>% 
+  ggplot(aes(sdate, pred, group=cause_of_death))+
+  geom_line()+
+  facet_wrap(~cause_of_death)
 
+#
+dim(pred)
+dim(pred$sdate)
+dim(pred$pred)
+
+View(pred)
 
 #plot the residual  !!!!!!!!!!!!
+#weight_index
+#bad
 resids %>% 
-  ggplot(aes(sdate, resids, group=cause_of_death))+
+  ggplot(aes(sdate, resids$weight_index, group=cause_of_death))+
   geom_line()+
   geom_smooth(se=FALSE)
+
+#better
+residual_weight<-resids %>% 
+  ggplot(aes(sdate, resids$weight_index, group=cause_of_death))+
+  geom_line()+
+  facet_wrap(~cause_of_death)
+
+#residuals on 
+#age
+
+residual_age<-resids %>% 
+  ggplot(aes(sdate, resids$age, group=cause_of_death))+
+  geom_line()+
+  facet_wrap(~cause_of_death)
+
+#months of follow up
+residual_months<-resids %>% 
+  ggplot(aes(sdate, resids$months_of_follow_up, group=cause_of_death))+
+  geom_line()+
+  facet_wrap(~cause_of_death)
+
+
 
 #model 2
 model2<-function(df){
@@ -89,20 +123,34 @@ is.na(pred2)
 
 #plot the prediction
 
-  ggplot(data=pred2, mapping=aes(sdate, pred2))+
-  geom_line(aes(group=status_))+
-  geom_smooth(se=FALSE)
-
-
-#want clearer view on each cause of death!
-
-ggplot(data=pred2, mapping=aes(sdate, pred2, group=cause_of_death))+
+pred2 %>% 
+  ggplot(aes(sdate, pred, group=status_))+
   geom_line()+
   facet_wrap(~status_)
 
-#plot the residual  !!!!!!!!!!!!
-resids2 %>% 
-  ggplot(aes(sdate, resids2, group=cause_of_death))+
+pred2 %>% 
+  ggplot(aes(sdate, pred, group=cause_of_death))+
   geom_line()+
-  geom_smooth(se=FALSE)
+  facet_wrap(~cause_of_death)
+
+
+#plot the residual  !!!!!!!!!!!!
+#weight_index
+residual_weight2<-resids2 %>% 
+  ggplot(aes(sdate, resids2$weight_index, group=cause_of_death))+
+  geom_line()+
+  facet_wrap(~cause_of_death)
+
+#age
+residual_age2<-resids2 %>% 
+  ggplot(aes(sdate, resids2$age, group=cause_of_death))+
+  geom_line()+
+ facet_wrap(~cause_of_death)
+
+#months
+residual_months2<-resids2 %>% 
+  ggplot(aes(sdate, resids2$months_of_follow_up, group=cause_of_death))+
+  geom_line()+
+  facet_wrap(~cause_of_death)
+
 
