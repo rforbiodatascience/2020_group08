@@ -3,6 +3,7 @@ installed.packages()
 #load libraries
 install.packages("broom")
 install.packages("purrr")
+install.packages("ggplot2")
 library(purrr)
 library(tidyr)
 library(dplyr)
@@ -10,70 +11,97 @@ library(broom)
 library(modelr)
 library(ggplot2)
 library(tibble)
+library(rlang)
 
 
-is_tibble(prostate_data_clean)
-class(prostate_data_clean)
+#preparing data-nesting
+#grouping my categorical variable
+#interested in death cause and status
 
-#way of checking the categories 
-factorvariables %>% group_by(ekg) %>% summarise(n())
-
-
-
-#nested datasets
-by_stage<-prostate_data_clean %>% group_by(stage) %>% nest()  
-
-#by_stage %>%mutate(model= map(stage, diastolic_bp))
-
-by_age<-prostate_data_clean %>% group_by(age) %>% nest()
-
-by_weightindex<-prostate_data_clean %>% group_by(weight_index) %>% nest()
-
-by_monthsfollow<-prostate_data_clean %>% group_by(months_of_follow_up) %>% nest()
-
-
-
+by_deathcause<-prostate_data_clean %>% 
+  group_by(cause_of_death, status_) %>%
+  nest() 
 
 ##building models
 
-#stage
 
-model_stage<-function(df){
+model1<-function(df){
   
-  lm(serum_hemoglobin~stage, df=prostate_data_clean)
-  
-}
-
-#age
-
-model_age<-function(df){
-  
-  return(lm(names(prostate_data_clean)[4] ~ age, data=df))
-  
-}
-by_age %>%mutate(mdls=map(data, model_age))
-
-model_age()
-
-#weightindex
-
-model_weightindex<-function(df){
-  
-  lm(serum_hemoglobin~age, df)
+  lm(serum_hemoglobin~sdate, df)
   
 }
 
-by_weightindex<-by_weightindex %>%mutate(mdls=map(data, model_weightindex)) %>% 
-  mutate(glance=map(mdls,broom::glance)) %>% unnest(cols=glance)
 
 
-by_weightindex %>% 
-  arrange(desc(r.squared)) %>% 
-  filter(r.squared >= 0.8)  
-
-#know that those 10 datasets are good fit
-
-
+#nesting and modelling
+by_deathcause<-by_deathcause %>% 
+  mutate(mdls=map(data,model1)) %>% 
+  mutate(resids= map2(data, mdls, add_residuals), 
+         pred=map2(data, mdls, add_predictions))
 
 
+#unnest prediction
+pred<-unnest(by_deathcause, pred)
+resids<-unnest(by_deathcause, resids)
+resids
 
+#plot the prediction
+pred %>% 
+  ggplot(aes(sdate, pred, group=status_))+
+  geom_line()+
+  geom_smooth()
+
+
+#want clearer view on each cause of death!
+
+pred %>% 
+  ggplot(aes(sdate, pred, group=status_))+
+  geom_line()+
+  facet_wrap(~status_)
+
+
+
+#plot the residual  !!!!!!!!!!!!
+resids %>% 
+  ggplot(aes(sdate, resids, group=cause_of_death))+
+  geom_line()+
+  geom_smooth(se=FALSE)
+
+#model 2
+model2<-function(df){
+  
+  lm(diastolic_bp~sdate, df)
+  
+}                
+
+#nesting and modelling
+by_deathcause_dia<-by_deathcause %>% 
+  mutate(mdls=map(data,model2)) %>% 
+  mutate(resids= map2(data, mdls, add_residuals), 
+         pred=map2(data, mdls, add_predictions))
+
+
+#unnest prediction
+pred2<-unnest(by_deathcause_dia, pred)
+resids2<-unnest(by_deathcause_dia, resids)
+resids
+is.na(pred2)
+
+#plot the prediction
+
+ggplot(data=pred2, mapping=aes(sdate, pred2))+
+  geom_line(aes(group=status_))+
+  geom_smooth(se=FALSE)
+
+
+#want clearer view on each cause of death!
+
+ggplot(data=pred2, mapping=aes(sdate, pred2, group=cause_of_death))+
+  geom_line()+
+  facet_wrap(~status_)
+
+#plot the residual  !!!!!!!!!!!!
+resids2 %>% 
+  ggplot(aes(sdate, resids2, group=cause_of_death))+
+  geom_line()+
+  geom_smooth(se=FALSE)
