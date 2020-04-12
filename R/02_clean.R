@@ -43,6 +43,20 @@ prostate_data_clean <-
 prostate_data_clean$rx <- NULL
 prostate_data_clean$status <- NULL
 
+<<<<<<< HEAD
+# <<<<<<< HEAD
+#variables to be changed- rx--> placebo, 
+#recent MIS, 
+install.packages("chron")
+library(chron)
+ as.Date.numeric(prostate$sdate, origin())
+?as.Date
+
+ 
+ 
+# =======
+# >>>>>>> aa1ac954e1f2603a4bc95ddea636745a15b3d614
+=======
 #Rename columns
 prostate_data_clean <- prostate_data_clean %>% 
   rename(months_of_follow_up = dtime, weight_index = wt, activity = pf, history_of_CD = hx,
@@ -57,3 +71,4 @@ prostate_data_clean <- na_if(prostate_data_clean, 999.87500000)
 # ------------------------------------------------------------------------------
 write_tsv(x = prostate_data_clean,
           path = "Data/02_prostate_data_clean.tsv")
+>>>>>>> 2b65ad8dbfdf3ec551797806c66625b4d57b5497
