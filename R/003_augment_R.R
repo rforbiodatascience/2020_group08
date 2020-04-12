@@ -54,12 +54,12 @@ pred %>%
 
 #want clearer view on each cause of death!
 
-pred %>% 
+pred_status<-pred %>% 
   ggplot(aes(sdate, pred, group=status_))+
   geom_line()+
   facet_wrap(~status_)
 
-pred %>% 
+pred_cause<-pred %>% 
   ggplot(aes(sdate, pred, group=cause_of_death))+
   geom_line()+
   facet_wrap(~cause_of_death)
@@ -85,6 +85,7 @@ residual_weight<-resids %>%
   geom_line()+
   facet_wrap(~cause_of_death)
 
+residual_weight
 #residuals on 
 #age
 
@@ -123,12 +124,12 @@ is.na(pred2)
 
 #plot the prediction
 
-pred2 %>% 
+pred_status2<-pred2 %>% 
   ggplot(aes(sdate, pred, group=status_))+
   geom_line()+
   facet_wrap(~status_)
 
-pred2 %>% 
+pred_cause2<-pred2 %>% 
   ggplot(aes(sdate, pred, group=cause_of_death))+
   geom_line()+
   facet_wrap(~cause_of_death)
@@ -140,6 +141,7 @@ residual_weight2<-resids2 %>%
   ggplot(aes(sdate, resids2$weight_index, group=cause_of_death))+
   geom_line()+
   facet_wrap(~cause_of_death)
+residual_weight2
 
 #age
 residual_age2<-resids2 %>% 
