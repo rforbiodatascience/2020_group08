@@ -3,7 +3,6 @@ installed.packages()
 #load libraries
 install.packages("broom")
 install.packages("purrr")
-install.packages("caret")
 install.packages("ggplot2")
 library(purrr)
 library(tidyr)
@@ -14,8 +13,6 @@ library(ggplot2)
 library(tibble)
 library(rlang)
 
-#way of checking the categories 
-factorvariables %>% group_by(ekg) %>% summarise(n())
 
 #preparing data-nesting
 #grouping my categorical variable
