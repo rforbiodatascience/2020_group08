@@ -85,7 +85,7 @@ by_deathcause_dia<-by_deathcause %>%
 pred2<-unnest(by_deathcause_dia, pred)
 resids2<-unnest(by_deathcause_dia, resids)
 resids
-is.na(pred2)
+
 
 #plot the prediction
 
