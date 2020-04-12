@@ -59,7 +59,7 @@ model_age()
 
 model_weightindex<-function(df){
   
-  lm(serum_hemoglobin~age, df)
+ lm(serum_hemoglobin~age, df)
   
 }
 
@@ -70,10 +70,10 @@ by_weightindex<-by_weightindex %>%mutate(mdls=map(data, model_weightindex)) %>%
 by_weightindex %>% 
   arrange(desc(r.squared)) %>% 
   filter(r.squared >= 0.8)  
-
+  
 #know that those 10 datasets are good fit
 
 
-
+  
 
 
