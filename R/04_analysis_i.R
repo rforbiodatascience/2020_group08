@@ -730,6 +730,9 @@ prostate_data_clean %>%
   ggplot(aes(x = bone_metastases, y = PA_phosphatase, colour = cause_of_death)) +
   geom_jitter()
 
+prostate_data_clean %>% 
+  ggplot(aes(x = diastolic_bp, y = systolic_bp, color = history_of_CD)) +
+  geom_jitter()
 
 # Potential correlations:
 # PA phosphatase + cause of death
@@ -737,7 +740,7 @@ prostate_data_clean %>%
 # Bone metastases + activity (maybe?)
 # Stage/grade index + activity
 # Stage/grade index + PA phosphatase (stratified on status_ and activity)
-# Bone metastases + PA phosphatase (stratified on cause of death)
+# Bone metastases + PA phosphatase (stratified on cause of death) --> boxplot
 # Tumor size + PA phosphatase
 # Bone metastases + age (stratified on status and activity and cause of death)
 # Stage + bone metastases (stratified on activity and cause of death)
@@ -746,5 +749,27 @@ prostate_data_clean %>%
 # Serum hemoglbin + bone metastases --> e.g. boxplot
 # Tumor size + bone metastases --> e.g. boxplot
 # Stage grade index + bone metastases (stratified on activity and cause of death)
+
+
+
+##### Nesting data frames for modelling: #########
+
+
+# Diastolic vs systolic bp
+
+bp_model <- function(prostate_data_clean) {
+  lm(systolic_bp ~ diastolic_bp, data = prostate_data_clean)
+}
+
+cause_of_death_nest <- prostate_data_clean %>% 
+  na.omit() %>% 
+  group_by(cause_of_death) %>% 
+  nest() %>% 
+  mutate(model = map(data, bp_model))
+
+bp_glance <- cause_of_death_nest %>%
+  mutate(glance = map(model, broom::glance)) %>%
+  unnest(glance)
+
 
 
