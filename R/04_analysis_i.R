@@ -755,7 +755,7 @@ prostate_data_clean %>%
 ##### Nesting data frames for modelling: #########
 
 
-# Diastolic vs systolic bp
+# Diastolic vs systolic bp grouped by cause_of_death
 
 bp_model <- function(prostate_data_clean) {
   lm(systolic_bp ~ diastolic_bp, data = prostate_data_clean)
@@ -767,9 +767,42 @@ cause_of_death_nest <- prostate_data_clean %>%
   nest() %>% 
   mutate(model = map(data, bp_model))
 
-bp_glance <- cause_of_death_nest %>%
+bp_cause_glance <- cause_of_death_nest %>%
   mutate(glance = map(model, broom::glance)) %>%
   unnest(glance)
 
+# Diastolic vs systolic bp grouped by cause_of_death and history_of_CD
+### HIGH R^2 value!!!
+
+bp_model <- function(prostate_data_clean) {
+  lm(systolic_bp ~ diastolic_bp, data = prostate_data_clean)
+}
+
+cause_CD_nest <- prostate_data_clean %>% 
+  na.omit() %>% 
+  group_by(cause_of_death, history_of_CD) %>% 
+  nest() %>% 
+  mutate(model = map(data, bp_model))
+
+bp_cause_CD_glance <- cause_of_death_nest %>%
+  mutate(glance = map(model, broom::glance)) %>%
+  unnest(glance)
+
+
+# In progress...
+
+metastases_model <- function(prostate_data_clean) {
+  lm(stage_grade_index ~ PA_phosphatase, data = prostate_data_clean)
+}
+
+status_nest <- prostate_data_clean %>% 
+  na.omit() %>% 
+  group_by(stage) %>% 
+  nest() %>% 
+  mutate(model = map(data, metastases_model))
+
+metastases_glance <- status_nest %>%
+  mutate(glance = map(model, broom::glance)) %>%
+  unnest(glance)
 
 
