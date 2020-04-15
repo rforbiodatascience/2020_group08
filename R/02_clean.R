@@ -46,7 +46,12 @@ prostate_data_clean <-
                                                status == "dead - other specific non-ca" ~ 0,
                                                status == "dead - unknown cause" ~ 0,
                                                status == "dead - unspecified non-ca" ~ 0,
-                                               status == "dead - respiratory disease" ~ 0)) %>% 
+                                               status == "dead - respiratory disease" ~ 0),
+         Age_group = case_when(age < 50 ~ "40 - 49",
+                               50 <= age & age < 60 ~ "50 - 59",
+                               60 <= age & age < 70 ~ "60 - 69",
+                               70 <= age & age < 80 ~ "70 - 79",
+                               80 <= age & age < 90 ~ "80 - 90")) %>% 
   na_if("N/A")
 
 
