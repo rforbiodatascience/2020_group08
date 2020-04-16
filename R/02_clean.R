@@ -41,7 +41,7 @@ prostate_data_clean <-
                                                status == "dead - cerebrovascular" ~ 0,
                                                status == "dead - prostatic ca" ~ 1,
                                                status == "dead - heart or vascular" ~ 0,
-                                               status == "alive" ~ 2,
+                                               status == "alive" ~ 99,
                                                status == "dead - pulmonary embolus" ~ 0,
                                                status == "dead - other specific non-ca" ~ 0,
                                                status == "dead - unknown cause" ~ 0,
@@ -52,7 +52,8 @@ prostate_data_clean <-
                                70 <= age & age < 80 ~ "70 - 79",
                                80 <= age & age < 90 ~ "80 - 90")) %>%
                                 
-  na_if("N/A")
+  na_if("N/A") %>% 
+  na_if(99)
 
 
 #Remove columns
@@ -75,8 +76,6 @@ factor_columns <- c("stage", "activity", "history_of_CD", "ekg", "bone_metastase
                     "Age_group")
 
 prostate_data_clean[factor_columns] <- lapply(prostate_data_clean[factor_columns], factor)
-
-prostate_data_clean
 
 # Write data
 # ------------------------------------------------------------------------------
