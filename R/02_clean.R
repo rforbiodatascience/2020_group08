@@ -47,11 +47,11 @@ prostate_data_clean <-
                                                status == "dead - unknown cause" ~ 0,
                                                status == "dead - unspecified non-ca" ~ 0,
                                                status == "dead - respiratory disease" ~ 0),
-         Age_group = case_when(age < 50 ~ "40 - 49",
-                               50 <= age & age < 60 ~ "50 - 59",
+         Age_group = case_when(45 <= age & age < 60 ~ "45 - 59",
                                60 <= age & age < 70 ~ "60 - 69",
                                70 <= age & age < 80 ~ "70 - 79",
-                               80 <= age & age < 90 ~ "80 - 90")) %>% 
+                               80 <= age & age < 90 ~ "80 - 90")) %>%
+                                
   na_if("N/A")
 
 
@@ -68,6 +68,15 @@ prostate_data_clean <- prostate_data_clean %>%
 #Convert value to NA, which was wrongly assigned a value according to the authors of the study
 #http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/prostate.notes.txt
 prostate_data_clean <- na_if(prostate_data_clean, 999.87500000)
+
+#Ensure that factorial variables are actually factors
+factor_columns <- c("stage", "activity", "history_of_CD", "ekg", "bone_metastases",
+                    "estrogen_mg", "status_", "cause_of_death", "dead_from_prostate_cancer",
+                    "Age_group")
+
+prostate_data_clean[factor_columns] <- lapply(prostate_data_clean[factor_columns], factor)
+
+prostate_data_clean
 
 # Write data
 # ------------------------------------------------------------------------------
