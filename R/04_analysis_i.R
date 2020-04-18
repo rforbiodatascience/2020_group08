@@ -6,751 +6,21 @@ rm(list = ls())
 # ------------------------------------------------------------------------------
 library(tidyverse)
 library(ggplot2)
+library(forcats)
 
 # Load data
 # ------------------------------------------------------------------------------
 prostate_data_clean <- read_tsv(file = "Data/02_prostate_data_clean.tsv")
 
+#Ensure that factorial variables are actually factors
+factor_columns <- c("stage", "activity", "history_of_CD", "ekg", "bone_metastases",
+                    "estrogen_mg", "status_", "cause_of_death", "dead_from_prostate_cancer",
+                    "Age_group")
+
+prostate_data_clean[factor_columns] <- lapply(prostate_data_clean[factor_columns], factor)
+
 # Wrangle and analyse data
 # ------------------------------------------------------------------------------
-
-#Plots for at quick overview
-
-# Looking at the PA_phosphatase variable
-# Wrangle to long format omitting PA_phospahtase, since this variable is investigated
-# All character columns are also omitted as these are used for stratification
-pdc_long_PAphosphatase <- prostate_data_clean %>% 
-  pivot_longer(-c(patno, PA_phosphatase, activity, status_, cause_of_death, ekg, sdate),
-               names_to = "variable",
-               values_to = "value")
-
-pdc_long_PAphosphatase %>% 
-  ggplot(aes(y = PA_phosphatase, x = value, color = activity)) +
-  geom_point(alpha = 0.4) +
-  facet_wrap(~ variable, ncol = 3)
-  
-pdc_long_PAphosphatase %>% 
-  ggplot(aes(y = PA_phosphatase, x = value, color = ekg)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_PAphosphatase %>% 
-  ggplot(aes(y = PA_phosphatase, x = value, color = status_)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_PAphosphatase %>% 
-  ggplot(aes(y = PA_phosphatase, x = value, color = cause_of_death)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-
-
-# Looking at the bone_metastases variable (some interesting trends here)
-pdc_long_BoneMetastases <- prostate_data_clean %>% 
-  pivot_longer(-c(patno, bone_metastases, activity, status_, cause_of_death, ekg, sdate),
-               names_to = "variable",
-               values_to = "value")
-
-pdc_long_BoneMetastases %>% 
-  ggplot(aes(y = bone_metastases, x = value, color = activity)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_BoneMetastases %>% 
-  ggplot(aes(y = bone_metastases, x = value, color = ekg)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_BoneMetastases %>% 
-  ggplot(aes(y = bone_metastases, x = value, color = status_)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_BoneMetastases %>% 
-  ggplot(aes(y = bone_metastases, x = value, color = cause_of_death)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-
-
-# Looking at the estrogen variable
-pdc_long_estrogen <- prostate_data_clean %>% 
-  pivot_longer(-c(patno, estrogen_mg, activity, status_, cause_of_death, ekg, sdate),
-               names_to = "variable",
-               values_to = "value")
-
-pdc_long_estrogen %>% 
-  ggplot(aes(x = estrogen_mg, y = value, color = activity)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_estrogen %>% 
-  ggplot(aes(x = estrogen_mg, y = value, color = ekg)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_estrogen %>% 
-  ggplot(aes(x = estrogen_mg, y = value, color = status_)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-pdc_long_estrogen %>% 
-  ggplot(aes(x = estrogen_mg, y = value, color = cause_of_death)) +
-  geom_point() +
-  facet_wrap(~ variable, ncol = 3)
-
-### Different approach --> facet_wrap on character variables
-pdc_long_characterColumn <- prostate_data_clean %>% 
-  pivot_longer(cols = c(activity, ekg, status_, cause_of_death),
-               names_to = "variable",
-               values_to = "value")
-
-pdc_long_characterColumn %>% 
-  ggplot(aes(x = estrogen_mg, y = age, colour = value)) +
-  geom_jitter() +
-  facet_wrap(~ variable, ncol = 2)
-
-### Different approach 
-
-#Estrogen vs age
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = age, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = age, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = age, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = age, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs stage
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs follow_up
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = months_of_follow_up, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = months_of_follow_up, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = months_of_follow_up, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = months_of_follow_up, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs weight_index
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = weight_index, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = weight_index, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = weight_index, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = weight_index, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs history of CD
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = history_of_CD, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = history_of_CD, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = history_of_CD, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = history_of_CD, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs systolic bp
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = systolic_bp, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = systolic_bp, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = systolic_bp, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = systolic_bp, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs diastolic bp
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = diastolic_bp, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = diastolic_bp, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = diastolic_bp, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = diastolic_bp, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs serum hemoglobin
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = serum_hemoglobin, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = serum_hemoglobin, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = serum_hemoglobin, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = serum_hemoglobin, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs tumor size
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = tumor_size, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = tumor_size, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = tumor_size, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = tumor_size, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs stage grade index
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage_grade_index, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage_grade_index, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage_grade_index, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = stage_grade_index, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs PA phosphatase
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = PA_phosphatase, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = PA_phosphatase, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = PA_phosphatase, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = PA_phosphatase, colour = cause_of_death)) +
-  geom_jitter()
-
-#Estrogen vs bone metastases
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = bone_metastases, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = bone_metastases, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = bone_metastases, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = estrogen_mg, y = bone_metastases, colour = cause_of_death)) +
-  geom_jitter()
-
-#######
-
-#PA_phosphatase vs age
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = age, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = age, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = age, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = age, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs stage
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs follow_up
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = months_of_follow_up, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = months_of_follow_up, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = months_of_follow_up, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = months_of_follow_up, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs weight_index
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = weight_index, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = weight_index, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = weight_index, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = weight_index, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs history of CD
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = history_of_CD, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = history_of_CD, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = history_of_CD, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = history_of_CD, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs systolic bp
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = systolic_bp, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = systolic_bp, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = systolic_bp, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = systolic_bp, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs diastolic bp
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = diastolic_bp, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = diastolic_bp, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = diastolic_bp, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = diastolic_bp, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs serum hemoglobin
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = serum_hemoglobin, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = serum_hemoglobin, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = serum_hemoglobin, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = serum_hemoglobin, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs tumor size
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = tumor_size, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = tumor_size, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = tumor_size, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = tumor_size, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs stage grade index
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage_grade_index, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage_grade_index, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage_grade_index, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = stage_grade_index, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs estrogen
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = estrogen_mg, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = estrogen_mg, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = estrogen_mg, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = estrogen_mg, colour = cause_of_death)) +
-  geom_jitter()
-
-#PA_phosphatase vs bone metastases
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = bone_metastases, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = bone_metastases, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = bone_metastases, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = PA_phosphatase, y = bone_metastases, colour = cause_of_death)) +
-  geom_jitter()
-
-
-########
-
-#bone_metastases vs age
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = age, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = age, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = age, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = age, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs stage
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs follow_up
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = months_of_follow_up, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = months_of_follow_up, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = months_of_follow_up, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = months_of_follow_up, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs weight_index
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = weight_index, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = weight_index, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = weight_index, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = weight_index, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs history of CD
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = history_of_CD, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = history_of_CD, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = history_of_CD, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = history_of_CD, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs systolic bp
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = systolic_bp, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = systolic_bp, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = systolic_bp, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = systolic_bp, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs diastolic bp
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = diastolic_bp, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = diastolic_bp, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = diastolic_bp, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = diastolic_bp, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs serum hemoglobin
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = serum_hemoglobin, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = serum_hemoglobin, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = serum_hemoglobin, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = serum_hemoglobin, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs tumor size
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = tumor_size, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = tumor_size, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = tumor_size, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = tumor_size, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs stage grade index
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage_grade_index, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage_grade_index, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage_grade_index, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = stage_grade_index, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs estrogen
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = estrogen_mg, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = estrogen_mg, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = estrogen_mg, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = estrogen_mg, colour = cause_of_death)) +
-  geom_jitter()
-
-#bone_metastases vs PA phosphatase
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = PA_phosphatase, colour = status_)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = PA_phosphatase, colour = ekg)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = PA_phosphatase, colour = activity)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = bone_metastases, y = PA_phosphatase, colour = cause_of_death)) +
-  geom_jitter()
-
-prostate_data_clean %>% 
-  ggplot(aes(x = diastolic_bp, y = systolic_bp, color = history_of_CD)) +
-  geom_jitter()
-
-# Potential correlations:
-# PA phosphatase + cause of death
-# Bone metastases + status
-# Bone metastases + activity (maybe?)
-# Stage/grade index + activity
-# Stage/grade index + PA phosphatase (stratified on status_ and activity)
-# Bone metastases + PA phosphatase (stratified on cause of death) --> boxplot
-# Tumor size + PA phosphatase
-# Bone metastases + age (stratified on status and activity and cause of death)
-# Stage + bone metastases (stratified on activity and cause of death)
-# Weight index + bone metastases --> e.g make boxplot
-# History of CD + bone metastases (stratified on status)
-# Serum hemoglbin + bone metastases --> e.g. boxplot
-# Tumor size + bone metastases --> e.g. boxplot
-# Stage grade index + bone metastases (stratified on activity and cause of death)
-
-
 
 ##### Nesting data frames for modelling: #########
 
@@ -771,38 +41,161 @@ bp_cause_glance <- cause_of_death_nest %>%
   mutate(glance = map(model, broom::glance)) %>%
   unnest(glance)
 
-# Diastolic vs systolic bp grouped by cause_of_death and history_of_CD
-### HIGH R^2 value!!!
+prostate_data_clean %>% 
+  ggplot(aes(x = diastolic_bp, y = systolic_bp)) +
+  geom_jitter() + 
+  geom_smooth(method = lm, se = T ) + 
+  facet_wrap(~ cause_of_death)
 
-bp_model <- function(prostate_data_clean) {
-  lm(systolic_bp ~ diastolic_bp, data = prostate_data_clean)
-}
 
-cause_CD_nest <- prostate_data_clean %>% 
+###### Plots #######
+
+### PA phosphatase + cause of death
+
+prostate_data_clean %>% 
   na.omit() %>% 
-  group_by(cause_of_death, history_of_CD) %>% 
-  nest() %>% 
-  mutate(model = map(data, bp_model))
+  ggplot(aes(x = fct_reorder(cause_of_death, PA_phosphatase, .fun = mean, .desc = T), y = PA_phosphatase, color = bone_metastases)) +
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x = "Cause of death",
+       y = "Serum Prostatic Acid Phosphatase (unit?)")
 
-bp_cause_CD_glance <- cause_of_death_nest %>%
-  mutate(glance = map(model, broom::glance)) %>%
-  unnest(glance)
+### Bone metastases + status
+# Calculate "dead from prostate cancer" percentage
+metastases_cancer_dead_percentage <- (prostate_data_clean %>% 
+                                        filter(status_ == "dead", bone_metastases == "1", dead_from_prostate_cancer == 1) %>% 
+                                        nrow())/
+  ((prostate_data_clean %>% 
+      filter(status_ == "dead", bone_metastases == "1", dead_from_prostate_cancer == 1) %>% 
+      nrow())+
+     (prostate_data_clean %>% 
+        filter(status_ == "dead", bone_metastases == "1", dead_from_prostate_cancer == 0) %>% 
+        nrow())) * 100
+
+metastases_cancer_dead_percentage <- str_c(round(metastases_cancer_dead_percentage, 2), "%")
 
 
-# In progress...
+nonmetastases_cancer_dead_percentage <- (prostate_data_clean %>% 
+                                           filter(status_ == "dead", bone_metastases == "0", dead_from_prostate_cancer == 1) %>% 
+                                           nrow())/
+  ((prostate_data_clean %>% 
+      filter(status_ == "dead", bone_metastases == "0", dead_from_prostate_cancer == 1) %>% 
+      nrow())+
+     (prostate_data_clean %>% 
+        filter(status_ == "dead", bone_metastases == "0", dead_from_prostate_cancer == 0) %>% 
+        nrow())) * 100
 
-metastases_model <- function(prostate_data_clean) {
-  lm(stage_grade_index ~ PA_phosphatase, data = prostate_data_clean)
-}
+nonmetastases_cancer_dead_percentage <- str_c(round(nonmetastases_cancer_dead_percentage, 2), "%")
 
-status_nest <- prostate_data_clean %>% 
+#plot
+prostate_data_clean %>% 
+  ggplot(aes(x = bone_metastases, y = status_, color = dead_from_prostate_cancer)) +
+  geom_jitter() + 
+  annotate("text", x = 1:2, y = 2.5, label = c(nonmetastases_cancer_dead_percentage, metastases_cancer_dead_percentage)) +
+  labs(x = "Bone metastases",
+       y = "Status")
+
+
+### Bone metastases + activity
+
+# Transform count by group
+activity_percentage <- prostate_data_clean %>% 
+  group_by(activity, bone_metastases)%>% 
+  summarise(counts = n()) %>% 
+  pivot_wider(
+    names_from = bone_metastases,
+    values_from = counts) %>% 
+  rename(. ,no_meta = "0", meta = "1")
+
+# replace NA's with 0
+activity_percentage[is.na(activity_percentage)] <- 0  
+
+# calculate percentage and plot 
+activity_percentage %>% 
+  mutate(
+    no = no_meta/sum(activity_percentage$no_meta) * 100,
+    yes = meta/sum(activity_percentage$meta) * 100
+  ) %>% 
+  pivot_longer(
+    -c(activity, meta, no_meta),
+    names_to = "bone_metastases",
+    values_to = "percentage"
+  ) %>% 
+  ggplot(aes(x = activity, y = percentage, fill = bone_metastases)) +
+  geom_bar(stat = "identity", position=position_dodge()) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+### Serum hemoglbin + bone metastases
+prostate_data_clean %>% 
   na.omit() %>% 
-  group_by(stage) %>% 
-  nest() %>% 
-  mutate(model = map(data, metastases_model))
+  ggplot(aes(y = serum_hemoglobin, x = bone_metastases, color = Age_group)) +
+  geom_boxplot()
 
-metastases_glance <- status_nest %>%
-  mutate(glance = map(model, broom::glance)) %>%
-  unnest(glance)
+### Tumor size + bone metastases
+prostate_data_clean %>% 
+  ggplot(aes(y = tumor_size, x = bone_metastases, color = dead_from_prostate_cancer)) +
+  geom_boxplot()
 
 
+###Bone metastases vs estrogen and status 
+
+# Transform count by grouped by bone_metastases
+# Pivot_wide to have percentage for each bone_metastases group and not in total
+estrogen_metastases_percentage <- prostate_data_clean %>% 
+  group_by(estrogen_mg, bone_metastases, status_)%>% 
+  summarise(counts = n()) %>% 
+  pivot_wider(
+    names_from = bone_metastases,
+    values_from = counts) %>% 
+  rename(. ,no_meta = "0", meta = "1")
+
+# replace NA's with 0
+estrogen_metastases_percentage[is.na(estrogen_metastases_percentage)] <- 0  
+
+# calculate percentage and plot 
+estrogen_metastases_percentage %>% 
+  mutate(
+    no = no_meta/sum(estrogen_metastases_percentage$no_meta) * 100,
+    yes = meta/sum(estrogen_metastases_percentage$meta) * 100
+  ) %>% 
+  pivot_longer(
+    -c(estrogen_mg, status_, meta, no_meta),
+    names_to = "bone_metastases",
+    values_to = "percentage"
+  ) %>% 
+  ggplot(aes(x = estrogen_mg, y = percentage, fill = bone_metastases)) +
+  geom_bar(stat = "identity", position=position_dodge()) +
+  facet_wrap(~ status_)
+
+### Age_group vs estrogen and status
+
+# Transform count grouped by Age_group (row 42 is removed due to age = NA)
+# Pivot_wide to have percentage for each Age_group group and not in total
+estrogen_age_percentage <- prostate_data_clean[-42,] %>% 
+  group_by(estrogen_mg, status_, Age_group)%>% 
+  summarise(counts = n()) %>% 
+  pivot_wider(
+    names_from = Age_group,
+    values_from = counts) %>% 
+  rename(. ,fortyfive = "45 - 59", sixty = "60 - 69", seventy = "70 - 79", eighty = "80 - 90")
+
+# replace NA's with 0
+estrogen_age_percentage[is.na(estrogen_age_percentage)] <- 0  
+
+# calculate percentage and plot 
+estrogen_age_percentage %>% 
+  mutate( 
+    "45 - 59" = fortyfive/sum(estrogen_age_percentage$fortyfive) * 100,
+    "60 - 69" = sixty/sum(estrogen_age_percentage$sixty) * 100,
+    "70 - 79" = seventy/sum(estrogen_age_percentage$seventy) * 100,
+    "80 - 90" = eighty/sum(estrogen_age_percentage$eighty) * 100
+  ) %>% 
+  pivot_longer(
+    -c(estrogen_mg, status_, fortyfive, sixty, seventy, eighty),
+    names_to = "Age_group",
+    values_to = "percentage"
+  ) %>% 
+  ggplot(aes(x = estrogen_mg, y = percentage, fill = Age_group)) +
+  geom_bar(stat = "identity", position=position_dodge()) +
+  facet_wrap(~ status_)
