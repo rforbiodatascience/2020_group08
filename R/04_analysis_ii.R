@@ -164,7 +164,8 @@ prostate_pca_aug %>%
   geom_point()
 
 
-### K-means Clustering ###
+# ------------------------------------------------------------------------------
+# K-means clustering
 
 prostate_k_org <- prostate_pca_aug %>% 
   select(stage, months_of_follow_up, age, weight_index, history_of_CD, systolic_bp, diastolic_bp, serum_hemoglobin, tumor_size, stage_grade_index, PA_phosphatase, bone_metastases, sdate, estrogen_mg) %>% 
