@@ -87,7 +87,8 @@ pdc_long_diastolic_bp %>%
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
 
 # Dropping missing rows from the prostate_data
-prostate_data <- prostate_data%>% 
+prostate_data <- prostate_data %>% 
+  select(-dead_from_prostate_cancer, -Age_group) %>% 
   drop_na()
 
 # We now need to normalize our data
@@ -116,7 +117,7 @@ prostate_data$estrogen_mg <- normalize(prostate_data$estrogen_mg)
 # Selecting only the numerical variables for the analysis
 pca_prostate_data <- prostate_data %>% 
   as_tibble %>% 
-  select(-patno, -activity, -ekg, -status_, -cause_of_death, -dead_from_prostate_cancer, -Age_group) %>% 
+  select(-patno, -activity, -ekg, -status_, -cause_of_death,) %>% 
   drop_na
 
 # Compute principal components
