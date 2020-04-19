@@ -36,8 +36,25 @@ prostate_data_clean <-
                                     status == "dead - other specific non-ca" ~ "other specified non-cancer",
                                     status == "dead - unknown cause" ~ "unknown",
                                     status == "dead - unspecified non-ca" ~ "unspecified non-cancer",
-                                    status == "dead - respiratory disease" ~ "respiratory disease")) %>% 
-  na_if("N/A")
+                                    status == "dead - respiratory disease" ~ "respiratory disease"),
+         dead_from_prostate_cancer = case_when(status == "dead - other ca" ~ 0,
+                                               status == "dead - cerebrovascular" ~ 0,
+                                               status == "dead - prostatic ca" ~ 1,
+                                               status == "dead - heart or vascular" ~ 0,
+                                               status == "alive" ~ 99,
+                                               status == "dead - pulmonary embolus" ~ 0,
+                                               status == "dead - other specific non-ca" ~ 0,
+                                               status == "dead - unknown cause" ~ 0,
+                                               status == "dead - unspecified non-ca" ~ 0,
+                                               status == "dead - respiratory disease" ~ 0),
+         Age_group = case_when(45 <= age & age < 60 ~ "45 - 59",
+                               60 <= age & age < 70 ~ "60 - 69",
+                               70 <= age & age < 80 ~ "70 - 79",
+                               80 <= age & age < 90 ~ "80 - 90")) %>%
+                                
+  na_if("N/A") %>% 
+  na_if(99)
+
 
 #Remove columns
 prostate_data_clean$rx <- NULL
@@ -50,7 +67,15 @@ prostate_data_clean <- prostate_data_clean %>%
          bone_metastases = bm, systolic_bp = sbp, diastolic_bp = dbp)
 
 #Convert value to NA, which was wrongly assigned a value according to the authors of the study
+#http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/prostate.notes.txt
 prostate_data_clean <- na_if(prostate_data_clean, 999.87500000)
+
+#Ensure that factorial variables are actually factors
+factor_columns <- c("stage", "activity", "history_of_CD", "ekg", "bone_metastases",
+                    "estrogen_mg", "status_", "cause_of_death", "dead_from_prostate_cancer",
+                    "Age_group")
+
+prostate_data_clean[factor_columns] <- lapply(prostate_data_clean[factor_columns], factor)
 
 # Write data
 # ------------------------------------------------------------------------------

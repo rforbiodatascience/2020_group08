@@ -37,7 +37,7 @@ model1<-function(df){
 by_deathcause<-by_deathcause %>% 
   mutate(mdls=map(data,model1)) %>% 
   mutate(resids= map2(data, mdls, add_residuals), 
-         pred=map2(data, mdls, add_predictions))
+       pred=map2(data, mdls, add_predictions))
 
 
 #unnest prediction
@@ -85,11 +85,11 @@ by_deathcause_dia<-by_deathcause %>%
 pred2<-unnest(by_deathcause_dia, pred)
 resids2<-unnest(by_deathcause_dia, resids)
 resids
-
+is.na(pred2)
 
 #plot the prediction
 
-ggplot(data=pred2, mapping=aes(sdate, pred2))+
+  ggplot(data=pred2, mapping=aes(sdate, pred2))+
   geom_line(aes(group=status_))+
   geom_smooth(se=FALSE)
 
@@ -105,3 +105,4 @@ resids2 %>%
   ggplot(aes(sdate, resids2, group=cause_of_death))+
   geom_line()+
   geom_smooth(se=FALSE)
+
