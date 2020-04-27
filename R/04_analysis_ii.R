@@ -164,6 +164,10 @@ prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = activity, shape = status_)) +
   geom_point()
 
+# Visualizing the PCA based on bone-metastases
+prostate_pca_aug %>%
+  ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = bone_metastases)) +
+  geom_point()
 
 # ------------------------------------------------------------------------------
 # K-means clustering
