@@ -7,6 +7,8 @@ rm(list = ls())
 library(tidyverse)
 library(ggplot2)
 library(forcats)
+library(caret)
+library(caretEnsemble)
 
 # Load data
 # ------------------------------------------------------------------------------
@@ -139,6 +141,8 @@ prostate_data_clean %>%
 
 
 ###Bone metastases vs estrogen and status 
+# Shows that no patients with the low doses and bone metastases are alive, 
+# but at the same time, the higher dose seems to be bad if you have bone metastases
 
 # Transform count by grouped by bone_metastases
 # Pivot_wide to have percentage for each bone_metastases group and not in total
@@ -199,3 +203,79 @@ estrogen_age_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = Age_group)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_)
+
+
+### PA_phosphatase vs stage_grade_index
+prostate_data_clean %>% 
+  ggplot(aes(y = PA_phosphatase, x = stage_grade_index, color = dead_from_prostate_cancer)) +
+  geom_jitter()
+
+### Note: change/look at the plots where na.omit() has been used, since this removes  all rows with a NA in any column ###
+
+
+##### Predicting if a patient died from prostate cancer or not with logistic regression #####
+
+# Remove all the rows where the patients are still alive and rows containing NA's as the model cant deal with these
+
+prostate_model_data <- prostate_data_clean %>% 
+  filter(status_ == "dead") %>% 
+  select(-c(patno, sdate, status_, cause_of_death, Age_group)) %>% 
+  na.omit()
+
+# Make model and test which parameters are significant
+prostate_death_model <- glm(dead_from_prostate_cancer~.,
+                            family = binomial(link='logit'),
+                            data = prostate_model_data)
+
+# extract variables from the model with p < 0.05
+summary(prostate_death_model)$coef[summary(prostate_death_model)$coef[,4] <= .05,] 
+
+# Put the significant varaibles into new revised model 
+# (the model with all variables will cause an error in the 5-fold cross validation)
+prostate_death_model_revised <- glm(dead_from_prostate_cancer ~ months_of_follow_up + age + 
+                                      diastolic_bp + tumor_size + stage_grade_index + PA_phosphatase,
+                                    family = binomial(link = "logit"),
+                                    data = prostate_model_data)
+
+## Running 5-fold cross validation 
+
+# Define training control (set.seed for reproducibility)
+set.seed(123)
+
+train.control <- trainControl(method = "cv", number = 5)
+
+# Train the model
+prostate_death_model_5fold <- train(dead_from_prostate_cancer ~ months_of_follow_up + age + 
+                                      diastolic_bp + tumor_size + stage_grade_index + 
+                                      PA_phosphatase,
+                                    data = prostate_model_data, 
+                                    method = "glm",
+                                    trControl = train.control, family = binomial(link = "logit"))
+
+print(prostate_death_model_5fold)
+
+# extract accuracy and save as string
+prostate_death_model_5fold_accuracy <- getMetric(prostate_death_model_5fold) * 100
+
+prostate_death_model_5fold_accuracy <- str_c("model accuracy = ",
+                                             (round(prostate_death_model_5fold_accuracy, 2)), "%")
+
+# Run anova to quntify how much the individual variables explain of the variance
+prostate_death_model_anova <- anova(prostate_death_model_revised, test = "Chisq")
+
+anova(prostate_death_model_revised, test = "Chisq")
+
+prostate_death_model_anova %>% 
+  as.data.frame() %>% 
+  drop_na() %>% 
+  rownames_to_column("variable") %>% 
+  ggplot(aes(x = fct_reorder(variable, Deviance, .fun = max, .desc = T), y = Deviance)) +
+  geom_col(width = 0.6) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.title = element_text(size=12)) +
+  labs(x = "Variable",
+       y = "Deviance (from ANOVA)",
+       title = "Prediction of cause of death (prostate cancer vs other) with logistic regression") +
+  annotate("text", x = 4.5, y = 32.5, label = prostate_death_model_5fold_accuracy)
+
+
