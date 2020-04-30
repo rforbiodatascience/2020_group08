@@ -1,9 +1,6 @@
 #Shewa has stage,age, months of followup and weight_index.
 installed.packages()
 #load libraries
-install.packages("broom")
-install.packages("purrr")
-install.packages("ggplot2")
 library(purrr)
 library(tidyr)
 library(dplyr)
