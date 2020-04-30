@@ -44,6 +44,8 @@ bp_cause_glance <- cause_of_death_nest %>%
   mutate(glance = map(model, broom::glance)) %>%
   unnest(glance)
 
+bp_cause_glance
+
 #plotting the variables of interest
 #observation- positive correlation with sys and dia for all the cancer causes
 prostate_data_clean %>% 
@@ -311,6 +313,7 @@ cause_of_death_nest_tm<-prostate_data_clean %>%
 cause_glance_tm<-cause_of_death_nest_tm %>% 
   mutate(glance=map(model, broom::glance))
 
+unnest(cause_)
 
 #plotting grouped by the cause of death
 
