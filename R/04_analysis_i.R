@@ -39,10 +39,13 @@ cause_of_death_nest <- prostate_data_clean %>%
   nest() %>% 
   mutate(model = map(data, bp_model))
 
+cause_of_death_nest
 bp_cause_glance <- cause_of_death_nest %>%
   mutate(glance = map(model, broom::glance)) %>%
   unnest(glance)
 
+#plotting the variables of interest
+#observation- positive correlation with sys and dia for all the cancer causes
 prostate_data_clean %>% 
   ggplot(aes(x = diastolic_bp, y = systolic_bp)) +
   geom_jitter() + 
@@ -52,7 +55,7 @@ prostate_data_clean %>%
 
 ###### Plots #######
 
-### PA phosphatase + cause of death
+###1. PA phosphatase + cause of death
 
 prostate_data_clean %>% 
   na.omit() %>% 
@@ -61,6 +64,10 @@ prostate_data_clean %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   labs(x = "Cause of death",
        y = "Serum Prostatic Acid Phosphatase (unit?)")
+
+##observation
+#The highest PA phosphatase is observed with the prostate cancer cases with bone metastasis.
+#Generally, the level of PA phosphatase is higher for bone mestasis than non-bone metastasis.
 
 ### Bone metastases + status
 # Calculate "dead from prostate cancer" percentage
@@ -101,7 +108,7 @@ prostate_data_clean %>%
 ### Bone metastases + activity
 
 # Transform count by group
-activity_percentage <- prostate_data_clean %>% 
+prostate_data_clean %>% 
   group_by(activity, bone_metastases)%>% 
   summarise(counts = n()) %>% 
   pivot_wider(
@@ -278,4 +285,43 @@ prostate_death_model_anova %>%
        title = "Prediction of cause of death (prostate cancer vs other) with logistic regression") +
   annotate("text", x = 4.5, y = 32.5, label = prostate_death_model_5fold_accuracy)
 
+###=======================================================================================
+###=======================================================================================
+###=======================================================================================
+#Analysis on tumor size for it was found out that it had impact on the cause of death
 
+
+#build model with tumor size and age
+
+tumormodel<-function(data){
+  
+  lm(age~tumor_size, data=prostate_data_clean)
+  
+}
+#nesting and adding model to analyse the cause of death on the tumor size
+
+cause_of_death_nest_tm<-prostate_data_clean %>%
+  na.omit() %>%
+  group_by(cause_of_death) %>%
+  nest() %>%
+  mutate(model=map(data, tumormodel))
+
+#mapping to glance function
+
+cause_glance_tm<-cause_of_death_nest_tm %>% 
+  mutate(glance=map(model, broom::glance))
+
+
+#plotting grouped by the cause of death
+
+prostate_data_clean %>% 
+  ggplot(mapping=aes(x=tumor_size, y= age))+
+  geom_jitter()+
+  geom_smooth(method=lm, na.rm = TRUE, se=TRUE)+
+  facet_wrap(~cause_of_death)
+
+#observation: for the prostate cancer, the tumor size increases around the age of 70s
+##
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(x=))
