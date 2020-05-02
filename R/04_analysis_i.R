@@ -363,10 +363,67 @@ prostate_data_clean %>%
   geom_smooth(method = lm)+
   facet_wrap(~cause_of_death)
 
-#Bone metastasis+weight
-#BONE METASDTASIS+STATUS
+#Bone metastasis+weight (cate+conti)
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(mapping = aes(bone_metastases, weight_index, color=dead_from_prostate_cancer))+
+  geom_jitter()+
+  facet_wrap(cause_of_death~dead_from_prostate_cancer)+
+  geom_smooth(method=lm)+
+  theme(legend.position = "bottom")+
+  annotate("text", label=c())
+
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(mapping = aes(bone_metastases, weight_index, color=serum_hemoglobin))+
+  geom_jitter()+
+  geom_smooth(method=lm)+
+  facet_wrap(cause_of_death~dead_from_prostate_cancer)+
+  theme(legend.position = "bottom")
+  
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(mapping = aes(bone_metastases, weight_index, color=PA_phosphatase))+
+  geom_jitter()+
+  geom_smooth(method=lm)+
+  facet_wrap(cause_of_death~dead_from_prostate_cancer)+
+  theme(legend.position = "bottom")
+
+
+#BONE METASDTASIS+STATUS (conti+disc)
+
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(mmapping = aes(status_, bone_metastases))+
+  geom_boxplot()
+
 #BONE METASDTASIS+ACTIVITY
+
+#transform count by group
+activity_bone<-prostate_data_clean %>% 
+  group_by(activity, bone_metastases) %>% 
+  summarise(count=n()) %>% 
+  pivot_wider(
+    names_from = bone_metastases, 
+    values_from = count) %>% 
+  rename(. ,no_meta="0", meta="1")
+
+#replace NA with 0
+
+activity_bone[is.na(activity_bone)]<-0
+
+#calculate the percentage and plt
+
+activity_bone %>% mutate(no=(no_meta/sum(activity_bone$no_meta))*100,
+                         yes=meta/sum(activity_bone$meta)*100) %>% 
+  pivot_longer(-c(activity, meta, no_meta), names_to = "bone_metastases", values_to = "percent") %>% 
+  ggplot(aes(activity, percent, fill=bone_metastases))+
+  geom_bar()
+
+
 #BONE METASDTASIS+SERUM_HEMOGLOBIN
+
+
 #BONE METASDTASIS+TUMOR SIZE
 #BONE METASDTASIS+ESTROGEN
 #BONE METASDTASIS+EKG
