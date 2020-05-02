@@ -368,4 +368,4 @@ max(maxrsq)
 maxrsq
 
 #PA+systolic shows the second highest correlation
-
+#so I am going to build the linear model using PA and systolic and perform some data transformations and visualisations.
