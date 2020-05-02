@@ -295,7 +295,7 @@ prostate_death_model_anova %>%
 
 #build model with tumor size and age
 
-tumormodel<-function(data){
+tumormodel<-function(prostate_data_clean){
   
   lm(age~tumor_size, data=prostate_data_clean)
   
@@ -311,10 +311,10 @@ cause_of_death_nest_tm<-prostate_data_clean %>%
 #mapping to glance function
 
 cause_glance_tm<-cause_of_death_nest_tm %>% 
-  mutate(glance=map(model, broom::glance))
+  mutate(glance=map(model, broom::glance))%>% 
+           unnest(glance)
 
-unnest(cause_)
-
+         cause_glance_tm
 #plotting grouped by the cause of death
 
 prostate_data_clean %>% 
@@ -328,3 +328,102 @@ prostate_data_clean %>%
 prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(x=))
+
+###=======================================================================================
+###=======================================================================================
+###=======================================================================================
+#building model with PA_phosphatase and systolic_bp
+ps_model<-function(prostate_data_clean){
+  
+  lm(PA_phosphatase~systolic_bp, data = prostate_data_clean)
+}
+
+#nesting and adding model
+nest_ps<-prostate_data_clean %>% 
+  na.omit() %>% 
+  group_by(cause_of_death) %>% 
+  nest() %>% 
+  mutate(model = map(data, ps_model))
+
+#mapping glance function on model go get its stats
+
+glance_ps<-nest_ps %>% 
+  mutate(glance=map(model, broom::glance))
+
+#unnest the glance to see
+glance_ps %>% unnest(glance)
+
+#pulmonary and unknown cause of death contributed when the PA phosphatase and systolic bp came into play\
+
+
+#plotting
+prostate_data_clean %>% 
+  ggplot(mapping = aes(PA_phosphatase, systolic_bp))+
+  geom_jitter() +
+  geom_smooth(method = lm)+
+  facet_wrap(~cause_of_death)
+
+#Bone metastasis+weight
+#BONE METASDTASIS+STATUS
+#BONE METASDTASIS+ACTIVITY
+#BONE METASDTASIS+SERUM_HEMOGLOBIN
+#BONE METASDTASIS+TUMOR SIZE
+#BONE METASDTASIS+ESTROGEN
+#BONE METASDTASIS+EKG
+#BONE METASDTASIS+DIASTOLIC BP
+#BONE METASDTASIS+AGE GROUP
+
+
+#WEIGHT+STATUS
+#WEIGHT+ACTIVITY
+#WEIGHT+SERUM_HEMO
+#WEIGHT+ESTROGEN
+#WEIGHT+EKG
+#WEIGHT+DIASTOLIC
+#WEIGHT+AGEGROUP
+
+
+#STATUS+ACTIVITY
+#STATUS+SERUM_HEMO
+#STATUS+TUMOR
+#STATUS+ESTROGEN
+#STATUS+EKG
+#STATUS+DIASTOLIC BP
+#STATUS+AGEGROUP
+
+
+#ACTIVITY+SERUM_HEMO
+#ACTIVITY+TUMORSIZE
+#ACTIVITY+ESTROGEN
+#ACTIVITY+EKG
+#ACTIVITY+DIA
+#ACTIVITY+AGEGROUP
+
+#SERUM_HEMO+TUMOR
+#SERUM_HEMO+ESTROGEN
+#SERUM_HEMO+EKG
+#SERUM_HEMO+DIASTOLIC
+#SERUM_HEMO+AGE GROUP
+
+#TUMOR+ESTROGEN
+#TUMOR+EKG
+#TUMOR+DIASTOLIC
+#TUMOR+AGE GROUP
+
+
+#EKG+DIASTOLIC
+#EKG+AGEGROUP
+
+#DIASTOLIC+AGEGROUP
+
+
+
+
+
+
+
+
+
+
+
+
