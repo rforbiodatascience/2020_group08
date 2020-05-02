@@ -65,7 +65,8 @@ prostate_data_clean %>%
   geom_boxplot() + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   labs(x = "Cause of death",
-       y = "Serum Prostatic Acid Phosphatase (unit?)")
+       y = "Serum Prostatic Acid Phosphatase (unit?)")+
+  theme(legend.position = "bottom")
 
 ##observation
 #The highest PA phosphatase is observed with the prostate cancer cases with bone metastasis.
@@ -141,12 +142,14 @@ activity_percentage %>%
 prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(y = serum_hemoglobin, x = bone_metastases, color = Age_group)) +
-  geom_boxplot()
+  geom_boxplot()+
+  theme(legend.position = "bottom")
 
 ### Tumor size + bone metastases
 prostate_data_clean %>% 
   ggplot(aes(y = tumor_size, x = bone_metastases, color = dead_from_prostate_cancer)) +
-  geom_boxplot()
+  geom_boxplot()+
+  theme(legend.position = "bottom")
 
 
 ###Bone metastases vs estrogen and status 
@@ -414,27 +417,156 @@ activity_bone[is.na(activity_bone)]<-0
 
 #calculate the percentage and plt
 
-activity_bone %>% mutate(no=(no_meta/sum(activity_bone$no_meta))*100,
-                         yes=meta/sum(activity_bone$meta)*100) %>% 
+activity_bone %>% 
+  mutate(no=no_meta/sum(activity_bone$no_meta)*100,
+        yes=meta/sum(activity_bone$meta)*100) %>% 
   pivot_longer(-c(activity, meta, no_meta), names_to = "bone_metastases", values_to = "percent") %>% 
   ggplot(aes(activity, percent, fill=bone_metastases))+
-  geom_bar()
+  geom_bar(stat = "identity", position = position_dodge())
 
 
 #BONE METASDTASIS+SERUM_HEMOGLOBIN
+#dead from  prostate cancer
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(bone_metastases, serum_hemoglobin,color=dead_from_prostate_cancer))+
+  geom_boxplot()+
+  theme(legend.position = "bottom")
+
+#stage
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(bone_metastases, serum_hemoglobin,color=stage))+
+  geom_boxplot()+
+  theme(legend.position = "bottom")
+
+#for the people without bone metastasis, the serum hemo level is about the same regardless of stage, but its not for the bone metastasis. 
+#For people with bone metastasis, the serum hemoglobin level increased with cancer stage
+
+#ekg
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(bone_metastases, serum_hemoglobin,color=ekg))+
+  geom_boxplot()+
+  theme(legend.position = "bottom")
+
+#people without bone metastasis showwed almost similar ekg, but people with bone metastasis werent. 
+
+#age group
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(bone_metastases, serum_hemoglobin,color=Age_group))+
+  geom_boxplot()+
+  theme(legend.position = "bottom")
+
+#estrogen
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(bone_metastases, serum_hemoglobin,color=estrogen_mg))+
+  geom_boxplot()+
+  theme(legend.position = "bottom")
+
+#people without bone metastasis showed constant level of serum hemoglobin when treated with different level of estrogen. 
+#but for people with bone metastasis showed different level of serume hemoglobin with different estrogen injected. this pattern is irreguar
 
 
 #BONE METASDTASIS+TUMOR SIZE
+
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(bone_metastases, serum_hemoglobin,color=tumor_size))+
+  geom_jitter()+
+  theme(legend.position = "bottom")
+
 #BONE METASDTASIS+ESTROGEN
-#BONE METASDTASIS+EKG
-#BONE METASDTASIS+DIASTOLIC BP
+#mathias
+prostate_data_clean  %>% 
+  ggplot(aes(bone_metastases, estrogen_mg, color= status_))+
+  geom_jitter()
+
+#TRANSOFORM COUNT BY GROUPED BY BONE METASTASIS
+
+estrogen_metastases_percentage<-prostate_data_clean %>% 
+  group_by(bone_metastases, estrogen_mg, status_) %>% 
+  summarise(count=n()) %>% 
+  pivot_wider(names_from = bone_metastases,
+              values_from = count)  %>%
+  rename(. ,no_meta = "0", meta = "1")
+
+estrogen_metastases_percentage
+#replace na with 0
+
+estrogen_metastases_percentage[is.na(estrogen_metastases_percentage)] <- 0  
+
+estrogen_metastases_percentage %>% 
+  mutate(no=no_meta/sum(estrogen_metastases_percentage$no_meta)*100,
+         yes=meta/sum(estrogen_metastases_percentage$meta)*100) %>% 
+  pivot_longer(-c(estrogen_mg, status_, meta, no_meta), 
+               names_to = "bone_metastases", 
+               values_to = "percent") %>% 
+  ggplot(aes(estrogen_mg, percent), fill=bone_metastases)+
+  geom_bar(stat = "identity", position = position_dodge())+
+  facet_wrap(~ status_)
+
+  
+#BONE METASDTASIS+EKG (both are categorical)
+
+prostate_data_clean %>% 
+  ggplot(ae)
+#BONE METASDTASIS+DIASTOLIC BP\
+prostate_data_clean %>% 
+  ggplot(aes(bone_metastases, systolic_bp), color=status_)+
+  geom_jitter()+
+  theme(legend.position = "bottom")
 #BONE METASDTASIS+AGE GROUP
 
 
 #WEIGHT+STATUS
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(weight_index, status_), color=dead_from_prostate_cancer)+
+  geom_jitter()
+
+
+
 #WEIGHT+ACTIVITY
+
+prostate_data_clean %>% 
+  ggplot(aes(activity, weight_index), color=status_)+
+  geom_jitter()
+
+prostate_data_clean %>% 
+  ggplot(aes(activity, weight_index), color=status_)+
+  geom_boxplot()+
+  theme(axis.text.x = element_text(angle=50, hjust=1))
+
+
 #WEIGHT+SERUM_HEMO
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(serum_hemoglobin,weight_index), color=estrogen_mg)+
+  geom_jitter()+
+  theme(axis.text.x = element_text(angle=50, hjust=1))
+
 #WEIGHT+ESTROGEN
+#ekg
+prostate_data_clean %>% 
+  ggplot(aes(estrogen_mg,weight_index,color=ekg))+
+  geom_boxplot()+
+  geom_smooth()+
+  theme(legend.position = "bottom")
+
+#activity
+prostate_data_clean %>% 
+  ggplot(aes(estrogen_mg,weight_index,color=activity))+
+  geom_boxplot()+
+  geom_smooth()+
+  theme(legend.position = "bottom")
+#status
+#cause of death
+
+#agegroup
+#estrogen
 #WEIGHT+EKG
 #WEIGHT+DIASTOLIC
 #WEIGHT+AGEGROUP
@@ -473,10 +605,48 @@ activity_bone %>% mutate(no=(no_meta/sum(activity_bone$no_meta))*100,
 
 #DIASTOLIC+AGEGROUP
 
+#stage
+#serum_hemo
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(x = fct_reorder(cause_of_death, serum_hemoglobin, .fun = mean, .desc = T), y = serum_hemoglobin, color = stage)) +
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x = "Cause of death",
+       y = "Serum hemoglobin")+
+  theme(legend.position = "bottom")
+
+#serum hemoglobin for stage 4 patients dead from prostate cancer were lower. 
+#second lowert serum hemoglobin level for prostate cancer
+
+#lower serum hemoglobin---> cancerous!
+
+#tumor size
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(x = fct_reorder(cause_of_death, tumor_size, .fun = mean, .desc = T), y = tumor_size, color = stage)) +
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x = "Cause of death",
+       y = "tumor size
+       ")+
+  theme(legend.position = "bottom")
+
+#prostate cancer has the second highest tumor size, but the stage doesnt really matter
 
 
-
-
+#weight_index
+prostate_data_clean %>% 
+  na.omit() %>% 
+  ggplot(aes(x = fct_reorder(cause_of_death, weight_index, .fun = mean, .desc = T), y = weight_index, color = stage)) +
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x = "Cause of death",
+       y = "weight index
+       ")+
+  theme(legend.position = "bottom")
+#weight index for stage 4 patients dead from prostate cancer were less
+#prostate cancer has the third lowest weight index in general
 
 
 
