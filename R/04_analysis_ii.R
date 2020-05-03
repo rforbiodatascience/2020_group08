@@ -218,9 +218,9 @@ library(keras)
 # Replacing missing values (NA) in the cause_of_death column with "none"
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
 
-# Dropping missing rows from the prostate_data
+# Dropping missing rows from the prostate_data and select only the 4 variables we use for the model
 prostate_data <- prostate_data %>% 
-  select(-dead_from_prostate_cancer, -Age_group) %>% 
+  select(-dead_from_prostate_cancer, -Age_group, -patno, -stage, -months_of_follow_up, -age, -weight_index, -activity, -history_of_CD, -systolic_bp, -diastolic_bp, -ekg, -stage_grade_index, -bone_metastases, -sdate, -status_) %>% 
   drop_na()
 
 # Converting character labels for cause of death to numeric
@@ -229,7 +229,16 @@ nn_dat = prostate_data %>%
          tumor_size_feat = tumor_size,
          estrogen_mg_feat = estrogen_mg,
          serum_hemoglobin_feat = serum_hemoglobin) %>%
-  mutate(class_num = as.numeric(cause_of_death) - 1, # factor, so = 0, 1, 2
+  mutate(class_num = case_when(cause_of_death == "none" ~ 1,
+                               cause_of_death == "cerebrovascular disease/accident" ~ 2,
+                               cause_of_death == "heart or vascular disease" ~ 3,
+                               cause_of_death == "other cancer" ~ 4,
+                               cause_of_death == "other specified non-cancer" ~ 5,
+                               cause_of_death == "prostate cancer" ~ 6,
+                               cause_of_death == "pulmonary embolus" ~ 7,
+                               cause_of_death == "respiratory disease" ~ 8,
+                               cause_of_death == "unknown" ~ 9,
+                               cause_of_death == "unspecified non-cancer" ~ 10), # factor, so = 0, 1, 2
          class_label = cause_of_death)
 nn_dat %>% head(3)
 
