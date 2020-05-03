@@ -648,6 +648,19 @@ prostate_data_clean %>%
 #weight index for stage 4 patients dead from prostate cancer were less
 #prostate cancer has the third lowest weight index in general
 
+#tumor size+...other variables
+
+#TUMOR+ESTROGEN
+
+
+
+#TUMOR+EKG
+#TUMOR+DIASTOLIC
+#TUMOR+AGE GROUP
+#TUMOR+bone metastasis
+#TUMOR+PA
+#TUMOR+sySTOLIC
+#TUMOR+weight
 
 
 
