@@ -24,37 +24,6 @@ prostate_data_clean_aug[factor_columns] <- lapply(prostate_data_clean_aug[factor
 # Wrangle and analyse data
 # ------------------------------------------------------------------------------
 
-##### Nesting data frames for modelling: #########
-
-
-# Diastolic vs systolic bp grouped by cause_of_death
-
-bp_model <- function(prostate_data_clean_aug) {
-  lm(systolic_bp ~ diastolic_bp, data = prostate_data_clean_aug)
-}
-
-cause_of_death_nest <- prostate_data_clean_aug %>% 
-  na.omit() %>% 
-  group_by(cause_of_death) %>% 
-  nest() %>% 
-  mutate(model = map(data, bp_model))
-
-cause_of_death_nest
-bp_cause_glance <- cause_of_death_nest %>%
-  mutate(glance = map(model, broom::glance)) %>%
-  unnest(glance)
-
-bp_cause_glance
-
-#plotting the variables of interest
-#observation- positive correlation with sys and dia for all the cancer causes
-prostate_data_clean_aug %>% 
-  ggplot(aes(x = diastolic_bp, y = systolic_bp)) +
-  geom_jitter() + 
-  geom_smooth(method = lm, se = T ) + 
-  facet_wrap(~ cause_of_death)
-
-
 ###### Plots #######
 
 ###1. PA phosphatase + cause of death
