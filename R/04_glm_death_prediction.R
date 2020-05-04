@@ -78,7 +78,7 @@ prostate_death_model_anova <- anova(prostate_death_model_revised, test = "Chisq"
 
 anova(prostate_death_model_revised, test = "Chisq")
 
-prostate_death_model_anova %>% 
+glm_death_model_performance <- prostate_death_model_anova %>% 
   as.data.frame() %>% 
   drop_na() %>% 
   rownames_to_column("variable") %>% 
@@ -90,3 +90,11 @@ prostate_death_model_anova %>%
        y = "Deviance (from ANOVA)",
        title = "Prediction of cause of death (prostate cancer vs other) with logistic regression") +
   annotate("text", x = 4.5, y = 32.5, label = prostate_death_model_5fold_accuracy)
+
+# Export png files
+# ------------------------------------------------------------------------------
+ggsave(filename = "results/04_glm_death_model_performance.png",
+       plot = glm_death_model_performance,
+       height = 15,
+       width = 16,
+       units = "cm")

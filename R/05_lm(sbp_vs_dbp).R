@@ -41,7 +41,7 @@ bp_cause_glance <- cause_of_death_nest %>%
   unnest(glance)
 
 # Extract adjusted r^2 for p-values below 0.05 to plot model fit
-bp_cause_glance %>% 
+lm_bp_model_fit <- bp_cause_glance %>% 
   filter(adj.r.squared > 0.05) %>% 
   select(adj.r.squared, p.value, cause_of_death) %>% 
   arrange(desc(adj.r.squared)) %>% 
@@ -55,9 +55,24 @@ bp_cause_glance %>%
   ylim(0, 1)
 
 # Plot of systolic via distolic bp by cause of death to compare with the R^2 values
-prostate_data_clean_aug %>% 
+sdp_vs_dbp_plot <- prostate_data_clean_aug %>% 
   na.omit() %>% 
   ggplot(aes(x = diastolic_bp, y = systolic_bp)) +
   geom_jitter() + 
   geom_smooth(method = lm, se = T ) + 
   facet_wrap(~ cause_of_death)
+
+# Export png files
+# ------------------------------------------------------------------------------
+ggsave(filename = "results/05_lm_model_fit_plot.png",
+       plot = lm_bp_model_fit,
+       height = 15,
+       width = 15,
+       units = "cm")
+
+ggsave(filename = "results/05_sdp_vs_dbp_plot.png",
+       plot = sdp_vs_dbp_plot,
+       height = 15,
+       width = 16,
+       units = "cm")
+
