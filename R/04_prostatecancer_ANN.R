@@ -4,7 +4,7 @@ rm(list = ls())
 
 # Load data
 # ------------------------------------------------------------------------------
-prostate_data <- read_tsv(file = "Data/02_prostate_data_clean.tsv") %>% 
+prostate_data <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv") %>% 
   as_tibble()
 
 # Wrangle data
@@ -14,7 +14,9 @@ prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
 
 # Dropping missing rows from the prostate_data and select only the 4 variables we use for the model
 prostate_data <- prostate_data %>% 
-  select(-dead_from_prostate_cancer, -Age_group, -patno, -stage, -months_of_follow_up, -age, -weight_index, -activity, -history_of_CD, -systolic_bp, -diastolic_bp, -ekg, -stage_grade_index, -bone_metastases, -sdate, -status_) %>% 
+  select(-dead_from_prostate_cancer, -Age_group, -patno, -stage, -months_of_follow_up,
+         -age, -weight_index, -activity, -history_of_CD, -systolic_bp, -diastolic_bp, 
+         -ekg, -stage_grade_index, -bone_metastases, -study_date, -status_) %>% 
   drop_na()
 
 # Then we define the functions needed to implement the ANN
