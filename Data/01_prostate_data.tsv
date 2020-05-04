@@ -1,503 +1,503 @@
-patno	stage	rx	dtime	status	age	wt	pf	hx	sbp	dbp	ekg	hg	sz	sg	ap	bm	sdate
-1	3	0.2 mg estrogen	72	alive	75	76	normal activity	0	15	9	heart strain	13.798828125	2	8	0.29998779296875	0	2778
-2	3	0.2 mg estrogen	1	dead - other ca	54	116	normal activity	0	13	7	heart block or conduction def	14.599609375	42	NA	0.699951171875	0	2820
-3	3	5.0 mg estrogen	40	dead - cerebrovascular	69	102	normal activity	1	14	8	heart strain	13.3984375	3	9	0.29998779296875	0	2933
-4	3	0.2 mg estrogen	20	dead - cerebrovascular	75	94	in bed < 50% daytime	1	14	7	benign	17.59765625	4	8	0.89990234375	0	2999
-5	3	placebo	65	alive	67	99	normal activity	0	17	10	normal	13.3984375	34	8	0.5	0	3002
-6	3	0.2 mg estrogen	24	dead - prostatic ca	71	98	normal activity	0	19	10	normal	15.099609375	10	11	0.5999755859375	0	3086
-7	3	placebo	46	dead - heart or vascular	75	100	normal activity	0	14	10	benign	13	13	9	0.7999267578125	0	3099
-8	3	placebo	62	alive	73	114	normal activity	1	17	11	heart strain	12.599609375	3	9	0.5999755859375	0	3100
-9	3	1.0 mg estrogen	61	alive	60	110	normal activity	0	12	8	normal	14.599609375	4	10	0.699951171875	0	3134
-10	3	1.0 mg estrogen	60	alive	78	107	normal activity	1	13	8	old MI	13	21	6	0.39996337890625	0	3140
-11	3	1.0 mg estrogen	60	alive	77	89	normal activity	0	15	8	normal	15.599609375	3	8	0.5999755859375	0	3141
-12	3	5.0 mg estrogen	59	alive	74	105	normal activity	1	18	14	normal	13.599609375	6	8	0.39996337890625	0	3176
-13	3	0.2 mg estrogen	59	alive	74	107	normal activity	0	14	9	old MI	14.3984375	6	9	0.29998779296875	0	3183
-14	3	placebo	49	dead - prostatic ca	55	112	normal activity	1	16	9	heart strain	13.8984375	4	9	1	0	3183
-15	3	5.0 mg estrogen	20	dead - cerebrovascular	73	88	normal activity	0	19	10	heart strain	12	15	10	0.5999755859375	0	3196
-16	3	5.0 mg estrogen	3	dead - heart or vascular	87	81	in bed < 50% daytime	1	17	12	rhythmic disturb & electrolyte ch	13.3984375	3	9	0.39996337890625	0	3196
-17	3	placebo	58	alive	64	90	normal activity	0	14	8	normal	16.19921875	6	9	0.699951171875	0	3218
-18	3	1.0 mg estrogen	29	dead - pulmonary embolus	79	104	normal activity	0	13	8	benign	15	5	8	0.5	0	3230
-19	3	5.0 mg estrogen	26	dead - heart or vascular	62	90	normal activity	1	13	8	benign	14.3984375	2	9	0.699951171875	0	3386
-20	3	5.0 mg estrogen	52	alive	74	107	normal activity	0	13	8	heart strain	16.3984375	10	9	0.699951171875	0	3400
-21	3	5.0 mg estrogen	20	dead - heart or vascular	83	72	in bed < 50% daytime	1	13	9	heart strain	15	1	10	0.699951171875	0	3400
-22	3	1.0 mg estrogen	51	alive	65	113	normal activity	0	16	10	normal	14.099609375	21	9	0.699951171875	0	3428
-23	3	placebo	51	alive	61	97	normal activity	0	11	8	normal	13.5	8	8	0.5999755859375	0	3433
-24	4	5.0 mg estrogen	31	dead - prostatic ca	56	95	normal activity	0	15	10	rhythmic disturb & electrolyte ch	14.798828125	26	13	35.6953125	1	2791
-25	4	1.0 mg estrogen	42	dead - cerebrovascular	73	103	normal activity	0	16	10	normal	14.599609375	6	11	3.89990234375	0	2831
-26	4	0.2 mg estrogen	38	dead - heart or vascular	69	75	normal activity	0	16	8	heart strain	10.69921875	25	11	6.19921875	0	2861
-27	4	placebo	69	alive	76	82	normal activity	0	12	8	old MI	11.69921875	12	10	2.5	0	2869
-28	4	placebo	39	dead - prostatic ca	71	103	normal activity	0	12	7	normal	14.3984375	11	11	12	0	2873
-29	4	1.0 mg estrogen	33	dead - other ca	66	126	normal activity	0	17	10	heart strain	14	32	13	24.19921875	0	2884
-30	4	0.2 mg estrogen	8	dead - prostatic ca	76	90	normal activity	0	15	9	heart strain	12.798828125	40	13	2.2998046875	0	2895
-31	4	0.2 mg estrogen	13	dead - prostatic ca	74	77	in bed > 50% daytime	0	16	9	heart strain	10.5	17	13	316	1	2905
-32	4	5.0 mg estrogen	33	dead - other specific non-ca	71	150	normal activity	1	16	10	old MI	15	9	11	1.89990234375	0	2924
-33	4	1.0 mg estrogen	9	dead - prostatic ca	71	88	normal activity	1	16	9	heart strain	12.298828125	38	13	35.3984375	0	2932
-34	4	placebo	21	dead - prostatic ca	79	89	normal activity	0	16	9	heart strain	12.798828125	26	12	12.099609375	0	2940
-35	4	5.0 mg estrogen	66	dead - prostatic ca	75	101	normal activity	0	15	9	normal	14.599609375	8	14	3.7998046875	0	2953
-36	4	5.0 mg estrogen	5	dead - prostatic ca	76	86	normal activity	1	16	6	heart strain	8.19921875	10	11	99.1875	1	2953
-37	4	placebo	27	dead - other specific non-ca	72	93	normal activity	0	16	10	heart strain	13	2	11	1.2998046875	0	2933
-38	4	0.2 mg estrogen	2	dead - heart or vascular	69	84	normal activity	1	12	8	benign	10.3984375	15	13	28.8984375	1	2979
-39	4	0.2 mg estrogen	20	dead - prostatic ca	53	99	normal activity	0	12	9	benign	14.19921875	26	13	5.599609375	1	3050
-40	4	1.0 mg estrogen	19	dead - prostatic ca	76	85	normal activity	0	14	9	heart strain	13	6	11	1.39990234375	1	3141
-41	4	placebo	60	alive	72	95	normal activity	1	17	8	heart strain	13.599609375	12	12	2.2998046875	0	3162
-42	4	1.0 mg estrogen	58	alive	NA	76	normal activity	0	15	8	heart strain	12.798828125	35	13	30	1	3202
-43	4	5.0 mg estrogen	32	dead - prostatic ca	82	89	normal activity	0	14	8	normal	13	27	13	22.296875	1	3204
-44	4	placebo	53	alive	74	124	normal activity	0	16	8	heart block or conduction def	9.3984375	26	15	1.2998046875	0	3350
-45	4	1.0 mg estrogen	53	alive	75	93	normal activity	0	13	9	rhythmic disturb & electrolyte ch	15.298828125	16	13	3.2998046875	0	3372
-46	4	5.0 mg estrogen	43	dead - prostatic ca	74	81	normal activity	0	17	10	heart strain	13.3984375	28	11	20	1	3395
-47	4	0.2 mg estrogen	21	dead - prostatic ca	60	96	normal activity	0	12	8	normal	14.298828125	27	13	7	0	3433
-48	3	5.0 mg estrogen	30	dead - unknown cause	59	116	in bed < 50% daytime	0	12	8	heart strain	15.19921875	NA	9	0.699951171875	0	2730
-49	3	5.0 mg estrogen	74	alive	49	99	normal activity	0	13	7	normal	14.798828125	14	8	0.5	0	2735
-50	3	placebo	72	alive	74	96	in bed < 50% daytime	1	11	6	old MI	10.3984375	20	11	0.5999755859375	0	2779
-51	3	placebo	14	dead - prostatic ca	73	101	normal activity	0	16	7	normal	12.3984375	18	11	0.5999755859375	0	2905
-52	3	5.0 mg estrogen	33	dead - heart or vascular	76	98	normal activity	1	17	10	old MI	17.09765625	13	8	0.5	0	2995
-53	3	0.2 mg estrogen	8	dead - cerebrovascular	72	84	normal activity	1	12	8	heart strain	14.798828125	15	8	0.5999755859375	0	3001
-54	3	1.0 mg estrogen	10	dead - heart or vascular	73	82	normal activity	1	16	8	heart strain	14.099609375	20	9	0.5	0	3022
-55	3	placebo	51	dead - prostatic ca	78	108	in bed > 50% daytime	1	18	8	old MI	14.798828125	24	9	0.29998779296875	0	3023
-56	3	0.2 mg estrogen	7	dead - heart or vascular	71	112	normal activity	1	15	9	normal	13.19921875	14	11	0.39996337890625	0	3048
-57	3	1.0 mg estrogen	63	alive	75	92	normal activity	0	13	8	heart strain	15.19921875	41	NA	0.7999267578125	0	3059
-58	3	0.2 mg estrogen	33	dead - prostatic ca	64	130	normal activity	0	13	9	normal	14.19921875	23	11	0.199981689453125	0	3219
-59	3	0.2 mg estrogen	3	dead - cerebrovascular	78	118	normal activity	1	16	9	heart strain	12.3984375	3	9	0.39996337890625	0	3347
-60	3	placebo	43	dead - other ca	60	99	normal activity	0	12	9	normal	13.599609375	7	9	0.5999755859375	0	3375
-61	4	1.0 mg estrogen	37	dead - prostatic ca	68	104	normal activity	0	14	9	heart strain	14.3984375	32	13	7.2998046875	1	2712
-62	4	placebo	5	dead - cerebrovascular	77	93	in bed < 50% daytime	0	21	9	old MI	12.8984375	24	13	11.69921875	0	2856
-63	4	0.2 mg estrogen	6	dead - prostatic ca	73	102	normal activity	1	14	9	heart strain	12	51	15	8.69921875	0	2856
-64	4	placebo	2	dead - prostatic ca	70	76	in bed > 50% daytime	0	12	8	normal	7.7998046875	26	11	2	1	2863
-65	4	0.2 mg estrogen	5	dead - prostatic ca	53	106	normal activity	0	14	8	heart strain	14.298828125	10	11	0.699951171875	0	2982
-66	4	5.0 mg estrogen	64	alive	55	116	normal activity	0	13	9	heart strain	14.798828125	26	15	4.599609375	1	3043
-67	4	5.0 mg estrogen	1	dead - unspecified non-ca	80	91	in bed < 50% daytime	1	14	8	old MI	11.69921875	15	13	1.2998046875	0	3259
-68	4	1.0 mg estrogen	21	dead - prostatic ca	59	71	normal activity	0	8	4	heart strain	8.69921875	27	11	175.09375	1	3298
-69	4	placebo	16	dead - other specific non-ca	80	111	normal activity	0	16	9	normal	11.298828125	34	15	1.099853515625	1	3345
-70	3	1.0 mg estrogen	21	dead - cerebrovascular	68	97	in bed < 50% daytime	1	14	8	old MI	12.099609375	18	8	0.5999755859375	0	2660
-71	3	1.0 mg estrogen	12	dead - heart or vascular	77	103	normal activity	1	13	7	rhythmic disturb & electrolyte ch	14.3984375	5	9	0.699951171875	0	2686
-72	3	1.0 mg estrogen	75	alive	74	110	normal activity	0	16	8	benign	13.599609375	7	8	0.5	0	2686
-73	3	placebo	74	alive	70	94	normal activity	0	15	7	benign	13.69921875	24	7	0.7999267578125	0	2714
-74	3	0.2 mg estrogen	74	alive	72	142	in bed < 50% daytime	1	14	13	normal	12.599609375	NA	9	0.5	0	2714
-75	3	0.2 mg estrogen	54	dead - prostatic ca	65	90	normal activity	0	14	8	normal	14	47	9	0.29998779296875	0	2723
-76	3	5.0 mg estrogen	73	alive	74	97	normal activity	1	13	7	normal	12.8984375	6	8	0.199981689453125	0	2754
-77	3	placebo	36	dead - heart or vascular	72	110	normal activity	1	22	13	old MI	14.69921875	5	10	0.5999755859375	0	2763
-78	3	placebo	59	dead - other specific non-ca	69	97	normal activity	1	13	7	normal	14.298828125	4	9	0.29998779296875	0	2763
-79	3	5.0 mg estrogen	6	dead - cerebrovascular	72	115	normal activity	1	16	10	normal	12	5	8	0.29998779296875	0	2772
-80	3	0.2 mg estrogen	58	dead - heart or vascular	71	87	normal activity	1	13	10	rhythmic disturb & electrolyte ch	13.3984375	13	9	0.7999267578125	0	2789
-81	3	1.0 mg estrogen	16	dead - respiratory disease	73	93	normal activity	0	11	7	normal	13.798828125	8	9	0.29998779296875	0	2798
-82	3	5.0 mg estrogen	19	dead - heart or vascular	79	106	normal activity	1	16	7	old MI	13.599609375	13	9	0.199981689453125	0	2805
-83	3	5.0 mg estrogen	39	dead - heart or vascular	63	86	normal activity	1	16	8	old MI	16	7	9	0.39996337890625	0	2839
-84	3	0.2 mg estrogen	26	dead - other ca	74	101	normal activity	1	14	9	rhythmic disturb & electrolyte ch	10.599609375	14	8	0.39996337890625	0	2856
-85	3	placebo	60	dead - respiratory disease	72	118	normal activity	1	17	11	normal	15.599609375	9	9	0.5999755859375	0	2856
-86	3	0.2 mg estrogen	43	dead - other specific non-ca	78	117	normal activity	1	10	7	heart strain	13.599609375	16	8	0.39996337890625	0	2862
-87	3	5.0 mg estrogen	7	dead - heart or vascular	76	92	normal activity	1	12	7	old MI	13.599609375	12	9	0.5	0	2903
-88	3	1.0 mg estrogen	9	dead - other ca	70	72	normal activity	1	16	9	heart block or conduction def	12	17	8	0.0999908447265625	0	2903
-89	3	1.0 mg estrogen	67	alive	69	120	normal activity	1	16	10	heart strain	13.599609375	21	10	0.699951171875	0	2938
-90	3	5.0 mg estrogen	62	dead - other ca	76	102	normal activity	1	12	8	normal	13.19921875	13	8	0.5	0	2951
-91	3	placebo	17	dead - respiratory disease	84	104	normal activity	1	15	10	benign	13.3984375	8	6	0.39996337890625	0	3049
-92	3	0.2 mg estrogen	25	dead - other ca	80	98	normal activity	1	15	8	normal	12.298828125	8	9	0.5	0	3049
-93	3	1.0 mg estrogen	0	dead - respiratory disease	81	97	normal activity	0	10	7	normal	13.3984375	11	9	0.699951171875	0	3087
-94	3	5.0 mg estrogen	5	dead - heart or vascular	81	76	normal activity	1	13	7	heart strain	14.8984375	28	9	0.5	0	3094
-95	3	5.0 mg estrogen	34	dead - heart or vascular	71	100	normal activity	1	12	10	heart strain	14.3984375	11	6	0.29998779296875	0	3127
-96	3	placebo	59	alive	77	109	normal activity	0	14	7	normal	12	7	10	0.29998779296875	0	3182
-97	3	0.2 mg estrogen	31	dead - heart or vascular	70	109	normal activity	1	18	8	heart strain	12	28	9	0.5	0	3197
-98	3	placebo	58	alive	76	108	normal activity	1	12	7	old MI	12	3	9	0.29998779296875	0	3204
-99	3	1.0 mg estrogen	30	dead - cerebrovascular	76	102	normal activity	1	16	9	old MI	18.19921875	52	11	0.5999755859375	0	3216
-100	3	0.2 mg estrogen	57	alive	71	97	normal activity	0	13	7	heart block or conduction def	13.3984375	19	9	0.5999755859375	0	3232
-101	3	0.2 mg estrogen	5	dead - heart or vascular	76	96	normal activity	1	17	8	normal	13.69921875	33	9	0.5999755859375	0	3239
-102	3	5.0 mg estrogen	55	alive	64	100	normal activity	1	16	10	normal	13.69921875	6	9	0.199981689453125	0	3295
-103	3	1.0 mg estrogen	55	alive	74	113	normal activity	0	12	7	normal	14.298828125	7	10	0.7999267578125	0	3317
-104	3	placebo	52	alive	76	88	normal activity	1	16	9	normal	12.298828125	3	8	0.5999755859375	0	3394
-105	3	5.0 mg estrogen	0	dead - pulmonary embolus	82	82	normal activity	1	13	9	rhythmic disturb & electrolyte ch	11.599609375	5	10	0.5999755859375	0	3406
-106	3	1.0 mg estrogen	51	alive	65	87	normal activity	1	16	8	normal	14.5	2	9	0.7999267578125	0	3421
-107	4	0.2 mg estrogen	17	dead - heart or vascular	70	83	in bed < 50% daytime	0	14	6	normal	12.69921875	14	11	9.69921875	1	2660
-108	4	5.0 mg estrogen	70	dead - other ca	76	92	normal activity	0	13	6	heart strain	9.69921875	6	10	6.19921875	1	2660
-109	4	placebo	74	alive	77	93	normal activity	0	10	6	benign	11	0	12	4.8994140625	0	2714
-110	4	0.2 mg estrogen	74	alive	77	99	normal activity	1	17	9	normal	12.798828125	15	12	2.39990234375	0	2723
-111	4	1.0 mg estrogen	20	dead - heart or vascular	70	103	normal activity	1	12	7	normal	13.5	23	11	10.19921875	0	2786
-112	4	placebo	2	dead - prostatic ca	73	80	normal activity	1	13	8	heart strain	12.8984375	61	12	39.6953125	0	2867
-113	4	0.2 mg estrogen	8	dead - prostatic ca	63	119	normal activity	1	13	8	heart strain	12.798828125	14	15	41.6953125	1	2936
-114	4	5.0 mg estrogen	27	dead - other specific non-ca	71	91	normal activity	0	13	6	heart strain	12	1	10	1.199951171875	0	2966
-115	4	1.0 mg estrogen	23	dead - cerebrovascular	78	103	in bed < 50% daytime	1	14	8	normal	10	38	12	1.7998046875	1	2994
-116	4	placebo	1	dead - heart or vascular	74	100	normal activity	1	13	8	old MI	14.3984375	1	11	1.099853515625	0	3294
-117	4	5.0 mg estrogen	52	alive	70	110	normal activity	1	16	8	old MI	15.8984375	4	10	2	0	3381
-118	4	1.0 mg estrogen	51	alive	73	106	normal activity	1	11	8	benign	11.19921875	10	13	1.199951171875	1	3414
-119	4	5.0 mg estrogen	6	dead - prostatic ca	74	98	normal activity	1	13	6	rhythmic disturb & electrolyte ch	14	41	12	78.390625	1	3427
-120	4	1.0 mg estrogen	0	dead - prostatic ca	77	91	normal activity	1	12	7	heart strain	14.298828125	6	11	1.699951171875	1	3434
-121	4	5.0 mg estrogen	26	dead - heart or vascular	85	85	normal activity	1	15	7	normal	14	12	12	25.8984375	0	3434
-122	3	placebo	65	dead - respiratory disease	72	79	normal activity	1	13	7	normal	12.298828125	16	9	0.7999267578125	0	2813
-123	3	placebo	52	dead - unspecified non-ca	74	106	normal activity	0	14	6	old MI	13.798828125	17	NA	0.199981689453125	0	2813
-124	3	0.2 mg estrogen	26	dead - prostatic ca	78	83	normal activity	0	13	7	normal	10.298828125	25	11	0.5	0	2852
-125	3	5.0 mg estrogen	70	alive	60	110	normal activity	0	14	10	heart strain	14.298828125	13	NA	0.5	0	2853
-126	3	placebo	6	dead - other ca	72	76	normal activity	0	11	9	benign	10	16	10	0.699951171875	0	2868
-127	3	0.2 mg estrogen	6	dead - pulmonary embolus	68	124	normal activity	0	13	7	rhythmic disturb & electrolyte ch	14.5	17	9	1.7998046875	0	2868
-128	3	1.0 mg estrogen	68	alive	71	93	normal activity	0	15	9	normal	14.5	19	9	0.29998779296875	0	2902
-129	3	5.0 mg estrogen	33	dead - heart or vascular	65	125	normal activity	0	17	9	old MI	15	19	8	0.7999267578125	0	2924
-130	3	0.2 mg estrogen	67	alive	67	96	normal activity	0	13	7	old MI	15.69921875	7	9	0.5	0	2954
-131	3	0.2 mg estrogen	58	dead - heart or vascular	76	94	normal activity	0	12	7	normal	14.19921875	NA	7	0.29998779296875	0	2985
-132	3	5.0 mg estrogen	23	dead - prostatic ca	74	98	normal activity	0	15	9	heart block or conduction def	14.19921875	3	12	4.099609375	0	2989
-133	3	5.0 mg estrogen	6	dead - other ca	78	91	normal activity	0	11	7	normal	11	4	9	0.29998779296875	0	3021
-134	3	1.0 mg estrogen	11	dead - heart or vascular	74	85	normal activity	0	14	8	benign	14	16	9	0.89990234375	0	3052
-135	3	placebo	6	dead - prostatic ca	71	92	normal activity	0	13	7	heart block or conduction def	14	9	9	0.7999267578125	0	3079
-136	3	1.0 mg estrogen	57	alive	74	113	normal activity	0	14	7	rhythmic disturb & electrolyte ch	10.5	20	9	0.5	0	3240
-137	3	1.0 mg estrogen	57	alive	72	110	normal activity	0	17	10	heart strain	14.5	20	8	0.39996337890625	0	3246
-138	3	placebo	29	dead - heart or vascular	57	97	normal activity	0	14	8	heart strain	14.69921875	20	9	0.699951171875	0	3311
-139	3	0.2 mg estrogen	9	dead - other ca	74	104	normal activity	0	14	7	normal	13.798828125	25	8	0.7999267578125	0	3325
-140	3	1.0 mg estrogen	53	alive	72	105	normal activity	0	12	6	rhythmic disturb & electrolyte ch	13.599609375	5	9	0.699951171875	0	3372
-141	3	1.0 mg estrogen	51	alive	65	99	normal activity	0	13	8	normal	14.3984375	10	9	0.5999755859375	0	3423
-142	3	5.0 mg estrogen	8	dead - pulmonary embolus	83	115	normal activity	0	17	9	heart strain	16.69921875	25	9	0.5999755859375	0	3428
-143	4	placebo	0	dead - other specific non-ca	71	98	in bed > 50% daytime	1	18	9	heart strain	12.298828125	34	13	42.8984375	1	2768
-144	4	5.0 mg estrogen	21	dead - heart or vascular	73	103	normal activity	0	12	8	normal	12.798828125	21	11	2.7998046875	0	2790
-145	4	0.2 mg estrogen	27	dead - prostatic ca	71	102	normal activity	0	14	7	normal	10.5	30	13	367	1	2889
-146	4	1.0 mg estrogen	22	dead - respiratory disease	75	124	normal activity	0	18	11	heart strain	15.599609375	22	11	7	0	2889
-147	4	1.0 mg estrogen	12	dead - prostatic ca	71	77	normal activity	0	10	6	rhythmic disturb & electrolyte ch	7	17	13	3.599609375	1	2895
-148	4	1.0 mg estrogen	68	alive	56	69	normal activity	0	13	8	normal	10.69921875	11	13	1.39990234375	1	2902
-149	4	1.0 mg estrogen	21	dead - other specific non-ca	83	88	normal activity	0	13	7	normal	13.298828125	15	13	21.69921875	0	2910
-150	4	0.2 mg estrogen	68	alive	71	116	normal activity	0	15	8	heart strain	15	46	10	3.19970703125	0	2916
-151	4	5.0 mg estrogen	0	dead - other specific non-ca	73	98	in bed < 50% daytime	1	15	8	rhythmic disturb & electrolyte ch	10.19921875	23	13	127.796875	0	2950
-152	4	5.0 mg estrogen	2	dead - prostatic ca	78	74	normal activity	0	12	9	heart strain	14	32	11	4.69921875	1	3021
-153	4	placebo	14	dead - prostatic ca	50	109	normal activity	0	12	8	normal	9.298828125	17	11	225.1875	1	3069
-154	4	placebo	18	dead - heart or vascular	73	101	normal activity	0	16	11	heart strain	14	9	11	2.69970703125	0	3099
-155	4	5.0 mg estrogen	5	dead - prostatic ca	67	111	normal activity	0	12	9	old MI	9.599609375	17	11	7	1	3149
-156	4	1.0 mg estrogen	60	alive	72	96	normal activity	0	15	9	normal	15.298828125	2	15	43.59375	1	3155
-157	4	placebo	40	dead - cerebrovascular	72	96	normal activity	0	14	10	benign	10.5	26	12	29.8984375	1	3156
-158	4	placebo	31	dead - prostatic ca	68	98	normal activity	0	18	10	old MI	15	NA	13	1.699951171875	0	3365
-159	4	0.2 mg estrogen	51	alive	78	116	normal activity	0	15	10	heart strain	15.69921875	6	13	1.099853515625	0	3427
-160	3	placebo	50	dead - unknown cause	72	91	normal activity	1	19	9	heart strain	12	16	8	0.5999755859375	0	2896
-161	3	0.2 mg estrogen	46	dead - unknown cause	76	118	normal activity	1	18	8	heart strain	14.5	4	8	0.699951171875	0	2925
-162	3	0.2 mg estrogen	65	alive	77	111	normal activity	0	19	9	heart block or conduction def	12.5	20	9	0.7999267578125	0	3009
-163	3	5.0 mg estrogen	9	dead - pulmonary embolus	70	127	normal activity	0	13	9	rhythmic disturb & electrolyte ch	11.798828125	14	8	0.199981689453125	0	3051
-164	3	0.2 mg estrogen	21	dead - other ca	74	96	normal activity	1	10	7	normal	10.19921875	18	9	0.89990234375	0	3097
-165	3	0.2 mg estrogen	27	dead - unknown cause	71	92	normal activity	1	15	8	old MI	10.599609375	5	8	0.39996337890625	0	3181
-166	3	1.0 mg estrogen	54	alive	69	89	normal activity	1	12	7	normal	13.5	4	8	0.5	0	3346
-167	3	1.0 mg estrogen	52	alive	70	111	normal activity	1	18	8	rhythmic disturb & electrolyte ch	8.19921875	22	9	0.7999267578125	0	3384
-168	4	1.0 mg estrogen	75	alive	58	99	normal activity	0	19	12	heart strain	13.099609375	24	11	1.599853515625	0	2691
-169	4	5.0 mg estrogen	75	alive	78	99	normal activity	0	14	7	normal	12.599609375	27	NA	4.599609375	1	2685
-170	4	1.0 mg estrogen	30	dead - heart or vascular	73	105	normal activity	1	14	6	old MI	13.798828125	9	15	5.099609375	0	2744
-171	4	5.0 mg estrogen	70	alive	69	108	normal activity	0	12	8	normal	12.19921875	23	11	2	0	2852
-172	4	1.0 mg estrogen	14	dead - other ca	73	94	normal activity	0	12	7	old MI	13.3984375	31	13	3.39990234375	0	2863
-173	4	placebo	0	dead - other specific non-ca	73	93	normal activity	0	14	8	normal	7.7998046875	23	15	1.199951171875	0	3106
-174	4	5.0 mg estrogen	42	dead - heart or vascular	68	100	normal activity	0	17	10	heart strain	11.69921875	32	13	26.3984375	0	3112
-175	4	1.0 mg estrogen	12	dead - heart or vascular	75	88	normal activity	1	14	6	normal	13.3984375	31	13	21.59765625	1	3118
-176	4	placebo	40	dead - heart or vascular	68	104	normal activity	1	17	10	old MI	15	25	10	0.89990234375	1	3122
-177	4	placebo	2	dead - prostatic ca	76	88	normal activity	1	16	7	normal	11.19921875	32	13	26.19921875	0	3125
-178	4	1.0 mg estrogen	12	dead - prostatic ca	76	87	in bed < 50% daytime	1	14	5	heart strain	11.69921875	28	14	42.796875	1	3225
-179	4	0.2 mg estrogen	53	alive	75	89	normal activity	1	14	8	normal	12.599609375	8	11	2	0	3355
-180	4	0.2 mg estrogen	11	dead - prostatic ca	59	116	normal activity	1	10	6	normal	12.798828125	6	11	2.39990234375	0	3358
-181	3	5.0 mg estrogen	18	dead - heart or vascular	72	96	normal activity	0	11	8	normal	10.298828125	9	11	3.2998046875	1	2734
-182	3	1.0 mg estrogen	13	dead - cerebrovascular	80	91	normal activity	0	15	8	rhythmic disturb & electrolyte ch	12.298828125	4	8	0.5999755859375	0	2805
-183	3	0.2 mg estrogen	45	dead - other specific non-ca	78	112	normal activity	1	16	8	normal	15	7	9	0.29998779296875	0	2839
-184	3	1.0 mg estrogen	8	dead - unknown cause	52	90	normal activity	1	13	8	heart strain	14.798828125	4	9	0.29998779296875	0	2841
-185	3	5.0 mg estrogen	28	dead - prostatic ca	75	87	normal activity	0	9	5	heart strain	12.69921875	8	8	1	0	2917
-186	3	5.0 mg estrogen	67	alive	67	109	normal activity	1	14	8	normal	14	3	9	0.7999267578125	0	2925
-187	3	0.2 mg estrogen	67	alive	74	103	normal activity	0	16	6	heart strain	13	4	9	0.39996337890625	0	2937
-188	3	placebo	24	dead - heart or vascular	79	107	in bed < 50% daytime	1	23	10	heart strain	11.599609375	2	9	0.199981689453125	0	2945
-189	3	0.2 mg estrogen	64	alive	73	96	normal activity	0	15	10	rhythmic disturb & electrolyte ch	12	4	9	0.5	0	3022
-190	3	1.0 mg estrogen	26	dead - heart or vascular	75	113	in bed > 50% daytime	0	12	7	heart strain	13.5	1	13	0.699951171875	0	3036
-191	4	0.2 mg estrogen	57	dead - prostatic ca	72	88	normal activity	0	14	7	heart strain	12	7	12	59.3984375	0	2796
-192	4	0.2 mg estrogen	32	dead - prostatic ca	55	96	normal activity	1	15	9	heart strain	10.298828125	12	11	0.199981689453125	0	2810
-193	4	placebo	71	alive	68	NA	in bed < 50% daytime	1	16	9	normal	14.599609375	18	11	0.199981689453125	0	2812
-194	4	0.2 mg estrogen	42	dead - cerebrovascular	48	100	in bed < 50% daytime	1	14	10	heart strain	12.298828125	3	11	1.5	0	2812
-195	4	placebo	20	dead - heart or vascular	75	88	normal activity	1	9	5	heart strain	14	1	11	4.7998046875	0	2817
-196	4	1.0 mg estrogen	71	alive	56	94	normal activity	0	12	8	normal	14.3984375	1	10	1.099853515625	0	2818
-197	4	5.0 mg estrogen	54	dead - respiratory disease	70	86	normal activity	0	14	9	heart strain	14.3984375	4	11	1.199951171875	0	3030
-198	4	5.0 mg estrogen	64	alive	54	89	normal activity	0	15	6	rhythmic disturb & electrolyte ch	14.798828125	8	13	1.199951171875	1	3035
-199	4	5.0 mg estrogen	51	dead - heart or vascular	87	82	normal activity	0	14	7	normal	11	3	15	2.099609375	1	3035
-200	3	5.0 mg estrogen	1	dead - heart or vascular	73	94	normal activity	1	14	9	heart strain	13.298828125	22	8	0.7999267578125	0	2691
-201	3	placebo	2	dead - other specific non-ca	76	94	normal activity	0	16	10	normal	10.69921875	8	9	0.5999755859375	0	2708
-202	3	5.0 mg estrogen	0	dead - prostatic ca	68	106	normal activity	0	15	9	normal	10.69921875	69	13	0.89990234375	0	2734
-203	3	placebo	54	dead - cerebrovascular	70	97	normal activity	1	17	10	rhythmic disturb & electrolyte ch	13.798828125	10	9	0.5999755859375	0	2734
-204	3	0.2 mg estrogen	69	alive	65	83	normal activity	0	12	6	normal	16	8	9	0.5999755859375	0	2877
-205	3	placebo	68	alive	79	95	normal activity	0	14	8	heart strain	13.3984375	11	9	0.39996337890625	0	2894
-206	3	placebo	67	alive	70	120	normal activity	0	19	11	normal	14.69921875	7	9	0.5	0	2931
-207	3	1.0 mg estrogen	66	alive	70	99	normal activity	0	12	8	normal	16	8	9	0.5999755859375	0	2978
-208	3	placebo	64	alive	59	90	normal activity	1	14	8	normal	10.3984375	2	9	0.29998779296875	0	3022
-209	3	0.2 mg estrogen	63	alive	72	73	in bed > 50% daytime	0	13	8	normal	14.19921875	11	8	0.5999755859375	0	3065
-210	3	1.0 mg estrogen	35	dead - cerebrovascular	76	88	normal activity	1	14	9	normal	15.19921875	4	5	0.5999755859375	0	3083
-211	3	5.0 mg estrogen	62	alive	78	123	normal activity	0	13	8	benign	16.796875	0	10	0.89990234375	0	3093
-212	3	1.0 mg estrogen	7	dead - other specific non-ca	76	113	normal activity	1	14	6	heart strain	12.798828125	3	8	0.699951171875	0	3119
-213	3	5.0 mg estrogen	35	dead - other specific non-ca	66	87	normal activity	0	14	9	normal	14.298828125	3	8	0.39996337890625	0	3134
-214	3	1.0 mg estrogen	24	dead - pulmonary embolus	69	91	normal activity	1	16	10	heart block or conduction def	15	11	8	0.29998779296875	0	3218
-215	3	5.0 mg estrogen	57	alive	71	88	normal activity	0	16	8	heart strain	15.3984375	3	9	0.5	0	3248
-216	3	0.2 mg estrogen	1	dead - other ca	75	120	normal activity	0	15	7	heart strain	15.099609375	4	8	0.5999755859375	0	3287
-217	3	0.2 mg estrogen	4	dead - heart or vascular	74	99	normal activity	1	17	9	rhythmic disturb & electrolyte ch	15.69921875	7	7	0.5999755859375	0	3330
-218	4	0.2 mg estrogen	74	dead - other ca	72	103	normal activity	0	15	9	heart block or conduction def	16.5	4	10	1	0	2699
-219	4	0.2 mg estrogen	0	dead - prostatic ca	78	96	in bed > 50% daytime	0	16	9	heart strain	10.099609375	54	12	4.599609375	1	2700
-220	4	0.2 mg estrogen	51	dead - heart or vascular	71	110	normal activity	0	14	9	old MI	13.3984375	6	10	0.699951171875	1	2723
-221	4	5.0 mg estrogen	36	dead - heart or vascular	75	101	normal activity	1	16	10	heart strain	11	15	10	1.599853515625	0	2754
-222	4	0.2 mg estrogen	16	dead - prostatic ca	73	89	in bed > 50% daytime	0	15	8	heart strain	7.19921875	14	11	20.3984375	1	2770
-223	4	1.0 mg estrogen	32	dead - prostatic ca	79	79	in bed > 50% daytime	0	15	7	benign	13.298828125	16	13	28.8984375	1	2832
-224	4	5.0 mg estrogen	68	alive	70	92	normal activity	0	16	8	normal	13.5	22	14	2.69970703125	0	2897
-225	4	0.2 mg estrogen	17	dead - prostatic ca	73	76	normal activity	0	17	8	normal	13.3984375	50	13	8.8984375	0	2905
-226	4	placebo	66	alive	75	98	normal activity	1	14	8	normal	14.69921875	16	13	2.7998046875	0	2973
-227	4	1.0 mg estrogen	65	alive	76	83	normal activity	0	12	6	rhythmic disturb & electrolyte ch	11.3984375	13	11	596	1	2995
-228	4	placebo	19	dead - prostatic ca	71	77	in bed < 50% daytime	0	17	7	old MI	11.798828125	61	15	4.2998046875	1	3000
-229	4	1.0 mg estrogen	41	dead - prostatic ca	76	91	normal activity	0	17	8	normal	15.099609375	24	11	8.19921875	0	3003
-230	4	placebo	28	dead - heart or vascular	73	106	normal activity	1	16	9	normal	14.69921875	11	11	36.8984375	0	3017
-231	4	placebo	0	dead - heart or vascular	70	80	normal activity	1	10	8	heart strain	12.19921875	5	11	4.2998046875	0	3023
-232	4	5.0 mg estrogen	46	dead - prostatic ca	72	100	normal activity	1	12	7	old MI	16	62	11	54.796875	1	3038
-233	4	5.0 mg estrogen	63	alive	74	101	normal activity	0	14	9	old MI	14.798828125	25	10	2.39990234375	0	3066
-234	4	1.0 mg estrogen	60	alive	62	98	normal activity	0	12	8	heart strain	15.599609375	15	13	4.5	0	3139
-235	4	1.0 mg estrogen	59	alive	53	116	normal activity	0	13	8	normal	16.3984375	7	12	1	0	3184
-236	3	5.0 mg estrogen	46	dead - heart or vascular	54	91	normal activity	0	13	10	normal	13	15	9	0.699951171875	0	2677
-237	3	1.0 mg estrogen	63	dead - prostatic ca	58	94	normal activity	1	16	10	heart block or conduction def	13.798828125	12	9	0.199981689453125	0	2677
-238	3	5.0 mg estrogen	8	dead - heart or vascular	78	99	normal activity	1	17	9	old MI	12	9	8	0.0999908447265625	0	2720
-239	3	1.0 mg estrogen	74	alive	77	100	normal activity	1	10	7	heart block or conduction def	12.3984375	25	9	0.39996337890625	0	2722
-240	3	placebo	18	dead - heart or vascular	61	152	normal activity	1	15	10	heart strain	14.099609375	18	7	0.199981689453125	0	2728
-241	3	placebo	33	dead - other specific non-ca	78	98	in bed < 50% daytime	1	13	7	heart strain	13.599609375	9	9	0.5	0	2811
-242	3	placebo	12	dead - heart or vascular	68	88	in bed < 50% daytime	1	24	12	heart strain	14.3984375	12	9	0.199981689453125	0	2824
-243	3	0.2 mg estrogen	1	dead - other specific non-ca	62	76	in bed < 50% daytime	0	10	6	NA	11.599609375	13	9	0.29998779296875	0	2826
-244	3	1.0 mg estrogen	66	alive	70	109	normal activity	0	15	10	normal	14.5	15	11	0.5999755859375	0	2981
-245	3	1.0 mg estrogen	28	dead - other ca	75	81	normal activity	0	16	10	normal	13.69921875	19	10	0.5	0	3090
-246	3	0.2 mg estrogen	30	dead - heart or vascular	80	91	normal activity	0	12	8	heart strain	10.798828125	22	11	0.89990234375	0	3170
-247	3	0.2 mg estrogen	57	dead - other specific non-ca	76	99	normal activity	1	13	8	old MI	11.19921875	20	8	0.5	0	3183
-248	3	1.0 mg estrogen	50	dead - prostatic ca	68	102	normal activity	0	16	8	normal	12	20	11	0.699951171875	0	3185
-249	3	placebo	39	dead - heart or vascular	73	81	normal activity	1	19	4	heart strain	12.5	18	11	0.29998779296875	0	3213
-250	3	placebo	40	dead - heart or vascular	79	96	normal activity	0	15	10	heart strain	14	16	6	0.29998779296875	0	3213
-251	3	0.2 mg estrogen	24	dead - cerebrovascular	78	81	normal activity	1	14	7	old MI	11	4	9	0.39996337890625	0	3381
-252	3	5.0 mg estrogen	6	dead - heart or vascular	79	94	normal activity	1	11	8	old MI	12.19921875	4	6	0.39996337890625	0	3441
-253	4	0.2 mg estrogen	30	dead - heart or vascular	72	90	in bed < 50% daytime	1	22	12	heart strain	12.298828125	15	14	0.5	1	2782
-254	4	0.2 mg estrogen	58	dead - prostatic ca	52	106	normal activity	1	11	7	normal	15	13	14	5.2998046875	0	2807
-255	4	1.0 mg estrogen	68	alive	76	97	normal activity	1	15	10	heart strain	14.599609375	19	11	353.5	0	2908
-256	4	0.2 mg estrogen	24	dead - prostatic ca	74	85	normal activity	0	16	10	rhythmic disturb & electrolyte ch	10	19	13	13.8984375	1	2924
-257	4	placebo	33	dead - unspecified non-ca	71	86	normal activity	0	14	8	normal	10.19921875	8	11	0.39996337890625	1	2933
-258	4	5.0 mg estrogen	65	alive	72	96	normal activity	0	14	10	rhythmic disturb & electrolyte ch	12.298828125	17	12	20	0	3006
-259	4	5.0 mg estrogen	2	dead - pulmonary embolus	77	113	normal activity	0	15	8	normal	13.798828125	22	12	5.5	0	3006
-260	4	0.2 mg estrogen	64	alive	73	100	normal activity	1	16	10	heart strain	13.798828125	23	11	9.69921875	0	3023
-261	4	placebo	19	dead - prostatic ca	75	83	normal activity	0	12	7	rhythmic disturb & electrolyte ch	11.798828125	17	13	2.2998046875	0	3077
-262	4	placebo	58	alive	73	NA	normal activity	0	13	7	old MI	13.298828125	20	13	1.099853515625	0	3204
-263	4	5.0 mg estrogen	15	dead - prostatic ca	71	98	normal activity	0	15	10	heart strain	14.69921875	12	11	43.09375	1	3364
-264	4	0.2 mg estrogen	10	dead - prostatic ca	76	94	normal activity	1	16	9	normal	10.5	20	12	33.59375	0	3367
-265	4	5.0 mg estrogen	12	dead - prostatic ca	49	90	in bed < 50% daytime	0	14	8	heart strain	14.099609375	21	15	5.599609375	1	3367
-266	4	5.0 mg estrogen	53	alive	74	91	in bed > 50% daytime	1	13	7	rhythmic disturb & electrolyte ch	13.3984375	17	11	278.25	1	3373
-267	4	1.0 mg estrogen	51	alive	59	97	normal activity	0	13	6	normal	14.099609375	17	13	2.19970703125	0	3412
-268	4	1.0 mg estrogen	1	dead - heart or vascular	79	116	normal activity	1	15	9	rhythmic disturb & electrolyte ch	12.599609375	23	11	3.7998046875	0	3436
-269	3	1.0 mg estrogen	40	dead - prostatic ca	78	113	normal activity	0	20	10	NA	13.19921875	36	11	0.5999755859375	0	2849
-270	3	placebo	40	dead - prostatic ca	78	110	normal activity	0	14	8	NA	14.798828125	15	9	0.29998779296875	0	2953
-271	3	1.0 mg estrogen	66	alive	79	96	normal activity	0	14	8	NA	14.798828125	19	8	0.39996337890625	0	2960
-272	3	0.2 mg estrogen	2	dead - pulmonary embolus	72	82	normal activity	0	13	7	heart strain	9.3984375	33	11	0.5999755859375	0	2971
-273	3	0.2 mg estrogen	21	dead - prostatic ca	58	136	in bed < 50% daytime	1	14	8	benign	10.5	30	12	0.699951171875	0	3020
-274	3	5.0 mg estrogen	35	dead - prostatic ca	73	101	normal activity	0	12	6	normal	12.798828125	46	11	0.5999755859375	0	3023
-275	3	placebo	29	dead - prostatic ca	75	113	normal activity	1	19	8	old MI	10.8984375	21	11	0.39996337890625	0	3188
-276	3	5.0 mg estrogen	54	dead - prostatic ca	78	107	normal activity	0	14	9	normal	12.798828125	42	11	29.69921875	0	3265
-277	3	5.0 mg estrogen	37	dead - heart or vascular	60	94	normal activity	0	15	9	normal	13	10	9	0.39996337890625	0	3307
-278	3	0.2 mg estrogen	10	dead - other ca	72	83	normal activity	0	11	7	normal	13.798828125	15	9	0.39996337890625	0	3353
-279	4	5.0 mg estrogen	29	dead - prostatic ca	59	99	confined to bed	0	13	8	normal	12.69921875	17	13	999.875	1	2673
-280	4	1.0 mg estrogen	71	alive	84	107	normal activity	0	14	7	NA	13	15	11	37.8984375	1	2826
-281	4	placebo	12	dead - prostatic ca	74	107	normal activity	1	15	8	normal	14.599609375	18	11	8.3984375	0	2826
-282	4	0.2 mg estrogen	13	dead - prostatic ca	76	97	normal activity	0	14	8	normal	13.69921875	36	15	15.5	0	2848
-283	4	placebo	27	dead - prostatic ca	80	135	normal activity	1	11	7	old MI	12.8984375	17	11	3.7998046875	0	2894
-284	4	0.2 mg estrogen	66	dead - prostatic ca	72	123	normal activity	1	15	8	rhythmic disturb & electrolyte ch	15.798828125	0	13	1.7998046875	0	2868
-285	4	placebo	28	dead - prostatic ca	59	100	normal activity	0	14	8	NA	15.798828125	21	11	5.2998046875	0	2981
-286	4	1.0 mg estrogen	31	dead - prostatic ca	74	111	normal activity	0	13	8	normal	15.19921875	25	13	4.19921875	0	3015
-287	4	1.0 mg estrogen	12	dead - prostatic ca	65	102	normal activity	0	15	9	normal	15.5	19	11	2.19970703125	0	3063
-288	4	placebo	9	dead - heart or vascular	71	119	normal activity	0	19	10	heart strain	13.599609375	24	13	25.59765625	1	3063
-289	4	0.2 mg estrogen	21	dead - prostatic ca	76	94	normal activity	0	14	6	normal	10.599609375	24	11	10.8984375	1	3212
-290	4	5.0 mg estrogen	19	dead - prostatic ca	74	74	confined to bed	0	14	5	heart block or conduction def	11.19921875	2	11	3.69970703125	1	3253
-291	4	1.0 mg estrogen	51	alive	75	114	normal activity	0	18	7	old MI	13.798828125	22	11	2.2998046875	0	3430
-292	3	placebo	71	dead - prostatic ca	73	134	in bed < 50% daytime	1	22	10	heart strain	14	22	11	0.5999755859375	0	2652
-293	3	1.0 mg estrogen	76	alive	74	99	normal activity	1	17	7	normal	11.099609375	12	11	0.39996337890625	0	2658
-294	3	5.0 mg estrogen	46	dead - prostatic ca	72	112	in bed < 50% daytime	1	16	8	normal	13	30	11	0.5999755859375	0	2667
-295	3	0.2 mg estrogen	47	dead - other ca	75	107	normal activity	1	15	9	heart strain	16.19921875	7	9	1.099853515625	0	2681
-296	3	0.2 mg estrogen	75	alive	70	99	in bed < 50% daytime	0	12	7	normal	13.8984375	7	9	0.89990234375	0	2681
-297	3	5.0 mg estrogen	75	alive	61	94	normal activity	0	12	7	heart strain	12	4	9	0.7999267578125	0	2681
-298	3	1.0 mg estrogen	49	dead - heart or vascular	71	94	normal activity	1	16	7	heart strain	15.599609375	9	9	0.29998779296875	0	2681
-299	3	5.0 mg estrogen	75	alive	57	84	normal activity	0	12	8	normal	13.8984375	6	8	0.5	0	2686
-300	3	5.0 mg estrogen	75	alive	65	111	normal activity	0	14	8	old MI	13.69921875	15	9	0.7999267578125	0	2691
-301	3	placebo	31	dead - heart or vascular	78	96	in bed < 50% daytime	1	17	11	normal	14.8984375	2	10	0.199981689453125	0	2707
-302	3	placebo	69	dead - prostatic ca	60	122	normal activity	0	13	9	normal	16.09765625	26	9	0.5	0	2712
-303	3	0.2 mg estrogen	74	alive	72	102	normal activity	0	16	8	normal	14	23	7	0.29998779296875	0	2730
-304	3	1.0 mg estrogen	25	dead - other specific non-ca	81	102	in bed < 50% daytime	0	15	8	old MI	12.798828125	4	8	0.5	0	2747
-305	3	5.0 mg estrogen	72	alive	70	87	normal activity	0	15	8	normal	14.599609375	5	10	0.29998779296875	0	2783
-306	3	0.2 mg estrogen	28	dead - other specific non-ca	62	88	normal activity	1	12	7	recent MI	13.5	10	8	0.29998779296875	0	2789
-307	3	1.0 mg estrogen	36	dead - other specific non-ca	68	98	normal activity	0	16	7	rhythmic disturb & electrolyte ch	13.298828125	40	9	0.39996337890625	0	2793
-308	3	placebo	8	dead - prostatic ca	74	97	normal activity	0	14	8	heart strain	13.599609375	14	8	0.5	0	2799
-309	3	0.2 mg estrogen	71	alive	65	117	normal activity	1	15	8	normal	16.5	9	9	0.7999267578125	0	2827
-310	3	placebo	60	dead - cerebrovascular	74	95	normal activity	1	18	9	normal	9.798828125	2	8	0.699951171875	0	2839
-311	3	1.0 mg estrogen	14	dead - pulmonary embolus	76	99	normal activity	1	15	9	heart strain	12	9	11	0.7999267578125	0	2859
-312	3	0.2 mg estrogen	22	dead - other specific non-ca	70	78	normal activity	0	14	7	rhythmic disturb & electrolyte ch	14.8984375	9	11	0.199981689453125	0	2889
-313	3	5.0 mg estrogen	67	dead - unspecified non-ca	73	105	normal activity	0	13	6	rhythmic disturb & electrolyte ch	14.8984375	39	9	0.5	0	2894
-314	3	placebo	62	dead - heart or vascular	71	107	normal activity	1	18	10	heart strain	14.5	9	8	0.29998779296875	0	2905
-315	3	5.0 mg estrogen	68	alive	73	118	normal activity	0	17	9	heart block or conduction def	13.3984375	4	9	0.699951171875	0	2905
-316	3	placebo	68	alive	71	108	normal activity	0	16	12	heart strain	14.099609375	7	9	0.39996337890625	0	2910
-317	3	1.0 mg estrogen	27	dead - cerebrovascular	75	145	normal activity	0	13	8	benign	15.3984375	4	9	0.5	0	2912
-318	3	0.2 mg estrogen	68	alive	70	98	normal activity	0	11	7	heart strain	14.19921875	19	10	0.5	0	2919
-319	3	1.0 mg estrogen	68	alive	77	98	normal activity	0	12	6	old MI	15.5	9	9	0.39996337890625	0	2919
-320	3	placebo	67	alive	71	87	normal activity	0	15	8	normal	15.599609375	8	8	0.5999755859375	0	2925
-321	3	placebo	67	alive	75	101	normal activity	0	14	7	heart block or conduction def	13.5	18	7	0.5	0	2925
-322	3	0.2 mg estrogen	3	dead - heart or vascular	74	105	normal activity	1	16	7	heart strain	14.099609375	10	11	0.29998779296875	0	2925
-323	3	5.0 mg estrogen	49	dead - heart or vascular	72	100	normal activity	0	11	6	heart strain	15	8	11	0.29998779296875	0	2936
-324	3	5.0 mg estrogen	12	dead - respiratory disease	89	92	normal activity	1	13	6	old MI	13.599609375	8	9	0.699951171875	0	2937
-325	3	0.2 mg estrogen	30	dead - respiratory disease	75	96	normal activity	0	12	6	heart strain	14.298828125	10	12	0.699951171875	0	2937
-326	3	1.0 mg estrogen	67	alive	71	101	normal activity	0	14	8	heart strain	14.69921875	3	11	0.5	0	2947
-327	3	1.0 mg estrogen	5	dead - other ca	80	95	normal activity	1	16	10	heart strain	14.5	7	9	0.89990234375	0	2952
-328	3	1.0 mg estrogen	65	dead - other ca	51	96	normal activity	0	13	8	normal	11.798828125	2	6	0.5999755859375	0	2964
-329	3	placebo	24	dead - other specific non-ca	71	81	normal activity	0	9	4	normal	13.69921875	10	9	0.39996337890625	0	2965
-330	3	0.2 mg estrogen	66	alive	72	95	normal activity	1	10	5	normal	14	8	8	0.699951171875	0	2971
-331	3	5.0 mg estrogen	36	dead - heart or vascular	70	91	normal activity	1	16	9	heart block or conduction def	15.8984375	7	9	1	0	2974
-332	3	placebo	66	alive	55	103	normal activity	0	16	10	old MI	16.69921875	2	8	0.7999267578125	0	2978
-333	3	0.2 mg estrogen	40	dead - cerebrovascular	76	104	normal activity	1	15	7	heart strain	14.599609375	3	9	0.5	0	2978
-334	3	0.2 mg estrogen	13	dead - other specific non-ca	68	97	normal activity	0	17	9	heart strain	9.5	11	8	0.5	0	2978
-335	3	5.0 mg estrogen	40	dead - cerebrovascular	75	81	normal activity	1	12	8	old MI	15.5	14	8	0.39996337890625	0	3001
-336	3	0.2 mg estrogen	65	alive	52	101	normal activity	1	15	10	heart strain	14	4	NA	0.5999755859375	0	3007
-337	3	0.2 mg estrogen	0	dead - other specific non-ca	75	91	normal activity	0	20	10	heart strain	11.798828125	3	11	0.199981689453125	0	3013
-338	3	1.0 mg estrogen	14	dead - heart or vascular	75	94	normal activity	1	11	7	heart strain	17.5	15	9	0.7999267578125	0	3023
-339	3	1.0 mg estrogen	45	dead - cerebrovascular	72	77	normal activity	0	13	7	normal	11	4	8	0.5	0	3023
-340	3	1.0 mg estrogen	64	alive	74	118	normal activity	0	14	8	normal	14.19921875	4	6	0.5999755859375	0	3023
-341	3	1.0 mg estrogen	13	dead - respiratory disease	75	91	normal activity	0	13	7	rhythmic disturb & electrolyte ch	12.099609375	5	8	0.5	0	3023
-342	3	placebo	24	dead - other ca	75	79	normal activity	1	13	9	old MI	10.8984375	8	8	0.39996337890625	0	3030
-343	3	placebo	15	dead - heart or vascular	71	96	normal activity	1	12	8	heart strain	17.296875	5	11	0.7999267578125	0	3048
-344	3	placebo	26	dead - heart or vascular	76	102	normal activity	1	15	9	heart strain	11.19921875	10	8	0.5	0	3051
-345	3	1.0 mg estrogen	5	dead - prostatic ca	70	83	normal activity	0	14	7	old MI	11.69921875	33	13	0.29998779296875	0	3051
-346	3	0.2 mg estrogen	63	alive	73	129	normal activity	1	21	11	heart strain	16.69921875	10	8	0.699951171875	0	3055
-347	3	5.0 mg estrogen	35	dead - heart or vascular	70	107	normal activity	1	13	8	old MI	16.09765625	7	11	0.7999267578125	0	3111
-348	3	placebo	61	alive	75	93	normal activity	0	13	8	normal	13.69921875	10	12	0.0999908447265625	0	3111
-349	3	5.0 mg estrogen	61	alive	70	127	normal activity	0	14	7	normal	16.19921875	8	9	0.5999755859375	0	3122
-350	3	5.0 mg estrogen	50	dead - unknown cause	74	97	normal activity	1	13	7	normal	12.298828125	1	8	0.39996337890625	0	3127
-351	3	5.0 mg estrogen	57	dead - heart or vascular	72	109	normal activity	0	16	10	normal	17.5	8	9	0.699951171875	0	3134
-352	3	5.0 mg estrogen	21	dead - cerebrovascular	62	109	normal activity	1	16	8	heart strain	16.3984375	15	9	0.699951171875	0	3140
-353	3	placebo	26	dead - prostatic ca	72	111	normal activity	0	14	8	normal	15.298828125	37	11	0.5	0	3140
-354	3	placebo	11	dead - respiratory disease	77	74	normal activity	0	12	6	rhythmic disturb & electrolyte ch	12.3984375	45	11	0.5	0	3140
-355	3	1.0 mg estrogen	59	alive	52	90	normal activity	0	12	7	heart strain	11.8984375	5	8	0.5	0	3188
-356	3	placebo	42	dead - prostatic ca	57	89	normal activity	0	12	6	normal	13.8984375	24	12	0.5	0	3190
-357	3	1.0 mg estrogen	27	dead - cerebrovascular	80	90	normal activity	1	14	8	heart strain	14.298828125	9	8	0.5999755859375	0	3195
-358	3	0.2 mg estrogen	50	dead - heart or vascular	62	85	normal activity	1	11	7	normal	13.69921875	6	9	0.29998779296875	0	3253
-359	3	1.0 mg estrogen	57	alive	72	101	normal activity	0	13	8	normal	14.599609375	8	10	0.5	0	3253
-360	3	1.0 mg estrogen	57	alive	72	116	normal activity	0	14	8	heart strain	15.19921875	11	9	0.7999267578125	0	3253
-361	3	placebo	0	dead - heart or vascular	77	91	normal activity	1	14	10	old MI	14.5	5	9	0.5	0	3272
-362	3	0.2 mg estrogen	1	dead - heart or vascular	72	134	normal activity	1	15	8	heart strain	14.798828125	23	9	0.699951171875	0	3275
-363	3	1.0 mg estrogen	54	alive	73	100	normal activity	0	18	10	old MI	11.69921875	8	9	0.699951171875	0	3346
-364	3	0.2 mg estrogen	53	dead - prostatic ca	74	98	normal activity	1	16	8	old MI	13.798828125	11	8	1	0	3358
-365	3	0.2 mg estrogen	23	dead - heart or vascular	74	82	normal activity	1	17	4	old MI	10.8984375	8	8	0.39996337890625	0	3359
-366	3	5.0 mg estrogen	8	dead - heart or vascular	72	110	normal activity	0	15	8	normal	13.099609375	4	9	0.7999267578125	0	3370
-367	3	5.0 mg estrogen	51	dead - pulmonary embolus	76	85	normal activity	1	14	8	old MI	15.8984375	25	9	0.89990234375	0	3374
-368	3	placebo	27	dead - other specific non-ca	78	111	normal activity	1	15	7	heart strain	12.298828125	7	9	0.5	0	3380
-369	3	5.0 mg estrogen	52	alive	83	88	normal activity	1	16	8	old MI	10	1	7	0.5999755859375	0	3384
-370	3	0.2 mg estrogen	52	alive	80	99	normal activity	1	13	7	heart strain	13	6	9	0.5	0	3402
-371	3	5.0 mg estrogen	52	alive	76	90	normal activity	0	15	8	heart block or conduction def	13.298828125	52	13	0.39996337890625	0	3407
-372	3	placebo	45	dead - cerebrovascular	79	126	normal activity	0	13	8	old MI	15.3984375	7	11	0.699951171875	0	3407
-373	3	0.2 mg estrogen	48	dead - other specific non-ca	76	116	normal activity	1	13	8	heart strain	16.8984375	2	9	0.39996337890625	0	3423
-374	3	placebo	18	dead - prostatic ca	71	110	normal activity	1	14	8	heart strain	13	7	11	0.29998779296875	0	3427
-375	4	placebo	2	dead - other specific non-ca	61	95	normal activity	0	12	8	heart strain	11.5	37	12	25.59765625	1	2652
-376	4	5.0 mg estrogen	2	dead - heart or vascular	77	96	in bed < 50% daytime	1	14	7	heart strain	11.8984375	36	10	0.89990234375	1	2670
-377	4	1.0 mg estrogen	35	dead - cerebrovascular	76	82	normal activity	0	10	6	heart strain	10.298828125	10	13	9.298828125	1	2686
-378	4	1.0 mg estrogen	75	alive	71	106	normal activity	0	15	8	normal	14.099609375	26	13	10	0	2695
-379	4	placebo	75	alive	77	87	normal activity	0	11	6	benign	12.5	5	11	2.19970703125	0	2707
-380	4	placebo	9	dead - pulmonary embolus	78	89	normal activity	1	18	8	rhythmic disturb & electrolyte ch	14.298828125	39	13	25.296875	1	2729
-381	4	1.0 mg estrogen	39	dead - prostatic ca	58	92	normal activity	0	12	8	heart strain	13.69921875	5	11	10.798828125	1	2772
-382	4	5.0 mg estrogen	0	dead - heart or vascular	74	113	normal activity	1	11	8	heart strain	14.19921875	41	13	2.2998046875	0	2772
-383	4	placebo	26	dead - cerebrovascular	75	116	normal activity	1	18	9	rhythmic disturb & electrolyte ch	16	26	11	0.5	1	2835
-384	4	placebo	17	dead - pulmonary embolus	62	102	normal activity	0	18	11	old MI	14.599609375	16	13	10.099609375	0	2854
-385	4	0.2 mg estrogen	43	dead - respiratory disease	80	92	normal activity	0	15	9	heart strain	13.099609375	0	13	1.099853515625	0	2887
-386	4	5.0 mg estrogen	53	dead - prostatic ca	61	79	in bed < 50% daytime	0	13	8	normal	10.298828125	14	11	4	0	2894
-387	4	1.0 mg estrogen	47	dead - cerebrovascular	76	98	normal activity	1	17	9	old MI	13.3984375	19	11	3.7998046875	0	2919
-388	4	0.2 mg estrogen	11	dead - prostatic ca	79	99	in bed < 50% daytime	0	16	8	heart strain	9.099609375	38	13	31.3984375	1	3009
-389	4	0.2 mg estrogen	65	alive	66	116	normal activity	0	12	8	normal	14.8984375	18	12	58.09375	0	3009
-390	4	1.0 mg estrogen	16	dead - prostatic ca	61	83	normal activity	1	12	6	rhythmic disturb & electrolyte ch	13.599609375	4	15	38.5	1	3010
-391	4	5.0 mg estrogen	21	dead - unspecified non-ca	79	99	normal activity	0	17	9	heart strain	16.09765625	4	13	6.099609375	0	3010
-392	4	0.2 mg estrogen	64	alive	70	99	normal activity	1	13	7	normal	14.19921875	11	11	1.099853515625	0	3035
-393	4	0.2 mg estrogen	7	dead - prostatic ca	73	105	normal activity	1	15	7	heart block or conduction def	15.599609375	10	9	1.099853515625	0	3111
-394	4	5.0 mg estrogen	38	dead - prostatic ca	72	90	normal activity	0	11	8	heart strain	14.798828125	11	15	1.5	0	3115
-395	4	1.0 mg estrogen	55	dead - prostatic ca	81	98	normal activity	1	13	6	normal	11.19921875	38	12	8.69921875	1	3097
-396	4	placebo	5	dead - respiratory disease	77	92	normal activity	0	15	9	heart strain	11.5	6	10	0.5999755859375	0	3097
-397	4	0.2 mg estrogen	28	dead - prostatic ca	76	76	normal activity	0	11	6	heart strain	14.798828125	29	13	1.7998046875	0	3143
-398	4	placebo	38	dead - prostatic ca	75	113	normal activity	1	10	6	rhythmic disturb & electrolyte ch	13.298828125	9	13	0.39996337890625	1	3150
-399	4	0.2 mg estrogen	20	dead - prostatic ca	72	79	normal activity	0	14	7	normal	12.19921875	24	11	7.19921875	1	3150
-400	4	5.0 mg estrogen	24	dead - prostatic ca	74	108	normal activity	0	16	9	normal	12.599609375	12	13	1.099853515625	0	3155
-401	4	5.0 mg estrogen	27	dead - prostatic ca	70	85	normal activity	0	16	8	rhythmic disturb & electrolyte ch	16.3984375	9	13	1.7998046875	0	3157
-402	4	1.0 mg estrogen	31	dead - prostatic ca	61	91	normal activity	1	14	8	benign	10.69921875	25	13	152.1875	1	3195
-403	4	placebo	9	dead - prostatic ca	77	116	normal activity	1	14	8	rhythmic disturb & electrolyte ch	15.19921875	7	13	47	0	3196
-404	4	1.0 mg estrogen	9	dead - prostatic ca	60	73	normal activity	0	11	8	NA	14.099609375	46	13	17	1	3204
-405	4	1.0 mg estrogen	11	dead - unspecified non-ca	72	86	in bed < 50% daytime	0	12	7	rhythmic disturb & electrolyte ch	14	50	15	1.099853515625	0	3238
-406	4	5.0 mg estrogen	56	dead - prostatic ca	64	104	normal activity	0	17	7	normal	12	43	13	2.39990234375	1	3253
-407	4	placebo	36	dead - prostatic ca	78	95	normal activity	0	15	9	heart strain	13.798828125	55	10	3.19970703125	0	3261
-408	4	0.2 mg estrogen	56	alive	74	108	normal activity	1	14	8	old MI	10.599609375	4	15	1.099853515625	0	3272
-409	4	5.0 mg estrogen	15	dead - other ca	73	83	normal activity	1	12	7	heart strain	11.19921875	0	11	4.19921875	0	3272
-410	4	5.0 mg estrogen	51	alive	71	104	normal activity	0	15	7	heart block or conduction def	16	26	11	0.7999267578125	1	3429
-411	3	placebo	33	dead - cerebrovascular	75	113	normal activity	1	17	9	heart strain	13.798828125	9	9	0.699951171875	0	2824
-412	3	1.0 mg estrogen	70	alive	72	105	normal activity	0	13	8	normal	13.798828125	3	9	0.7999267578125	0	2838
-413	3	5.0 mg estrogen	32	dead - heart or vascular	68	89	normal activity	1	19	10	heart strain	13.798828125	3	9	0.5999755859375	0	2895
-414	3	1.0 mg estrogen	5	dead - other ca	74	91	normal activity	0	15	8	normal	15.099609375	3	9	0.39996337890625	0	2965
-415	3	5.0 mg estrogen	23	dead - heart or vascular	72	93	normal activity	1	16	8	heart strain	16.59765625	4	9	0.199981689453125	0	3000
-416	3	placebo	63	alive	79	110	normal activity	0	15	9	old MI	16.8984375	2	9	0.699951171875	0	3056
-417	3	0.2 mg estrogen	30	dead - prostatic ca	62	104	normal activity	1	12	8	heart strain	16	32	11	0.39996337890625	0	3078
-418	3	0.2 mg estrogen	12	dead - prostatic ca	69	92	normal activity	1	17	7	old MI	15.5	22	NA	0.89990234375	0	3083
-419	3	placebo	53	dead - heart or vascular	62	119	normal activity	0	19	11	heart strain	16.3984375	14	9	0.5	0	3113
-420	3	placebo	12	dead - heart or vascular	72	128	normal activity	0	15	8	heart strain	16.3984375	15	9	0.5999755859375	0	3176
-421	3	placebo	58	alive	72	109	normal activity	0	13	8	heart strain	13.298828125	12	9	0.5999755859375	0	3203
-422	3	1.0 mg estrogen	54	alive	51	112	normal activity	0	13	9	normal	15.798828125	7	8	0.7999267578125	0	3322
-423	3	placebo	36	dead - prostatic ca	72	104	normal activity	0	18	10	normal	16.3984375	4	9	0.5999755859375	0	3337
-424	3	0.2 mg estrogen	20	dead - respiratory disease	81	104	normal activity	0	15	8	normal	16.8984375	16	13	0.7999267578125	0	3364
-425	4	5.0 mg estrogen	74	alive	71	81	normal activity	0	11	7	old MI	13.099609375	29	11	11.798828125	0	2714
-426	4	placebo	34	dead - prostatic ca	77	103	normal activity	0	14	7	rhythmic disturb & electrolyte ch	14.298828125	35	11	1.2998046875	0	2726
-427	4	0.2 mg estrogen	70	alive	73	114	normal activity	1	14	8	normal	14.69921875	26	11	0.5	0	2832
-428	4	placebo	25	dead - prostatic ca	56	100	normal activity	0	17	8	heart strain	13.798828125	30	11	50.59375	1	2973
-429	4	0.2 mg estrogen	65	alive	77	107	normal activity	0	14	9	heart strain	14.69921875	1	13	1.599853515625	0	2987
-430	4	placebo	4	dead - prostatic ca	78	104	normal activity	0	16	9	heart block or conduction def	12.69921875	27	11	22.59765625	0	3022
-431	4	1.0 mg estrogen	10	dead - prostatic ca	76	96	normal activity	0	12	7	old MI	13.798828125	34	11	36	1	3119
-432	4	1.0 mg estrogen	58	alive	68	79	normal activity	0	18	9	rhythmic disturb & electrolyte ch	13.3984375	9	11	1.199951171875	0	3205
-433	4	placebo	37	dead - prostatic ca	73	90	normal activity	0	14	9	benign	9.3984375	21	13	5.099609375	0	3223
-434	4	5.0 mg estrogen	56	alive	56	135	normal activity	0	16	9	normal	14.69921875	10	10	3.19970703125	0	3279
-435	4	1.0 mg estrogen	6	dead - prostatic ca	74	112	normal activity	1	20	10	heart strain	13.099609375	9	11	21.296875	1	3392
-436	3	5.0 mg estrogen	54	dead - prostatic ca	76	84	normal activity	1	15	8	normal	12.599609375	19	NA	0.39996337890625	0	2720
-437	3	5.0 mg estrogen	0	dead - heart or vascular	69	113	normal activity	1	13	8	normal	11.298828125	1	9	0.0999908447265625	0	2813
-438	3	1.0 mg estrogen	70	alive	73	84	normal activity	1	10	6	benign	15.599609375	1	9	0.5	0	2853
-439	3	1.0 mg estrogen	70	alive	71	105	normal activity	0	12	8	normal	13.599609375	2	10	0.199981689453125	0	2859
-440	3	0.2 mg estrogen	28	dead - heart or vascular	75	97	normal activity	1	14	8	old MI	10.798828125	2	9	0.199981689453125	0	2875
-441	3	1.0 mg estrogen	40	dead - heart or vascular	69	85	normal activity	0	15	7	old MI	5.8994140625	2	9	0.29998779296875	0	2917
-442	3	1.0 mg estrogen	67	alive	73	95	normal activity	0	11	7	normal	13.798828125	7	8	0.39996337890625	0	2943
-443	3	0.2 mg estrogen	36	dead - respiratory disease	59	81	normal activity	0	15	10	normal	16	2	9	0.39996337890625	0	3076
-444	3	placebo	23	dead - respiratory disease	68	93	normal activity	0	13	7	normal	12.5	2	8	0.89990234375	0	3076
-445	3	placebo	23	dead - heart or vascular	78	115	normal activity	1	14	7	heart block or conduction def	13	2	8	0.0999908447265625	0	3076
-446	3	placebo	62	alive	63	95	normal activity	0	12	9	normal	13.19921875	3	8	0.29998779296875	0	3076
-447	3	0.2 mg estrogen	62	alive	74	85	normal activity	0	12	9	heart block or conduction def	14.099609375	2	9	0.39996337890625	0	3087
-448	3	placebo	62	alive	72	103	normal activity	0	16	7	heart strain	14.298828125	0	5	0.39996337890625	0	3100
-449	3	5.0 mg estrogen	2	dead - heart or vascular	78	103	normal activity	0	11	7	old MI	11.19921875	0	6	0.5999755859375	0	3140
-450	3	0.2 mg estrogen	34	dead - prostatic ca	70	85	normal activity	0	14	9	benign	14.8984375	2	12	0.5999755859375	0	3170
-451	3	1.0 mg estrogen	4	dead - heart or vascular	72	101	normal activity	0	14	10	rhythmic disturb & electrolyte ch	16.3984375	1	9	0.7999267578125	0	3205
-452	3	0.2 mg estrogen	12	dead - prostatic ca	76	103	normal activity	1	13	7	old MI	12.5	4	8	0.5	0	3213
-453	3	placebo	56	alive	66	106	normal activity	0	12	9	old MI	15.5	4	9	0.5	0	3260
-454	3	5.0 mg estrogen	1	dead - heart or vascular	88	99	normal activity	1	13	6	old MI	14.099609375	17	9	0.699951171875	0	3275
-455	3	5.0 mg estrogen	7	dead - other specific non-ca	78	88	normal activity	1	11	6	old MI	10.8984375	5	9	0.29998779296875	0	3413
-456	4	placebo	4	dead - prostatic ca	79	105	normal activity	0	12	7	normal	12.19921875	5	12	3	0	2740
-457	4	placebo	70	alive	77	106	normal activity	1	15	8	rhythmic disturb & electrolyte ch	16	1	9	2.19970703125	0	2841
-458	4	5.0 mg estrogen	65	alive	71	101	normal activity	0	12	7	normal	12.69921875	2	10	1.5	0	3006
-459	4	0.2 mg estrogen	7	dead - prostatic ca	74	91	normal activity	1	15	8	normal	12.599609375	8	13	11.298828125	0	3100
-460	4	1.0 mg estrogen	30	dead - heart or vascular	75	124	normal activity	0	15	10	rhythmic disturb & electrolyte ch	13.19921875	3	13	1.699951171875	0	3132
-461	4	0.2 mg estrogen	40	dead - heart or vascular	77	90	normal activity	1	10	6	heart block or conduction def	14.69921875	2	12	8.19921875	0	3176
-462	4	placebo	13	dead - heart or vascular	75	74	normal activity	1	15	9	normal	15.798828125	4	11	1.099853515625	0	3275
-463	4	0.2 mg estrogen	22	dead - prostatic ca	64	110	normal activity	0	16	10	rhythmic disturb & electrolyte ch	9.298828125	6	11	6.2998046875	1	3332
-464	4	1.0 mg estrogen	0	dead - heart or vascular	79	89	normal activity	0	17	10	heart block or conduction def	10.298828125	19	13	2	1	3332
-465	4	placebo	18	dead - prostatic ca	60	134	in bed > 50% daytime	1	16	8	old MI	14.099609375	9	13	1.199951171875	0	3367
-466	3	0.2 mg estrogen	64	dead - unknown cause	70	107	normal activity	0	14	9	heart strain	14.099609375	8	9	0.199981689453125	0	2806
-467	3	5.0 mg estrogen	13	dead - heart or vascular	73	111	normal activity	1	15	8	heart strain	17	4	9	0.699951171875	0	2856
-468	3	placebo	26	dead - prostatic ca	61	109	normal activity	0	14	9	rhythmic disturb & electrolyte ch	14.298828125	3	11	0.39996337890625	0	2898
-469	3	5.0 mg estrogen	1	dead - pulmonary embolus	79	97	in bed < 50% daytime	1	16	8	heart strain	13.599609375	3	9	0.5999755859375	0	2943
-470	3	placebo	16	dead - heart or vascular	78	88	normal activity	0	12	7	NA	11.3984375	4	9	0.39996337890625	0	2985
-472	3	0.2 mg estrogen	33	dead - heart or vascular	72	106	normal activity	1	13	8	old MI	16.5	17	11	0.5999755859375	0	3267
-474	3	placebo	16	dead - heart or vascular	76	90	normal activity	0	13	8	rhythmic disturb & electrolyte ch	12	5	NA	1.099853515625	0	3336
-476	4	0.2 mg estrogen	22	dead - prostatic ca	51	100	normal activity	0	16	9	normal	14.599609375	5	13	0.5999755859375	0	2698
-477	4	0.2 mg estrogen	30	dead - prostatic ca	59	87	normal activity	1	15	9	normal	15.099609375	32	13	3	0	2713
-478	4	5.0 mg estrogen	53	dead - cerebrovascular	73	91	normal activity	1	16	9	rhythmic disturb & electrolyte ch	14.599609375	4	10	3.19970703125	0	2761
-479	4	0.2 mg estrogen	53	dead - prostatic ca	74	90	normal activity	1	13	7	rhythmic disturb & electrolyte ch	11.798828125	5	13	1.2998046875	0	2806
-480	4	placebo	7	dead - prostatic ca	77	93	in bed > 50% daytime	1	14	9	old MI	11.798828125	43	11	43	1	2806
-481	4	0.2 mg estrogen	61	dead - prostatic ca	74	95	normal activity	0	15	7	rhythmic disturb & electrolyte ch	13.5	5	11	24.3984375	0	2841
-482	4	placebo	40	dead - prostatic ca	60	125	normal activity	0	11	7	normal	14	9	11	1.2998046875	0	2852
-483	4	placebo	9	dead - heart or vascular	72	83	normal activity	1	14	8	rhythmic disturb & electrolyte ch	12.8984375	18	13	1.39990234375	1	2943
-484	4	1.0 mg estrogen	14	dead - prostatic ca	79	88	normal activity	1	12	7	old MI	8.599609375	20	NA	1.39990234375	0	3002
-485	4	1.0 mg estrogen	59	alive	50	117	normal activity	0	12	8	normal	15.298828125	NA	13	10.298828125	0	3169
-486	4	1.0 mg estrogen	59	alive	73	71	normal activity	0	16	8	normal	13.3984375	3	11	0.699951171875	1	3192
-487	4	5.0 mg estrogen	7	dead - heart or vascular	72	110	normal activity	0	14	6	normal	13.69921875	4	11	2.099609375	0	3220
-489	4	5.0 mg estrogen	12	dead - prostatic ca	80	105	in bed > 50% daytime	1	14	7	old MI	8.5	6	5	160	1	3435
-490	4	5.0 mg estrogen	46	dead - cerebrovascular	69	71	in bed < 50% daytime	1	11	8	old MI	13.69921875	5	13	1.39990234375	1	3465
-491	4	1.0 mg estrogen	50	alive	75	116	normal activity	0	14	8	normal	16	1	11	4.5	0	3465
-492	4	5.0 mg estrogen	0	dead - pulmonary embolus	71	99	in bed < 50% daytime	1	14	8	heart block or conduction def	14.099609375	1	11	1.699951171875	0	3465
-493	3	5.0 mg estrogen	52	alive	73	114	normal activity	1	14	8	heart strain	13.599609375	8	8	0.5	0	3387
-494	3	1.0 mg estrogen	19	dead - other ca	76	99	normal activity	1	15	9	heart block or conduction def	16	7	9	0.199981689453125	0	3407
-495	3	placebo	52	alive	73	114	normal activity	0	15	7	normal	11.69921875	5	9	0.29998779296875	0	3407
-496	3	1.0 mg estrogen	51	alive	76	114	normal activity	1	30	18	heart strain	11.599609375	6	9	0.5	0	3440
-497	3	5.0 mg estrogen	51	alive	68	98	normal activity	0	14	8	normal	13.3984375	6	9	0.699951171875	0	3440
-498	4	0.2 mg estrogen	14	dead - prostatic ca	64	100	in bed < 50% daytime	0	14	7	normal	14	23	11	0.5999755859375	0	3395
-499	4	0.2 mg estrogen	27	dead - prostatic ca	75	102	normal activity	0	16	8	normal	14.19921875	5	11	29.59765625	0	3430
-500	4	1.0 mg estrogen	51	alive	60	123	normal activity	1	14	10	heart strain	14.5	6	8	0.5	1	3429
-501	4	5.0 mg estrogen	5	dead - heart or vascular	73	100	normal activity	1	19	10	normal	16.796875	2	11	2.89990234375	0	3433
-502	3	1.0 mg estrogen	0	dead - other ca	78	108	normal activity	0	11	6	normal	15.798828125	9	13	0.5999755859375	0	3297
-503	3	0.2 mg estrogen	41	dead - unspecified non-ca	78	127	normal activity	1	16	10	heart strain	15.798828125	5	9	0.5	0	3349
-504	3	1.0 mg estrogen	53	alive	77	93	normal activity	0	17	10	heart block or conduction def	16	11	9	0.7999267578125	0	3357
-505	4	5.0 mg estrogen	19	dead - prostatic ca	82	96	normal activity	1	12	6	heart strain	12.3984375	32	13	8.3984375	0	3311
-506	4	1.0 mg estrogen	4	dead - prostatic ca	74	97	in bed < 50% daytime	0	15	6	normal	21.19921875	33	NA	22.19921875	1	3428
+patno	age	ap	bm	dbp	dtime	ekg	hg	hx	pf	rx	sbp	sdate	sg	stage	status	sz	wt
+1	75	0.29998779296875	0	9	72	heart strain	13.798828125	0	normal activity	0.2 mg estrogen	15	2778	8	3	alive	2	76
+2	54	0.699951171875	0	7	1	heart block or conduction def	14.599609375	0	normal activity	0.2 mg estrogen	13	2820	NA	3	dead - other ca	42	116
+3	69	0.29998779296875	0	8	40	heart strain	13.3984375	1	normal activity	5.0 mg estrogen	14	2933	9	3	dead - cerebrovascular	3	102
+4	75	0.89990234375	0	7	20	benign	17.59765625	1	in bed < 50% daytime	0.2 mg estrogen	14	2999	8	3	dead - cerebrovascular	4	94
+5	67	0.5	0	10	65	normal	13.3984375	0	normal activity	placebo	17	3002	8	3	alive	34	99
+6	71	0.5999755859375	0	10	24	normal	15.099609375	0	normal activity	0.2 mg estrogen	19	3086	11	3	dead - prostatic ca	10	98
+7	75	0.7999267578125	0	10	46	benign	13	0	normal activity	placebo	14	3099	9	3	dead - heart or vascular	13	100
+8	73	0.5999755859375	0	11	62	heart strain	12.599609375	1	normal activity	placebo	17	3100	9	3	alive	3	114
+9	60	0.699951171875	0	8	61	normal	14.599609375	0	normal activity	1.0 mg estrogen	12	3134	10	3	alive	4	110
+10	78	0.39996337890625	0	8	60	old MI	13	1	normal activity	1.0 mg estrogen	13	3140	6	3	alive	21	107
+11	77	0.5999755859375	0	8	60	normal	15.599609375	0	normal activity	1.0 mg estrogen	15	3141	8	3	alive	3	89
+12	74	0.39996337890625	0	14	59	normal	13.599609375	1	normal activity	5.0 mg estrogen	18	3176	8	3	alive	6	105
+13	74	0.29998779296875	0	9	59	old MI	14.3984375	0	normal activity	0.2 mg estrogen	14	3183	9	3	alive	6	107
+14	55	1	0	9	49	heart strain	13.8984375	1	normal activity	placebo	16	3183	9	3	dead - prostatic ca	4	112
+15	73	0.5999755859375	0	10	20	heart strain	12	0	normal activity	5.0 mg estrogen	19	3196	10	3	dead - cerebrovascular	15	88
+16	87	0.39996337890625	0	12	3	rhythmic disturb & electrolyte ch	13.3984375	1	in bed < 50% daytime	5.0 mg estrogen	17	3196	9	3	dead - heart or vascular	3	81
+17	64	0.699951171875	0	8	58	normal	16.19921875	0	normal activity	placebo	14	3218	9	3	alive	6	90
+18	79	0.5	0	8	29	benign	15	0	normal activity	1.0 mg estrogen	13	3230	8	3	dead - pulmonary embolus	5	104
+19	62	0.699951171875	0	8	26	benign	14.3984375	1	normal activity	5.0 mg estrogen	13	3386	9	3	dead - heart or vascular	2	90
+20	74	0.699951171875	0	8	52	heart strain	16.3984375	0	normal activity	5.0 mg estrogen	13	3400	9	3	alive	10	107
+21	83	0.699951171875	0	9	20	heart strain	15	1	in bed < 50% daytime	5.0 mg estrogen	13	3400	10	3	dead - heart or vascular	1	72
+22	65	0.699951171875	0	10	51	normal	14.099609375	0	normal activity	1.0 mg estrogen	16	3428	9	3	alive	21	113
+23	61	0.5999755859375	0	8	51	normal	13.5	0	normal activity	placebo	11	3433	8	3	alive	8	97
+24	56	35.6953125	1	10	31	rhythmic disturb & electrolyte ch	14.798828125	0	normal activity	5.0 mg estrogen	15	2791	13	4	dead - prostatic ca	26	95
+25	73	3.89990234375	0	10	42	normal	14.599609375	0	normal activity	1.0 mg estrogen	16	2831	11	4	dead - cerebrovascular	6	103
+26	69	6.19921875	0	8	38	heart strain	10.69921875	0	normal activity	0.2 mg estrogen	16	2861	11	4	dead - heart or vascular	25	75
+27	76	2.5	0	8	69	old MI	11.69921875	0	normal activity	placebo	12	2869	10	4	alive	12	82
+28	71	12	0	7	39	normal	14.3984375	0	normal activity	placebo	12	2873	11	4	dead - prostatic ca	11	103
+29	66	24.19921875	0	10	33	heart strain	14	0	normal activity	1.0 mg estrogen	17	2884	13	4	dead - other ca	32	126
+30	76	2.2998046875	0	9	8	heart strain	12.798828125	0	normal activity	0.2 mg estrogen	15	2895	13	4	dead - prostatic ca	40	90
+31	74	316	1	9	13	heart strain	10.5	0	in bed > 50% daytime	0.2 mg estrogen	16	2905	13	4	dead - prostatic ca	17	77
+32	71	1.89990234375	0	10	33	old MI	15	1	normal activity	5.0 mg estrogen	16	2924	11	4	dead - other specific non-ca	9	150
+33	71	35.3984375	0	9	9	heart strain	12.298828125	1	normal activity	1.0 mg estrogen	16	2932	13	4	dead - prostatic ca	38	88
+34	79	12.099609375	0	9	21	heart strain	12.798828125	0	normal activity	placebo	16	2940	12	4	dead - prostatic ca	26	89
+35	75	3.7998046875	0	9	66	normal	14.599609375	0	normal activity	5.0 mg estrogen	15	2953	14	4	dead - prostatic ca	8	101
+36	76	99.1875	1	6	5	heart strain	8.19921875	1	normal activity	5.0 mg estrogen	16	2953	11	4	dead - prostatic ca	10	86
+37	72	1.2998046875	0	10	27	heart strain	13	0	normal activity	placebo	16	2933	11	4	dead - other specific non-ca	2	93
+38	69	28.8984375	1	8	2	benign	10.3984375	1	normal activity	0.2 mg estrogen	12	2979	13	4	dead - heart or vascular	15	84
+39	53	5.599609375	1	9	20	benign	14.19921875	0	normal activity	0.2 mg estrogen	12	3050	13	4	dead - prostatic ca	26	99
+40	76	1.39990234375	1	9	19	heart strain	13	0	normal activity	1.0 mg estrogen	14	3141	11	4	dead - prostatic ca	6	85
+41	72	2.2998046875	0	8	60	heart strain	13.599609375	1	normal activity	placebo	17	3162	12	4	alive	12	95
+42	NA	30	1	8	58	heart strain	12.798828125	0	normal activity	1.0 mg estrogen	15	3202	13	4	alive	35	76
+43	82	22.296875	1	8	32	normal	13	0	normal activity	5.0 mg estrogen	14	3204	13	4	dead - prostatic ca	27	89
+44	74	1.2998046875	0	8	53	heart block or conduction def	9.3984375	0	normal activity	placebo	16	3350	15	4	alive	26	124
+45	75	3.2998046875	0	9	53	rhythmic disturb & electrolyte ch	15.298828125	0	normal activity	1.0 mg estrogen	13	3372	13	4	alive	16	93
+46	74	20	1	10	43	heart strain	13.3984375	0	normal activity	5.0 mg estrogen	17	3395	11	4	dead - prostatic ca	28	81
+47	60	7	0	8	21	normal	14.298828125	0	normal activity	0.2 mg estrogen	12	3433	13	4	dead - prostatic ca	27	96
+48	59	0.699951171875	0	8	30	heart strain	15.19921875	0	in bed < 50% daytime	5.0 mg estrogen	12	2730	9	3	dead - unknown cause	NA	116
+49	49	0.5	0	7	74	normal	14.798828125	0	normal activity	5.0 mg estrogen	13	2735	8	3	alive	14	99
+50	74	0.5999755859375	0	6	72	old MI	10.3984375	1	in bed < 50% daytime	placebo	11	2779	11	3	alive	20	96
+51	73	0.5999755859375	0	7	14	normal	12.3984375	0	normal activity	placebo	16	2905	11	3	dead - prostatic ca	18	101
+52	76	0.5	0	10	33	old MI	17.09765625	1	normal activity	5.0 mg estrogen	17	2995	8	3	dead - heart or vascular	13	98
+53	72	0.5999755859375	0	8	8	heart strain	14.798828125	1	normal activity	0.2 mg estrogen	12	3001	8	3	dead - cerebrovascular	15	84
+54	73	0.5	0	8	10	heart strain	14.099609375	1	normal activity	1.0 mg estrogen	16	3022	9	3	dead - heart or vascular	20	82
+55	78	0.29998779296875	0	8	51	old MI	14.798828125	1	in bed > 50% daytime	placebo	18	3023	9	3	dead - prostatic ca	24	108
+56	71	0.39996337890625	0	9	7	normal	13.19921875	1	normal activity	0.2 mg estrogen	15	3048	11	3	dead - heart or vascular	14	112
+57	75	0.7999267578125	0	8	63	heart strain	15.19921875	0	normal activity	1.0 mg estrogen	13	3059	NA	3	alive	41	92
+58	64	0.199981689453125	0	9	33	normal	14.19921875	0	normal activity	0.2 mg estrogen	13	3219	11	3	dead - prostatic ca	23	130
+59	78	0.39996337890625	0	9	3	heart strain	12.3984375	1	normal activity	0.2 mg estrogen	16	3347	9	3	dead - cerebrovascular	3	118
+60	60	0.5999755859375	0	9	43	normal	13.599609375	0	normal activity	placebo	12	3375	9	3	dead - other ca	7	99
+61	68	7.2998046875	1	9	37	heart strain	14.3984375	0	normal activity	1.0 mg estrogen	14	2712	13	4	dead - prostatic ca	32	104
+62	77	11.69921875	0	9	5	old MI	12.8984375	0	in bed < 50% daytime	placebo	21	2856	13	4	dead - cerebrovascular	24	93
+63	73	8.69921875	0	9	6	heart strain	12	1	normal activity	0.2 mg estrogen	14	2856	15	4	dead - prostatic ca	51	102
+64	70	2	1	8	2	normal	7.7998046875	0	in bed > 50% daytime	placebo	12	2863	11	4	dead - prostatic ca	26	76
+65	53	0.699951171875	0	8	5	heart strain	14.298828125	0	normal activity	0.2 mg estrogen	14	2982	11	4	dead - prostatic ca	10	106
+66	55	4.599609375	1	9	64	heart strain	14.798828125	0	normal activity	5.0 mg estrogen	13	3043	15	4	alive	26	116
+67	80	1.2998046875	0	8	1	old MI	11.69921875	1	in bed < 50% daytime	5.0 mg estrogen	14	3259	13	4	dead - unspecified non-ca	15	91
+68	59	175.09375	1	4	21	heart strain	8.69921875	0	normal activity	1.0 mg estrogen	8	3298	11	4	dead - prostatic ca	27	71
+69	80	1.099853515625	1	9	16	normal	11.298828125	0	normal activity	placebo	16	3345	15	4	dead - other specific non-ca	34	111
+70	68	0.5999755859375	0	8	21	old MI	12.099609375	1	in bed < 50% daytime	1.0 mg estrogen	14	2660	8	3	dead - cerebrovascular	18	97
+71	77	0.699951171875	0	7	12	rhythmic disturb & electrolyte ch	14.3984375	1	normal activity	1.0 mg estrogen	13	2686	9	3	dead - heart or vascular	5	103
+72	74	0.5	0	8	75	benign	13.599609375	0	normal activity	1.0 mg estrogen	16	2686	8	3	alive	7	110
+73	70	0.7999267578125	0	7	74	benign	13.69921875	0	normal activity	placebo	15	2714	7	3	alive	24	94
+74	72	0.5	0	13	74	normal	12.599609375	1	in bed < 50% daytime	0.2 mg estrogen	14	2714	9	3	alive	NA	142
+75	65	0.29998779296875	0	8	54	normal	14	0	normal activity	0.2 mg estrogen	14	2723	9	3	dead - prostatic ca	47	90
+76	74	0.199981689453125	0	7	73	normal	12.8984375	1	normal activity	5.0 mg estrogen	13	2754	8	3	alive	6	97
+77	72	0.5999755859375	0	13	36	old MI	14.69921875	1	normal activity	placebo	22	2763	10	3	dead - heart or vascular	5	110
+78	69	0.29998779296875	0	7	59	normal	14.298828125	1	normal activity	placebo	13	2763	9	3	dead - other specific non-ca	4	97
+79	72	0.29998779296875	0	10	6	normal	12	1	normal activity	5.0 mg estrogen	16	2772	8	3	dead - cerebrovascular	5	115
+80	71	0.7999267578125	0	10	58	rhythmic disturb & electrolyte ch	13.3984375	1	normal activity	0.2 mg estrogen	13	2789	9	3	dead - heart or vascular	13	87
+81	73	0.29998779296875	0	7	16	normal	13.798828125	0	normal activity	1.0 mg estrogen	11	2798	9	3	dead - respiratory disease	8	93
+82	79	0.199981689453125	0	7	19	old MI	13.599609375	1	normal activity	5.0 mg estrogen	16	2805	9	3	dead - heart or vascular	13	106
+83	63	0.39996337890625	0	8	39	old MI	16	1	normal activity	5.0 mg estrogen	16	2839	9	3	dead - heart or vascular	7	86
+84	74	0.39996337890625	0	9	26	rhythmic disturb & electrolyte ch	10.599609375	1	normal activity	0.2 mg estrogen	14	2856	8	3	dead - other ca	14	101
+85	72	0.5999755859375	0	11	60	normal	15.599609375	1	normal activity	placebo	17	2856	9	3	dead - respiratory disease	9	118
+86	78	0.39996337890625	0	7	43	heart strain	13.599609375	1	normal activity	0.2 mg estrogen	10	2862	8	3	dead - other specific non-ca	16	117
+87	76	0.5	0	7	7	old MI	13.599609375	1	normal activity	5.0 mg estrogen	12	2903	9	3	dead - heart or vascular	12	92
+88	70	0.0999908447265625	0	9	9	heart block or conduction def	12	1	normal activity	1.0 mg estrogen	16	2903	8	3	dead - other ca	17	72
+89	69	0.699951171875	0	10	67	heart strain	13.599609375	1	normal activity	1.0 mg estrogen	16	2938	10	3	alive	21	120
+90	76	0.5	0	8	62	normal	13.19921875	1	normal activity	5.0 mg estrogen	12	2951	8	3	dead - other ca	13	102
+91	84	0.39996337890625	0	10	17	benign	13.3984375	1	normal activity	placebo	15	3049	6	3	dead - respiratory disease	8	104
+92	80	0.5	0	8	25	normal	12.298828125	1	normal activity	0.2 mg estrogen	15	3049	9	3	dead - other ca	8	98
+93	81	0.699951171875	0	7	0	normal	13.3984375	0	normal activity	1.0 mg estrogen	10	3087	9	3	dead - respiratory disease	11	97
+94	81	0.5	0	7	5	heart strain	14.8984375	1	normal activity	5.0 mg estrogen	13	3094	9	3	dead - heart or vascular	28	76
+95	71	0.29998779296875	0	10	34	heart strain	14.3984375	1	normal activity	5.0 mg estrogen	12	3127	6	3	dead - heart or vascular	11	100
+96	77	0.29998779296875	0	7	59	normal	12	0	normal activity	placebo	14	3182	10	3	alive	7	109
+97	70	0.5	0	8	31	heart strain	12	1	normal activity	0.2 mg estrogen	18	3197	9	3	dead - heart or vascular	28	109
+98	76	0.29998779296875	0	7	58	old MI	12	1	normal activity	placebo	12	3204	9	3	alive	3	108
+99	76	0.5999755859375	0	9	30	old MI	18.19921875	1	normal activity	1.0 mg estrogen	16	3216	11	3	dead - cerebrovascular	52	102
+100	71	0.5999755859375	0	7	57	heart block or conduction def	13.3984375	0	normal activity	0.2 mg estrogen	13	3232	9	3	alive	19	97
+101	76	0.5999755859375	0	8	5	normal	13.69921875	1	normal activity	0.2 mg estrogen	17	3239	9	3	dead - heart or vascular	33	96
+102	64	0.199981689453125	0	10	55	normal	13.69921875	1	normal activity	5.0 mg estrogen	16	3295	9	3	alive	6	100
+103	74	0.7999267578125	0	7	55	normal	14.298828125	0	normal activity	1.0 mg estrogen	12	3317	10	3	alive	7	113
+104	76	0.5999755859375	0	9	52	normal	12.298828125	1	normal activity	placebo	16	3394	8	3	alive	3	88
+105	82	0.5999755859375	0	9	0	rhythmic disturb & electrolyte ch	11.599609375	1	normal activity	5.0 mg estrogen	13	3406	10	3	dead - pulmonary embolus	5	82
+106	65	0.7999267578125	0	8	51	normal	14.5	1	normal activity	1.0 mg estrogen	16	3421	9	3	alive	2	87
+107	70	9.69921875	1	6	17	normal	12.69921875	0	in bed < 50% daytime	0.2 mg estrogen	14	2660	11	4	dead - heart or vascular	14	83
+108	76	6.19921875	1	6	70	heart strain	9.69921875	0	normal activity	5.0 mg estrogen	13	2660	10	4	dead - other ca	6	92
+109	77	4.8994140625	0	6	74	benign	11	0	normal activity	placebo	10	2714	12	4	alive	0	93
+110	77	2.39990234375	0	9	74	normal	12.798828125	1	normal activity	0.2 mg estrogen	17	2723	12	4	alive	15	99
+111	70	10.19921875	0	7	20	normal	13.5	1	normal activity	1.0 mg estrogen	12	2786	11	4	dead - heart or vascular	23	103
+112	73	39.6953125	0	8	2	heart strain	12.8984375	1	normal activity	placebo	13	2867	12	4	dead - prostatic ca	61	80
+113	63	41.6953125	1	8	8	heart strain	12.798828125	1	normal activity	0.2 mg estrogen	13	2936	15	4	dead - prostatic ca	14	119
+114	71	1.199951171875	0	6	27	heart strain	12	0	normal activity	5.0 mg estrogen	13	2966	10	4	dead - other specific non-ca	1	91
+115	78	1.7998046875	1	8	23	normal	10	1	in bed < 50% daytime	1.0 mg estrogen	14	2994	12	4	dead - cerebrovascular	38	103
+116	74	1.099853515625	0	8	1	old MI	14.3984375	1	normal activity	placebo	13	3294	11	4	dead - heart or vascular	1	100
+117	70	2	0	8	52	old MI	15.8984375	1	normal activity	5.0 mg estrogen	16	3381	10	4	alive	4	110
+118	73	1.199951171875	1	8	51	benign	11.19921875	1	normal activity	1.0 mg estrogen	11	3414	13	4	alive	10	106
+119	74	78.390625	1	6	6	rhythmic disturb & electrolyte ch	14	1	normal activity	5.0 mg estrogen	13	3427	12	4	dead - prostatic ca	41	98
+120	77	1.699951171875	1	7	0	heart strain	14.298828125	1	normal activity	1.0 mg estrogen	12	3434	11	4	dead - prostatic ca	6	91
+121	85	25.8984375	0	7	26	normal	14	1	normal activity	5.0 mg estrogen	15	3434	12	4	dead - heart or vascular	12	85
+122	72	0.7999267578125	0	7	65	normal	12.298828125	1	normal activity	placebo	13	2813	9	3	dead - respiratory disease	16	79
+123	74	0.199981689453125	0	6	52	old MI	13.798828125	0	normal activity	placebo	14	2813	NA	3	dead - unspecified non-ca	17	106
+124	78	0.5	0	7	26	normal	10.298828125	0	normal activity	0.2 mg estrogen	13	2852	11	3	dead - prostatic ca	25	83
+125	60	0.5	0	10	70	heart strain	14.298828125	0	normal activity	5.0 mg estrogen	14	2853	NA	3	alive	13	110
+126	72	0.699951171875	0	9	6	benign	10	0	normal activity	placebo	11	2868	10	3	dead - other ca	16	76
+127	68	1.7998046875	0	7	6	rhythmic disturb & electrolyte ch	14.5	0	normal activity	0.2 mg estrogen	13	2868	9	3	dead - pulmonary embolus	17	124
+128	71	0.29998779296875	0	9	68	normal	14.5	0	normal activity	1.0 mg estrogen	15	2902	9	3	alive	19	93
+129	65	0.7999267578125	0	9	33	old MI	15	0	normal activity	5.0 mg estrogen	17	2924	8	3	dead - heart or vascular	19	125
+130	67	0.5	0	7	67	old MI	15.69921875	0	normal activity	0.2 mg estrogen	13	2954	9	3	alive	7	96
+131	76	0.29998779296875	0	7	58	normal	14.19921875	0	normal activity	0.2 mg estrogen	12	2985	7	3	dead - heart or vascular	NA	94
+132	74	4.099609375	0	9	23	heart block or conduction def	14.19921875	0	normal activity	5.0 mg estrogen	15	2989	12	3	dead - prostatic ca	3	98
+133	78	0.29998779296875	0	7	6	normal	11	0	normal activity	5.0 mg estrogen	11	3021	9	3	dead - other ca	4	91
+134	74	0.89990234375	0	8	11	benign	14	0	normal activity	1.0 mg estrogen	14	3052	9	3	dead - heart or vascular	16	85
+135	71	0.7999267578125	0	7	6	heart block or conduction def	14	0	normal activity	placebo	13	3079	9	3	dead - prostatic ca	9	92
+136	74	0.5	0	7	57	rhythmic disturb & electrolyte ch	10.5	0	normal activity	1.0 mg estrogen	14	3240	9	3	alive	20	113
+137	72	0.39996337890625	0	10	57	heart strain	14.5	0	normal activity	1.0 mg estrogen	17	3246	8	3	alive	20	110
+138	57	0.699951171875	0	8	29	heart strain	14.69921875	0	normal activity	placebo	14	3311	9	3	dead - heart or vascular	20	97
+139	74	0.7999267578125	0	7	9	normal	13.798828125	0	normal activity	0.2 mg estrogen	14	3325	8	3	dead - other ca	25	104
+140	72	0.699951171875	0	6	53	rhythmic disturb & electrolyte ch	13.599609375	0	normal activity	1.0 mg estrogen	12	3372	9	3	alive	5	105
+141	65	0.5999755859375	0	8	51	normal	14.3984375	0	normal activity	1.0 mg estrogen	13	3423	9	3	alive	10	99
+142	83	0.5999755859375	0	9	8	heart strain	16.69921875	0	normal activity	5.0 mg estrogen	17	3428	9	3	dead - pulmonary embolus	25	115
+143	71	42.8984375	1	9	0	heart strain	12.298828125	1	in bed > 50% daytime	placebo	18	2768	13	4	dead - other specific non-ca	34	98
+144	73	2.7998046875	0	8	21	normal	12.798828125	0	normal activity	5.0 mg estrogen	12	2790	11	4	dead - heart or vascular	21	103
+145	71	367	1	7	27	normal	10.5	0	normal activity	0.2 mg estrogen	14	2889	13	4	dead - prostatic ca	30	102
+146	75	7	0	11	22	heart strain	15.599609375	0	normal activity	1.0 mg estrogen	18	2889	11	4	dead - respiratory disease	22	124
+147	71	3.599609375	1	6	12	rhythmic disturb & electrolyte ch	7	0	normal activity	1.0 mg estrogen	10	2895	13	4	dead - prostatic ca	17	77
+148	56	1.39990234375	1	8	68	normal	10.69921875	0	normal activity	1.0 mg estrogen	13	2902	13	4	alive	11	69
+149	83	21.69921875	0	7	21	normal	13.298828125	0	normal activity	1.0 mg estrogen	13	2910	13	4	dead - other specific non-ca	15	88
+150	71	3.19970703125	0	8	68	heart strain	15	0	normal activity	0.2 mg estrogen	15	2916	10	4	alive	46	116
+151	73	127.796875	0	8	0	rhythmic disturb & electrolyte ch	10.19921875	1	in bed < 50% daytime	5.0 mg estrogen	15	2950	13	4	dead - other specific non-ca	23	98
+152	78	4.69921875	1	9	2	heart strain	14	0	normal activity	5.0 mg estrogen	12	3021	11	4	dead - prostatic ca	32	74
+153	50	225.1875	1	8	14	normal	9.298828125	0	normal activity	placebo	12	3069	11	4	dead - prostatic ca	17	109
+154	73	2.69970703125	0	11	18	heart strain	14	0	normal activity	placebo	16	3099	11	4	dead - heart or vascular	9	101
+155	67	7	1	9	5	old MI	9.599609375	0	normal activity	5.0 mg estrogen	12	3149	11	4	dead - prostatic ca	17	111
+156	72	43.59375	1	9	60	normal	15.298828125	0	normal activity	1.0 mg estrogen	15	3155	15	4	alive	2	96
+157	72	29.8984375	1	10	40	benign	10.5	0	normal activity	placebo	14	3156	12	4	dead - cerebrovascular	26	96
+158	68	1.699951171875	0	10	31	old MI	15	0	normal activity	placebo	18	3365	13	4	dead - prostatic ca	NA	98
+159	78	1.099853515625	0	10	51	heart strain	15.69921875	0	normal activity	0.2 mg estrogen	15	3427	13	4	alive	6	116
+160	72	0.5999755859375	0	9	50	heart strain	12	1	normal activity	placebo	19	2896	8	3	dead - unknown cause	16	91
+161	76	0.699951171875	0	8	46	heart strain	14.5	1	normal activity	0.2 mg estrogen	18	2925	8	3	dead - unknown cause	4	118
+162	77	0.7999267578125	0	9	65	heart block or conduction def	12.5	0	normal activity	0.2 mg estrogen	19	3009	9	3	alive	20	111
+163	70	0.199981689453125	0	9	9	rhythmic disturb & electrolyte ch	11.798828125	0	normal activity	5.0 mg estrogen	13	3051	8	3	dead - pulmonary embolus	14	127
+164	74	0.89990234375	0	7	21	normal	10.19921875	1	normal activity	0.2 mg estrogen	10	3097	9	3	dead - other ca	18	96
+165	71	0.39996337890625	0	8	27	old MI	10.599609375	1	normal activity	0.2 mg estrogen	15	3181	8	3	dead - unknown cause	5	92
+166	69	0.5	0	7	54	normal	13.5	1	normal activity	1.0 mg estrogen	12	3346	8	3	alive	4	89
+167	70	0.7999267578125	0	8	52	rhythmic disturb & electrolyte ch	8.19921875	1	normal activity	1.0 mg estrogen	18	3384	9	3	alive	22	111
+168	58	1.599853515625	0	12	75	heart strain	13.099609375	0	normal activity	1.0 mg estrogen	19	2691	11	4	alive	24	99
+169	78	4.599609375	1	7	75	normal	12.599609375	0	normal activity	5.0 mg estrogen	14	2685	NA	4	alive	27	99
+170	73	5.099609375	0	6	30	old MI	13.798828125	1	normal activity	1.0 mg estrogen	14	2744	15	4	dead - heart or vascular	9	105
+171	69	2	0	8	70	normal	12.19921875	0	normal activity	5.0 mg estrogen	12	2852	11	4	alive	23	108
+172	73	3.39990234375	0	7	14	old MI	13.3984375	0	normal activity	1.0 mg estrogen	12	2863	13	4	dead - other ca	31	94
+173	73	1.199951171875	0	8	0	normal	7.7998046875	0	normal activity	placebo	14	3106	15	4	dead - other specific non-ca	23	93
+174	68	26.3984375	0	10	42	heart strain	11.69921875	0	normal activity	5.0 mg estrogen	17	3112	13	4	dead - heart or vascular	32	100
+175	75	21.59765625	1	6	12	normal	13.3984375	1	normal activity	1.0 mg estrogen	14	3118	13	4	dead - heart or vascular	31	88
+176	68	0.89990234375	1	10	40	old MI	15	1	normal activity	placebo	17	3122	10	4	dead - heart or vascular	25	104
+177	76	26.19921875	0	7	2	normal	11.19921875	1	normal activity	placebo	16	3125	13	4	dead - prostatic ca	32	88
+178	76	42.796875	1	5	12	heart strain	11.69921875	1	in bed < 50% daytime	1.0 mg estrogen	14	3225	14	4	dead - prostatic ca	28	87
+179	75	2	0	8	53	normal	12.599609375	1	normal activity	0.2 mg estrogen	14	3355	11	4	alive	8	89
+180	59	2.39990234375	0	6	11	normal	12.798828125	1	normal activity	0.2 mg estrogen	10	3358	11	4	dead - prostatic ca	6	116
+181	72	3.2998046875	1	8	18	normal	10.298828125	0	normal activity	5.0 mg estrogen	11	2734	11	3	dead - heart or vascular	9	96
+182	80	0.5999755859375	0	8	13	rhythmic disturb & electrolyte ch	12.298828125	0	normal activity	1.0 mg estrogen	15	2805	8	3	dead - cerebrovascular	4	91
+183	78	0.29998779296875	0	8	45	normal	15	1	normal activity	0.2 mg estrogen	16	2839	9	3	dead - other specific non-ca	7	112
+184	52	0.29998779296875	0	8	8	heart strain	14.798828125	1	normal activity	1.0 mg estrogen	13	2841	9	3	dead - unknown cause	4	90
+185	75	1	0	5	28	heart strain	12.69921875	0	normal activity	5.0 mg estrogen	9	2917	8	3	dead - prostatic ca	8	87
+186	67	0.7999267578125	0	8	67	normal	14	1	normal activity	5.0 mg estrogen	14	2925	9	3	alive	3	109
+187	74	0.39996337890625	0	6	67	heart strain	13	0	normal activity	0.2 mg estrogen	16	2937	9	3	alive	4	103
+188	79	0.199981689453125	0	10	24	heart strain	11.599609375	1	in bed < 50% daytime	placebo	23	2945	9	3	dead - heart or vascular	2	107
+189	73	0.5	0	10	64	rhythmic disturb & electrolyte ch	12	0	normal activity	0.2 mg estrogen	15	3022	9	3	alive	4	96
+190	75	0.699951171875	0	7	26	heart strain	13.5	0	in bed > 50% daytime	1.0 mg estrogen	12	3036	13	3	dead - heart or vascular	1	113
+191	72	59.3984375	0	7	57	heart strain	12	0	normal activity	0.2 mg estrogen	14	2796	12	4	dead - prostatic ca	7	88
+192	55	0.199981689453125	0	9	32	heart strain	10.298828125	1	normal activity	0.2 mg estrogen	15	2810	11	4	dead - prostatic ca	12	96
+193	68	0.199981689453125	0	9	71	normal	14.599609375	1	in bed < 50% daytime	placebo	16	2812	11	4	alive	18	NA
+194	48	1.5	0	10	42	heart strain	12.298828125	1	in bed < 50% daytime	0.2 mg estrogen	14	2812	11	4	dead - cerebrovascular	3	100
+195	75	4.7998046875	0	5	20	heart strain	14	1	normal activity	placebo	9	2817	11	4	dead - heart or vascular	1	88
+196	56	1.099853515625	0	8	71	normal	14.3984375	0	normal activity	1.0 mg estrogen	12	2818	10	4	alive	1	94
+197	70	1.199951171875	0	9	54	heart strain	14.3984375	0	normal activity	5.0 mg estrogen	14	3030	11	4	dead - respiratory disease	4	86
+198	54	1.199951171875	1	6	64	rhythmic disturb & electrolyte ch	14.798828125	0	normal activity	5.0 mg estrogen	15	3035	13	4	alive	8	89
+199	87	2.099609375	1	7	51	normal	11	0	normal activity	5.0 mg estrogen	14	3035	15	4	dead - heart or vascular	3	82
+200	73	0.7999267578125	0	9	1	heart strain	13.298828125	1	normal activity	5.0 mg estrogen	14	2691	8	3	dead - heart or vascular	22	94
+201	76	0.5999755859375	0	10	2	normal	10.69921875	0	normal activity	placebo	16	2708	9	3	dead - other specific non-ca	8	94
+202	68	0.89990234375	0	9	0	normal	10.69921875	0	normal activity	5.0 mg estrogen	15	2734	13	3	dead - prostatic ca	69	106
+203	70	0.5999755859375	0	10	54	rhythmic disturb & electrolyte ch	13.798828125	1	normal activity	placebo	17	2734	9	3	dead - cerebrovascular	10	97
+204	65	0.5999755859375	0	6	69	normal	16	0	normal activity	0.2 mg estrogen	12	2877	9	3	alive	8	83
+205	79	0.39996337890625	0	8	68	heart strain	13.3984375	0	normal activity	placebo	14	2894	9	3	alive	11	95
+206	70	0.5	0	11	67	normal	14.69921875	0	normal activity	placebo	19	2931	9	3	alive	7	120
+207	70	0.5999755859375	0	8	66	normal	16	0	normal activity	1.0 mg estrogen	12	2978	9	3	alive	8	99
+208	59	0.29998779296875	0	8	64	normal	10.3984375	1	normal activity	placebo	14	3022	9	3	alive	2	90
+209	72	0.5999755859375	0	8	63	normal	14.19921875	0	in bed > 50% daytime	0.2 mg estrogen	13	3065	8	3	alive	11	73
+210	76	0.5999755859375	0	9	35	normal	15.19921875	1	normal activity	1.0 mg estrogen	14	3083	5	3	dead - cerebrovascular	4	88
+211	78	0.89990234375	0	8	62	benign	16.796875	0	normal activity	5.0 mg estrogen	13	3093	10	3	alive	0	123
+212	76	0.699951171875	0	6	7	heart strain	12.798828125	1	normal activity	1.0 mg estrogen	14	3119	8	3	dead - other specific non-ca	3	113
+213	66	0.39996337890625	0	9	35	normal	14.298828125	0	normal activity	5.0 mg estrogen	14	3134	8	3	dead - other specific non-ca	3	87
+214	69	0.29998779296875	0	10	24	heart block or conduction def	15	1	normal activity	1.0 mg estrogen	16	3218	8	3	dead - pulmonary embolus	11	91
+215	71	0.5	0	8	57	heart strain	15.3984375	0	normal activity	5.0 mg estrogen	16	3248	9	3	alive	3	88
+216	75	0.5999755859375	0	7	1	heart strain	15.099609375	0	normal activity	0.2 mg estrogen	15	3287	8	3	dead - other ca	4	120
+217	74	0.5999755859375	0	9	4	rhythmic disturb & electrolyte ch	15.69921875	1	normal activity	0.2 mg estrogen	17	3330	7	3	dead - heart or vascular	7	99
+218	72	1	0	9	74	heart block or conduction def	16.5	0	normal activity	0.2 mg estrogen	15	2699	10	4	dead - other ca	4	103
+219	78	4.599609375	1	9	0	heart strain	10.099609375	0	in bed > 50% daytime	0.2 mg estrogen	16	2700	12	4	dead - prostatic ca	54	96
+220	71	0.699951171875	1	9	51	old MI	13.3984375	0	normal activity	0.2 mg estrogen	14	2723	10	4	dead - heart or vascular	6	110
+221	75	1.599853515625	0	10	36	heart strain	11	1	normal activity	5.0 mg estrogen	16	2754	10	4	dead - heart or vascular	15	101
+222	73	20.3984375	1	8	16	heart strain	7.19921875	0	in bed > 50% daytime	0.2 mg estrogen	15	2770	11	4	dead - prostatic ca	14	89
+223	79	28.8984375	1	7	32	benign	13.298828125	0	in bed > 50% daytime	1.0 mg estrogen	15	2832	13	4	dead - prostatic ca	16	79
+224	70	2.69970703125	0	8	68	normal	13.5	0	normal activity	5.0 mg estrogen	16	2897	14	4	alive	22	92
+225	73	8.8984375	0	8	17	normal	13.3984375	0	normal activity	0.2 mg estrogen	17	2905	13	4	dead - prostatic ca	50	76
+226	75	2.7998046875	0	8	66	normal	14.69921875	1	normal activity	placebo	14	2973	13	4	alive	16	98
+227	76	596	1	6	65	rhythmic disturb & electrolyte ch	11.3984375	0	normal activity	1.0 mg estrogen	12	2995	11	4	alive	13	83
+228	71	4.2998046875	1	7	19	old MI	11.798828125	0	in bed < 50% daytime	placebo	17	3000	15	4	dead - prostatic ca	61	77
+229	76	8.19921875	0	8	41	normal	15.099609375	0	normal activity	1.0 mg estrogen	17	3003	11	4	dead - prostatic ca	24	91
+230	73	36.8984375	0	9	28	normal	14.69921875	1	normal activity	placebo	16	3017	11	4	dead - heart or vascular	11	106
+231	70	4.2998046875	0	8	0	heart strain	12.19921875	1	normal activity	placebo	10	3023	11	4	dead - heart or vascular	5	80
+232	72	54.796875	1	7	46	old MI	16	1	normal activity	5.0 mg estrogen	12	3038	11	4	dead - prostatic ca	62	100
+233	74	2.39990234375	0	9	63	old MI	14.798828125	0	normal activity	5.0 mg estrogen	14	3066	10	4	alive	25	101
+234	62	4.5	0	8	60	heart strain	15.599609375	0	normal activity	1.0 mg estrogen	12	3139	13	4	alive	15	98
+235	53	1	0	8	59	normal	16.3984375	0	normal activity	1.0 mg estrogen	13	3184	12	4	alive	7	116
+236	54	0.699951171875	0	10	46	normal	13	0	normal activity	5.0 mg estrogen	13	2677	9	3	dead - heart or vascular	15	91
+237	58	0.199981689453125	0	10	63	heart block or conduction def	13.798828125	1	normal activity	1.0 mg estrogen	16	2677	9	3	dead - prostatic ca	12	94
+238	78	0.0999908447265625	0	9	8	old MI	12	1	normal activity	5.0 mg estrogen	17	2720	8	3	dead - heart or vascular	9	99
+239	77	0.39996337890625	0	7	74	heart block or conduction def	12.3984375	1	normal activity	1.0 mg estrogen	10	2722	9	3	alive	25	100
+240	61	0.199981689453125	0	10	18	heart strain	14.099609375	1	normal activity	placebo	15	2728	7	3	dead - heart or vascular	18	152
+241	78	0.5	0	7	33	heart strain	13.599609375	1	in bed < 50% daytime	placebo	13	2811	9	3	dead - other specific non-ca	9	98
+242	68	0.199981689453125	0	12	12	heart strain	14.3984375	1	in bed < 50% daytime	placebo	24	2824	9	3	dead - heart or vascular	12	88
+243	62	0.29998779296875	0	6	1	NA	11.599609375	0	in bed < 50% daytime	0.2 mg estrogen	10	2826	9	3	dead - other specific non-ca	13	76
+244	70	0.5999755859375	0	10	66	normal	14.5	0	normal activity	1.0 mg estrogen	15	2981	11	3	alive	15	109
+245	75	0.5	0	10	28	normal	13.69921875	0	normal activity	1.0 mg estrogen	16	3090	10	3	dead - other ca	19	81
+246	80	0.89990234375	0	8	30	heart strain	10.798828125	0	normal activity	0.2 mg estrogen	12	3170	11	3	dead - heart or vascular	22	91
+247	76	0.5	0	8	57	old MI	11.19921875	1	normal activity	0.2 mg estrogen	13	3183	8	3	dead - other specific non-ca	20	99
+248	68	0.699951171875	0	8	50	normal	12	0	normal activity	1.0 mg estrogen	16	3185	11	3	dead - prostatic ca	20	102
+249	73	0.29998779296875	0	4	39	heart strain	12.5	1	normal activity	placebo	19	3213	11	3	dead - heart or vascular	18	81
+250	79	0.29998779296875	0	10	40	heart strain	14	0	normal activity	placebo	15	3213	6	3	dead - heart or vascular	16	96
+251	78	0.39996337890625	0	7	24	old MI	11	1	normal activity	0.2 mg estrogen	14	3381	9	3	dead - cerebrovascular	4	81
+252	79	0.39996337890625	0	8	6	old MI	12.19921875	1	normal activity	5.0 mg estrogen	11	3441	6	3	dead - heart or vascular	4	94
+253	72	0.5	1	12	30	heart strain	12.298828125	1	in bed < 50% daytime	0.2 mg estrogen	22	2782	14	4	dead - heart or vascular	15	90
+254	52	5.2998046875	0	7	58	normal	15	1	normal activity	0.2 mg estrogen	11	2807	14	4	dead - prostatic ca	13	106
+255	76	353.5	0	10	68	heart strain	14.599609375	1	normal activity	1.0 mg estrogen	15	2908	11	4	alive	19	97
+256	74	13.8984375	1	10	24	rhythmic disturb & electrolyte ch	10	0	normal activity	0.2 mg estrogen	16	2924	13	4	dead - prostatic ca	19	85
+257	71	0.39996337890625	1	8	33	normal	10.19921875	0	normal activity	placebo	14	2933	11	4	dead - unspecified non-ca	8	86
+258	72	20	0	10	65	rhythmic disturb & electrolyte ch	12.298828125	0	normal activity	5.0 mg estrogen	14	3006	12	4	alive	17	96
+259	77	5.5	0	8	2	normal	13.798828125	0	normal activity	5.0 mg estrogen	15	3006	12	4	dead - pulmonary embolus	22	113
+260	73	9.69921875	0	10	64	heart strain	13.798828125	1	normal activity	0.2 mg estrogen	16	3023	11	4	alive	23	100
+261	75	2.2998046875	0	7	19	rhythmic disturb & electrolyte ch	11.798828125	0	normal activity	placebo	12	3077	13	4	dead - prostatic ca	17	83
+262	73	1.099853515625	0	7	58	old MI	13.298828125	0	normal activity	placebo	13	3204	13	4	alive	20	NA
+263	71	43.09375	1	10	15	heart strain	14.69921875	0	normal activity	5.0 mg estrogen	15	3364	11	4	dead - prostatic ca	12	98
+264	76	33.59375	0	9	10	normal	10.5	1	normal activity	0.2 mg estrogen	16	3367	12	4	dead - prostatic ca	20	94
+265	49	5.599609375	1	8	12	heart strain	14.099609375	0	in bed < 50% daytime	5.0 mg estrogen	14	3367	15	4	dead - prostatic ca	21	90
+266	74	278.25	1	7	53	rhythmic disturb & electrolyte ch	13.3984375	1	in bed > 50% daytime	5.0 mg estrogen	13	3373	11	4	alive	17	91
+267	59	2.19970703125	0	6	51	normal	14.099609375	0	normal activity	1.0 mg estrogen	13	3412	13	4	alive	17	97
+268	79	3.7998046875	0	9	1	rhythmic disturb & electrolyte ch	12.599609375	1	normal activity	1.0 mg estrogen	15	3436	11	4	dead - heart or vascular	23	116
+269	78	0.5999755859375	0	10	40	NA	13.19921875	0	normal activity	1.0 mg estrogen	20	2849	11	3	dead - prostatic ca	36	113
+270	78	0.29998779296875	0	8	40	NA	14.798828125	0	normal activity	placebo	14	2953	9	3	dead - prostatic ca	15	110
+271	79	0.39996337890625	0	8	66	NA	14.798828125	0	normal activity	1.0 mg estrogen	14	2960	8	3	alive	19	96
+272	72	0.5999755859375	0	7	2	heart strain	9.3984375	0	normal activity	0.2 mg estrogen	13	2971	11	3	dead - pulmonary embolus	33	82
+273	58	0.699951171875	0	8	21	benign	10.5	1	in bed < 50% daytime	0.2 mg estrogen	14	3020	12	3	dead - prostatic ca	30	136
+274	73	0.5999755859375	0	6	35	normal	12.798828125	0	normal activity	5.0 mg estrogen	12	3023	11	3	dead - prostatic ca	46	101
+275	75	0.39996337890625	0	8	29	old MI	10.8984375	1	normal activity	placebo	19	3188	11	3	dead - prostatic ca	21	113
+276	78	29.69921875	0	9	54	normal	12.798828125	0	normal activity	5.0 mg estrogen	14	3265	11	3	dead - prostatic ca	42	107
+277	60	0.39996337890625	0	9	37	normal	13	0	normal activity	5.0 mg estrogen	15	3307	9	3	dead - heart or vascular	10	94
+278	72	0.39996337890625	0	7	10	normal	13.798828125	0	normal activity	0.2 mg estrogen	11	3353	9	3	dead - other ca	15	83
+279	59	999.875	1	8	29	normal	12.69921875	0	confined to bed	5.0 mg estrogen	13	2673	13	4	dead - prostatic ca	17	99
+280	84	37.8984375	1	7	71	NA	13	0	normal activity	1.0 mg estrogen	14	2826	11	4	alive	15	107
+281	74	8.3984375	0	8	12	normal	14.599609375	1	normal activity	placebo	15	2826	11	4	dead - prostatic ca	18	107
+282	76	15.5	0	8	13	normal	13.69921875	0	normal activity	0.2 mg estrogen	14	2848	15	4	dead - prostatic ca	36	97
+283	80	3.7998046875	0	7	27	old MI	12.8984375	1	normal activity	placebo	11	2894	11	4	dead - prostatic ca	17	135
+284	72	1.7998046875	0	8	66	rhythmic disturb & electrolyte ch	15.798828125	1	normal activity	0.2 mg estrogen	15	2868	13	4	dead - prostatic ca	0	123
+285	59	5.2998046875	0	8	28	NA	15.798828125	0	normal activity	placebo	14	2981	11	4	dead - prostatic ca	21	100
+286	74	4.19921875	0	8	31	normal	15.19921875	0	normal activity	1.0 mg estrogen	13	3015	13	4	dead - prostatic ca	25	111
+287	65	2.19970703125	0	9	12	normal	15.5	0	normal activity	1.0 mg estrogen	15	3063	11	4	dead - prostatic ca	19	102
+288	71	25.59765625	1	10	9	heart strain	13.599609375	0	normal activity	placebo	19	3063	13	4	dead - heart or vascular	24	119
+289	76	10.8984375	1	6	21	normal	10.599609375	0	normal activity	0.2 mg estrogen	14	3212	11	4	dead - prostatic ca	24	94
+290	74	3.69970703125	1	5	19	heart block or conduction def	11.19921875	0	confined to bed	5.0 mg estrogen	14	3253	11	4	dead - prostatic ca	2	74
+291	75	2.2998046875	0	7	51	old MI	13.798828125	0	normal activity	1.0 mg estrogen	18	3430	11	4	alive	22	114
+292	73	0.5999755859375	0	10	71	heart strain	14	1	in bed < 50% daytime	placebo	22	2652	11	3	dead - prostatic ca	22	134
+293	74	0.39996337890625	0	7	76	normal	11.099609375	1	normal activity	1.0 mg estrogen	17	2658	11	3	alive	12	99
+294	72	0.5999755859375	0	8	46	normal	13	1	in bed < 50% daytime	5.0 mg estrogen	16	2667	11	3	dead - prostatic ca	30	112
+295	75	1.099853515625	0	9	47	heart strain	16.19921875	1	normal activity	0.2 mg estrogen	15	2681	9	3	dead - other ca	7	107
+296	70	0.89990234375	0	7	75	normal	13.8984375	0	in bed < 50% daytime	0.2 mg estrogen	12	2681	9	3	alive	7	99
+297	61	0.7999267578125	0	7	75	heart strain	12	0	normal activity	5.0 mg estrogen	12	2681	9	3	alive	4	94
+298	71	0.29998779296875	0	7	49	heart strain	15.599609375	1	normal activity	1.0 mg estrogen	16	2681	9	3	dead - heart or vascular	9	94
+299	57	0.5	0	8	75	normal	13.8984375	0	normal activity	5.0 mg estrogen	12	2686	8	3	alive	6	84
+300	65	0.7999267578125	0	8	75	old MI	13.69921875	0	normal activity	5.0 mg estrogen	14	2691	9	3	alive	15	111
+301	78	0.199981689453125	0	11	31	normal	14.8984375	1	in bed < 50% daytime	placebo	17	2707	10	3	dead - heart or vascular	2	96
+302	60	0.5	0	9	69	normal	16.09765625	0	normal activity	placebo	13	2712	9	3	dead - prostatic ca	26	122
+303	72	0.29998779296875	0	8	74	normal	14	0	normal activity	0.2 mg estrogen	16	2730	7	3	alive	23	102
+304	81	0.5	0	8	25	old MI	12.798828125	0	in bed < 50% daytime	1.0 mg estrogen	15	2747	8	3	dead - other specific non-ca	4	102
+305	70	0.29998779296875	0	8	72	normal	14.599609375	0	normal activity	5.0 mg estrogen	15	2783	10	3	alive	5	87
+306	62	0.29998779296875	0	7	28	recent MI	13.5	1	normal activity	0.2 mg estrogen	12	2789	8	3	dead - other specific non-ca	10	88
+307	68	0.39996337890625	0	7	36	rhythmic disturb & electrolyte ch	13.298828125	0	normal activity	1.0 mg estrogen	16	2793	9	3	dead - other specific non-ca	40	98
+308	74	0.5	0	8	8	heart strain	13.599609375	0	normal activity	placebo	14	2799	8	3	dead - prostatic ca	14	97
+309	65	0.7999267578125	0	8	71	normal	16.5	1	normal activity	0.2 mg estrogen	15	2827	9	3	alive	9	117
+310	74	0.699951171875	0	9	60	normal	9.798828125	1	normal activity	placebo	18	2839	8	3	dead - cerebrovascular	2	95
+311	76	0.7999267578125	0	9	14	heart strain	12	1	normal activity	1.0 mg estrogen	15	2859	11	3	dead - pulmonary embolus	9	99
+312	70	0.199981689453125	0	7	22	rhythmic disturb & electrolyte ch	14.8984375	0	normal activity	0.2 mg estrogen	14	2889	11	3	dead - other specific non-ca	9	78
+313	73	0.5	0	6	67	rhythmic disturb & electrolyte ch	14.8984375	0	normal activity	5.0 mg estrogen	13	2894	9	3	dead - unspecified non-ca	39	105
+314	71	0.29998779296875	0	10	62	heart strain	14.5	1	normal activity	placebo	18	2905	8	3	dead - heart or vascular	9	107
+315	73	0.699951171875	0	9	68	heart block or conduction def	13.3984375	0	normal activity	5.0 mg estrogen	17	2905	9	3	alive	4	118
+316	71	0.39996337890625	0	12	68	heart strain	14.099609375	0	normal activity	placebo	16	2910	9	3	alive	7	108
+317	75	0.5	0	8	27	benign	15.3984375	0	normal activity	1.0 mg estrogen	13	2912	9	3	dead - cerebrovascular	4	145
+318	70	0.5	0	7	68	heart strain	14.19921875	0	normal activity	0.2 mg estrogen	11	2919	10	3	alive	19	98
+319	77	0.39996337890625	0	6	68	old MI	15.5	0	normal activity	1.0 mg estrogen	12	2919	9	3	alive	9	98
+320	71	0.5999755859375	0	8	67	normal	15.599609375	0	normal activity	placebo	15	2925	8	3	alive	8	87
+321	75	0.5	0	7	67	heart block or conduction def	13.5	0	normal activity	placebo	14	2925	7	3	alive	18	101
+322	74	0.29998779296875	0	7	3	heart strain	14.099609375	1	normal activity	0.2 mg estrogen	16	2925	11	3	dead - heart or vascular	10	105
+323	72	0.29998779296875	0	6	49	heart strain	15	0	normal activity	5.0 mg estrogen	11	2936	11	3	dead - heart or vascular	8	100
+324	89	0.699951171875	0	6	12	old MI	13.599609375	1	normal activity	5.0 mg estrogen	13	2937	9	3	dead - respiratory disease	8	92
+325	75	0.699951171875	0	6	30	heart strain	14.298828125	0	normal activity	0.2 mg estrogen	12	2937	12	3	dead - respiratory disease	10	96
+326	71	0.5	0	8	67	heart strain	14.69921875	0	normal activity	1.0 mg estrogen	14	2947	11	3	alive	3	101
+327	80	0.89990234375	0	10	5	heart strain	14.5	1	normal activity	1.0 mg estrogen	16	2952	9	3	dead - other ca	7	95
+328	51	0.5999755859375	0	8	65	normal	11.798828125	0	normal activity	1.0 mg estrogen	13	2964	6	3	dead - other ca	2	96
+329	71	0.39996337890625	0	4	24	normal	13.69921875	0	normal activity	placebo	9	2965	9	3	dead - other specific non-ca	10	81
+330	72	0.699951171875	0	5	66	normal	14	1	normal activity	0.2 mg estrogen	10	2971	8	3	alive	8	95
+331	70	1	0	9	36	heart block or conduction def	15.8984375	1	normal activity	5.0 mg estrogen	16	2974	9	3	dead - heart or vascular	7	91
+332	55	0.7999267578125	0	10	66	old MI	16.69921875	0	normal activity	placebo	16	2978	8	3	alive	2	103
+333	76	0.5	0	7	40	heart strain	14.599609375	1	normal activity	0.2 mg estrogen	15	2978	9	3	dead - cerebrovascular	3	104
+334	68	0.5	0	9	13	heart strain	9.5	0	normal activity	0.2 mg estrogen	17	2978	8	3	dead - other specific non-ca	11	97
+335	75	0.39996337890625	0	8	40	old MI	15.5	1	normal activity	5.0 mg estrogen	12	3001	8	3	dead - cerebrovascular	14	81
+336	52	0.5999755859375	0	10	65	heart strain	14	1	normal activity	0.2 mg estrogen	15	3007	NA	3	alive	4	101
+337	75	0.199981689453125	0	10	0	heart strain	11.798828125	0	normal activity	0.2 mg estrogen	20	3013	11	3	dead - other specific non-ca	3	91
+338	75	0.7999267578125	0	7	14	heart strain	17.5	1	normal activity	1.0 mg estrogen	11	3023	9	3	dead - heart or vascular	15	94
+339	72	0.5	0	7	45	normal	11	0	normal activity	1.0 mg estrogen	13	3023	8	3	dead - cerebrovascular	4	77
+340	74	0.5999755859375	0	8	64	normal	14.19921875	0	normal activity	1.0 mg estrogen	14	3023	6	3	alive	4	118
+341	75	0.5	0	7	13	rhythmic disturb & electrolyte ch	12.099609375	0	normal activity	1.0 mg estrogen	13	3023	8	3	dead - respiratory disease	5	91
+342	75	0.39996337890625	0	9	24	old MI	10.8984375	1	normal activity	placebo	13	3030	8	3	dead - other ca	8	79
+343	71	0.7999267578125	0	8	15	heart strain	17.296875	1	normal activity	placebo	12	3048	11	3	dead - heart or vascular	5	96
+344	76	0.5	0	9	26	heart strain	11.19921875	1	normal activity	placebo	15	3051	8	3	dead - heart or vascular	10	102
+345	70	0.29998779296875	0	7	5	old MI	11.69921875	0	normal activity	1.0 mg estrogen	14	3051	13	3	dead - prostatic ca	33	83
+346	73	0.699951171875	0	11	63	heart strain	16.69921875	1	normal activity	0.2 mg estrogen	21	3055	8	3	alive	10	129
+347	70	0.7999267578125	0	8	35	old MI	16.09765625	1	normal activity	5.0 mg estrogen	13	3111	11	3	dead - heart or vascular	7	107
+348	75	0.0999908447265625	0	8	61	normal	13.69921875	0	normal activity	placebo	13	3111	12	3	alive	10	93
+349	70	0.5999755859375	0	7	61	normal	16.19921875	0	normal activity	5.0 mg estrogen	14	3122	9	3	alive	8	127
+350	74	0.39996337890625	0	7	50	normal	12.298828125	1	normal activity	5.0 mg estrogen	13	3127	8	3	dead - unknown cause	1	97
+351	72	0.699951171875	0	10	57	normal	17.5	0	normal activity	5.0 mg estrogen	16	3134	9	3	dead - heart or vascular	8	109
+352	62	0.699951171875	0	8	21	heart strain	16.3984375	1	normal activity	5.0 mg estrogen	16	3140	9	3	dead - cerebrovascular	15	109
+353	72	0.5	0	8	26	normal	15.298828125	0	normal activity	placebo	14	3140	11	3	dead - prostatic ca	37	111
+354	77	0.5	0	6	11	rhythmic disturb & electrolyte ch	12.3984375	0	normal activity	placebo	12	3140	11	3	dead - respiratory disease	45	74
+355	52	0.5	0	7	59	heart strain	11.8984375	0	normal activity	1.0 mg estrogen	12	3188	8	3	alive	5	90
+356	57	0.5	0	6	42	normal	13.8984375	0	normal activity	placebo	12	3190	12	3	dead - prostatic ca	24	89
+357	80	0.5999755859375	0	8	27	heart strain	14.298828125	1	normal activity	1.0 mg estrogen	14	3195	8	3	dead - cerebrovascular	9	90
+358	62	0.29998779296875	0	7	50	normal	13.69921875	1	normal activity	0.2 mg estrogen	11	3253	9	3	dead - heart or vascular	6	85
+359	72	0.5	0	8	57	normal	14.599609375	0	normal activity	1.0 mg estrogen	13	3253	10	3	alive	8	101
+360	72	0.7999267578125	0	8	57	heart strain	15.19921875	0	normal activity	1.0 mg estrogen	14	3253	9	3	alive	11	116
+361	77	0.5	0	10	0	old MI	14.5	1	normal activity	placebo	14	3272	9	3	dead - heart or vascular	5	91
+362	72	0.699951171875	0	8	1	heart strain	14.798828125	1	normal activity	0.2 mg estrogen	15	3275	9	3	dead - heart or vascular	23	134
+363	73	0.699951171875	0	10	54	old MI	11.69921875	0	normal activity	1.0 mg estrogen	18	3346	9	3	alive	8	100
+364	74	1	0	8	53	old MI	13.798828125	1	normal activity	0.2 mg estrogen	16	3358	8	3	dead - prostatic ca	11	98
+365	74	0.39996337890625	0	4	23	old MI	10.8984375	1	normal activity	0.2 mg estrogen	17	3359	8	3	dead - heart or vascular	8	82
+366	72	0.7999267578125	0	8	8	normal	13.099609375	0	normal activity	5.0 mg estrogen	15	3370	9	3	dead - heart or vascular	4	110
+367	76	0.89990234375	0	8	51	old MI	15.8984375	1	normal activity	5.0 mg estrogen	14	3374	9	3	dead - pulmonary embolus	25	85
+368	78	0.5	0	7	27	heart strain	12.298828125	1	normal activity	placebo	15	3380	9	3	dead - other specific non-ca	7	111
+369	83	0.5999755859375	0	8	52	old MI	10	1	normal activity	5.0 mg estrogen	16	3384	7	3	alive	1	88
+370	80	0.5	0	7	52	heart strain	13	1	normal activity	0.2 mg estrogen	13	3402	9	3	alive	6	99
+371	76	0.39996337890625	0	8	52	heart block or conduction def	13.298828125	0	normal activity	5.0 mg estrogen	15	3407	13	3	alive	52	90
+372	79	0.699951171875	0	8	45	old MI	15.3984375	0	normal activity	placebo	13	3407	11	3	dead - cerebrovascular	7	126
+373	76	0.39996337890625	0	8	48	heart strain	16.8984375	1	normal activity	0.2 mg estrogen	13	3423	9	3	dead - other specific non-ca	2	116
+374	71	0.29998779296875	0	8	18	heart strain	13	1	normal activity	placebo	14	3427	11	3	dead - prostatic ca	7	110
+375	61	25.59765625	1	8	2	heart strain	11.5	0	normal activity	placebo	12	2652	12	4	dead - other specific non-ca	37	95
+376	77	0.89990234375	1	7	2	heart strain	11.8984375	1	in bed < 50% daytime	5.0 mg estrogen	14	2670	10	4	dead - heart or vascular	36	96
+377	76	9.298828125	1	6	35	heart strain	10.298828125	0	normal activity	1.0 mg estrogen	10	2686	13	4	dead - cerebrovascular	10	82
+378	71	10	0	8	75	normal	14.099609375	0	normal activity	1.0 mg estrogen	15	2695	13	4	alive	26	106
+379	77	2.19970703125	0	6	75	benign	12.5	0	normal activity	placebo	11	2707	11	4	alive	5	87
+380	78	25.296875	1	8	9	rhythmic disturb & electrolyte ch	14.298828125	1	normal activity	placebo	18	2729	13	4	dead - pulmonary embolus	39	89
+381	58	10.798828125	1	8	39	heart strain	13.69921875	0	normal activity	1.0 mg estrogen	12	2772	11	4	dead - prostatic ca	5	92
+382	74	2.2998046875	0	8	0	heart strain	14.19921875	1	normal activity	5.0 mg estrogen	11	2772	13	4	dead - heart or vascular	41	113
+383	75	0.5	1	9	26	rhythmic disturb & electrolyte ch	16	1	normal activity	placebo	18	2835	11	4	dead - cerebrovascular	26	116
+384	62	10.099609375	0	11	17	old MI	14.599609375	0	normal activity	placebo	18	2854	13	4	dead - pulmonary embolus	16	102
+385	80	1.099853515625	0	9	43	heart strain	13.099609375	0	normal activity	0.2 mg estrogen	15	2887	13	4	dead - respiratory disease	0	92
+386	61	4	0	8	53	normal	10.298828125	0	in bed < 50% daytime	5.0 mg estrogen	13	2894	11	4	dead - prostatic ca	14	79
+387	76	3.7998046875	0	9	47	old MI	13.3984375	1	normal activity	1.0 mg estrogen	17	2919	11	4	dead - cerebrovascular	19	98
+388	79	31.3984375	1	8	11	heart strain	9.099609375	0	in bed < 50% daytime	0.2 mg estrogen	16	3009	13	4	dead - prostatic ca	38	99
+389	66	58.09375	0	8	65	normal	14.8984375	0	normal activity	0.2 mg estrogen	12	3009	12	4	alive	18	116
+390	61	38.5	1	6	16	rhythmic disturb & electrolyte ch	13.599609375	1	normal activity	1.0 mg estrogen	12	3010	15	4	dead - prostatic ca	4	83
+391	79	6.099609375	0	9	21	heart strain	16.09765625	0	normal activity	5.0 mg estrogen	17	3010	13	4	dead - unspecified non-ca	4	99
+392	70	1.099853515625	0	7	64	normal	14.19921875	1	normal activity	0.2 mg estrogen	13	3035	11	4	alive	11	99
+393	73	1.099853515625	0	7	7	heart block or conduction def	15.599609375	1	normal activity	0.2 mg estrogen	15	3111	9	4	dead - prostatic ca	10	105
+394	72	1.5	0	8	38	heart strain	14.798828125	0	normal activity	5.0 mg estrogen	11	3115	15	4	dead - prostatic ca	11	90
+395	81	8.69921875	1	6	55	normal	11.19921875	1	normal activity	1.0 mg estrogen	13	3097	12	4	dead - prostatic ca	38	98
+396	77	0.5999755859375	0	9	5	heart strain	11.5	0	normal activity	placebo	15	3097	10	4	dead - respiratory disease	6	92
+397	76	1.7998046875	0	6	28	heart strain	14.798828125	0	normal activity	0.2 mg estrogen	11	3143	13	4	dead - prostatic ca	29	76
+398	75	0.39996337890625	1	6	38	rhythmic disturb & electrolyte ch	13.298828125	1	normal activity	placebo	10	3150	13	4	dead - prostatic ca	9	113
+399	72	7.19921875	1	7	20	normal	12.19921875	0	normal activity	0.2 mg estrogen	14	3150	11	4	dead - prostatic ca	24	79
+400	74	1.099853515625	0	9	24	normal	12.599609375	0	normal activity	5.0 mg estrogen	16	3155	13	4	dead - prostatic ca	12	108
+401	70	1.7998046875	0	8	27	rhythmic disturb & electrolyte ch	16.3984375	0	normal activity	5.0 mg estrogen	16	3157	13	4	dead - prostatic ca	9	85
+402	61	152.1875	1	8	31	benign	10.69921875	1	normal activity	1.0 mg estrogen	14	3195	13	4	dead - prostatic ca	25	91
+403	77	47	0	8	9	rhythmic disturb & electrolyte ch	15.19921875	1	normal activity	placebo	14	3196	13	4	dead - prostatic ca	7	116
+404	60	17	1	8	9	NA	14.099609375	0	normal activity	1.0 mg estrogen	11	3204	13	4	dead - prostatic ca	46	73
+405	72	1.099853515625	0	7	11	rhythmic disturb & electrolyte ch	14	0	in bed < 50% daytime	1.0 mg estrogen	12	3238	15	4	dead - unspecified non-ca	50	86
+406	64	2.39990234375	1	7	56	normal	12	0	normal activity	5.0 mg estrogen	17	3253	13	4	dead - prostatic ca	43	104
+407	78	3.19970703125	0	9	36	heart strain	13.798828125	0	normal activity	placebo	15	3261	10	4	dead - prostatic ca	55	95
+408	74	1.099853515625	0	8	56	old MI	10.599609375	1	normal activity	0.2 mg estrogen	14	3272	15	4	alive	4	108
+409	73	4.19921875	0	7	15	heart strain	11.19921875	1	normal activity	5.0 mg estrogen	12	3272	11	4	dead - other ca	0	83
+410	71	0.7999267578125	1	7	51	heart block or conduction def	16	0	normal activity	5.0 mg estrogen	15	3429	11	4	alive	26	104
+411	75	0.699951171875	0	9	33	heart strain	13.798828125	1	normal activity	placebo	17	2824	9	3	dead - cerebrovascular	9	113
+412	72	0.7999267578125	0	8	70	normal	13.798828125	0	normal activity	1.0 mg estrogen	13	2838	9	3	alive	3	105
+413	68	0.5999755859375	0	10	32	heart strain	13.798828125	1	normal activity	5.0 mg estrogen	19	2895	9	3	dead - heart or vascular	3	89
+414	74	0.39996337890625	0	8	5	normal	15.099609375	0	normal activity	1.0 mg estrogen	15	2965	9	3	dead - other ca	3	91
+415	72	0.199981689453125	0	8	23	heart strain	16.59765625	1	normal activity	5.0 mg estrogen	16	3000	9	3	dead - heart or vascular	4	93
+416	79	0.699951171875	0	9	63	old MI	16.8984375	0	normal activity	placebo	15	3056	9	3	alive	2	110
+417	62	0.39996337890625	0	8	30	heart strain	16	1	normal activity	0.2 mg estrogen	12	3078	11	3	dead - prostatic ca	32	104
+418	69	0.89990234375	0	7	12	old MI	15.5	1	normal activity	0.2 mg estrogen	17	3083	NA	3	dead - prostatic ca	22	92
+419	62	0.5	0	11	53	heart strain	16.3984375	0	normal activity	placebo	19	3113	9	3	dead - heart or vascular	14	119
+420	72	0.5999755859375	0	8	12	heart strain	16.3984375	0	normal activity	placebo	15	3176	9	3	dead - heart or vascular	15	128
+421	72	0.5999755859375	0	8	58	heart strain	13.298828125	0	normal activity	placebo	13	3203	9	3	alive	12	109
+422	51	0.7999267578125	0	9	54	normal	15.798828125	0	normal activity	1.0 mg estrogen	13	3322	8	3	alive	7	112
+423	72	0.5999755859375	0	10	36	normal	16.3984375	0	normal activity	placebo	18	3337	9	3	dead - prostatic ca	4	104
+424	81	0.7999267578125	0	8	20	normal	16.8984375	0	normal activity	0.2 mg estrogen	15	3364	13	3	dead - respiratory disease	16	104
+425	71	11.798828125	0	7	74	old MI	13.099609375	0	normal activity	5.0 mg estrogen	11	2714	11	4	alive	29	81
+426	77	1.2998046875	0	7	34	rhythmic disturb & electrolyte ch	14.298828125	0	normal activity	placebo	14	2726	11	4	dead - prostatic ca	35	103
+427	73	0.5	0	8	70	normal	14.69921875	1	normal activity	0.2 mg estrogen	14	2832	11	4	alive	26	114
+428	56	50.59375	1	8	25	heart strain	13.798828125	0	normal activity	placebo	17	2973	11	4	dead - prostatic ca	30	100
+429	77	1.599853515625	0	9	65	heart strain	14.69921875	0	normal activity	0.2 mg estrogen	14	2987	13	4	alive	1	107
+430	78	22.59765625	0	9	4	heart block or conduction def	12.69921875	0	normal activity	placebo	16	3022	11	4	dead - prostatic ca	27	104
+431	76	36	1	7	10	old MI	13.798828125	0	normal activity	1.0 mg estrogen	12	3119	11	4	dead - prostatic ca	34	96
+432	68	1.199951171875	0	9	58	rhythmic disturb & electrolyte ch	13.3984375	0	normal activity	1.0 mg estrogen	18	3205	11	4	alive	9	79
+433	73	5.099609375	0	9	37	benign	9.3984375	0	normal activity	placebo	14	3223	13	4	dead - prostatic ca	21	90
+434	56	3.19970703125	0	9	56	normal	14.69921875	0	normal activity	5.0 mg estrogen	16	3279	10	4	alive	10	135
+435	74	21.296875	1	10	6	heart strain	13.099609375	1	normal activity	1.0 mg estrogen	20	3392	11	4	dead - prostatic ca	9	112
+436	76	0.39996337890625	0	8	54	normal	12.599609375	1	normal activity	5.0 mg estrogen	15	2720	NA	3	dead - prostatic ca	19	84
+437	69	0.0999908447265625	0	8	0	normal	11.298828125	1	normal activity	5.0 mg estrogen	13	2813	9	3	dead - heart or vascular	1	113
+438	73	0.5	0	6	70	benign	15.599609375	1	normal activity	1.0 mg estrogen	10	2853	9	3	alive	1	84
+439	71	0.199981689453125	0	8	70	normal	13.599609375	0	normal activity	1.0 mg estrogen	12	2859	10	3	alive	2	105
+440	75	0.199981689453125	0	8	28	old MI	10.798828125	1	normal activity	0.2 mg estrogen	14	2875	9	3	dead - heart or vascular	2	97
+441	69	0.29998779296875	0	7	40	old MI	5.8994140625	0	normal activity	1.0 mg estrogen	15	2917	9	3	dead - heart or vascular	2	85
+442	73	0.39996337890625	0	7	67	normal	13.798828125	0	normal activity	1.0 mg estrogen	11	2943	8	3	alive	7	95
+443	59	0.39996337890625	0	10	36	normal	16	0	normal activity	0.2 mg estrogen	15	3076	9	3	dead - respiratory disease	2	81
+444	68	0.89990234375	0	7	23	normal	12.5	0	normal activity	placebo	13	3076	8	3	dead - respiratory disease	2	93
+445	78	0.0999908447265625	0	7	23	heart block or conduction def	13	1	normal activity	placebo	14	3076	8	3	dead - heart or vascular	2	115
+446	63	0.29998779296875	0	9	62	normal	13.19921875	0	normal activity	placebo	12	3076	8	3	alive	3	95
+447	74	0.39996337890625	0	9	62	heart block or conduction def	14.099609375	0	normal activity	0.2 mg estrogen	12	3087	9	3	alive	2	85
+448	72	0.39996337890625	0	7	62	heart strain	14.298828125	0	normal activity	placebo	16	3100	5	3	alive	0	103
+449	78	0.5999755859375	0	7	2	old MI	11.19921875	0	normal activity	5.0 mg estrogen	11	3140	6	3	dead - heart or vascular	0	103
+450	70	0.5999755859375	0	9	34	benign	14.8984375	0	normal activity	0.2 mg estrogen	14	3170	12	3	dead - prostatic ca	2	85
+451	72	0.7999267578125	0	10	4	rhythmic disturb & electrolyte ch	16.3984375	0	normal activity	1.0 mg estrogen	14	3205	9	3	dead - heart or vascular	1	101
+452	76	0.5	0	7	12	old MI	12.5	1	normal activity	0.2 mg estrogen	13	3213	8	3	dead - prostatic ca	4	103
+453	66	0.5	0	9	56	old MI	15.5	0	normal activity	placebo	12	3260	9	3	alive	4	106
+454	88	0.699951171875	0	6	1	old MI	14.099609375	1	normal activity	5.0 mg estrogen	13	3275	9	3	dead - heart or vascular	17	99
+455	78	0.29998779296875	0	6	7	old MI	10.8984375	1	normal activity	5.0 mg estrogen	11	3413	9	3	dead - other specific non-ca	5	88
+456	79	3	0	7	4	normal	12.19921875	0	normal activity	placebo	12	2740	12	4	dead - prostatic ca	5	105
+457	77	2.19970703125	0	8	70	rhythmic disturb & electrolyte ch	16	1	normal activity	placebo	15	2841	9	4	alive	1	106
+458	71	1.5	0	7	65	normal	12.69921875	0	normal activity	5.0 mg estrogen	12	3006	10	4	alive	2	101
+459	74	11.298828125	0	8	7	normal	12.599609375	1	normal activity	0.2 mg estrogen	15	3100	13	4	dead - prostatic ca	8	91
+460	75	1.699951171875	0	10	30	rhythmic disturb & electrolyte ch	13.19921875	0	normal activity	1.0 mg estrogen	15	3132	13	4	dead - heart or vascular	3	124
+461	77	8.19921875	0	6	40	heart block or conduction def	14.69921875	1	normal activity	0.2 mg estrogen	10	3176	12	4	dead - heart or vascular	2	90
+462	75	1.099853515625	0	9	13	normal	15.798828125	1	normal activity	placebo	15	3275	11	4	dead - heart or vascular	4	74
+463	64	6.2998046875	1	10	22	rhythmic disturb & electrolyte ch	9.298828125	0	normal activity	0.2 mg estrogen	16	3332	11	4	dead - prostatic ca	6	110
+464	79	2	1	10	0	heart block or conduction def	10.298828125	0	normal activity	1.0 mg estrogen	17	3332	13	4	dead - heart or vascular	19	89
+465	60	1.199951171875	0	8	18	old MI	14.099609375	1	in bed > 50% daytime	placebo	16	3367	13	4	dead - prostatic ca	9	134
+466	70	0.199981689453125	0	9	64	heart strain	14.099609375	0	normal activity	0.2 mg estrogen	14	2806	9	3	dead - unknown cause	8	107
+467	73	0.699951171875	0	8	13	heart strain	17	1	normal activity	5.0 mg estrogen	15	2856	9	3	dead - heart or vascular	4	111
+468	61	0.39996337890625	0	9	26	rhythmic disturb & electrolyte ch	14.298828125	0	normal activity	placebo	14	2898	11	3	dead - prostatic ca	3	109
+469	79	0.5999755859375	0	8	1	heart strain	13.599609375	1	in bed < 50% daytime	5.0 mg estrogen	16	2943	9	3	dead - pulmonary embolus	3	97
+470	78	0.39996337890625	0	7	16	NA	11.3984375	0	normal activity	placebo	12	2985	9	3	dead - heart or vascular	4	88
+472	72	0.5999755859375	0	8	33	old MI	16.5	1	normal activity	0.2 mg estrogen	13	3267	11	3	dead - heart or vascular	17	106
+474	76	1.099853515625	0	8	16	rhythmic disturb & electrolyte ch	12	0	normal activity	placebo	13	3336	NA	3	dead - heart or vascular	5	90
+476	51	0.5999755859375	0	9	22	normal	14.599609375	0	normal activity	0.2 mg estrogen	16	2698	13	4	dead - prostatic ca	5	100
+477	59	3	0	9	30	normal	15.099609375	1	normal activity	0.2 mg estrogen	15	2713	13	4	dead - prostatic ca	32	87
+478	73	3.19970703125	0	9	53	rhythmic disturb & electrolyte ch	14.599609375	1	normal activity	5.0 mg estrogen	16	2761	10	4	dead - cerebrovascular	4	91
+479	74	1.2998046875	0	7	53	rhythmic disturb & electrolyte ch	11.798828125	1	normal activity	0.2 mg estrogen	13	2806	13	4	dead - prostatic ca	5	90
+480	77	43	1	9	7	old MI	11.798828125	1	in bed > 50% daytime	placebo	14	2806	11	4	dead - prostatic ca	43	93
+481	74	24.3984375	0	7	61	rhythmic disturb & electrolyte ch	13.5	0	normal activity	0.2 mg estrogen	15	2841	11	4	dead - prostatic ca	5	95
+482	60	1.2998046875	0	7	40	normal	14	0	normal activity	placebo	11	2852	11	4	dead - prostatic ca	9	125
+483	72	1.39990234375	1	8	9	rhythmic disturb & electrolyte ch	12.8984375	1	normal activity	placebo	14	2943	13	4	dead - heart or vascular	18	83
+484	79	1.39990234375	0	7	14	old MI	8.599609375	1	normal activity	1.0 mg estrogen	12	3002	NA	4	dead - prostatic ca	20	88
+485	50	10.298828125	0	8	59	normal	15.298828125	0	normal activity	1.0 mg estrogen	12	3169	13	4	alive	NA	117
+486	73	0.699951171875	1	8	59	normal	13.3984375	0	normal activity	1.0 mg estrogen	16	3192	11	4	alive	3	71
+487	72	2.099609375	0	6	7	normal	13.69921875	0	normal activity	5.0 mg estrogen	14	3220	11	4	dead - heart or vascular	4	110
+489	80	160	1	7	12	old MI	8.5	1	in bed > 50% daytime	5.0 mg estrogen	14	3435	5	4	dead - prostatic ca	6	105
+490	69	1.39990234375	1	8	46	old MI	13.69921875	1	in bed < 50% daytime	5.0 mg estrogen	11	3465	13	4	dead - cerebrovascular	5	71
+491	75	4.5	0	8	50	normal	16	0	normal activity	1.0 mg estrogen	14	3465	11	4	alive	1	116
+492	71	1.699951171875	0	8	0	heart block or conduction def	14.099609375	1	in bed < 50% daytime	5.0 mg estrogen	14	3465	11	4	dead - pulmonary embolus	1	99
+493	73	0.5	0	8	52	heart strain	13.599609375	1	normal activity	5.0 mg estrogen	14	3387	8	3	alive	8	114
+494	76	0.199981689453125	0	9	19	heart block or conduction def	16	1	normal activity	1.0 mg estrogen	15	3407	9	3	dead - other ca	7	99
+495	73	0.29998779296875	0	7	52	normal	11.69921875	0	normal activity	placebo	15	3407	9	3	alive	5	114
+496	76	0.5	0	18	51	heart strain	11.599609375	1	normal activity	1.0 mg estrogen	30	3440	9	3	alive	6	114
+497	68	0.699951171875	0	8	51	normal	13.3984375	0	normal activity	5.0 mg estrogen	14	3440	9	3	alive	6	98
+498	64	0.5999755859375	0	7	14	normal	14	0	in bed < 50% daytime	0.2 mg estrogen	14	3395	11	4	dead - prostatic ca	23	100
+499	75	29.59765625	0	8	27	normal	14.19921875	0	normal activity	0.2 mg estrogen	16	3430	11	4	dead - prostatic ca	5	102
+500	60	0.5	1	10	51	heart strain	14.5	1	normal activity	1.0 mg estrogen	14	3429	8	4	alive	6	123
+501	73	2.89990234375	0	10	5	normal	16.796875	1	normal activity	5.0 mg estrogen	19	3433	11	4	dead - heart or vascular	2	100
+502	78	0.5999755859375	0	6	0	normal	15.798828125	0	normal activity	1.0 mg estrogen	11	3297	13	3	dead - other ca	9	108
+503	78	0.5	0	10	41	heart strain	15.798828125	1	normal activity	0.2 mg estrogen	16	3349	9	3	dead - unspecified non-ca	5	127
+504	77	0.7999267578125	0	10	53	heart block or conduction def	16	0	normal activity	1.0 mg estrogen	17	3357	9	3	alive	11	93
+505	82	8.3984375	0	6	19	heart strain	12.3984375	1	normal activity	5.0 mg estrogen	12	3311	13	4	dead - prostatic ca	32	96
+506	74	22.19921875	1	6	4	normal	21.19921875	0	in bed < 50% daytime	1.0 mg estrogen	15	3428	NA	4	dead - prostatic ca	33	97
