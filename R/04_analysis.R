@@ -12,14 +12,14 @@ library(caretEnsemble)
 
 # Load data
 # ------------------------------------------------------------------------------
-prostate_data_clean_aug <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv")
+prostate_data_clean <- read_tsv(file = "Data/02_prostate_data_clean.tsv")
 
 #Ensure that factorial variables are actually factors
 factor_columns <- c("stage", "activity", "history_of_CD", "ekg", "bone_metastases",
                     "estrogen_mg", "status_", "cause_of_death", "dead_from_prostate_cancer",
                     "Age_group")
 
-prostate_data_clean_aug[factor_columns] <- lapply(prostate_data_clean_aug[factor_columns], factor)
+prostate_data_clean[factor_columns] <- lapply(prostate_data_clean[factor_columns], factor)
 
 # Wrangle and analyse data
 # ------------------------------------------------------------------------------
@@ -29,11 +29,11 @@ prostate_data_clean_aug[factor_columns] <- lapply(prostate_data_clean_aug[factor
 
 # Diastolic vs systolic bp grouped by cause_of_death
 
-bp_model <- function(prostate_data_clean_aug) {
-  lm(systolic_bp ~ diastolic_bp, data = prostate_data_clean_aug)
+bp_model <- function(prostate_data_clean) {
+  lm(systolic_bp ~ diastolic_bp, data = prostate_data_clean)
 }
 
-cause_of_death_nest <- prostate_data_clean_aug %>% 
+cause_of_death_nest <- prostate_data_clean %>% 
   na.omit() %>% 
   group_by(cause_of_death) %>% 
   nest() %>% 
@@ -48,7 +48,7 @@ bp_cause_glance
 
 #plotting the variables of interest
 #observation- positive correlation with sys and dia for all the cancer causes
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(x = diastolic_bp, y = systolic_bp)) +
   geom_jitter() + 
   geom_smooth(method = lm, se = T ) + 
@@ -59,7 +59,7 @@ prostate_data_clean_aug %>%
 
 ###1. PA phosphatase + cause of death
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, PA_phosphatase, .fun = mean, .desc = T), y = PA_phosphatase, color = bone_metastases)) +
   geom_boxplot() + 
@@ -74,33 +74,33 @@ prostate_data_clean_aug %>%
 
 ### Bone metastases + status
 # Calculate "dead from prostate cancer" percentage
-metastases_cancer_dead_percentage <- (prostate_data_clean_aug %>% 
+metastases_cancer_dead_percentage <- (prostate_data_clean %>% 
                                         filter(status_ == "dead", bone_metastases == "1", dead_from_prostate_cancer == 1) %>% 
                                         nrow())/
-  ((prostate_data_clean_aug %>% 
+  ((prostate_data_clean %>% 
       filter(status_ == "dead", bone_metastases == "1", dead_from_prostate_cancer == 1) %>% 
       nrow())+
-     (prostate_data_clean_aug %>% 
+     (prostate_data_clean %>% 
         filter(status_ == "dead", bone_metastases == "1", dead_from_prostate_cancer == 0) %>% 
         nrow())) * 100
 
 metastases_cancer_dead_percentage <- str_c(round(metastases_cancer_dead_percentage, 2), "%")
 
 
-nonmetastases_cancer_dead_percentage <- (prostate_data_clean_aug %>% 
+nonmetastases_cancer_dead_percentage <- (prostate_data_clean %>% 
                                            filter(status_ == "dead", bone_metastases == "0", dead_from_prostate_cancer == 1) %>% 
                                            nrow())/
-  ((prostate_data_clean_aug %>% 
+  ((prostate_data_clean %>% 
       filter(status_ == "dead", bone_metastases == "0", dead_from_prostate_cancer == 1) %>% 
       nrow())+
-     (prostate_data_clean_aug %>% 
+     (prostate_data_clean %>% 
         filter(status_ == "dead", bone_metastases == "0", dead_from_prostate_cancer == 0) %>% 
         nrow())) * 100
 
 nonmetastases_cancer_dead_percentage <- str_c(round(nonmetastases_cancer_dead_percentage, 2), "%")
 
 #plot
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(x = bone_metastases, y = status_, color = dead_from_prostate_cancer)) +
   geom_jitter() + 
   annotate("text", x = 1:2, y = 2.5, label = c(nonmetastases_cancer_dead_percentage, metastases_cancer_dead_percentage)) +
@@ -111,7 +111,7 @@ prostate_data_clean_aug %>%
 ### Bone metastases + activity
 
 # Transform count by group
-activity_percentage <- prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   group_by(activity, bone_metastases)%>% 
   summarise(counts = n()) %>% 
   pivot_wider(
@@ -139,14 +139,14 @@ activity_percentage %>%
 
 
 ### Serum hemoglbin + bone metastases
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(y = serum_hemoglobin, x = bone_metastases, color = Age_group)) +
   geom_boxplot()+
   theme(legend.position = "bottom")
 
 ### Tumor size + bone metastases
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(y = tumor_size, x = bone_metastases, color = dead_from_prostate_cancer)) +
   geom_boxplot()+
   theme(legend.position = "bottom")
@@ -158,7 +158,7 @@ prostate_data_clean_aug %>%
 
 # Transform count by grouped by bone_metastases
 # Pivot_wide to have percentage for each bone_metastases group and not in total
-estrogen_metastases_percentage <- prostate_data_clean_aug %>% 
+estrogen_metastases_percentage <- prostate_data_clean %>% 
   group_by(estrogen_mg, bone_metastases, status_)%>% 
   summarise(counts = n()) %>% 
   pivot_wider(
@@ -188,7 +188,7 @@ estrogen_metastases_percentage %>%
 
 # Transform count grouped by Age_group (row 42 is removed due to age = NA)
 # Pivot_wide to have percentage for each Age_group group and not in total
-estrogen_age_percentage <- prostate_data_clean_aug[-42,] %>% 
+estrogen_age_percentage <- prostate_data_clean[-42,] %>% 
   group_by(estrogen_mg, status_, Age_group)%>% 
   summarise(counts = n()) %>% 
   pivot_wider(
@@ -218,7 +218,7 @@ estrogen_age_percentage %>%
 
 
 ### PA_phosphatase vs stage_grade_index
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(y = PA_phosphatase, x = stage_grade_index, color = dead_from_prostate_cancer)) +
   geom_jitter()
 
@@ -227,18 +227,16 @@ prostate_data_clean_aug %>%
 
 ##### Predicting if a patient died from prostate cancer or not with logistic regression #####
 
-# Remove all the rows where the patients are still alive and 
-# rows containing NA's as the model cant deal with these
-# and irrelevant rows
+# Remove all the rows where the patients are still alive and rows containing NA's as the model cant deal with these
 
-prostate_model_data <- prostate_data_clean_aug %>% 
+prostate_model_data <- prostate_data_clean %>% 
   filter(status_ == "dead") %>% 
   select(-c(patno, sdate, status_, cause_of_death, Age_group)) %>% 
   na.omit()
 
 # Make model and test which parameters are significant
 prostate_death_model <- glm(dead_from_prostate_cancer~.,
-                            family = binomial(link = "logit"),
+                            family = binomial(link='logit'),
                             data = prostate_model_data)
 
 # extract variables from the model with p < 0.05
@@ -246,9 +244,8 @@ summary(prostate_death_model)$coef[summary(prostate_death_model)$coef[,4] <= .05
 
 # Put the significant varaibles into new revised model 
 # (the model with all variables will cause an error in the 5-fold cross validation)
-prostate_death_model_revised <- glm(dead_from_prostate_cancer ~ age + PA_phosphatase +
-                                      diastolic_bp + months_of_follow_up + stage_grade_index +
-                                      tumor_size,
+prostate_death_model_revised <- glm(dead_from_prostate_cancer ~ months_of_follow_up + age + 
+                                      diastolic_bp + tumor_size + stage_grade_index + PA_phosphatase,
                                     family = binomial(link = "logit"),
                                     data = prostate_model_data)
 
@@ -293,9 +290,6 @@ prostate_death_model_anova %>%
        title = "Prediction of cause of death (prostate cancer vs other) with logistic regression") +
   annotate("text", x = 4.5, y = 32.5, label = prostate_death_model_5fold_accuracy)
 
-
-
-
 ###=======================================================================================
 ###=======================================================================================
 ###=======================================================================================
@@ -304,14 +298,14 @@ prostate_death_model_anova %>%
 
 #build model with tumor size and age
 
-tumormodel<-function(prostate_data_clean_aug){
+tumormodel<-function(prostate_data_clean){
   
-  lm(age~tumor_size, data=prostate_data_clean_aug)
+  lm(age~tumor_size, data=prostate_data_clean)
   
 }
 #nesting and adding model to analyse the cause of death on the tumor size
 
-cause_of_death_nest_tm<-prostate_data_clean_aug %>%
+cause_of_death_nest_tm<-prostate_data_clean %>%
   na.omit() %>%
   group_by(cause_of_death) %>%
   nest() %>%
@@ -326,7 +320,7 @@ cause_glance_tm<-cause_of_death_nest_tm %>%
          cause_glance_tm
 #plotting grouped by the cause of death
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(mapping=aes(x=tumor_size, y= age))+
   geom_jitter()+
   geom_smooth(method=lm, na.rm = TRUE, se=TRUE)+
@@ -334,7 +328,7 @@ prostate_data_clean_aug %>%
 
 #observation: for the prostate cancer, the tumor size increases around the age of 70s
 ##
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(x=))
 
@@ -342,13 +336,13 @@ prostate_data_clean_aug %>%
 ###=======================================================================================
 ###=======================================================================================
 #building model with PA_phosphatase and systolic_bp
-ps_model<-function(prostate_data_clean_aug){
+ps_model<-function(prostate_data_clean){
   
-  lm(PA_phosphatase~systolic_bp, data = prostate_data_clean_aug)
+  lm(PA_phosphatase~systolic_bp, data = prostate_data_clean)
 }
 
 #nesting and adding model
-nest_ps<-prostate_data_clean_aug %>% 
+nest_ps<-prostate_data_clean %>% 
   na.omit() %>% 
   group_by(cause_of_death) %>% 
   nest() %>% 
@@ -366,14 +360,14 @@ glance_ps %>% unnest(glance)
 
 
 #plotting
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(mapping = aes(PA_phosphatase, systolic_bp))+
   geom_jitter() +
   geom_smooth(method = lm)+
   facet_wrap(~cause_of_death)
 
 #Bone metastasis+weight (cate+conti)
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(mapping = aes(bone_metastases, weight_index, color=dead_from_prostate_cancer))+
   geom_jitter()+
@@ -382,7 +376,7 @@ prostate_data_clean_aug %>%
   theme(legend.position = "bottom")+
   annotate("text", label=c())
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(mapping = aes(bone_metastases, weight_index, color=serum_hemoglobin))+
   geom_jitter()+
@@ -390,7 +384,7 @@ prostate_data_clean_aug %>%
   facet_wrap(cause_of_death~dead_from_prostate_cancer)+
   theme(legend.position = "bottom")
   
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(mapping = aes(bone_metastases, weight_index, color=PA_phosphatase))+
   geom_jitter()+
@@ -401,7 +395,7 @@ prostate_data_clean_aug %>%
 
 #BONE METASDTASIS+STATUS (conti+disc)
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(mmapping = aes(status_, bone_metastases))+
   geom_boxplot()
@@ -409,7 +403,7 @@ prostate_data_clean_aug %>%
 #BONE METASDTASIS+ACTIVITY
 
 #transform count by group
-activity_bone<-prostate_data_clean_aug %>% 
+activity_bone<-prostate_data_clean %>% 
   group_by(activity, bone_metastases) %>% 
   summarise(count=n()) %>% 
   pivot_wider(
@@ -433,14 +427,14 @@ activity_bone %>%
 
 #BONE METASDTASIS+SERUM_HEMOGLOBIN
 #dead from  prostate cancer
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(bone_metastases, serum_hemoglobin,color=dead_from_prostate_cancer))+
   geom_boxplot()+
   theme(legend.position = "bottom")
 
 #stage
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(bone_metastases, serum_hemoglobin,color=stage))+
   geom_boxplot()+
@@ -450,7 +444,7 @@ prostate_data_clean_aug %>%
 #For people with bone metastasis, the serum hemoglobin level increased with cancer stage
 
 #ekg
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(bone_metastases, serum_hemoglobin,color=ekg))+
   geom_boxplot()+
@@ -459,14 +453,14 @@ prostate_data_clean_aug %>%
 #people without bone metastasis showwed almost similar ekg, but people with bone metastasis werent. 
 
 #age group
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(bone_metastases, serum_hemoglobin,color=Age_group))+
   geom_boxplot()+
   theme(legend.position = "bottom")
 
 #estrogen
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(bone_metastases, serum_hemoglobin,color=estrogen_mg))+
   geom_boxplot()+
@@ -478,7 +472,7 @@ prostate_data_clean_aug %>%
 
 #BONE METASDTASIS+TUMOR SIZE
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(bone_metastases, serum_hemoglobin,color=tumor_size))+
   geom_jitter()+
@@ -486,13 +480,13 @@ prostate_data_clean_aug %>%
 
 #BONE METASDTASIS+ESTROGEN
 #mathias
-prostate_data_clean_aug  %>% 
+prostate_data_clean  %>% 
   ggplot(aes(bone_metastases, estrogen_mg, color= status_))+
   geom_jitter()
 
 #TRANSOFORM COUNT BY GROUPED BY BONE METASTASIS
 
-estrogen_metastases_percentage<-prostate_data_clean_aug %>% 
+estrogen_metastases_percentage<-prostate_data_clean %>% 
   group_by(bone_metastases, estrogen_mg, status_) %>% 
   summarise(count=n()) %>% 
   pivot_wider(names_from = bone_metastases,
@@ -517,10 +511,10 @@ estrogen_metastases_percentage %>%
   
 #BONE METASDTASIS+EKG (both are categorical)
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(ae)
 #BONE METASDTASIS+DIASTOLIC BP\
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(bone_metastases, systolic_bp), color=status_)+
   geom_jitter()+
   theme(legend.position = "bottom")
@@ -528,7 +522,7 @@ prostate_data_clean_aug %>%
 
 
 #WEIGHT+STATUS
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(weight_index, status_), color=dead_from_prostate_cancer)+
   geom_jitter()
@@ -537,18 +531,18 @@ prostate_data_clean_aug %>%
 
 #WEIGHT+ACTIVITY
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(activity, weight_index), color=status_)+
   geom_jitter()
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(activity, weight_index), color=status_)+
   geom_boxplot()+
   theme(axis.text.x = element_text(angle=50, hjust=1))
 
 
 #WEIGHT+SERUM_HEMO
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(serum_hemoglobin,weight_index), color=estrogen_mg)+
   geom_jitter()+
@@ -556,14 +550,14 @@ prostate_data_clean_aug %>%
 
 #WEIGHT+ESTROGEN
 #ekg
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(estrogen_mg,weight_index,color=ekg))+
   geom_boxplot()+
   geom_smooth()+
   theme(legend.position = "bottom")
 
 #activity
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   ggplot(aes(estrogen_mg,weight_index,color=activity))+
   geom_boxplot()+
   geom_smooth()+
@@ -613,7 +607,7 @@ prostate_data_clean_aug %>%
 
 #stage
 #serum_hemo
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, serum_hemoglobin, .fun = mean, .desc = T), y = serum_hemoglobin, color = stage)) +
   geom_boxplot() + 
@@ -628,7 +622,7 @@ prostate_data_clean_aug %>%
 #lower serum hemoglobin---> cancerous!
 
 #tumor size
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, tumor_size, .fun = mean, .desc = T), y = tumor_size, color = stage)) +
   geom_boxplot() + 
@@ -642,7 +636,7 @@ prostate_data_clean_aug %>%
 
 
 #weight_index
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, weight_index, .fun = mean, .desc = T), y = weight_index, color = stage)) +
   geom_boxplot() + 
@@ -659,7 +653,7 @@ prostate_data_clean_aug %>%
 
 #TUMOR+ESTROGEN
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   group_by(tumor_size, estrogen_mg) %>% 
   ggplot(aes(estrogen_mg,tumor_size, color=stage))+
@@ -669,7 +663,7 @@ prostate_data_clean_aug %>%
 
 #TUMOR+EKG
 
-prostate_data_clean_aug %>% 
+prostate_data_clean %>% 
   na.omit() %>% 
   group_by(tumor_size, ekg) %>% 
   ggplot(aes(ekg, tumor_size, color=stage))+
