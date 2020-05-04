@@ -648,13 +648,29 @@ prostate_data_clean %>%
 #weight index for stage 4 patients dead from prostate cancer were less
 #prostate cancer has the third lowest weight index in general
 
-#tumor size+...other variables
+#what could have made the tumor size bigger for the dead prostate cancer patients?
+#analysis on tumor size+...other variables
 
 #TUMOR+ESTROGEN
 
+prostate_data_clean %>% 
+  na.omit() %>% 
+  group_by(tumor_size, estrogen_mg) %>% 
+  ggplot(aes(estrogen_mg,tumor_size, color=stage))+
+  geom_jitter()
 
+#math required!!!
 
 #TUMOR+EKG
+
+prostate_data_clean %>% 
+  na.omit() %>% 
+  group_by(tumor_size, ekg) %>% 
+  ggplot(aes(ekg, tumor_size, color=stage))+
+  geom_jitter()+
+  theme(legend.position = "bottom")+
+  theme(axis.text.x = element_text(angle=20, hjust=1))
+  
 #TUMOR+DIASTOLIC
 #TUMOR+AGE GROUP
 #TUMOR+bone metastasis
