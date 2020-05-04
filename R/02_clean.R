@@ -9,6 +9,7 @@ library(tidyverse)
 library(tibble)
 library(stringr)
 library(readr)
+library(lubridate)
 
 
 # Load data
@@ -20,7 +21,7 @@ prostate_data <- read_tsv(file = "Data/01_prostate_data.tsv") %>%
 # Wrangle data
 # ------------------------------------------------------------------------------
 
-# Change "rx" column to numeric and split "status" column in to two
+# Change "rx" column and split "status" column in to two
 prostate_data_clean <- 
   prostate_data %>%
       mutate(estrogen_mg = case_when(rx == "0.2 mg estrogen" ~ 0.2,
@@ -44,16 +45,18 @@ prostate_data_clean <-
 # Remove column
 prostate_data_clean$rx <- NULL
 
-#Rename columns
+# Rename columns
 prostate_data_clean <- prostate_data_clean %>% 
   rename(months_of_follow_up = dtime, weight_index = wt, activity = pf, history_of_CD = hx,
          serum_hemoglobin = hg,tumor_size = sz, stage_grade_index = sg, PA_phosphatase = ap, 
-         bone_metastases = bm, systolic_bp = sbp, diastolic_bp = dbp)
+         bone_metastases = bm, systolic_bp = sbp, diastolic_bp = dbp, study_date = sdate)
 
-#Convert value to NA, which was wrongly assigned a value according to the authors of the study
-#http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/prostate.notes.txt
+# Convert value to NA, which was wrongly assigned a value according to the authors of the study
+# http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/prostate.notes.txt
 prostate_data_clean <- na_if(prostate_data_clean, 999.87500000)
 
+# Convert study_date column to dates
+prostate_data_clean$study_date <- as_date(prostate_data_clean$study_date)
 
 # Write data
 # ------------------------------------------------------------------------------

@@ -1,503 +1,503 @@
-patno	age	PA_phosphatase	bone_metastases	diastolic_bp	months_of_follow_up	ekg	serum_hemoglobin	history_of_CD	activity	systolic_bp	sdate	stage_grade_index	stage	tumor_size	weight_index	estrogen_mg	status_	cause_of_death	dead_from_prostate_cancer	Age_group
-1	75	0.29998779296875	0	9	72	heart strain	13.798828125	0	normal activity	15	2778	8	3	2	76	0.2	alive	NA	NA	70 - 79
-2	54	0.699951171875	0	7	1	heart block or conduction def	14.599609375	0	normal activity	13	2820	NA	3	42	116	0.2	dead	other cancer	0	45 - 59
-3	69	0.29998779296875	0	8	40	heart strain	13.3984375	1	normal activity	14	2933	9	3	3	102	5	dead	cerebrovascular disease/accident	0	60 - 69
-4	75	0.89990234375	0	7	20	benign	17.59765625	1	in bed < 50% daytime	14	2999	8	3	4	94	0.2	dead	cerebrovascular disease/accident	0	70 - 79
-5	67	0.5	0	10	65	normal	13.3984375	0	normal activity	17	3002	8	3	34	NA	0	alive	NA	NA	60 - 69
-6	71	0.5999755859375	0	10	24	normal	15.099609375	0	normal activity	19	3086	11	3	10	98	0.2	dead	prostate cancer	1	70 - 79
-7	75	0.7999267578125	0	10	46	benign	13	0	normal activity	14	3099	9	3	13	100	0	dead	heart or vascular disease	0	70 - 79
-8	73	0.5999755859375	0	11	62	heart strain	12.599609375	1	normal activity	17	3100	9	3	3	114	0	alive	NA	NA	70 - 79
-9	60	0.699951171875	0	8	61	normal	14.599609375	0	normal activity	12	3134	10	3	4	110	1	alive	NA	NA	60 - 69
-10	78	0.39996337890625	0	8	60	old MI	13	1	normal activity	13	3140	6	3	21	107	1	alive	NA	NA	70 - 79
-11	77	0.5999755859375	0	8	60	normal	15.599609375	0	normal activity	15	3141	8	3	3	89	1	alive	NA	NA	70 - 79
-12	74	0.39996337890625	0	14	59	normal	13.599609375	1	normal activity	18	3176	8	3	6	105	5	alive	NA	NA	70 - 79
-13	74	0.29998779296875	0	9	59	old MI	14.3984375	0	normal activity	14	3183	9	3	6	107	0.2	alive	NA	NA	70 - 79
-14	55	1	0	9	49	heart strain	13.8984375	1	normal activity	16	3183	9	3	4	112	0	dead	prostate cancer	1	45 - 59
-15	73	0.5999755859375	0	10	20	heart strain	12	0	normal activity	19	3196	10	3	15	88	5	dead	cerebrovascular disease/accident	0	70 - 79
-16	87	0.39996337890625	0	12	3	rhythmic disturb & electrolyte ch	13.3984375	1	in bed < 50% daytime	17	3196	9	3	3	81	5	dead	heart or vascular disease	0	80 - 90
-17	64	0.699951171875	0	8	58	normal	16.19921875	0	normal activity	14	3218	9	3	6	90	0	alive	NA	NA	60 - 69
-18	79	0.5	0	8	29	benign	15	0	normal activity	13	3230	8	3	5	104	1	dead	pulmonary embolus	0	70 - 79
-19	62	0.699951171875	0	8	26	benign	14.3984375	1	normal activity	13	3386	9	3	2	90	5	dead	heart or vascular disease	0	60 - 69
-20	74	0.699951171875	0	8	52	heart strain	16.3984375	0	normal activity	13	3400	9	3	10	107	5	alive	NA	NA	70 - 79
-21	83	0.699951171875	0	9	20	heart strain	15	1	in bed < 50% daytime	13	3400	10	3	1	72	5	dead	heart or vascular disease	0	80 - 90
-22	65	0.699951171875	0	10	51	normal	14.099609375	0	normal activity	16	3428	9	3	21	113	1	alive	NA	NA	60 - 69
-23	61	0.5999755859375	0	8	51	normal	13.5	0	normal activity	11	3433	8	3	8	97	0	alive	NA	NA	60 - 69
-24	56	35.6953125	1	10	31	rhythmic disturb & electrolyte ch	14.798828125	0	normal activity	15	2791	13	4	26	95	5	dead	prostate cancer	1	45 - 59
-25	73	3.89990234375	0	10	42	normal	14.599609375	0	normal activity	16	2831	11	4	6	103	1	dead	cerebrovascular disease/accident	0	70 - 79
-26	69	6.19921875	0	8	38	heart strain	10.69921875	0	normal activity	16	2861	11	4	25	75	0.2	dead	heart or vascular disease	0	60 - 69
-27	76	2.5	0	8	69	old MI	11.69921875	0	normal activity	12	2869	10	4	12	82	0	alive	NA	NA	70 - 79
-28	71	12	0	7	39	normal	14.3984375	0	normal activity	12	2873	11	4	11	103	0	dead	prostate cancer	1	70 - 79
-29	66	24.19921875	0	10	33	heart strain	14	0	normal activity	17	2884	13	4	32	126	1	dead	other cancer	0	60 - 69
-30	76	2.2998046875	0	9	8	heart strain	12.798828125	0	normal activity	15	2895	13	4	40	90	0.2	dead	prostate cancer	1	70 - 79
-31	74	316	1	9	13	heart strain	10.5	0	in bed > 50% daytime	16	2905	13	4	17	77	0.2	dead	prostate cancer	1	70 - 79
-32	71	1.89990234375	0	10	33	old MI	15	1	normal activity	16	2924	11	4	9	150	5	dead	other specified non-cancer	0	70 - 79
-33	71	35.3984375	0	9	9	heart strain	12.298828125	1	normal activity	16	2932	13	4	38	88	1	dead	prostate cancer	1	70 - 79
-34	79	12.099609375	0	9	21	heart strain	12.798828125	0	normal activity	16	2940	12	4	26	89	0	dead	prostate cancer	1	70 - 79
-35	75	3.7998046875	0	9	66	normal	14.599609375	0	normal activity	15	2953	14	4	8	101	5	dead	prostate cancer	1	70 - 79
-36	76	99.1875	1	6	5	heart strain	8.19921875	1	normal activity	16	2953	11	4	10	86	5	dead	prostate cancer	1	70 - 79
-37	72	1.2998046875	0	10	27	heart strain	13	0	normal activity	16	2933	11	4	2	93	0	dead	other specified non-cancer	0	70 - 79
-38	69	28.8984375	1	8	2	benign	10.3984375	1	normal activity	12	2979	13	4	15	84	0.2	dead	heart or vascular disease	0	60 - 69
-39	53	5.599609375	1	9	20	benign	14.19921875	0	normal activity	12	3050	13	4	26	NA	0.2	dead	prostate cancer	1	45 - 59
-40	76	1.39990234375	1	9	19	heart strain	13	0	normal activity	14	3141	11	4	6	85	1	dead	prostate cancer	1	70 - 79
-41	72	2.2998046875	0	8	60	heart strain	13.599609375	1	normal activity	17	3162	12	4	12	95	0	alive	NA	NA	70 - 79
-42	NA	30	1	8	58	heart strain	12.798828125	0	normal activity	15	3202	13	4	35	76	1	alive	NA	NA	NA
-43	82	22.296875	1	8	32	normal	13	0	normal activity	14	3204	13	4	27	89	5	dead	prostate cancer	1	80 - 90
-44	74	1.2998046875	0	8	53	heart block or conduction def	9.3984375	0	normal activity	16	3350	15	4	26	124	0	alive	NA	NA	70 - 79
-45	75	3.2998046875	0	9	53	rhythmic disturb & electrolyte ch	15.298828125	0	normal activity	13	3372	13	4	16	93	1	alive	NA	NA	70 - 79
-46	74	20	1	10	43	heart strain	13.3984375	0	normal activity	17	3395	11	4	28	81	5	dead	prostate cancer	1	70 - 79
-47	60	7	0	8	21	normal	14.298828125	0	normal activity	12	3433	13	4	27	96	0.2	dead	prostate cancer	1	60 - 69
-48	59	0.699951171875	0	8	30	heart strain	15.19921875	0	in bed < 50% daytime	12	2730	9	3	NA	116	5	dead	unknown	0	45 - 59
-49	49	0.5	0	7	74	normal	14.798828125	0	normal activity	13	2735	8	3	14	NA	5	alive	NA	NA	45 - 59
-50	74	0.5999755859375	0	6	72	old MI	10.3984375	1	in bed < 50% daytime	11	2779	11	3	20	96	0	alive	NA	NA	70 - 79
-51	73	0.5999755859375	0	7	14	normal	12.3984375	0	normal activity	16	2905	11	3	18	101	0	dead	prostate cancer	1	70 - 79
-52	76	0.5	0	10	33	old MI	17.09765625	1	normal activity	17	2995	8	3	13	98	5	dead	heart or vascular disease	0	70 - 79
-53	72	0.5999755859375	0	8	8	heart strain	14.798828125	1	normal activity	12	3001	8	3	15	84	0.2	dead	cerebrovascular disease/accident	0	70 - 79
-54	73	0.5	0	8	10	heart strain	14.099609375	1	normal activity	16	3022	9	3	20	82	1	dead	heart or vascular disease	0	70 - 79
-55	78	0.29998779296875	0	8	51	old MI	14.798828125	1	in bed > 50% daytime	18	3023	9	3	24	108	0	dead	prostate cancer	1	70 - 79
-56	71	0.39996337890625	0	9	7	normal	13.19921875	1	normal activity	15	3048	11	3	14	112	0.2	dead	heart or vascular disease	0	70 - 79
-57	75	0.7999267578125	0	8	63	heart strain	15.19921875	0	normal activity	13	3059	NA	3	41	92	1	alive	NA	NA	70 - 79
-58	64	0.199981689453125	0	9	33	normal	14.19921875	0	normal activity	13	3219	11	3	23	130	0.2	dead	prostate cancer	1	60 - 69
-59	78	0.39996337890625	0	9	3	heart strain	12.3984375	1	normal activity	16	3347	9	3	3	118	0.2	dead	cerebrovascular disease/accident	0	70 - 79
-60	60	0.5999755859375	0	9	43	normal	13.599609375	0	normal activity	12	3375	9	3	7	NA	0	dead	other cancer	0	60 - 69
-61	68	7.2998046875	1	9	37	heart strain	14.3984375	0	normal activity	14	2712	13	4	32	104	1	dead	prostate cancer	1	60 - 69
-62	77	11.69921875	0	9	5	old MI	12.8984375	0	in bed < 50% daytime	21	2856	13	4	24	93	0	dead	cerebrovascular disease/accident	0	70 - 79
-63	73	8.69921875	0	9	6	heart strain	12	1	normal activity	14	2856	15	4	51	102	0.2	dead	prostate cancer	1	70 - 79
-64	70	2	1	8	2	normal	7.7998046875	0	in bed > 50% daytime	12	2863	11	4	26	76	0	dead	prostate cancer	1	70 - 79
-65	53	0.699951171875	0	8	5	heart strain	14.298828125	0	normal activity	14	2982	11	4	10	106	0.2	dead	prostate cancer	1	45 - 59
-66	55	4.599609375	1	9	64	heart strain	14.798828125	0	normal activity	13	3043	15	4	26	116	5	alive	NA	NA	45 - 59
-67	80	1.2998046875	0	8	1	old MI	11.69921875	1	in bed < 50% daytime	14	3259	13	4	15	91	5	dead	unspecified non-cancer	0	80 - 90
-68	59	175.09375	1	4	21	heart strain	8.69921875	0	normal activity	8	3298	11	4	27	71	1	dead	prostate cancer	1	45 - 59
-69	80	1.099853515625	1	9	16	normal	11.298828125	0	normal activity	16	3345	15	4	34	111	0	dead	other specified non-cancer	0	80 - 90
-70	68	0.5999755859375	0	8	21	old MI	12.099609375	1	in bed < 50% daytime	14	2660	8	3	18	97	1	dead	cerebrovascular disease/accident	0	60 - 69
-71	77	0.699951171875	0	7	12	rhythmic disturb & electrolyte ch	14.3984375	1	normal activity	13	2686	9	3	5	103	1	dead	heart or vascular disease	0	70 - 79
-72	74	0.5	0	8	75	benign	13.599609375	0	normal activity	16	2686	8	3	7	110	1	alive	NA	NA	70 - 79
-73	70	0.7999267578125	0	7	74	benign	13.69921875	0	normal activity	15	2714	7	3	24	94	0	alive	NA	NA	70 - 79
-74	72	0.5	0	13	74	normal	12.599609375	1	in bed < 50% daytime	14	2714	9	3	NA	142	0.2	alive	NA	NA	70 - 79
-75	65	0.29998779296875	0	8	54	normal	14	0	normal activity	14	2723	9	3	47	90	0.2	dead	prostate cancer	1	60 - 69
-76	74	0.199981689453125	0	7	73	normal	12.8984375	1	normal activity	13	2754	8	3	6	97	5	alive	NA	NA	70 - 79
-77	72	0.5999755859375	0	13	36	old MI	14.69921875	1	normal activity	22	2763	10	3	5	110	0	dead	heart or vascular disease	0	70 - 79
-78	69	0.29998779296875	0	7	59	normal	14.298828125	1	normal activity	13	2763	9	3	4	97	0	dead	other specified non-cancer	0	60 - 69
-79	72	0.29998779296875	0	10	6	normal	12	1	normal activity	16	2772	8	3	5	115	5	dead	cerebrovascular disease/accident	0	70 - 79
-80	71	0.7999267578125	0	10	58	rhythmic disturb & electrolyte ch	13.3984375	1	normal activity	13	2789	9	3	13	87	0.2	dead	heart or vascular disease	0	70 - 79
-81	73	0.29998779296875	0	7	16	normal	13.798828125	0	normal activity	11	2798	9	3	8	93	1	dead	respiratory disease	0	70 - 79
-82	79	0.199981689453125	0	7	19	old MI	13.599609375	1	normal activity	16	2805	9	3	13	106	5	dead	heart or vascular disease	0	70 - 79
-83	63	0.39996337890625	0	8	39	old MI	16	1	normal activity	16	2839	9	3	7	86	5	dead	heart or vascular disease	0	60 - 69
-84	74	0.39996337890625	0	9	26	rhythmic disturb & electrolyte ch	10.599609375	1	normal activity	14	2856	8	3	14	101	0.2	dead	other cancer	0	70 - 79
-85	72	0.5999755859375	0	11	60	normal	15.599609375	1	normal activity	17	2856	9	3	9	118	0	dead	respiratory disease	0	70 - 79
-86	78	0.39996337890625	0	7	43	heart strain	13.599609375	1	normal activity	10	2862	8	3	16	117	0.2	dead	other specified non-cancer	0	70 - 79
-87	76	0.5	0	7	7	old MI	13.599609375	1	normal activity	12	2903	9	3	12	92	5	dead	heart or vascular disease	0	70 - 79
-88	70	0.0999908447265625	0	9	9	heart block or conduction def	12	1	normal activity	16	2903	8	3	17	72	1	dead	other cancer	0	70 - 79
-89	69	0.699951171875	0	10	67	heart strain	13.599609375	1	normal activity	16	2938	10	3	21	120	1	alive	NA	NA	60 - 69
-90	76	0.5	0	8	62	normal	13.19921875	1	normal activity	12	2951	8	3	13	102	5	dead	other cancer	0	70 - 79
-91	84	0.39996337890625	0	10	17	benign	13.3984375	1	normal activity	15	3049	6	3	8	104	0	dead	respiratory disease	0	80 - 90
-92	80	0.5	0	8	25	normal	12.298828125	1	normal activity	15	3049	9	3	8	98	0.2	dead	other cancer	0	80 - 90
-93	81	0.699951171875	0	7	0	normal	13.3984375	0	normal activity	10	3087	9	3	11	97	1	dead	respiratory disease	0	80 - 90
-94	81	0.5	0	7	5	heart strain	14.8984375	1	normal activity	13	3094	9	3	28	76	5	dead	heart or vascular disease	0	80 - 90
-95	71	0.29998779296875	0	10	34	heart strain	14.3984375	1	normal activity	12	3127	6	3	11	100	5	dead	heart or vascular disease	0	70 - 79
-96	77	0.29998779296875	0	7	59	normal	12	0	normal activity	14	3182	10	3	7	109	0	alive	NA	NA	70 - 79
-97	70	0.5	0	8	31	heart strain	12	1	normal activity	18	3197	9	3	28	109	0.2	dead	heart or vascular disease	0	70 - 79
-98	76	0.29998779296875	0	7	58	old MI	12	1	normal activity	12	3204	9	3	3	108	0	alive	NA	NA	70 - 79
-NA	76	0.5999755859375	0	9	30	old MI	18.19921875	1	normal activity	16	3216	11	3	52	102	1	dead	cerebrovascular disease/accident	0	70 - 79
-100	71	0.5999755859375	0	7	57	heart block or conduction def	13.3984375	0	normal activity	13	3232	9	3	19	97	0.2	alive	NA	NA	70 - 79
-101	76	0.5999755859375	0	8	5	normal	13.69921875	1	normal activity	17	3239	9	3	33	96	0.2	dead	heart or vascular disease	0	70 - 79
-102	64	0.199981689453125	0	10	55	normal	13.69921875	1	normal activity	16	3295	9	3	6	100	5	alive	NA	NA	60 - 69
-103	74	0.7999267578125	0	7	55	normal	14.298828125	0	normal activity	12	3317	10	3	7	113	1	alive	NA	NA	70 - 79
-104	76	0.5999755859375	0	9	52	normal	12.298828125	1	normal activity	16	3394	8	3	3	88	0	alive	NA	NA	70 - 79
-105	82	0.5999755859375	0	9	0	rhythmic disturb & electrolyte ch	11.599609375	1	normal activity	13	3406	10	3	5	82	5	dead	pulmonary embolus	0	80 - 90
-106	65	0.7999267578125	0	8	51	normal	14.5	1	normal activity	16	3421	9	3	2	87	1	alive	NA	NA	60 - 69
-107	70	9.69921875	1	6	17	normal	12.69921875	0	in bed < 50% daytime	14	2660	11	4	14	83	0.2	dead	heart or vascular disease	0	70 - 79
-108	76	6.19921875	1	6	70	heart strain	9.69921875	0	normal activity	13	2660	10	4	6	92	5	dead	other cancer	0	70 - 79
-109	77	4.8994140625	0	6	74	benign	11	0	normal activity	10	2714	12	4	0	93	0	alive	NA	NA	70 - 79
-110	77	2.39990234375	0	9	74	normal	12.798828125	1	normal activity	17	2723	12	4	15	NA	0.2	alive	NA	NA	70 - 79
-111	70	10.19921875	0	7	20	normal	13.5	1	normal activity	12	2786	11	4	23	103	1	dead	heart or vascular disease	0	70 - 79
-112	73	39.6953125	0	8	2	heart strain	12.8984375	1	normal activity	13	2867	12	4	61	80	0	dead	prostate cancer	1	70 - 79
-113	63	41.6953125	1	8	8	heart strain	12.798828125	1	normal activity	13	2936	15	4	14	119	0.2	dead	prostate cancer	1	60 - 69
-114	71	1.199951171875	0	6	27	heart strain	12	0	normal activity	13	2966	10	4	1	91	5	dead	other specified non-cancer	0	70 - 79
-115	78	1.7998046875	1	8	23	normal	10	1	in bed < 50% daytime	14	2994	12	4	38	103	1	dead	cerebrovascular disease/accident	0	70 - 79
-116	74	1.099853515625	0	8	1	old MI	14.3984375	1	normal activity	13	3294	11	4	1	100	0	dead	heart or vascular disease	0	70 - 79
-117	70	2	0	8	52	old MI	15.8984375	1	normal activity	16	3381	10	4	4	110	5	alive	NA	NA	70 - 79
-118	73	1.199951171875	1	8	51	benign	11.19921875	1	normal activity	11	3414	13	4	10	106	1	alive	NA	NA	70 - 79
-119	74	78.390625	1	6	6	rhythmic disturb & electrolyte ch	14	1	normal activity	13	3427	12	4	41	98	5	dead	prostate cancer	1	70 - 79
-120	77	1.699951171875	1	7	0	heart strain	14.298828125	1	normal activity	12	3434	11	4	6	91	1	dead	prostate cancer	1	70 - 79
-121	85	25.8984375	0	7	26	normal	14	1	normal activity	15	3434	12	4	12	85	5	dead	heart or vascular disease	0	80 - 90
-122	72	0.7999267578125	0	7	65	normal	12.298828125	1	normal activity	13	2813	9	3	16	79	0	dead	respiratory disease	0	70 - 79
-123	74	0.199981689453125	0	6	52	old MI	13.798828125	0	normal activity	14	2813	NA	3	17	106	0	dead	unspecified non-cancer	0	70 - 79
-124	78	0.5	0	7	26	normal	10.298828125	0	normal activity	13	2852	11	3	25	83	0.2	dead	prostate cancer	1	70 - 79
-125	60	0.5	0	10	70	heart strain	14.298828125	0	normal activity	14	2853	NA	3	13	110	5	alive	NA	NA	60 - 69
-126	72	0.699951171875	0	9	6	benign	10	0	normal activity	11	2868	10	3	16	76	0	dead	other cancer	0	70 - 79
-127	68	1.7998046875	0	7	6	rhythmic disturb & electrolyte ch	14.5	0	normal activity	13	2868	9	3	17	124	0.2	dead	pulmonary embolus	0	60 - 69
-128	71	0.29998779296875	0	9	68	normal	14.5	0	normal activity	15	2902	9	3	19	93	1	alive	NA	NA	70 - 79
-129	65	0.7999267578125	0	9	33	old MI	15	0	normal activity	17	2924	8	3	19	125	5	dead	heart or vascular disease	0	60 - 69
-130	67	0.5	0	7	67	old MI	15.69921875	0	normal activity	13	2954	9	3	7	96	0.2	alive	NA	NA	60 - 69
-131	76	0.29998779296875	0	7	58	normal	14.19921875	0	normal activity	12	2985	7	3	NA	94	0.2	dead	heart or vascular disease	0	70 - 79
-132	74	4.099609375	0	9	23	heart block or conduction def	14.19921875	0	normal activity	15	2989	12	3	3	98	5	dead	prostate cancer	1	70 - 79
-133	78	0.29998779296875	0	7	6	normal	11	0	normal activity	11	3021	9	3	4	91	5	dead	other cancer	0	70 - 79
-134	74	0.89990234375	0	8	11	benign	14	0	normal activity	14	3052	9	3	16	85	1	dead	heart or vascular disease	0	70 - 79
-135	71	0.7999267578125	0	7	6	heart block or conduction def	14	0	normal activity	13	3079	9	3	9	92	0	dead	prostate cancer	1	70 - 79
-136	74	0.5	0	7	57	rhythmic disturb & electrolyte ch	10.5	0	normal activity	14	3240	9	3	20	113	1	alive	NA	NA	70 - 79
-137	72	0.39996337890625	0	10	57	heart strain	14.5	0	normal activity	17	3246	8	3	20	110	1	alive	NA	NA	70 - 79
-138	57	0.699951171875	0	8	29	heart strain	14.69921875	0	normal activity	14	3311	9	3	20	97	0	dead	heart or vascular disease	0	45 - 59
-139	74	0.7999267578125	0	7	9	normal	13.798828125	0	normal activity	14	3325	8	3	25	104	0.2	dead	other cancer	0	70 - 79
-140	72	0.699951171875	0	6	53	rhythmic disturb & electrolyte ch	13.599609375	0	normal activity	12	3372	9	3	5	105	1	alive	NA	NA	70 - 79
-141	65	0.5999755859375	0	8	51	normal	14.3984375	0	normal activity	13	3423	9	3	10	NA	1	alive	NA	NA	60 - 69
-142	83	0.5999755859375	0	9	8	heart strain	16.69921875	0	normal activity	17	3428	9	3	25	115	5	dead	pulmonary embolus	0	80 - 90
-143	71	42.8984375	1	9	0	heart strain	12.298828125	1	in bed > 50% daytime	18	2768	13	4	34	98	0	dead	other specified non-cancer	0	70 - 79
-144	73	2.7998046875	0	8	21	normal	12.798828125	0	normal activity	12	2790	11	4	21	103	5	dead	heart or vascular disease	0	70 - 79
-145	71	367	1	7	27	normal	10.5	0	normal activity	14	2889	13	4	30	102	0.2	dead	prostate cancer	1	70 - 79
-146	75	7	0	11	22	heart strain	15.599609375	0	normal activity	18	2889	11	4	22	124	1	dead	respiratory disease	0	70 - 79
-147	71	3.599609375	1	6	12	rhythmic disturb & electrolyte ch	7	0	normal activity	10	2895	13	4	17	77	1	dead	prostate cancer	1	70 - 79
-148	56	1.39990234375	1	8	68	normal	10.69921875	0	normal activity	13	2902	13	4	11	69	1	alive	NA	NA	45 - 59
-149	83	21.69921875	0	7	21	normal	13.298828125	0	normal activity	13	2910	13	4	15	88	1	dead	other specified non-cancer	0	80 - 90
-150	71	3.19970703125	0	8	68	heart strain	15	0	normal activity	15	2916	10	4	46	116	0.2	alive	NA	NA	70 - 79
-151	73	127.796875	0	8	0	rhythmic disturb & electrolyte ch	10.19921875	1	in bed < 50% daytime	15	2950	13	4	23	98	5	dead	other specified non-cancer	0	70 - 79
-152	78	4.69921875	1	9	2	heart strain	14	0	normal activity	12	3021	11	4	32	74	5	dead	prostate cancer	1	70 - 79
-153	50	225.1875	1	8	14	normal	9.298828125	0	normal activity	12	3069	11	4	17	109	0	dead	prostate cancer	1	45 - 59
-154	73	2.69970703125	0	11	18	heart strain	14	0	normal activity	16	3099	11	4	9	101	0	dead	heart or vascular disease	0	70 - 79
-155	67	7	1	9	5	old MI	9.599609375	0	normal activity	12	3149	11	4	17	111	5	dead	prostate cancer	1	60 - 69
-156	72	43.59375	1	9	60	normal	15.298828125	0	normal activity	15	3155	15	4	2	96	1	alive	NA	NA	70 - 79
-157	72	29.8984375	1	10	40	benign	10.5	0	normal activity	14	3156	12	4	26	96	0	dead	cerebrovascular disease/accident	0	70 - 79
-158	68	1.699951171875	0	10	31	old MI	15	0	normal activity	18	3365	13	4	NA	98	0	dead	prostate cancer	1	60 - 69
-159	78	1.099853515625	0	10	51	heart strain	15.69921875	0	normal activity	15	3427	13	4	6	116	0.2	alive	NA	NA	70 - 79
-160	72	0.5999755859375	0	9	50	heart strain	12	1	normal activity	19	2896	8	3	16	91	0	dead	unknown	0	70 - 79
-161	76	0.699951171875	0	8	46	heart strain	14.5	1	normal activity	18	2925	8	3	4	118	0.2	dead	unknown	0	70 - 79
-162	77	0.7999267578125	0	9	65	heart block or conduction def	12.5	0	normal activity	19	3009	9	3	20	111	0.2	alive	NA	NA	70 - 79
-163	70	0.199981689453125	0	9	9	rhythmic disturb & electrolyte ch	11.798828125	0	normal activity	13	3051	8	3	14	127	5	dead	pulmonary embolus	0	70 - 79
-164	74	0.89990234375	0	7	21	normal	10.19921875	1	normal activity	10	3097	9	3	18	96	0.2	dead	other cancer	0	70 - 79
-165	71	0.39996337890625	0	8	27	old MI	10.599609375	1	normal activity	15	3181	8	3	5	92	0.2	dead	unknown	0	70 - 79
-166	69	0.5	0	7	54	normal	13.5	1	normal activity	12	3346	8	3	4	89	1	alive	NA	NA	60 - 69
-167	70	0.7999267578125	0	8	52	rhythmic disturb & electrolyte ch	8.19921875	1	normal activity	18	3384	9	3	22	111	1	alive	NA	NA	70 - 79
-168	58	1.599853515625	0	12	75	heart strain	13.099609375	0	normal activity	19	2691	11	4	24	NA	1	alive	NA	NA	45 - 59
-169	78	4.599609375	1	7	75	normal	12.599609375	0	normal activity	14	2685	NA	4	27	NA	5	alive	NA	NA	70 - 79
-170	73	5.099609375	0	6	30	old MI	13.798828125	1	normal activity	14	2744	15	4	9	105	1	dead	heart or vascular disease	0	70 - 79
-171	69	2	0	8	70	normal	12.19921875	0	normal activity	12	2852	11	4	23	108	5	alive	NA	NA	60 - 69
-172	73	3.39990234375	0	7	14	old MI	13.3984375	0	normal activity	12	2863	13	4	31	94	1	dead	other cancer	0	70 - 79
-173	73	1.199951171875	0	8	0	normal	7.7998046875	0	normal activity	14	3106	15	4	23	93	0	dead	other specified non-cancer	0	70 - 79
-174	68	26.3984375	0	10	42	heart strain	11.69921875	0	normal activity	17	3112	13	4	32	100	5	dead	heart or vascular disease	0	60 - 69
-175	75	21.59765625	1	6	12	normal	13.3984375	1	normal activity	14	3118	13	4	31	88	1	dead	heart or vascular disease	0	70 - 79
-176	68	0.89990234375	1	10	40	old MI	15	1	normal activity	17	3122	10	4	25	104	0	dead	heart or vascular disease	0	60 - 69
-177	76	26.19921875	0	7	2	normal	11.19921875	1	normal activity	16	3125	13	4	32	88	0	dead	prostate cancer	1	70 - 79
-178	76	42.796875	1	5	12	heart strain	11.69921875	1	in bed < 50% daytime	14	3225	14	4	28	87	1	dead	prostate cancer	1	70 - 79
-179	75	2	0	8	53	normal	12.599609375	1	normal activity	14	3355	11	4	8	89	0.2	alive	NA	NA	70 - 79
-180	59	2.39990234375	0	6	11	normal	12.798828125	1	normal activity	10	3358	11	4	6	116	0.2	dead	prostate cancer	1	45 - 59
-181	72	3.2998046875	1	8	18	normal	10.298828125	0	normal activity	11	2734	11	3	9	96	5	dead	heart or vascular disease	0	70 - 79
-182	80	0.5999755859375	0	8	13	rhythmic disturb & electrolyte ch	12.298828125	0	normal activity	15	2805	8	3	4	91	1	dead	cerebrovascular disease/accident	0	80 - 90
-183	78	0.29998779296875	0	8	45	normal	15	1	normal activity	16	2839	9	3	7	112	0.2	dead	other specified non-cancer	0	70 - 79
-184	52	0.29998779296875	0	8	8	heart strain	14.798828125	1	normal activity	13	2841	9	3	4	90	1	dead	unknown	0	45 - 59
-185	75	1	0	5	28	heart strain	12.69921875	0	normal activity	9	2917	8	3	8	87	5	dead	prostate cancer	1	70 - 79
-186	67	0.7999267578125	0	8	67	normal	14	1	normal activity	14	2925	9	3	3	109	5	alive	NA	NA	60 - 69
-187	74	0.39996337890625	0	6	67	heart strain	13	0	normal activity	16	2937	9	3	4	103	0.2	alive	NA	NA	70 - 79
-188	79	0.199981689453125	0	10	24	heart strain	11.599609375	1	in bed < 50% daytime	23	2945	9	3	2	107	0	dead	heart or vascular disease	0	70 - 79
-189	73	0.5	0	10	64	rhythmic disturb & electrolyte ch	12	0	normal activity	15	3022	9	3	4	96	0.2	alive	NA	NA	70 - 79
-190	75	0.699951171875	0	7	26	heart strain	13.5	0	in bed > 50% daytime	12	3036	13	3	1	113	1	dead	heart or vascular disease	0	70 - 79
-191	72	59.3984375	0	7	57	heart strain	12	0	normal activity	14	2796	12	4	7	88	0.2	dead	prostate cancer	1	70 - 79
-192	55	0.199981689453125	0	9	32	heart strain	10.298828125	1	normal activity	15	2810	11	4	12	96	0.2	dead	prostate cancer	1	45 - 59
-193	68	0.199981689453125	0	9	71	normal	14.599609375	1	in bed < 50% daytime	16	2812	11	4	18	NA	0	alive	NA	NA	60 - 69
-194	48	1.5	0	10	42	heart strain	12.298828125	1	in bed < 50% daytime	14	2812	11	4	3	100	0.2	dead	cerebrovascular disease/accident	0	45 - 59
-195	75	4.7998046875	0	5	20	heart strain	14	1	normal activity	9	2817	11	4	1	88	0	dead	heart or vascular disease	0	70 - 79
-196	56	1.099853515625	0	8	71	normal	14.3984375	0	normal activity	12	2818	10	4	1	94	1	alive	NA	NA	45 - 59
-197	70	1.199951171875	0	9	54	heart strain	14.3984375	0	normal activity	14	3030	11	4	4	86	5	dead	respiratory disease	0	70 - 79
-198	54	1.199951171875	1	6	64	rhythmic disturb & electrolyte ch	14.798828125	0	normal activity	15	3035	13	4	8	89	5	alive	NA	NA	45 - 59
-199	87	2.099609375	1	7	51	normal	11	0	normal activity	14	3035	15	4	3	82	5	dead	heart or vascular disease	0	80 - 90
-200	73	0.7999267578125	0	9	1	heart strain	13.298828125	1	normal activity	14	2691	8	3	22	94	5	dead	heart or vascular disease	0	70 - 79
-201	76	0.5999755859375	0	10	2	normal	10.69921875	0	normal activity	16	2708	9	3	8	94	0	dead	other specified non-cancer	0	70 - 79
-202	68	0.89990234375	0	9	0	normal	10.69921875	0	normal activity	15	2734	13	3	69	106	5	dead	prostate cancer	1	60 - 69
-203	70	0.5999755859375	0	10	54	rhythmic disturb & electrolyte ch	13.798828125	1	normal activity	17	2734	9	3	10	97	0	dead	cerebrovascular disease/accident	0	70 - 79
-204	65	0.5999755859375	0	6	69	normal	16	0	normal activity	12	2877	9	3	8	83	0.2	alive	NA	NA	60 - 69
-205	79	0.39996337890625	0	8	68	heart strain	13.3984375	0	normal activity	14	2894	9	3	11	95	0	alive	NA	NA	70 - 79
-206	70	0.5	0	11	67	normal	14.69921875	0	normal activity	19	2931	9	3	7	120	0	alive	NA	NA	70 - 79
-207	70	0.5999755859375	0	8	66	normal	16	0	normal activity	12	2978	9	3	8	NA	1	alive	NA	NA	70 - 79
-208	59	0.29998779296875	0	8	64	normal	10.3984375	1	normal activity	14	3022	9	3	2	90	0	alive	NA	NA	45 - 59
-209	72	0.5999755859375	0	8	63	normal	14.19921875	0	in bed > 50% daytime	13	3065	8	3	11	73	0.2	alive	NA	NA	70 - 79
-210	76	0.5999755859375	0	9	35	normal	15.19921875	1	normal activity	14	3083	5	3	4	88	1	dead	cerebrovascular disease/accident	0	70 - 79
-211	78	0.89990234375	0	8	62	benign	16.796875	0	normal activity	13	3093	10	3	0	123	5	alive	NA	NA	70 - 79
-212	76	0.699951171875	0	6	7	heart strain	12.798828125	1	normal activity	14	3119	8	3	3	113	1	dead	other specified non-cancer	0	70 - 79
-213	66	0.39996337890625	0	9	35	normal	14.298828125	0	normal activity	14	3134	8	3	3	87	5	dead	other specified non-cancer	0	60 - 69
-214	69	0.29998779296875	0	10	24	heart block or conduction def	15	1	normal activity	16	3218	8	3	11	91	1	dead	pulmonary embolus	0	60 - 69
-215	71	0.5	0	8	57	heart strain	15.3984375	0	normal activity	16	3248	9	3	3	88	5	alive	NA	NA	70 - 79
-216	75	0.5999755859375	0	7	1	heart strain	15.099609375	0	normal activity	15	3287	8	3	4	120	0.2	dead	other cancer	0	70 - 79
-217	74	0.5999755859375	0	9	4	rhythmic disturb & electrolyte ch	15.69921875	1	normal activity	17	3330	7	3	7	NA	0.2	dead	heart or vascular disease	0	70 - 79
-218	72	1	0	9	74	heart block or conduction def	16.5	0	normal activity	15	2699	10	4	4	103	0.2	dead	other cancer	0	70 - 79
-219	78	4.599609375	1	9	0	heart strain	10.099609375	0	in bed > 50% daytime	16	2700	12	4	54	96	0.2	dead	prostate cancer	1	70 - 79
-220	71	0.699951171875	1	9	51	old MI	13.3984375	0	normal activity	14	2723	10	4	6	110	0.2	dead	heart or vascular disease	0	70 - 79
-221	75	1.599853515625	0	10	36	heart strain	11	1	normal activity	16	2754	10	4	15	101	5	dead	heart or vascular disease	0	70 - 79
-222	73	20.3984375	1	8	16	heart strain	7.19921875	0	in bed > 50% daytime	15	2770	11	4	14	89	0.2	dead	prostate cancer	1	70 - 79
-223	79	28.8984375	1	7	32	benign	13.298828125	0	in bed > 50% daytime	15	2832	13	4	16	79	1	dead	prostate cancer	1	70 - 79
-224	70	2.69970703125	0	8	68	normal	13.5	0	normal activity	16	2897	14	4	22	92	5	alive	NA	NA	70 - 79
-225	73	8.8984375	0	8	17	normal	13.3984375	0	normal activity	17	2905	13	4	50	76	0.2	dead	prostate cancer	1	70 - 79
-226	75	2.7998046875	0	8	66	normal	14.69921875	1	normal activity	14	2973	13	4	16	98	0	alive	NA	NA	70 - 79
-227	76	596	1	6	65	rhythmic disturb & electrolyte ch	11.3984375	0	normal activity	12	2995	11	4	13	83	1	alive	NA	NA	70 - 79
-228	71	4.2998046875	1	7	19	old MI	11.798828125	0	in bed < 50% daytime	17	3000	15	4	61	77	0	dead	prostate cancer	1	70 - 79
-229	76	8.19921875	0	8	41	normal	15.099609375	0	normal activity	17	3003	11	4	24	91	1	dead	prostate cancer	1	70 - 79
-230	73	36.8984375	0	9	28	normal	14.69921875	1	normal activity	16	3017	11	4	11	106	0	dead	heart or vascular disease	0	70 - 79
-231	70	4.2998046875	0	8	0	heart strain	12.19921875	1	normal activity	10	3023	11	4	5	80	0	dead	heart or vascular disease	0	70 - 79
-232	72	54.796875	1	7	46	old MI	16	1	normal activity	12	3038	11	4	62	100	5	dead	prostate cancer	1	70 - 79
-233	74	2.39990234375	0	9	63	old MI	14.798828125	0	normal activity	14	3066	10	4	25	101	5	alive	NA	NA	70 - 79
-234	62	4.5	0	8	60	heart strain	15.599609375	0	normal activity	12	3139	13	4	15	98	1	alive	NA	NA	60 - 69
-235	53	1	0	8	59	normal	16.3984375	0	normal activity	13	3184	12	4	7	116	1	alive	NA	NA	45 - 59
-236	54	0.699951171875	0	10	46	normal	13	0	normal activity	13	2677	9	3	15	91	5	dead	heart or vascular disease	0	45 - 59
-237	58	0.199981689453125	0	10	63	heart block or conduction def	13.798828125	1	normal activity	16	2677	9	3	12	94	1	dead	prostate cancer	1	45 - 59
-238	78	0.0999908447265625	0	9	8	old MI	12	1	normal activity	17	2720	8	3	9	NA	5	dead	heart or vascular disease	0	70 - 79
-239	77	0.39996337890625	0	7	74	heart block or conduction def	12.3984375	1	normal activity	10	2722	9	3	25	100	1	alive	NA	NA	70 - 79
-240	61	0.199981689453125	0	10	18	heart strain	14.099609375	1	normal activity	15	2728	7	3	18	152	0	dead	heart or vascular disease	0	60 - 69
-241	78	0.5	0	7	33	heart strain	13.599609375	1	in bed < 50% daytime	13	2811	9	3	9	98	0	dead	other specified non-cancer	0	70 - 79
-242	68	0.199981689453125	0	12	12	heart strain	14.3984375	1	in bed < 50% daytime	24	2824	9	3	12	88	0	dead	heart or vascular disease	0	60 - 69
-243	62	0.29998779296875	0	6	1	NA	11.599609375	0	in bed < 50% daytime	10	2826	9	3	13	76	0.2	dead	other specified non-cancer	0	60 - 69
-244	70	0.5999755859375	0	10	66	normal	14.5	0	normal activity	15	2981	11	3	15	109	1	alive	NA	NA	70 - 79
-245	75	0.5	0	10	28	normal	13.69921875	0	normal activity	16	3090	10	3	19	81	1	dead	other cancer	0	70 - 79
-246	80	0.89990234375	0	8	30	heart strain	10.798828125	0	normal activity	12	3170	11	3	22	91	0.2	dead	heart or vascular disease	0	80 - 90
-247	76	0.5	0	8	57	old MI	11.19921875	1	normal activity	13	3183	8	3	20	NA	0.2	dead	other specified non-cancer	0	70 - 79
-248	68	0.699951171875	0	8	50	normal	12	0	normal activity	16	3185	11	3	20	102	1	dead	prostate cancer	1	60 - 69
-249	73	0.29998779296875	0	4	39	heart strain	12.5	1	normal activity	19	3213	11	3	18	81	0	dead	heart or vascular disease	0	70 - 79
-250	79	0.29998779296875	0	10	40	heart strain	14	0	normal activity	15	3213	6	3	16	96	0	dead	heart or vascular disease	0	70 - 79
-251	78	0.39996337890625	0	7	24	old MI	11	1	normal activity	14	3381	9	3	4	81	0.2	dead	cerebrovascular disease/accident	0	70 - 79
-252	79	0.39996337890625	0	8	6	old MI	12.19921875	1	normal activity	11	3441	6	3	4	94	5	dead	heart or vascular disease	0	70 - 79
-253	72	0.5	1	12	30	heart strain	12.298828125	1	in bed < 50% daytime	22	2782	14	4	15	90	0.2	dead	heart or vascular disease	0	70 - 79
-254	52	5.2998046875	0	7	58	normal	15	1	normal activity	11	2807	14	4	13	106	0.2	dead	prostate cancer	1	45 - 59
-255	76	353.5	0	10	68	heart strain	14.599609375	1	normal activity	15	2908	11	4	19	97	1	alive	NA	NA	70 - 79
-256	74	13.8984375	1	10	24	rhythmic disturb & electrolyte ch	10	0	normal activity	16	2924	13	4	19	85	0.2	dead	prostate cancer	1	70 - 79
-257	71	0.39996337890625	1	8	33	normal	10.19921875	0	normal activity	14	2933	11	4	8	86	0	dead	unspecified non-cancer	0	70 - 79
-258	72	20	0	10	65	rhythmic disturb & electrolyte ch	12.298828125	0	normal activity	14	3006	12	4	17	96	5	alive	NA	NA	70 - 79
-259	77	5.5	0	8	2	normal	13.798828125	0	normal activity	15	3006	12	4	22	113	5	dead	pulmonary embolus	0	70 - 79
-260	73	9.69921875	0	10	64	heart strain	13.798828125	1	normal activity	16	3023	11	4	23	100	0.2	alive	NA	NA	70 - 79
-261	75	2.2998046875	0	7	19	rhythmic disturb & electrolyte ch	11.798828125	0	normal activity	12	3077	13	4	17	83	0	dead	prostate cancer	1	70 - 79
-262	73	1.099853515625	0	7	58	old MI	13.298828125	0	normal activity	13	3204	13	4	20	NA	0	alive	NA	NA	70 - 79
-263	71	43.09375	1	10	15	heart strain	14.69921875	0	normal activity	15	3364	11	4	12	98	5	dead	prostate cancer	1	70 - 79
-264	76	33.59375	0	9	10	normal	10.5	1	normal activity	16	3367	12	4	20	94	0.2	dead	prostate cancer	1	70 - 79
-265	49	5.599609375	1	8	12	heart strain	14.099609375	0	in bed < 50% daytime	14	3367	15	4	21	90	5	dead	prostate cancer	1	45 - 59
-266	74	278.25	1	7	53	rhythmic disturb & electrolyte ch	13.3984375	1	in bed > 50% daytime	13	3373	11	4	17	91	5	alive	NA	NA	70 - 79
-267	59	2.19970703125	0	6	51	normal	14.099609375	0	normal activity	13	3412	13	4	17	97	1	alive	NA	NA	45 - 59
-268	79	3.7998046875	0	9	1	rhythmic disturb & electrolyte ch	12.599609375	1	normal activity	15	3436	11	4	23	116	1	dead	heart or vascular disease	0	70 - 79
-269	78	0.5999755859375	0	10	40	NA	13.19921875	0	normal activity	20	2849	11	3	36	113	1	dead	prostate cancer	1	70 - 79
-270	78	0.29998779296875	0	8	40	NA	14.798828125	0	normal activity	14	2953	9	3	15	110	0	dead	prostate cancer	1	70 - 79
-271	79	0.39996337890625	0	8	66	NA	14.798828125	0	normal activity	14	2960	8	3	19	96	1	alive	NA	NA	70 - 79
-272	72	0.5999755859375	0	7	2	heart strain	9.3984375	0	normal activity	13	2971	11	3	33	82	0.2	dead	pulmonary embolus	0	70 - 79
-273	58	0.699951171875	0	8	21	benign	10.5	1	in bed < 50% daytime	14	3020	12	3	30	136	0.2	dead	prostate cancer	1	45 - 59
-274	73	0.5999755859375	0	6	35	normal	12.798828125	0	normal activity	12	3023	11	3	46	101	5	dead	prostate cancer	1	70 - 79
-275	75	0.39996337890625	0	8	29	old MI	10.8984375	1	normal activity	19	3188	11	3	21	113	0	dead	prostate cancer	1	70 - 79
-276	78	29.69921875	0	9	54	normal	12.798828125	0	normal activity	14	3265	11	3	42	107	5	dead	prostate cancer	1	70 - 79
-277	60	0.39996337890625	0	9	37	normal	13	0	normal activity	15	3307	9	3	10	94	5	dead	heart or vascular disease	0	60 - 69
-278	72	0.39996337890625	0	7	10	normal	13.798828125	0	normal activity	11	3353	9	3	15	83	0.2	dead	other cancer	0	70 - 79
-279	59	NA	1	8	29	normal	12.69921875	0	confined to bed	13	2673	13	4	17	NA	5	dead	prostate cancer	1	45 - 59
-280	84	37.8984375	1	7	71	NA	13	0	normal activity	14	2826	11	4	15	107	1	alive	NA	NA	80 - 90
-281	74	8.3984375	0	8	12	normal	14.599609375	1	normal activity	15	2826	11	4	18	107	0	dead	prostate cancer	1	70 - 79
-282	76	15.5	0	8	13	normal	13.69921875	0	normal activity	14	2848	15	4	36	97	0.2	dead	prostate cancer	1	70 - 79
-283	80	3.7998046875	0	7	27	old MI	12.8984375	1	normal activity	11	2894	11	4	17	135	0	dead	prostate cancer	1	80 - 90
-284	72	1.7998046875	0	8	66	rhythmic disturb & electrolyte ch	15.798828125	1	normal activity	15	2868	13	4	0	123	0.2	dead	prostate cancer	1	70 - 79
-285	59	5.2998046875	0	8	28	NA	15.798828125	0	normal activity	14	2981	11	4	21	100	0	dead	prostate cancer	1	45 - 59
-286	74	4.19921875	0	8	31	normal	15.19921875	0	normal activity	13	3015	13	4	25	111	1	dead	prostate cancer	1	70 - 79
-287	65	2.19970703125	0	9	12	normal	15.5	0	normal activity	15	3063	11	4	19	102	1	dead	prostate cancer	1	60 - 69
-288	71	25.59765625	1	10	9	heart strain	13.599609375	0	normal activity	19	3063	13	4	24	119	0	dead	heart or vascular disease	0	70 - 79
-289	76	10.8984375	1	6	21	normal	10.599609375	0	normal activity	14	3212	11	4	24	94	0.2	dead	prostate cancer	1	70 - 79
-290	74	3.69970703125	1	5	19	heart block or conduction def	11.19921875	0	confined to bed	14	3253	11	4	2	74	5	dead	prostate cancer	1	70 - 79
-291	75	2.2998046875	0	7	51	old MI	13.798828125	0	normal activity	18	3430	11	4	22	114	1	alive	NA	NA	70 - 79
-292	73	0.5999755859375	0	10	71	heart strain	14	1	in bed < 50% daytime	22	2652	11	3	22	134	0	dead	prostate cancer	1	70 - 79
-293	74	0.39996337890625	0	7	76	normal	11.099609375	1	normal activity	17	2658	11	3	12	NA	1	alive	NA	NA	70 - 79
-294	72	0.5999755859375	0	8	46	normal	13	1	in bed < 50% daytime	16	2667	11	3	30	112	5	dead	prostate cancer	1	70 - 79
-295	75	1.099853515625	0	9	47	heart strain	16.19921875	1	normal activity	15	2681	9	3	7	107	0.2	dead	other cancer	0	70 - 79
-296	70	0.89990234375	0	7	75	normal	13.8984375	0	in bed < 50% daytime	12	2681	9	3	7	NA	0.2	alive	NA	NA	70 - 79
-297	61	0.7999267578125	0	7	75	heart strain	12	0	normal activity	12	2681	9	3	4	94	5	alive	NA	NA	60 - 69
-298	71	0.29998779296875	0	7	49	heart strain	15.599609375	1	normal activity	16	2681	9	3	9	94	1	dead	heart or vascular disease	0	70 - 79
-299	57	0.5	0	8	75	normal	13.8984375	0	normal activity	12	2686	8	3	6	84	5	alive	NA	NA	45 - 59
-300	65	0.7999267578125	0	8	75	old MI	13.69921875	0	normal activity	14	2691	9	3	15	111	5	alive	NA	NA	60 - 69
-301	78	0.199981689453125	0	11	31	normal	14.8984375	1	in bed < 50% daytime	17	2707	10	3	2	96	0	dead	heart or vascular disease	0	70 - 79
-302	60	0.5	0	9	69	normal	16.09765625	0	normal activity	13	2712	9	3	26	122	0	dead	prostate cancer	1	60 - 69
-303	72	0.29998779296875	0	8	74	normal	14	0	normal activity	16	2730	7	3	23	102	0.2	alive	NA	NA	70 - 79
-304	81	0.5	0	8	25	old MI	12.798828125	0	in bed < 50% daytime	15	2747	8	3	4	102	1	dead	other specified non-cancer	0	80 - 90
-305	70	0.29998779296875	0	8	72	normal	14.599609375	0	normal activity	15	2783	10	3	5	87	5	alive	NA	NA	70 - 79
-306	62	0.29998779296875	0	7	28	recent MI	13.5	1	normal activity	12	2789	8	3	10	88	0.2	dead	other specified non-cancer	0	60 - 69
-307	68	0.39996337890625	0	7	36	rhythmic disturb & electrolyte ch	13.298828125	0	normal activity	16	2793	9	3	40	98	1	dead	other specified non-cancer	0	60 - 69
-308	74	0.5	0	8	8	heart strain	13.599609375	0	normal activity	14	2799	8	3	14	97	0	dead	prostate cancer	1	70 - 79
-309	65	0.7999267578125	0	8	71	normal	16.5	1	normal activity	15	2827	9	3	9	117	0.2	alive	NA	NA	60 - 69
-310	74	0.699951171875	0	9	60	normal	9.798828125	1	normal activity	18	2839	8	3	2	95	0	dead	cerebrovascular disease/accident	0	70 - 79
-311	76	0.7999267578125	0	9	14	heart strain	12	1	normal activity	15	2859	11	3	9	NA	1	dead	pulmonary embolus	0	70 - 79
-312	70	0.199981689453125	0	7	22	rhythmic disturb & electrolyte ch	14.8984375	0	normal activity	14	2889	11	3	9	78	0.2	dead	other specified non-cancer	0	70 - 79
-313	73	0.5	0	6	67	rhythmic disturb & electrolyte ch	14.8984375	0	normal activity	13	2894	9	3	39	105	5	dead	unspecified non-cancer	0	70 - 79
-314	71	0.29998779296875	0	10	62	heart strain	14.5	1	normal activity	18	2905	8	3	9	107	0	dead	heart or vascular disease	0	70 - 79
-315	73	0.699951171875	0	9	68	heart block or conduction def	13.3984375	0	normal activity	17	2905	9	3	4	118	5	alive	NA	NA	70 - 79
-316	71	0.39996337890625	0	12	68	heart strain	14.099609375	0	normal activity	16	2910	9	3	7	108	0	alive	NA	NA	70 - 79
-317	75	0.5	0	8	27	benign	15.3984375	0	normal activity	13	2912	9	3	4	145	1	dead	cerebrovascular disease/accident	0	70 - 79
-318	70	0.5	0	7	68	heart strain	14.19921875	0	normal activity	11	2919	10	3	19	98	0.2	alive	NA	NA	70 - 79
-319	77	0.39996337890625	0	6	68	old MI	15.5	0	normal activity	12	2919	9	3	9	98	1	alive	NA	NA	70 - 79
-320	71	0.5999755859375	0	8	67	normal	15.599609375	0	normal activity	15	2925	8	3	8	87	0	alive	NA	NA	70 - 79
-321	75	0.5	0	7	67	heart block or conduction def	13.5	0	normal activity	14	2925	7	3	18	101	0	alive	NA	NA	70 - 79
-322	74	0.29998779296875	0	7	3	heart strain	14.099609375	1	normal activity	16	2925	11	3	10	105	0.2	dead	heart or vascular disease	0	70 - 79
-323	72	0.29998779296875	0	6	49	heart strain	15	0	normal activity	11	2936	11	3	8	100	5	dead	heart or vascular disease	0	70 - 79
-324	89	0.699951171875	0	6	12	old MI	13.599609375	1	normal activity	13	2937	9	3	8	92	5	dead	respiratory disease	0	80 - 90
-325	75	0.699951171875	0	6	30	heart strain	14.298828125	0	normal activity	12	2937	12	3	10	96	0.2	dead	respiratory disease	0	70 - 79
-326	71	0.5	0	8	67	heart strain	14.69921875	0	normal activity	14	2947	11	3	3	101	1	alive	NA	NA	70 - 79
-327	80	0.89990234375	0	10	5	heart strain	14.5	1	normal activity	16	2952	9	3	7	95	1	dead	other cancer	0	80 - 90
-328	51	0.5999755859375	0	8	65	normal	11.798828125	0	normal activity	13	2964	6	3	2	96	1	dead	other cancer	0	45 - 59
-329	71	0.39996337890625	0	4	24	normal	13.69921875	0	normal activity	9	2965	9	3	10	81	0	dead	other specified non-cancer	0	70 - 79
-330	72	0.699951171875	0	5	66	normal	14	1	normal activity	10	2971	8	3	8	95	0.2	alive	NA	NA	70 - 79
-331	70	1	0	9	36	heart block or conduction def	15.8984375	1	normal activity	16	2974	9	3	7	91	5	dead	heart or vascular disease	0	70 - 79
-332	55	0.7999267578125	0	10	66	old MI	16.69921875	0	normal activity	16	2978	8	3	2	103	0	alive	NA	NA	45 - 59
-333	76	0.5	0	7	40	heart strain	14.599609375	1	normal activity	15	2978	9	3	3	104	0.2	dead	cerebrovascular disease/accident	0	70 - 79
-334	68	0.5	0	9	13	heart strain	9.5	0	normal activity	17	2978	8	3	11	97	0.2	dead	other specified non-cancer	0	60 - 69
-335	75	0.39996337890625	0	8	40	old MI	15.5	1	normal activity	12	3001	8	3	14	81	5	dead	cerebrovascular disease/accident	0	70 - 79
-336	52	0.5999755859375	0	10	65	heart strain	14	1	normal activity	15	3007	NA	3	4	101	0.2	alive	NA	NA	45 - 59
-337	75	0.199981689453125	0	10	0	heart strain	11.798828125	0	normal activity	20	3013	11	3	3	91	0.2	dead	other specified non-cancer	0	70 - 79
-338	75	0.7999267578125	0	7	14	heart strain	17.5	1	normal activity	11	3023	9	3	15	94	1	dead	heart or vascular disease	0	70 - 79
-339	72	0.5	0	7	45	normal	11	0	normal activity	13	3023	8	3	4	77	1	dead	cerebrovascular disease/accident	0	70 - 79
-340	74	0.5999755859375	0	8	64	normal	14.19921875	0	normal activity	14	3023	6	3	4	118	1	alive	NA	NA	70 - 79
-341	75	0.5	0	7	13	rhythmic disturb & electrolyte ch	12.099609375	0	normal activity	13	3023	8	3	5	91	1	dead	respiratory disease	0	70 - 79
-342	75	0.39996337890625	0	9	24	old MI	10.8984375	1	normal activity	13	3030	8	3	8	79	0	dead	other cancer	0	70 - 79
-343	71	0.7999267578125	0	8	15	heart strain	17.296875	1	normal activity	12	3048	11	3	5	96	0	dead	heart or vascular disease	0	70 - 79
-344	76	0.5	0	9	26	heart strain	11.19921875	1	normal activity	15	3051	8	3	10	102	0	dead	heart or vascular disease	0	70 - 79
-345	70	0.29998779296875	0	7	5	old MI	11.69921875	0	normal activity	14	3051	13	3	33	83	1	dead	prostate cancer	1	70 - 79
-346	73	0.699951171875	0	11	63	heart strain	16.69921875	1	normal activity	21	3055	8	3	10	129	0.2	alive	NA	NA	70 - 79
-347	70	0.7999267578125	0	8	35	old MI	16.09765625	1	normal activity	13	3111	11	3	7	107	5	dead	heart or vascular disease	0	70 - 79
-348	75	0.0999908447265625	0	8	61	normal	13.69921875	0	normal activity	13	3111	12	3	10	93	0	alive	NA	NA	70 - 79
-349	70	0.5999755859375	0	7	61	normal	16.19921875	0	normal activity	14	3122	9	3	8	127	5	alive	NA	NA	70 - 79
-350	74	0.39996337890625	0	7	50	normal	12.298828125	1	normal activity	13	3127	8	3	1	97	5	dead	unknown	0	70 - 79
-351	72	0.699951171875	0	10	57	normal	17.5	0	normal activity	16	3134	9	3	8	109	5	dead	heart or vascular disease	0	70 - 79
-352	62	0.699951171875	0	8	21	heart strain	16.3984375	1	normal activity	16	3140	9	3	15	109	5	dead	cerebrovascular disease/accident	0	60 - 69
-353	72	0.5	0	8	26	normal	15.298828125	0	normal activity	14	3140	11	3	37	111	0	dead	prostate cancer	1	70 - 79
-354	77	0.5	0	6	11	rhythmic disturb & electrolyte ch	12.3984375	0	normal activity	12	3140	11	3	45	74	0	dead	respiratory disease	0	70 - 79
-355	52	0.5	0	7	59	heart strain	11.8984375	0	normal activity	12	3188	8	3	5	90	1	alive	NA	NA	45 - 59
-356	57	0.5	0	6	42	normal	13.8984375	0	normal activity	12	3190	12	3	24	89	0	dead	prostate cancer	1	45 - 59
-357	80	0.5999755859375	0	8	27	heart strain	14.298828125	1	normal activity	14	3195	8	3	9	90	1	dead	cerebrovascular disease/accident	0	80 - 90
-358	62	0.29998779296875	0	7	50	normal	13.69921875	1	normal activity	11	3253	9	3	6	85	0.2	dead	heart or vascular disease	0	60 - 69
-359	72	0.5	0	8	57	normal	14.599609375	0	normal activity	13	3253	10	3	8	101	1	alive	NA	NA	70 - 79
-360	72	0.7999267578125	0	8	57	heart strain	15.19921875	0	normal activity	14	3253	9	3	11	116	1	alive	NA	NA	70 - 79
-361	77	0.5	0	10	0	old MI	14.5	1	normal activity	14	3272	9	3	5	91	0	dead	heart or vascular disease	0	70 - 79
-362	72	0.699951171875	0	8	1	heart strain	14.798828125	1	normal activity	15	3275	9	3	23	134	0.2	dead	heart or vascular disease	0	70 - 79
-363	73	0.699951171875	0	10	54	old MI	11.69921875	0	normal activity	18	3346	9	3	8	100	1	alive	NA	NA	70 - 79
-364	74	1	0	8	53	old MI	13.798828125	1	normal activity	16	3358	8	3	11	98	0.2	dead	prostate cancer	1	70 - 79
-365	74	0.39996337890625	0	4	23	old MI	10.8984375	1	normal activity	17	3359	8	3	8	82	0.2	dead	heart or vascular disease	0	70 - 79
-366	72	0.7999267578125	0	8	8	normal	13.099609375	0	normal activity	15	3370	9	3	4	110	5	dead	heart or vascular disease	0	70 - 79
-367	76	0.89990234375	0	8	51	old MI	15.8984375	1	normal activity	14	3374	9	3	25	85	5	dead	pulmonary embolus	0	70 - 79
-368	78	0.5	0	7	27	heart strain	12.298828125	1	normal activity	15	3380	9	3	7	111	0	dead	other specified non-cancer	0	70 - 79
-369	83	0.5999755859375	0	8	52	old MI	10	1	normal activity	16	3384	7	3	1	88	5	alive	NA	NA	80 - 90
-370	80	0.5	0	7	52	heart strain	13	1	normal activity	13	3402	9	3	6	NA	0.2	alive	NA	NA	80 - 90
-371	76	0.39996337890625	0	8	52	heart block or conduction def	13.298828125	0	normal activity	15	3407	13	3	52	90	5	alive	NA	NA	70 - 79
-372	79	0.699951171875	0	8	45	old MI	15.3984375	0	normal activity	13	3407	11	3	7	126	0	dead	cerebrovascular disease/accident	0	70 - 79
-373	76	0.39996337890625	0	8	48	heart strain	16.8984375	1	normal activity	13	3423	9	3	2	116	0.2	dead	other specified non-cancer	0	70 - 79
-374	71	0.29998779296875	0	8	18	heart strain	13	1	normal activity	14	3427	11	3	7	110	0	dead	prostate cancer	1	70 - 79
-375	61	25.59765625	1	8	2	heart strain	11.5	0	normal activity	12	2652	12	4	37	95	0	dead	other specified non-cancer	0	60 - 69
-376	77	0.89990234375	1	7	2	heart strain	11.8984375	1	in bed < 50% daytime	14	2670	10	4	36	96	5	dead	heart or vascular disease	0	70 - 79
-377	76	9.298828125	1	6	35	heart strain	10.298828125	0	normal activity	10	2686	13	4	10	82	1	dead	cerebrovascular disease/accident	0	70 - 79
-378	71	10	0	8	75	normal	14.099609375	0	normal activity	15	2695	13	4	26	106	1	alive	NA	NA	70 - 79
-379	77	2.19970703125	0	6	75	benign	12.5	0	normal activity	11	2707	11	4	5	87	0	alive	NA	NA	70 - 79
-380	78	25.296875	1	8	9	rhythmic disturb & electrolyte ch	14.298828125	1	normal activity	18	2729	13	4	39	89	0	dead	pulmonary embolus	0	70 - 79
-381	58	10.798828125	1	8	39	heart strain	13.69921875	0	normal activity	12	2772	11	4	5	92	1	dead	prostate cancer	1	45 - 59
-382	74	2.2998046875	0	8	0	heart strain	14.19921875	1	normal activity	11	2772	13	4	41	113	5	dead	heart or vascular disease	0	70 - 79
-383	75	0.5	1	9	26	rhythmic disturb & electrolyte ch	16	1	normal activity	18	2835	11	4	26	116	0	dead	cerebrovascular disease/accident	0	70 - 79
-384	62	10.099609375	0	11	17	old MI	14.599609375	0	normal activity	18	2854	13	4	16	102	0	dead	pulmonary embolus	0	60 - 69
-385	80	1.099853515625	0	9	43	heart strain	13.099609375	0	normal activity	15	2887	13	4	0	92	0.2	dead	respiratory disease	0	80 - 90
-386	61	4	0	8	53	normal	10.298828125	0	in bed < 50% daytime	13	2894	11	4	14	79	5	dead	prostate cancer	1	60 - 69
-387	76	3.7998046875	0	9	47	old MI	13.3984375	1	normal activity	17	2919	11	4	19	98	1	dead	cerebrovascular disease/accident	0	70 - 79
-388	79	31.3984375	1	8	11	heart strain	9.099609375	0	in bed < 50% daytime	16	3009	13	4	38	NA	0.2	dead	prostate cancer	1	70 - 79
-389	66	58.09375	0	8	65	normal	14.8984375	0	normal activity	12	3009	12	4	18	116	0.2	alive	NA	NA	60 - 69
-390	61	38.5	1	6	16	rhythmic disturb & electrolyte ch	13.599609375	1	normal activity	12	3010	15	4	4	83	1	dead	prostate cancer	1	60 - 69
-391	79	6.099609375	0	9	21	heart strain	16.09765625	0	normal activity	17	3010	13	4	4	NA	5	dead	unspecified non-cancer	0	70 - 79
-392	70	1.099853515625	0	7	64	normal	14.19921875	1	normal activity	13	3035	11	4	11	NA	0.2	alive	NA	NA	70 - 79
-393	73	1.099853515625	0	7	7	heart block or conduction def	15.599609375	1	normal activity	15	3111	9	4	10	105	0.2	dead	prostate cancer	1	70 - 79
-394	72	1.5	0	8	38	heart strain	14.798828125	0	normal activity	11	3115	15	4	11	90	5	dead	prostate cancer	1	70 - 79
-395	81	8.69921875	1	6	55	normal	11.19921875	1	normal activity	13	3097	12	4	38	98	1	dead	prostate cancer	1	80 - 90
-396	77	0.5999755859375	0	9	5	heart strain	11.5	0	normal activity	15	3097	10	4	6	92	0	dead	respiratory disease	0	70 - 79
-397	76	1.7998046875	0	6	28	heart strain	14.798828125	0	normal activity	11	3143	13	4	29	76	0.2	dead	prostate cancer	1	70 - 79
-398	75	0.39996337890625	1	6	38	rhythmic disturb & electrolyte ch	13.298828125	1	normal activity	10	3150	13	4	9	113	0	dead	prostate cancer	1	70 - 79
-399	72	7.19921875	1	7	20	normal	12.19921875	0	normal activity	14	3150	11	4	24	79	0.2	dead	prostate cancer	1	70 - 79
-400	74	1.099853515625	0	9	24	normal	12.599609375	0	normal activity	16	3155	13	4	12	108	5	dead	prostate cancer	1	70 - 79
-401	70	1.7998046875	0	8	27	rhythmic disturb & electrolyte ch	16.3984375	0	normal activity	16	3157	13	4	9	85	5	dead	prostate cancer	1	70 - 79
-402	61	152.1875	1	8	31	benign	10.69921875	1	normal activity	14	3195	13	4	25	91	1	dead	prostate cancer	1	60 - 69
-403	77	47	0	8	9	rhythmic disturb & electrolyte ch	15.19921875	1	normal activity	14	3196	13	4	7	116	0	dead	prostate cancer	1	70 - 79
-404	60	17	1	8	9	NA	14.099609375	0	normal activity	11	3204	13	4	46	73	1	dead	prostate cancer	1	60 - 69
-405	72	1.099853515625	0	7	11	rhythmic disturb & electrolyte ch	14	0	in bed < 50% daytime	12	3238	15	4	50	86	1	dead	unspecified non-cancer	0	70 - 79
-406	64	2.39990234375	1	7	56	normal	12	0	normal activity	17	3253	13	4	43	104	5	dead	prostate cancer	1	60 - 69
-407	78	3.19970703125	0	9	36	heart strain	13.798828125	0	normal activity	15	3261	10	4	55	95	0	dead	prostate cancer	1	70 - 79
-408	74	1.099853515625	0	8	56	old MI	10.599609375	1	normal activity	14	3272	15	4	4	108	0.2	alive	NA	NA	70 - 79
-409	73	4.19921875	0	7	15	heart strain	11.19921875	1	normal activity	12	3272	11	4	0	83	5	dead	other cancer	0	70 - 79
-410	71	0.7999267578125	1	7	51	heart block or conduction def	16	0	normal activity	15	3429	11	4	26	104	5	alive	NA	NA	70 - 79
-411	75	0.699951171875	0	9	33	heart strain	13.798828125	1	normal activity	17	2824	9	3	9	113	0	dead	cerebrovascular disease/accident	0	70 - 79
-412	72	0.7999267578125	0	8	70	normal	13.798828125	0	normal activity	13	2838	9	3	3	105	1	alive	NA	NA	70 - 79
-413	68	0.5999755859375	0	10	32	heart strain	13.798828125	1	normal activity	19	2895	9	3	3	89	5	dead	heart or vascular disease	0	60 - 69
-414	74	0.39996337890625	0	8	5	normal	15.099609375	0	normal activity	15	2965	9	3	3	91	1	dead	other cancer	0	70 - 79
-415	72	0.199981689453125	0	8	23	heart strain	16.59765625	1	normal activity	16	3000	9	3	4	93	5	dead	heart or vascular disease	0	70 - 79
-416	79	0.699951171875	0	9	63	old MI	16.8984375	0	normal activity	15	3056	9	3	2	110	0	alive	NA	NA	70 - 79
-417	62	0.39996337890625	0	8	30	heart strain	16	1	normal activity	12	3078	11	3	32	104	0.2	dead	prostate cancer	1	60 - 69
-418	69	0.89990234375	0	7	12	old MI	15.5	1	normal activity	17	3083	NA	3	22	92	0.2	dead	prostate cancer	1	60 - 69
-419	62	0.5	0	11	53	heart strain	16.3984375	0	normal activity	19	3113	9	3	14	119	0	dead	heart or vascular disease	0	60 - 69
-420	72	0.5999755859375	0	8	12	heart strain	16.3984375	0	normal activity	15	3176	9	3	15	128	0	dead	heart or vascular disease	0	70 - 79
-421	72	0.5999755859375	0	8	58	heart strain	13.298828125	0	normal activity	13	3203	9	3	12	109	0	alive	NA	NA	70 - 79
-422	51	0.7999267578125	0	9	54	normal	15.798828125	0	normal activity	13	3322	8	3	7	112	1	alive	NA	NA	45 - 59
-423	72	0.5999755859375	0	10	36	normal	16.3984375	0	normal activity	18	3337	9	3	4	104	0	dead	prostate cancer	1	70 - 79
-424	81	0.7999267578125	0	8	20	normal	16.8984375	0	normal activity	15	3364	13	3	16	104	0.2	dead	respiratory disease	0	80 - 90
-425	71	11.798828125	0	7	74	old MI	13.099609375	0	normal activity	11	2714	11	4	29	81	5	alive	NA	NA	70 - 79
-426	77	1.2998046875	0	7	34	rhythmic disturb & electrolyte ch	14.298828125	0	normal activity	14	2726	11	4	35	103	0	dead	prostate cancer	1	70 - 79
-427	73	0.5	0	8	70	normal	14.69921875	1	normal activity	14	2832	11	4	26	114	0.2	alive	NA	NA	70 - 79
-428	56	50.59375	1	8	25	heart strain	13.798828125	0	normal activity	17	2973	11	4	30	100	0	dead	prostate cancer	1	45 - 59
-429	77	1.599853515625	0	9	65	heart strain	14.69921875	0	normal activity	14	2987	13	4	1	107	0.2	alive	NA	NA	70 - 79
-430	78	22.59765625	0	9	4	heart block or conduction def	12.69921875	0	normal activity	16	3022	11	4	27	104	0	dead	prostate cancer	1	70 - 79
-431	76	36	1	7	10	old MI	13.798828125	0	normal activity	12	3119	11	4	34	96	1	dead	prostate cancer	1	70 - 79
-432	68	1.199951171875	0	9	58	rhythmic disturb & electrolyte ch	13.3984375	0	normal activity	18	3205	11	4	9	79	1	alive	NA	NA	60 - 69
-433	73	5.099609375	0	9	37	benign	9.3984375	0	normal activity	14	3223	13	4	21	90	0	dead	prostate cancer	1	70 - 79
-434	56	3.19970703125	0	9	56	normal	14.69921875	0	normal activity	16	3279	10	4	10	135	5	alive	NA	NA	45 - 59
-435	74	21.296875	1	10	6	heart strain	13.099609375	1	normal activity	20	3392	11	4	9	112	1	dead	prostate cancer	1	70 - 79
-436	76	0.39996337890625	0	8	54	normal	12.599609375	1	normal activity	15	2720	NA	3	19	84	5	dead	prostate cancer	1	70 - 79
-437	69	0.0999908447265625	0	8	0	normal	11.298828125	1	normal activity	13	2813	9	3	1	113	5	dead	heart or vascular disease	0	60 - 69
-438	73	0.5	0	6	70	benign	15.599609375	1	normal activity	10	2853	9	3	1	84	1	alive	NA	NA	70 - 79
-439	71	0.199981689453125	0	8	70	normal	13.599609375	0	normal activity	12	2859	10	3	2	105	1	alive	NA	NA	70 - 79
-440	75	0.199981689453125	0	8	28	old MI	10.798828125	1	normal activity	14	2875	9	3	2	97	0.2	dead	heart or vascular disease	0	70 - 79
-441	69	0.29998779296875	0	7	40	old MI	5.8994140625	0	normal activity	15	2917	9	3	2	85	1	dead	heart or vascular disease	0	60 - 69
-442	73	0.39996337890625	0	7	67	normal	13.798828125	0	normal activity	11	2943	8	3	7	95	1	alive	NA	NA	70 - 79
-443	59	0.39996337890625	0	10	36	normal	16	0	normal activity	15	3076	9	3	2	81	0.2	dead	respiratory disease	0	45 - 59
-444	68	0.89990234375	0	7	23	normal	12.5	0	normal activity	13	3076	8	3	2	93	0	dead	respiratory disease	0	60 - 69
-445	78	0.0999908447265625	0	7	23	heart block or conduction def	13	1	normal activity	14	3076	8	3	2	115	0	dead	heart or vascular disease	0	70 - 79
-446	63	0.29998779296875	0	9	62	normal	13.19921875	0	normal activity	12	3076	8	3	3	95	0	alive	NA	NA	60 - 69
-447	74	0.39996337890625	0	9	62	heart block or conduction def	14.099609375	0	normal activity	12	3087	9	3	2	85	0.2	alive	NA	NA	70 - 79
-448	72	0.39996337890625	0	7	62	heart strain	14.298828125	0	normal activity	16	3100	5	3	0	103	0	alive	NA	NA	70 - 79
-449	78	0.5999755859375	0	7	2	old MI	11.19921875	0	normal activity	11	3140	6	3	0	103	5	dead	heart or vascular disease	0	70 - 79
-450	70	0.5999755859375	0	9	34	benign	14.8984375	0	normal activity	14	3170	12	3	2	85	0.2	dead	prostate cancer	1	70 - 79
-451	72	0.7999267578125	0	10	4	rhythmic disturb & electrolyte ch	16.3984375	0	normal activity	14	3205	9	3	1	101	1	dead	heart or vascular disease	0	70 - 79
-452	76	0.5	0	7	12	old MI	12.5	1	normal activity	13	3213	8	3	4	103	0.2	dead	prostate cancer	1	70 - 79
-453	66	0.5	0	9	56	old MI	15.5	0	normal activity	12	3260	9	3	4	106	0	alive	NA	NA	60 - 69
-454	88	0.699951171875	0	6	1	old MI	14.099609375	1	normal activity	13	3275	9	3	17	NA	5	dead	heart or vascular disease	0	80 - 90
-455	78	0.29998779296875	0	6	7	old MI	10.8984375	1	normal activity	11	3413	9	3	5	88	5	dead	other specified non-cancer	0	70 - 79
-456	79	3	0	7	4	normal	12.19921875	0	normal activity	12	2740	12	4	5	105	0	dead	prostate cancer	1	70 - 79
-457	77	2.19970703125	0	8	70	rhythmic disturb & electrolyte ch	16	1	normal activity	15	2841	9	4	1	106	0	alive	NA	NA	70 - 79
-458	71	1.5	0	7	65	normal	12.69921875	0	normal activity	12	3006	10	4	2	101	5	alive	NA	NA	70 - 79
-459	74	11.298828125	0	8	7	normal	12.599609375	1	normal activity	15	3100	13	4	8	91	0.2	dead	prostate cancer	1	70 - 79
-460	75	1.699951171875	0	10	30	rhythmic disturb & electrolyte ch	13.19921875	0	normal activity	15	3132	13	4	3	124	1	dead	heart or vascular disease	0	70 - 79
-461	77	8.19921875	0	6	40	heart block or conduction def	14.69921875	1	normal activity	10	3176	12	4	2	90	0.2	dead	heart or vascular disease	0	70 - 79
-462	75	1.099853515625	0	9	13	normal	15.798828125	1	normal activity	15	3275	11	4	4	74	0	dead	heart or vascular disease	0	70 - 79
-463	64	6.2998046875	1	10	22	rhythmic disturb & electrolyte ch	9.298828125	0	normal activity	16	3332	11	4	6	110	0.2	dead	prostate cancer	1	60 - 69
-464	79	2	1	10	0	heart block or conduction def	10.298828125	0	normal activity	17	3332	13	4	19	89	1	dead	heart or vascular disease	0	70 - 79
-465	60	1.199951171875	0	8	18	old MI	14.099609375	1	in bed > 50% daytime	16	3367	13	4	9	134	0	dead	prostate cancer	1	60 - 69
-466	70	0.199981689453125	0	9	64	heart strain	14.099609375	0	normal activity	14	2806	9	3	8	107	0.2	dead	unknown	0	70 - 79
-467	73	0.699951171875	0	8	13	heart strain	17	1	normal activity	15	2856	9	3	4	111	5	dead	heart or vascular disease	0	70 - 79
-468	61	0.39996337890625	0	9	26	rhythmic disturb & electrolyte ch	14.298828125	0	normal activity	14	2898	11	3	3	109	0	dead	prostate cancer	1	60 - 69
-469	79	0.5999755859375	0	8	1	heart strain	13.599609375	1	in bed < 50% daytime	16	2943	9	3	3	97	5	dead	pulmonary embolus	0	70 - 79
-470	78	0.39996337890625	0	7	16	NA	11.3984375	0	normal activity	12	2985	9	3	4	88	0	dead	heart or vascular disease	0	70 - 79
-472	72	0.5999755859375	0	8	33	old MI	16.5	1	normal activity	13	3267	11	3	17	106	0.2	dead	heart or vascular disease	0	70 - 79
-474	76	1.099853515625	0	8	16	rhythmic disturb & electrolyte ch	12	0	normal activity	13	3336	NA	3	5	90	0	dead	heart or vascular disease	0	70 - 79
-476	51	0.5999755859375	0	9	22	normal	14.599609375	0	normal activity	16	2698	13	4	5	100	0.2	dead	prostate cancer	1	45 - 59
-477	59	3	0	9	30	normal	15.099609375	1	normal activity	15	2713	13	4	32	87	0.2	dead	prostate cancer	1	45 - 59
-478	73	3.19970703125	0	9	53	rhythmic disturb & electrolyte ch	14.599609375	1	normal activity	16	2761	10	4	4	91	5	dead	cerebrovascular disease/accident	0	70 - 79
-479	74	1.2998046875	0	7	53	rhythmic disturb & electrolyte ch	11.798828125	1	normal activity	13	2806	13	4	5	90	0.2	dead	prostate cancer	1	70 - 79
-480	77	43	1	9	7	old MI	11.798828125	1	in bed > 50% daytime	14	2806	11	4	43	93	0	dead	prostate cancer	1	70 - 79
-481	74	24.3984375	0	7	61	rhythmic disturb & electrolyte ch	13.5	0	normal activity	15	2841	11	4	5	95	0.2	dead	prostate cancer	1	70 - 79
-482	60	1.2998046875	0	7	40	normal	14	0	normal activity	11	2852	11	4	9	125	0	dead	prostate cancer	1	60 - 69
-483	72	1.39990234375	1	8	9	rhythmic disturb & electrolyte ch	12.8984375	1	normal activity	14	2943	13	4	18	83	0	dead	heart or vascular disease	0	70 - 79
-484	79	1.39990234375	0	7	14	old MI	8.599609375	1	normal activity	12	3002	NA	4	20	88	1	dead	prostate cancer	1	70 - 79
-485	50	10.298828125	0	8	59	normal	15.298828125	0	normal activity	12	3169	13	4	NA	117	1	alive	NA	NA	45 - 59
-486	73	0.699951171875	1	8	59	normal	13.3984375	0	normal activity	16	3192	11	4	3	71	1	alive	NA	NA	70 - 79
-487	72	2.099609375	0	6	7	normal	13.69921875	0	normal activity	14	3220	11	4	4	110	5	dead	heart or vascular disease	0	70 - 79
-489	80	160	1	7	12	old MI	8.5	1	in bed > 50% daytime	14	3435	5	4	6	105	5	dead	prostate cancer	1	80 - 90
-490	69	1.39990234375	1	8	46	old MI	13.69921875	1	in bed < 50% daytime	11	3465	13	4	5	71	5	dead	cerebrovascular disease/accident	0	60 - 69
-491	75	4.5	0	8	50	normal	16	0	normal activity	14	3465	11	4	1	116	1	alive	NA	NA	70 - 79
-492	71	1.699951171875	0	8	0	heart block or conduction def	14.099609375	1	in bed < 50% daytime	14	3465	11	4	1	NA	5	dead	pulmonary embolus	0	70 - 79
-493	73	0.5	0	8	52	heart strain	13.599609375	1	normal activity	14	3387	8	3	8	114	5	alive	NA	NA	70 - 79
-494	76	0.199981689453125	0	9	19	heart block or conduction def	16	1	normal activity	15	3407	9	3	7	NA	1	dead	other cancer	0	70 - 79
-495	73	0.29998779296875	0	7	52	normal	11.69921875	0	normal activity	15	3407	9	3	5	114	0	alive	NA	NA	70 - 79
-496	76	0.5	0	18	51	heart strain	11.599609375	1	normal activity	30	3440	9	3	6	114	1	alive	NA	NA	70 - 79
-497	68	0.699951171875	0	8	51	normal	13.3984375	0	normal activity	14	3440	9	3	6	98	5	alive	NA	NA	60 - 69
-498	64	0.5999755859375	0	7	14	normal	14	0	in bed < 50% daytime	14	3395	11	4	23	100	0.2	dead	prostate cancer	1	60 - 69
-499	75	29.59765625	0	8	27	normal	14.19921875	0	normal activity	16	3430	11	4	5	102	0.2	dead	prostate cancer	1	70 - 79
-500	60	0.5	1	10	51	heart strain	14.5	1	normal activity	14	3429	8	4	6	123	1	alive	NA	NA	60 - 69
-501	73	2.89990234375	0	10	5	normal	16.796875	1	normal activity	19	3433	11	4	2	100	5	dead	heart or vascular disease	0	70 - 79
-502	78	0.5999755859375	0	6	0	normal	15.798828125	0	normal activity	11	3297	13	3	9	108	1	dead	other cancer	0	70 - 79
-503	78	0.5	0	10	41	heart strain	15.798828125	1	normal activity	16	3349	9	3	5	127	0.2	dead	unspecified non-cancer	0	70 - 79
-504	77	0.7999267578125	0	10	53	heart block or conduction def	16	0	normal activity	17	3357	9	3	11	93	1	alive	NA	NA	70 - 79
-505	82	8.3984375	0	6	19	heart strain	12.3984375	1	normal activity	12	3311	13	4	32	96	5	dead	prostate cancer	1	80 - 90
-506	74	22.19921875	1	6	4	normal	21.19921875	0	in bed < 50% daytime	15	3428	NA	4	33	97	1	dead	prostate cancer	1	70 - 79
+patno	age	PA_phosphatase	bone_metastases	diastolic_bp	months_of_follow_up	ekg	serum_hemoglobin	history_of_CD	activity	systolic_bp	study_date	stage_grade_index	stage	tumor_size	weight_index	estrogen_mg	status_	cause_of_death	dead_from_prostate_cancer	Age_group
+1	75	0.29998779296875	0	9	72	heart strain	13.798828125	0	normal activity	15	1977-08-10	8	3	2	76	0.2	alive	NA	NA	70 - 79
+2	54	0.699951171875	0	7	1	heart block or conduction def	14.599609375	0	normal activity	13	1977-09-21	NA	3	42	116	0.2	dead	other cancer	0	45 - 59
+3	69	0.29998779296875	0	8	40	heart strain	13.3984375	1	normal activity	14	1978-01-12	9	3	3	102	5	dead	cerebrovascular disease/accident	0	60 - 69
+4	75	0.89990234375	0	7	20	benign	17.59765625	1	in bed < 50% daytime	14	1978-03-19	8	3	4	94	0.2	dead	cerebrovascular disease/accident	0	70 - 79
+5	67	0.5	0	10	65	normal	13.3984375	0	normal activity	17	1978-03-22	8	3	34	NA	0	alive	NA	NA	60 - 69
+6	71	0.5999755859375	0	10	24	normal	15.099609375	0	normal activity	19	1978-06-14	11	3	10	98	0.2	dead	prostate cancer	1	70 - 79
+7	75	0.7999267578125	0	10	46	benign	13	0	normal activity	14	1978-06-27	9	3	13	100	0	dead	heart or vascular disease	0	70 - 79
+8	73	0.5999755859375	0	11	62	heart strain	12.599609375	1	normal activity	17	1978-06-28	9	3	3	114	0	alive	NA	NA	70 - 79
+9	60	0.699951171875	0	8	61	normal	14.599609375	0	normal activity	12	1978-08-01	10	3	4	110	1	alive	NA	NA	60 - 69
+10	78	0.39996337890625	0	8	60	old MI	13	1	normal activity	13	1978-08-07	6	3	21	107	1	alive	NA	NA	70 - 79
+11	77	0.5999755859375	0	8	60	normal	15.599609375	0	normal activity	15	1978-08-08	8	3	3	89	1	alive	NA	NA	70 - 79
+12	74	0.39996337890625	0	14	59	normal	13.599609375	1	normal activity	18	1978-09-12	8	3	6	105	5	alive	NA	NA	70 - 79
+13	74	0.29998779296875	0	9	59	old MI	14.3984375	0	normal activity	14	1978-09-19	9	3	6	107	0.2	alive	NA	NA	70 - 79
+14	55	1	0	9	49	heart strain	13.8984375	1	normal activity	16	1978-09-19	9	3	4	112	0	dead	prostate cancer	1	45 - 59
+15	73	0.5999755859375	0	10	20	heart strain	12	0	normal activity	19	1978-10-02	10	3	15	88	5	dead	cerebrovascular disease/accident	0	70 - 79
+16	87	0.39996337890625	0	12	3	rhythmic disturb & electrolyte ch	13.3984375	1	in bed < 50% daytime	17	1978-10-02	9	3	3	81	5	dead	heart or vascular disease	0	80 - 90
+17	64	0.699951171875	0	8	58	normal	16.19921875	0	normal activity	14	1978-10-24	9	3	6	90	0	alive	NA	NA	60 - 69
+18	79	0.5	0	8	29	benign	15	0	normal activity	13	1978-11-05	8	3	5	104	1	dead	pulmonary embolus	0	70 - 79
+19	62	0.699951171875	0	8	26	benign	14.3984375	1	normal activity	13	1979-04-10	9	3	2	90	5	dead	heart or vascular disease	0	60 - 69
+20	74	0.699951171875	0	8	52	heart strain	16.3984375	0	normal activity	13	1979-04-24	9	3	10	107	5	alive	NA	NA	70 - 79
+21	83	0.699951171875	0	9	20	heart strain	15	1	in bed < 50% daytime	13	1979-04-24	10	3	1	72	5	dead	heart or vascular disease	0	80 - 90
+22	65	0.699951171875	0	10	51	normal	14.099609375	0	normal activity	16	1979-05-22	9	3	21	113	1	alive	NA	NA	60 - 69
+23	61	0.5999755859375	0	8	51	normal	13.5	0	normal activity	11	1979-05-27	8	3	8	97	0	alive	NA	NA	60 - 69
+24	56	35.6953125	1	10	31	rhythmic disturb & electrolyte ch	14.798828125	0	normal activity	15	1977-08-23	13	4	26	95	5	dead	prostate cancer	1	45 - 59
+25	73	3.89990234375	0	10	42	normal	14.599609375	0	normal activity	16	1977-10-02	11	4	6	103	1	dead	cerebrovascular disease/accident	0	70 - 79
+26	69	6.19921875	0	8	38	heart strain	10.69921875	0	normal activity	16	1977-11-01	11	4	25	75	0.2	dead	heart or vascular disease	0	60 - 69
+27	76	2.5	0	8	69	old MI	11.69921875	0	normal activity	12	1977-11-09	10	4	12	82	0	alive	NA	NA	70 - 79
+28	71	12	0	7	39	normal	14.3984375	0	normal activity	12	1977-11-13	11	4	11	103	0	dead	prostate cancer	1	70 - 79
+29	66	24.19921875	0	10	33	heart strain	14	0	normal activity	17	1977-11-24	13	4	32	126	1	dead	other cancer	0	60 - 69
+30	76	2.2998046875	0	9	8	heart strain	12.798828125	0	normal activity	15	1977-12-05	13	4	40	90	0.2	dead	prostate cancer	1	70 - 79
+31	74	316	1	9	13	heart strain	10.5	0	in bed > 50% daytime	16	1977-12-15	13	4	17	77	0.2	dead	prostate cancer	1	70 - 79
+32	71	1.89990234375	0	10	33	old MI	15	1	normal activity	16	1978-01-03	11	4	9	150	5	dead	other specified non-cancer	0	70 - 79
+33	71	35.3984375	0	9	9	heart strain	12.298828125	1	normal activity	16	1978-01-11	13	4	38	88	1	dead	prostate cancer	1	70 - 79
+34	79	12.099609375	0	9	21	heart strain	12.798828125	0	normal activity	16	1978-01-19	12	4	26	89	0	dead	prostate cancer	1	70 - 79
+35	75	3.7998046875	0	9	66	normal	14.599609375	0	normal activity	15	1978-02-01	14	4	8	101	5	dead	prostate cancer	1	70 - 79
+36	76	99.1875	1	6	5	heart strain	8.19921875	1	normal activity	16	1978-02-01	11	4	10	86	5	dead	prostate cancer	1	70 - 79
+37	72	1.2998046875	0	10	27	heart strain	13	0	normal activity	16	1978-01-12	11	4	2	93	0	dead	other specified non-cancer	0	70 - 79
+38	69	28.8984375	1	8	2	benign	10.3984375	1	normal activity	12	1978-02-27	13	4	15	84	0.2	dead	heart or vascular disease	0	60 - 69
+39	53	5.599609375	1	9	20	benign	14.19921875	0	normal activity	12	1978-05-09	13	4	26	NA	0.2	dead	prostate cancer	1	45 - 59
+40	76	1.39990234375	1	9	19	heart strain	13	0	normal activity	14	1978-08-08	11	4	6	85	1	dead	prostate cancer	1	70 - 79
+41	72	2.2998046875	0	8	60	heart strain	13.599609375	1	normal activity	17	1978-08-29	12	4	12	95	0	alive	NA	NA	70 - 79
+42	NA	30	1	8	58	heart strain	12.798828125	0	normal activity	15	1978-10-08	13	4	35	76	1	alive	NA	NA	NA
+43	82	22.296875	1	8	32	normal	13	0	normal activity	14	1978-10-10	13	4	27	89	5	dead	prostate cancer	1	80 - 90
+44	74	1.2998046875	0	8	53	heart block or conduction def	9.3984375	0	normal activity	16	1979-03-05	15	4	26	124	0	alive	NA	NA	70 - 79
+45	75	3.2998046875	0	9	53	rhythmic disturb & electrolyte ch	15.298828125	0	normal activity	13	1979-03-27	13	4	16	93	1	alive	NA	NA	70 - 79
+46	74	20	1	10	43	heart strain	13.3984375	0	normal activity	17	1979-04-19	11	4	28	81	5	dead	prostate cancer	1	70 - 79
+47	60	7	0	8	21	normal	14.298828125	0	normal activity	12	1979-05-27	13	4	27	96	0.2	dead	prostate cancer	1	60 - 69
+48	59	0.699951171875	0	8	30	heart strain	15.19921875	0	in bed < 50% daytime	12	1977-06-23	9	3	NA	116	5	dead	unknown	0	45 - 59
+49	49	0.5	0	7	74	normal	14.798828125	0	normal activity	13	1977-06-28	8	3	14	NA	5	alive	NA	NA	45 - 59
+50	74	0.5999755859375	0	6	72	old MI	10.3984375	1	in bed < 50% daytime	11	1977-08-11	11	3	20	96	0	alive	NA	NA	70 - 79
+51	73	0.5999755859375	0	7	14	normal	12.3984375	0	normal activity	16	1977-12-15	11	3	18	101	0	dead	prostate cancer	1	70 - 79
+52	76	0.5	0	10	33	old MI	17.09765625	1	normal activity	17	1978-03-15	8	3	13	98	5	dead	heart or vascular disease	0	70 - 79
+53	72	0.5999755859375	0	8	8	heart strain	14.798828125	1	normal activity	12	1978-03-21	8	3	15	84	0.2	dead	cerebrovascular disease/accident	0	70 - 79
+54	73	0.5	0	8	10	heart strain	14.099609375	1	normal activity	16	1978-04-11	9	3	20	82	1	dead	heart or vascular disease	0	70 - 79
+55	78	0.29998779296875	0	8	51	old MI	14.798828125	1	in bed > 50% daytime	18	1978-04-12	9	3	24	108	0	dead	prostate cancer	1	70 - 79
+56	71	0.39996337890625	0	9	7	normal	13.19921875	1	normal activity	15	1978-05-07	11	3	14	112	0.2	dead	heart or vascular disease	0	70 - 79
+57	75	0.7999267578125	0	8	63	heart strain	15.19921875	0	normal activity	13	1978-05-18	NA	3	41	92	1	alive	NA	NA	70 - 79
+58	64	0.199981689453125	0	9	33	normal	14.19921875	0	normal activity	13	1978-10-25	11	3	23	130	0.2	dead	prostate cancer	1	60 - 69
+59	78	0.39996337890625	0	9	3	heart strain	12.3984375	1	normal activity	16	1979-03-02	9	3	3	118	0.2	dead	cerebrovascular disease/accident	0	70 - 79
+60	60	0.5999755859375	0	9	43	normal	13.599609375	0	normal activity	12	1979-03-30	9	3	7	NA	0	dead	other cancer	0	60 - 69
+61	68	7.2998046875	1	9	37	heart strain	14.3984375	0	normal activity	14	1977-06-05	13	4	32	104	1	dead	prostate cancer	1	60 - 69
+62	77	11.69921875	0	9	5	old MI	12.8984375	0	in bed < 50% daytime	21	1977-10-27	13	4	24	93	0	dead	cerebrovascular disease/accident	0	70 - 79
+63	73	8.69921875	0	9	6	heart strain	12	1	normal activity	14	1977-10-27	15	4	51	102	0.2	dead	prostate cancer	1	70 - 79
+64	70	2	1	8	2	normal	7.7998046875	0	in bed > 50% daytime	12	1977-11-03	11	4	26	76	0	dead	prostate cancer	1	70 - 79
+65	53	0.699951171875	0	8	5	heart strain	14.298828125	0	normal activity	14	1978-03-02	11	4	10	106	0.2	dead	prostate cancer	1	45 - 59
+66	55	4.599609375	1	9	64	heart strain	14.798828125	0	normal activity	13	1978-05-02	15	4	26	116	5	alive	NA	NA	45 - 59
+67	80	1.2998046875	0	8	1	old MI	11.69921875	1	in bed < 50% daytime	14	1978-12-04	13	4	15	91	5	dead	unspecified non-cancer	0	80 - 90
+68	59	175.09375	1	4	21	heart strain	8.69921875	0	normal activity	8	1979-01-12	11	4	27	71	1	dead	prostate cancer	1	45 - 59
+69	80	1.099853515625	1	9	16	normal	11.298828125	0	normal activity	16	1979-02-28	15	4	34	111	0	dead	other specified non-cancer	0	80 - 90
+70	68	0.5999755859375	0	8	21	old MI	12.099609375	1	in bed < 50% daytime	14	1977-04-14	8	3	18	97	1	dead	cerebrovascular disease/accident	0	60 - 69
+71	77	0.699951171875	0	7	12	rhythmic disturb & electrolyte ch	14.3984375	1	normal activity	13	1977-05-10	9	3	5	103	1	dead	heart or vascular disease	0	70 - 79
+72	74	0.5	0	8	75	benign	13.599609375	0	normal activity	16	1977-05-10	8	3	7	110	1	alive	NA	NA	70 - 79
+73	70	0.7999267578125	0	7	74	benign	13.69921875	0	normal activity	15	1977-06-07	7	3	24	94	0	alive	NA	NA	70 - 79
+74	72	0.5	0	13	74	normal	12.599609375	1	in bed < 50% daytime	14	1977-06-07	9	3	NA	142	0.2	alive	NA	NA	70 - 79
+75	65	0.29998779296875	0	8	54	normal	14	0	normal activity	14	1977-06-16	9	3	47	90	0.2	dead	prostate cancer	1	60 - 69
+76	74	0.199981689453125	0	7	73	normal	12.8984375	1	normal activity	13	1977-07-17	8	3	6	97	5	alive	NA	NA	70 - 79
+77	72	0.5999755859375	0	13	36	old MI	14.69921875	1	normal activity	22	1977-07-26	10	3	5	110	0	dead	heart or vascular disease	0	70 - 79
+78	69	0.29998779296875	0	7	59	normal	14.298828125	1	normal activity	13	1977-07-26	9	3	4	97	0	dead	other specified non-cancer	0	60 - 69
+79	72	0.29998779296875	0	10	6	normal	12	1	normal activity	16	1977-08-04	8	3	5	115	5	dead	cerebrovascular disease/accident	0	70 - 79
+80	71	0.7999267578125	0	10	58	rhythmic disturb & electrolyte ch	13.3984375	1	normal activity	13	1977-08-21	9	3	13	87	0.2	dead	heart or vascular disease	0	70 - 79
+81	73	0.29998779296875	0	7	16	normal	13.798828125	0	normal activity	11	1977-08-30	9	3	8	93	1	dead	respiratory disease	0	70 - 79
+82	79	0.199981689453125	0	7	19	old MI	13.599609375	1	normal activity	16	1977-09-06	9	3	13	106	5	dead	heart or vascular disease	0	70 - 79
+83	63	0.39996337890625	0	8	39	old MI	16	1	normal activity	16	1977-10-10	9	3	7	86	5	dead	heart or vascular disease	0	60 - 69
+84	74	0.39996337890625	0	9	26	rhythmic disturb & electrolyte ch	10.599609375	1	normal activity	14	1977-10-27	8	3	14	101	0.2	dead	other cancer	0	70 - 79
+85	72	0.5999755859375	0	11	60	normal	15.599609375	1	normal activity	17	1977-10-27	9	3	9	118	0	dead	respiratory disease	0	70 - 79
+86	78	0.39996337890625	0	7	43	heart strain	13.599609375	1	normal activity	10	1977-11-02	8	3	16	117	0.2	dead	other specified non-cancer	0	70 - 79
+87	76	0.5	0	7	7	old MI	13.599609375	1	normal activity	12	1977-12-13	9	3	12	92	5	dead	heart or vascular disease	0	70 - 79
+88	70	0.0999908447265625	0	9	9	heart block or conduction def	12	1	normal activity	16	1977-12-13	8	3	17	72	1	dead	other cancer	0	70 - 79
+89	69	0.699951171875	0	10	67	heart strain	13.599609375	1	normal activity	16	1978-01-17	10	3	21	120	1	alive	NA	NA	60 - 69
+90	76	0.5	0	8	62	normal	13.19921875	1	normal activity	12	1978-01-30	8	3	13	102	5	dead	other cancer	0	70 - 79
+91	84	0.39996337890625	0	10	17	benign	13.3984375	1	normal activity	15	1978-05-08	6	3	8	104	0	dead	respiratory disease	0	80 - 90
+92	80	0.5	0	8	25	normal	12.298828125	1	normal activity	15	1978-05-08	9	3	8	98	0.2	dead	other cancer	0	80 - 90
+93	81	0.699951171875	0	7	0	normal	13.3984375	0	normal activity	10	1978-06-15	9	3	11	97	1	dead	respiratory disease	0	80 - 90
+94	81	0.5	0	7	5	heart strain	14.8984375	1	normal activity	13	1978-06-22	9	3	28	76	5	dead	heart or vascular disease	0	80 - 90
+95	71	0.29998779296875	0	10	34	heart strain	14.3984375	1	normal activity	12	1978-07-25	6	3	11	100	5	dead	heart or vascular disease	0	70 - 79
+96	77	0.29998779296875	0	7	59	normal	12	0	normal activity	14	1978-09-18	10	3	7	109	0	alive	NA	NA	70 - 79
+97	70	0.5	0	8	31	heart strain	12	1	normal activity	18	1978-10-03	9	3	28	109	0.2	dead	heart or vascular disease	0	70 - 79
+98	76	0.29998779296875	0	7	58	old MI	12	1	normal activity	12	1978-10-10	9	3	3	108	0	alive	NA	NA	70 - 79
+NA	76	0.5999755859375	0	9	30	old MI	18.19921875	1	normal activity	16	1978-10-22	11	3	52	102	1	dead	cerebrovascular disease/accident	0	70 - 79
+100	71	0.5999755859375	0	7	57	heart block or conduction def	13.3984375	0	normal activity	13	1978-11-07	9	3	19	97	0.2	alive	NA	NA	70 - 79
+101	76	0.5999755859375	0	8	5	normal	13.69921875	1	normal activity	17	1978-11-14	9	3	33	96	0.2	dead	heart or vascular disease	0	70 - 79
+102	64	0.199981689453125	0	10	55	normal	13.69921875	1	normal activity	16	1979-01-09	9	3	6	100	5	alive	NA	NA	60 - 69
+103	74	0.7999267578125	0	7	55	normal	14.298828125	0	normal activity	12	1979-01-31	10	3	7	113	1	alive	NA	NA	70 - 79
+104	76	0.5999755859375	0	9	52	normal	12.298828125	1	normal activity	16	1979-04-18	8	3	3	88	0	alive	NA	NA	70 - 79
+105	82	0.5999755859375	0	9	0	rhythmic disturb & electrolyte ch	11.599609375	1	normal activity	13	1979-04-30	10	3	5	82	5	dead	pulmonary embolus	0	80 - 90
+106	65	0.7999267578125	0	8	51	normal	14.5	1	normal activity	16	1979-05-15	9	3	2	87	1	alive	NA	NA	60 - 69
+107	70	9.69921875	1	6	17	normal	12.69921875	0	in bed < 50% daytime	14	1977-04-14	11	4	14	83	0.2	dead	heart or vascular disease	0	70 - 79
+108	76	6.19921875	1	6	70	heart strain	9.69921875	0	normal activity	13	1977-04-14	10	4	6	92	5	dead	other cancer	0	70 - 79
+109	77	4.8994140625	0	6	74	benign	11	0	normal activity	10	1977-06-07	12	4	0	93	0	alive	NA	NA	70 - 79
+110	77	2.39990234375	0	9	74	normal	12.798828125	1	normal activity	17	1977-06-16	12	4	15	NA	0.2	alive	NA	NA	70 - 79
+111	70	10.19921875	0	7	20	normal	13.5	1	normal activity	12	1977-08-18	11	4	23	103	1	dead	heart or vascular disease	0	70 - 79
+112	73	39.6953125	0	8	2	heart strain	12.8984375	1	normal activity	13	1977-11-07	12	4	61	80	0	dead	prostate cancer	1	70 - 79
+113	63	41.6953125	1	8	8	heart strain	12.798828125	1	normal activity	13	1978-01-15	15	4	14	119	0.2	dead	prostate cancer	1	60 - 69
+114	71	1.199951171875	0	6	27	heart strain	12	0	normal activity	13	1978-02-14	10	4	1	91	5	dead	other specified non-cancer	0	70 - 79
+115	78	1.7998046875	1	8	23	normal	10	1	in bed < 50% daytime	14	1978-03-14	12	4	38	103	1	dead	cerebrovascular disease/accident	0	70 - 79
+116	74	1.099853515625	0	8	1	old MI	14.3984375	1	normal activity	13	1979-01-08	11	4	1	100	0	dead	heart or vascular disease	0	70 - 79
+117	70	2	0	8	52	old MI	15.8984375	1	normal activity	16	1979-04-05	10	4	4	110	5	alive	NA	NA	70 - 79
+118	73	1.199951171875	1	8	51	benign	11.19921875	1	normal activity	11	1979-05-08	13	4	10	106	1	alive	NA	NA	70 - 79
+119	74	78.390625	1	6	6	rhythmic disturb & electrolyte ch	14	1	normal activity	13	1979-05-21	12	4	41	98	5	dead	prostate cancer	1	70 - 79
+120	77	1.699951171875	1	7	0	heart strain	14.298828125	1	normal activity	12	1979-05-28	11	4	6	91	1	dead	prostate cancer	1	70 - 79
+121	85	25.8984375	0	7	26	normal	14	1	normal activity	15	1979-05-28	12	4	12	85	5	dead	heart or vascular disease	0	80 - 90
+122	72	0.7999267578125	0	7	65	normal	12.298828125	1	normal activity	13	1977-09-14	9	3	16	79	0	dead	respiratory disease	0	70 - 79
+123	74	0.199981689453125	0	6	52	old MI	13.798828125	0	normal activity	14	1977-09-14	NA	3	17	106	0	dead	unspecified non-cancer	0	70 - 79
+124	78	0.5	0	7	26	normal	10.298828125	0	normal activity	13	1977-10-23	11	3	25	83	0.2	dead	prostate cancer	1	70 - 79
+125	60	0.5	0	10	70	heart strain	14.298828125	0	normal activity	14	1977-10-24	NA	3	13	110	5	alive	NA	NA	60 - 69
+126	72	0.699951171875	0	9	6	benign	10	0	normal activity	11	1977-11-08	10	3	16	76	0	dead	other cancer	0	70 - 79
+127	68	1.7998046875	0	7	6	rhythmic disturb & electrolyte ch	14.5	0	normal activity	13	1977-11-08	9	3	17	124	0.2	dead	pulmonary embolus	0	60 - 69
+128	71	0.29998779296875	0	9	68	normal	14.5	0	normal activity	15	1977-12-12	9	3	19	93	1	alive	NA	NA	70 - 79
+129	65	0.7999267578125	0	9	33	old MI	15	0	normal activity	17	1978-01-03	8	3	19	125	5	dead	heart or vascular disease	0	60 - 69
+130	67	0.5	0	7	67	old MI	15.69921875	0	normal activity	13	1978-02-02	9	3	7	96	0.2	alive	NA	NA	60 - 69
+131	76	0.29998779296875	0	7	58	normal	14.19921875	0	normal activity	12	1978-03-05	7	3	NA	94	0.2	dead	heart or vascular disease	0	70 - 79
+132	74	4.099609375	0	9	23	heart block or conduction def	14.19921875	0	normal activity	15	1978-03-09	12	3	3	98	5	dead	prostate cancer	1	70 - 79
+133	78	0.29998779296875	0	7	6	normal	11	0	normal activity	11	1978-04-10	9	3	4	91	5	dead	other cancer	0	70 - 79
+134	74	0.89990234375	0	8	11	benign	14	0	normal activity	14	1978-05-11	9	3	16	85	1	dead	heart or vascular disease	0	70 - 79
+135	71	0.7999267578125	0	7	6	heart block or conduction def	14	0	normal activity	13	1978-06-07	9	3	9	92	0	dead	prostate cancer	1	70 - 79
+136	74	0.5	0	7	57	rhythmic disturb & electrolyte ch	10.5	0	normal activity	14	1978-11-15	9	3	20	113	1	alive	NA	NA	70 - 79
+137	72	0.39996337890625	0	10	57	heart strain	14.5	0	normal activity	17	1978-11-21	8	3	20	110	1	alive	NA	NA	70 - 79
+138	57	0.699951171875	0	8	29	heart strain	14.69921875	0	normal activity	14	1979-01-25	9	3	20	97	0	dead	heart or vascular disease	0	45 - 59
+139	74	0.7999267578125	0	7	9	normal	13.798828125	0	normal activity	14	1979-02-08	8	3	25	104	0.2	dead	other cancer	0	70 - 79
+140	72	0.699951171875	0	6	53	rhythmic disturb & electrolyte ch	13.599609375	0	normal activity	12	1979-03-27	9	3	5	105	1	alive	NA	NA	70 - 79
+141	65	0.5999755859375	0	8	51	normal	14.3984375	0	normal activity	13	1979-05-17	9	3	10	NA	1	alive	NA	NA	60 - 69
+142	83	0.5999755859375	0	9	8	heart strain	16.69921875	0	normal activity	17	1979-05-22	9	3	25	115	5	dead	pulmonary embolus	0	80 - 90
+143	71	42.8984375	1	9	0	heart strain	12.298828125	1	in bed > 50% daytime	18	1977-07-31	13	4	34	98	0	dead	other specified non-cancer	0	70 - 79
+144	73	2.7998046875	0	8	21	normal	12.798828125	0	normal activity	12	1977-08-22	11	4	21	103	5	dead	heart or vascular disease	0	70 - 79
+145	71	367	1	7	27	normal	10.5	0	normal activity	14	1977-11-29	13	4	30	102	0.2	dead	prostate cancer	1	70 - 79
+146	75	7	0	11	22	heart strain	15.599609375	0	normal activity	18	1977-11-29	11	4	22	124	1	dead	respiratory disease	0	70 - 79
+147	71	3.599609375	1	6	12	rhythmic disturb & electrolyte ch	7	0	normal activity	10	1977-12-05	13	4	17	77	1	dead	prostate cancer	1	70 - 79
+148	56	1.39990234375	1	8	68	normal	10.69921875	0	normal activity	13	1977-12-12	13	4	11	69	1	alive	NA	NA	45 - 59
+149	83	21.69921875	0	7	21	normal	13.298828125	0	normal activity	13	1977-12-20	13	4	15	88	1	dead	other specified non-cancer	0	80 - 90
+150	71	3.19970703125	0	8	68	heart strain	15	0	normal activity	15	1977-12-26	10	4	46	116	0.2	alive	NA	NA	70 - 79
+151	73	127.796875	0	8	0	rhythmic disturb & electrolyte ch	10.19921875	1	in bed < 50% daytime	15	1978-01-29	13	4	23	98	5	dead	other specified non-cancer	0	70 - 79
+152	78	4.69921875	1	9	2	heart strain	14	0	normal activity	12	1978-04-10	11	4	32	74	5	dead	prostate cancer	1	70 - 79
+153	50	225.1875	1	8	14	normal	9.298828125	0	normal activity	12	1978-05-28	11	4	17	109	0	dead	prostate cancer	1	45 - 59
+154	73	2.69970703125	0	11	18	heart strain	14	0	normal activity	16	1978-06-27	11	4	9	101	0	dead	heart or vascular disease	0	70 - 79
+155	67	7	1	9	5	old MI	9.599609375	0	normal activity	12	1978-08-16	11	4	17	111	5	dead	prostate cancer	1	60 - 69
+156	72	43.59375	1	9	60	normal	15.298828125	0	normal activity	15	1978-08-22	15	4	2	96	1	alive	NA	NA	70 - 79
+157	72	29.8984375	1	10	40	benign	10.5	0	normal activity	14	1978-08-23	12	4	26	96	0	dead	cerebrovascular disease/accident	0	70 - 79
+158	68	1.699951171875	0	10	31	old MI	15	0	normal activity	18	1979-03-20	13	4	NA	98	0	dead	prostate cancer	1	60 - 69
+159	78	1.099853515625	0	10	51	heart strain	15.69921875	0	normal activity	15	1979-05-21	13	4	6	116	0.2	alive	NA	NA	70 - 79
+160	72	0.5999755859375	0	9	50	heart strain	12	1	normal activity	19	1977-12-06	8	3	16	91	0	dead	unknown	0	70 - 79
+161	76	0.699951171875	0	8	46	heart strain	14.5	1	normal activity	18	1978-01-04	8	3	4	118	0.2	dead	unknown	0	70 - 79
+162	77	0.7999267578125	0	9	65	heart block or conduction def	12.5	0	normal activity	19	1978-03-29	9	3	20	111	0.2	alive	NA	NA	70 - 79
+163	70	0.199981689453125	0	9	9	rhythmic disturb & electrolyte ch	11.798828125	0	normal activity	13	1978-05-10	8	3	14	127	5	dead	pulmonary embolus	0	70 - 79
+164	74	0.89990234375	0	7	21	normal	10.19921875	1	normal activity	10	1978-06-25	9	3	18	96	0.2	dead	other cancer	0	70 - 79
+165	71	0.39996337890625	0	8	27	old MI	10.599609375	1	normal activity	15	1978-09-17	8	3	5	92	0.2	dead	unknown	0	70 - 79
+166	69	0.5	0	7	54	normal	13.5	1	normal activity	12	1979-03-01	8	3	4	89	1	alive	NA	NA	60 - 69
+167	70	0.7999267578125	0	8	52	rhythmic disturb & electrolyte ch	8.19921875	1	normal activity	18	1979-04-08	9	3	22	111	1	alive	NA	NA	70 - 79
+168	58	1.599853515625	0	12	75	heart strain	13.099609375	0	normal activity	19	1977-05-15	11	4	24	NA	1	alive	NA	NA	45 - 59
+169	78	4.599609375	1	7	75	normal	12.599609375	0	normal activity	14	1977-05-09	NA	4	27	NA	5	alive	NA	NA	70 - 79
+170	73	5.099609375	0	6	30	old MI	13.798828125	1	normal activity	14	1977-07-07	15	4	9	105	1	dead	heart or vascular disease	0	70 - 79
+171	69	2	0	8	70	normal	12.19921875	0	normal activity	12	1977-10-23	11	4	23	108	5	alive	NA	NA	60 - 69
+172	73	3.39990234375	0	7	14	old MI	13.3984375	0	normal activity	12	1977-11-03	13	4	31	94	1	dead	other cancer	0	70 - 79
+173	73	1.199951171875	0	8	0	normal	7.7998046875	0	normal activity	14	1978-07-04	15	4	23	93	0	dead	other specified non-cancer	0	70 - 79
+174	68	26.3984375	0	10	42	heart strain	11.69921875	0	normal activity	17	1978-07-10	13	4	32	100	5	dead	heart or vascular disease	0	60 - 69
+175	75	21.59765625	1	6	12	normal	13.3984375	1	normal activity	14	1978-07-16	13	4	31	88	1	dead	heart or vascular disease	0	70 - 79
+176	68	0.89990234375	1	10	40	old MI	15	1	normal activity	17	1978-07-20	10	4	25	104	0	dead	heart or vascular disease	0	60 - 69
+177	76	26.19921875	0	7	2	normal	11.19921875	1	normal activity	16	1978-07-23	13	4	32	88	0	dead	prostate cancer	1	70 - 79
+178	76	42.796875	1	5	12	heart strain	11.69921875	1	in bed < 50% daytime	14	1978-10-31	14	4	28	87	1	dead	prostate cancer	1	70 - 79
+179	75	2	0	8	53	normal	12.599609375	1	normal activity	14	1979-03-10	11	4	8	89	0.2	alive	NA	NA	70 - 79
+180	59	2.39990234375	0	6	11	normal	12.798828125	1	normal activity	10	1979-03-13	11	4	6	116	0.2	dead	prostate cancer	1	45 - 59
+181	72	3.2998046875	1	8	18	normal	10.298828125	0	normal activity	11	1977-06-27	11	3	9	96	5	dead	heart or vascular disease	0	70 - 79
+182	80	0.5999755859375	0	8	13	rhythmic disturb & electrolyte ch	12.298828125	0	normal activity	15	1977-09-06	8	3	4	91	1	dead	cerebrovascular disease/accident	0	80 - 90
+183	78	0.29998779296875	0	8	45	normal	15	1	normal activity	16	1977-10-10	9	3	7	112	0.2	dead	other specified non-cancer	0	70 - 79
+184	52	0.29998779296875	0	8	8	heart strain	14.798828125	1	normal activity	13	1977-10-12	9	3	4	90	1	dead	unknown	0	45 - 59
+185	75	1	0	5	28	heart strain	12.69921875	0	normal activity	9	1977-12-27	8	3	8	87	5	dead	prostate cancer	1	70 - 79
+186	67	0.7999267578125	0	8	67	normal	14	1	normal activity	14	1978-01-04	9	3	3	109	5	alive	NA	NA	60 - 69
+187	74	0.39996337890625	0	6	67	heart strain	13	0	normal activity	16	1978-01-16	9	3	4	103	0.2	alive	NA	NA	70 - 79
+188	79	0.199981689453125	0	10	24	heart strain	11.599609375	1	in bed < 50% daytime	23	1978-01-24	9	3	2	107	0	dead	heart or vascular disease	0	70 - 79
+189	73	0.5	0	10	64	rhythmic disturb & electrolyte ch	12	0	normal activity	15	1978-04-11	9	3	4	96	0.2	alive	NA	NA	70 - 79
+190	75	0.699951171875	0	7	26	heart strain	13.5	0	in bed > 50% daytime	12	1978-04-25	13	3	1	113	1	dead	heart or vascular disease	0	70 - 79
+191	72	59.3984375	0	7	57	heart strain	12	0	normal activity	14	1977-08-28	12	4	7	88	0.2	dead	prostate cancer	1	70 - 79
+192	55	0.199981689453125	0	9	32	heart strain	10.298828125	1	normal activity	15	1977-09-11	11	4	12	96	0.2	dead	prostate cancer	1	45 - 59
+193	68	0.199981689453125	0	9	71	normal	14.599609375	1	in bed < 50% daytime	16	1977-09-13	11	4	18	NA	0	alive	NA	NA	60 - 69
+194	48	1.5	0	10	42	heart strain	12.298828125	1	in bed < 50% daytime	14	1977-09-13	11	4	3	100	0.2	dead	cerebrovascular disease/accident	0	45 - 59
+195	75	4.7998046875	0	5	20	heart strain	14	1	normal activity	9	1977-09-18	11	4	1	88	0	dead	heart or vascular disease	0	70 - 79
+196	56	1.099853515625	0	8	71	normal	14.3984375	0	normal activity	12	1977-09-19	10	4	1	94	1	alive	NA	NA	45 - 59
+197	70	1.199951171875	0	9	54	heart strain	14.3984375	0	normal activity	14	1978-04-19	11	4	4	86	5	dead	respiratory disease	0	70 - 79
+198	54	1.199951171875	1	6	64	rhythmic disturb & electrolyte ch	14.798828125	0	normal activity	15	1978-04-24	13	4	8	89	5	alive	NA	NA	45 - 59
+199	87	2.099609375	1	7	51	normal	11	0	normal activity	14	1978-04-24	15	4	3	82	5	dead	heart or vascular disease	0	80 - 90
+200	73	0.7999267578125	0	9	1	heart strain	13.298828125	1	normal activity	14	1977-05-15	8	3	22	94	5	dead	heart or vascular disease	0	70 - 79
+201	76	0.5999755859375	0	10	2	normal	10.69921875	0	normal activity	16	1977-06-01	9	3	8	94	0	dead	other specified non-cancer	0	70 - 79
+202	68	0.89990234375	0	9	0	normal	10.69921875	0	normal activity	15	1977-06-27	13	3	69	106	5	dead	prostate cancer	1	60 - 69
+203	70	0.5999755859375	0	10	54	rhythmic disturb & electrolyte ch	13.798828125	1	normal activity	17	1977-06-27	9	3	10	97	0	dead	cerebrovascular disease/accident	0	70 - 79
+204	65	0.5999755859375	0	6	69	normal	16	0	normal activity	12	1977-11-17	9	3	8	83	0.2	alive	NA	NA	60 - 69
+205	79	0.39996337890625	0	8	68	heart strain	13.3984375	0	normal activity	14	1977-12-04	9	3	11	95	0	alive	NA	NA	70 - 79
+206	70	0.5	0	11	67	normal	14.69921875	0	normal activity	19	1978-01-10	9	3	7	120	0	alive	NA	NA	70 - 79
+207	70	0.5999755859375	0	8	66	normal	16	0	normal activity	12	1978-02-26	9	3	8	NA	1	alive	NA	NA	70 - 79
+208	59	0.29998779296875	0	8	64	normal	10.3984375	1	normal activity	14	1978-04-11	9	3	2	90	0	alive	NA	NA	45 - 59
+209	72	0.5999755859375	0	8	63	normal	14.19921875	0	in bed > 50% daytime	13	1978-05-24	8	3	11	73	0.2	alive	NA	NA	70 - 79
+210	76	0.5999755859375	0	9	35	normal	15.19921875	1	normal activity	14	1978-06-11	5	3	4	88	1	dead	cerebrovascular disease/accident	0	70 - 79
+211	78	0.89990234375	0	8	62	benign	16.796875	0	normal activity	13	1978-06-21	10	3	0	123	5	alive	NA	NA	70 - 79
+212	76	0.699951171875	0	6	7	heart strain	12.798828125	1	normal activity	14	1978-07-17	8	3	3	113	1	dead	other specified non-cancer	0	70 - 79
+213	66	0.39996337890625	0	9	35	normal	14.298828125	0	normal activity	14	1978-08-01	8	3	3	87	5	dead	other specified non-cancer	0	60 - 69
+214	69	0.29998779296875	0	10	24	heart block or conduction def	15	1	normal activity	16	1978-10-24	8	3	11	91	1	dead	pulmonary embolus	0	60 - 69
+215	71	0.5	0	8	57	heart strain	15.3984375	0	normal activity	16	1978-11-23	9	3	3	88	5	alive	NA	NA	70 - 79
+216	75	0.5999755859375	0	7	1	heart strain	15.099609375	0	normal activity	15	1979-01-01	8	3	4	120	0.2	dead	other cancer	0	70 - 79
+217	74	0.5999755859375	0	9	4	rhythmic disturb & electrolyte ch	15.69921875	1	normal activity	17	1979-02-13	7	3	7	NA	0.2	dead	heart or vascular disease	0	70 - 79
+218	72	1	0	9	74	heart block or conduction def	16.5	0	normal activity	15	1977-05-23	10	4	4	103	0.2	dead	other cancer	0	70 - 79
+219	78	4.599609375	1	9	0	heart strain	10.099609375	0	in bed > 50% daytime	16	1977-05-24	12	4	54	96	0.2	dead	prostate cancer	1	70 - 79
+220	71	0.699951171875	1	9	51	old MI	13.3984375	0	normal activity	14	1977-06-16	10	4	6	110	0.2	dead	heart or vascular disease	0	70 - 79
+221	75	1.599853515625	0	10	36	heart strain	11	1	normal activity	16	1977-07-17	10	4	15	101	5	dead	heart or vascular disease	0	70 - 79
+222	73	20.3984375	1	8	16	heart strain	7.19921875	0	in bed > 50% daytime	15	1977-08-02	11	4	14	89	0.2	dead	prostate cancer	1	70 - 79
+223	79	28.8984375	1	7	32	benign	13.298828125	0	in bed > 50% daytime	15	1977-10-03	13	4	16	79	1	dead	prostate cancer	1	70 - 79
+224	70	2.69970703125	0	8	68	normal	13.5	0	normal activity	16	1977-12-07	14	4	22	92	5	alive	NA	NA	70 - 79
+225	73	8.8984375	0	8	17	normal	13.3984375	0	normal activity	17	1977-12-15	13	4	50	76	0.2	dead	prostate cancer	1	70 - 79
+226	75	2.7998046875	0	8	66	normal	14.69921875	1	normal activity	14	1978-02-21	13	4	16	98	0	alive	NA	NA	70 - 79
+227	76	596	1	6	65	rhythmic disturb & electrolyte ch	11.3984375	0	normal activity	12	1978-03-15	11	4	13	83	1	alive	NA	NA	70 - 79
+228	71	4.2998046875	1	7	19	old MI	11.798828125	0	in bed < 50% daytime	17	1978-03-20	15	4	61	77	0	dead	prostate cancer	1	70 - 79
+229	76	8.19921875	0	8	41	normal	15.099609375	0	normal activity	17	1978-03-23	11	4	24	91	1	dead	prostate cancer	1	70 - 79
+230	73	36.8984375	0	9	28	normal	14.69921875	1	normal activity	16	1978-04-06	11	4	11	106	0	dead	heart or vascular disease	0	70 - 79
+231	70	4.2998046875	0	8	0	heart strain	12.19921875	1	normal activity	10	1978-04-12	11	4	5	80	0	dead	heart or vascular disease	0	70 - 79
+232	72	54.796875	1	7	46	old MI	16	1	normal activity	12	1978-04-27	11	4	62	100	5	dead	prostate cancer	1	70 - 79
+233	74	2.39990234375	0	9	63	old MI	14.798828125	0	normal activity	14	1978-05-25	10	4	25	101	5	alive	NA	NA	70 - 79
+234	62	4.5	0	8	60	heart strain	15.599609375	0	normal activity	12	1978-08-06	13	4	15	98	1	alive	NA	NA	60 - 69
+235	53	1	0	8	59	normal	16.3984375	0	normal activity	13	1978-09-20	12	4	7	116	1	alive	NA	NA	45 - 59
+236	54	0.699951171875	0	10	46	normal	13	0	normal activity	13	1977-05-01	9	3	15	91	5	dead	heart or vascular disease	0	45 - 59
+237	58	0.199981689453125	0	10	63	heart block or conduction def	13.798828125	1	normal activity	16	1977-05-01	9	3	12	94	1	dead	prostate cancer	1	45 - 59
+238	78	0.0999908447265625	0	9	8	old MI	12	1	normal activity	17	1977-06-13	8	3	9	NA	5	dead	heart or vascular disease	0	70 - 79
+239	77	0.39996337890625	0	7	74	heart block or conduction def	12.3984375	1	normal activity	10	1977-06-15	9	3	25	100	1	alive	NA	NA	70 - 79
+240	61	0.199981689453125	0	10	18	heart strain	14.099609375	1	normal activity	15	1977-06-21	7	3	18	152	0	dead	heart or vascular disease	0	60 - 69
+241	78	0.5	0	7	33	heart strain	13.599609375	1	in bed < 50% daytime	13	1977-09-12	9	3	9	98	0	dead	other specified non-cancer	0	70 - 79
+242	68	0.199981689453125	0	12	12	heart strain	14.3984375	1	in bed < 50% daytime	24	1977-09-25	9	3	12	88	0	dead	heart or vascular disease	0	60 - 69
+243	62	0.29998779296875	0	6	1	NA	11.599609375	0	in bed < 50% daytime	10	1977-09-27	9	3	13	76	0.2	dead	other specified non-cancer	0	60 - 69
+244	70	0.5999755859375	0	10	66	normal	14.5	0	normal activity	15	1978-03-01	11	3	15	109	1	alive	NA	NA	70 - 79
+245	75	0.5	0	10	28	normal	13.69921875	0	normal activity	16	1978-06-18	10	3	19	81	1	dead	other cancer	0	70 - 79
+246	80	0.89990234375	0	8	30	heart strain	10.798828125	0	normal activity	12	1978-09-06	11	3	22	91	0.2	dead	heart or vascular disease	0	80 - 90
+247	76	0.5	0	8	57	old MI	11.19921875	1	normal activity	13	1978-09-19	8	3	20	NA	0.2	dead	other specified non-cancer	0	70 - 79
+248	68	0.699951171875	0	8	50	normal	12	0	normal activity	16	1978-09-21	11	3	20	102	1	dead	prostate cancer	1	60 - 69
+249	73	0.29998779296875	0	4	39	heart strain	12.5	1	normal activity	19	1978-10-19	11	3	18	81	0	dead	heart or vascular disease	0	70 - 79
+250	79	0.29998779296875	0	10	40	heart strain	14	0	normal activity	15	1978-10-19	6	3	16	96	0	dead	heart or vascular disease	0	70 - 79
+251	78	0.39996337890625	0	7	24	old MI	11	1	normal activity	14	1979-04-05	9	3	4	81	0.2	dead	cerebrovascular disease/accident	0	70 - 79
+252	79	0.39996337890625	0	8	6	old MI	12.19921875	1	normal activity	11	1979-06-04	6	3	4	94	5	dead	heart or vascular disease	0	70 - 79
+253	72	0.5	1	12	30	heart strain	12.298828125	1	in bed < 50% daytime	22	1977-08-14	14	4	15	90	0.2	dead	heart or vascular disease	0	70 - 79
+254	52	5.2998046875	0	7	58	normal	15	1	normal activity	11	1977-09-08	14	4	13	106	0.2	dead	prostate cancer	1	45 - 59
+255	76	353.5	0	10	68	heart strain	14.599609375	1	normal activity	15	1977-12-18	11	4	19	97	1	alive	NA	NA	70 - 79
+256	74	13.8984375	1	10	24	rhythmic disturb & electrolyte ch	10	0	normal activity	16	1978-01-03	13	4	19	85	0.2	dead	prostate cancer	1	70 - 79
+257	71	0.39996337890625	1	8	33	normal	10.19921875	0	normal activity	14	1978-01-12	11	4	8	86	0	dead	unspecified non-cancer	0	70 - 79
+258	72	20	0	10	65	rhythmic disturb & electrolyte ch	12.298828125	0	normal activity	14	1978-03-26	12	4	17	96	5	alive	NA	NA	70 - 79
+259	77	5.5	0	8	2	normal	13.798828125	0	normal activity	15	1978-03-26	12	4	22	113	5	dead	pulmonary embolus	0	70 - 79
+260	73	9.69921875	0	10	64	heart strain	13.798828125	1	normal activity	16	1978-04-12	11	4	23	100	0.2	alive	NA	NA	70 - 79
+261	75	2.2998046875	0	7	19	rhythmic disturb & electrolyte ch	11.798828125	0	normal activity	12	1978-06-05	13	4	17	83	0	dead	prostate cancer	1	70 - 79
+262	73	1.099853515625	0	7	58	old MI	13.298828125	0	normal activity	13	1978-10-10	13	4	20	NA	0	alive	NA	NA	70 - 79
+263	71	43.09375	1	10	15	heart strain	14.69921875	0	normal activity	15	1979-03-19	11	4	12	98	5	dead	prostate cancer	1	70 - 79
+264	76	33.59375	0	9	10	normal	10.5	1	normal activity	16	1979-03-22	12	4	20	94	0.2	dead	prostate cancer	1	70 - 79
+265	49	5.599609375	1	8	12	heart strain	14.099609375	0	in bed < 50% daytime	14	1979-03-22	15	4	21	90	5	dead	prostate cancer	1	45 - 59
+266	74	278.25	1	7	53	rhythmic disturb & electrolyte ch	13.3984375	1	in bed > 50% daytime	13	1979-03-28	11	4	17	91	5	alive	NA	NA	70 - 79
+267	59	2.19970703125	0	6	51	normal	14.099609375	0	normal activity	13	1979-05-06	13	4	17	97	1	alive	NA	NA	45 - 59
+268	79	3.7998046875	0	9	1	rhythmic disturb & electrolyte ch	12.599609375	1	normal activity	15	1979-05-30	11	4	23	116	1	dead	heart or vascular disease	0	70 - 79
+269	78	0.5999755859375	0	10	40	NA	13.19921875	0	normal activity	20	1977-10-20	11	3	36	113	1	dead	prostate cancer	1	70 - 79
+270	78	0.29998779296875	0	8	40	NA	14.798828125	0	normal activity	14	1978-02-01	9	3	15	110	0	dead	prostate cancer	1	70 - 79
+271	79	0.39996337890625	0	8	66	NA	14.798828125	0	normal activity	14	1978-02-08	8	3	19	96	1	alive	NA	NA	70 - 79
+272	72	0.5999755859375	0	7	2	heart strain	9.3984375	0	normal activity	13	1978-02-19	11	3	33	82	0.2	dead	pulmonary embolus	0	70 - 79
+273	58	0.699951171875	0	8	21	benign	10.5	1	in bed < 50% daytime	14	1978-04-09	12	3	30	136	0.2	dead	prostate cancer	1	45 - 59
+274	73	0.5999755859375	0	6	35	normal	12.798828125	0	normal activity	12	1978-04-12	11	3	46	101	5	dead	prostate cancer	1	70 - 79
+275	75	0.39996337890625	0	8	29	old MI	10.8984375	1	normal activity	19	1978-09-24	11	3	21	113	0	dead	prostate cancer	1	70 - 79
+276	78	29.69921875	0	9	54	normal	12.798828125	0	normal activity	14	1978-12-10	11	3	42	107	5	dead	prostate cancer	1	70 - 79
+277	60	0.39996337890625	0	9	37	normal	13	0	normal activity	15	1979-01-21	9	3	10	94	5	dead	heart or vascular disease	0	60 - 69
+278	72	0.39996337890625	0	7	10	normal	13.798828125	0	normal activity	11	1979-03-08	9	3	15	83	0.2	dead	other cancer	0	70 - 79
+279	59	NA	1	8	29	normal	12.69921875	0	confined to bed	13	1977-04-27	13	4	17	NA	5	dead	prostate cancer	1	45 - 59
+280	84	37.8984375	1	7	71	NA	13	0	normal activity	14	1977-09-27	11	4	15	107	1	alive	NA	NA	80 - 90
+281	74	8.3984375	0	8	12	normal	14.599609375	1	normal activity	15	1977-09-27	11	4	18	107	0	dead	prostate cancer	1	70 - 79
+282	76	15.5	0	8	13	normal	13.69921875	0	normal activity	14	1977-10-19	15	4	36	97	0.2	dead	prostate cancer	1	70 - 79
+283	80	3.7998046875	0	7	27	old MI	12.8984375	1	normal activity	11	1977-12-04	11	4	17	135	0	dead	prostate cancer	1	80 - 90
+284	72	1.7998046875	0	8	66	rhythmic disturb & electrolyte ch	15.798828125	1	normal activity	15	1977-11-08	13	4	0	123	0.2	dead	prostate cancer	1	70 - 79
+285	59	5.2998046875	0	8	28	NA	15.798828125	0	normal activity	14	1978-03-01	11	4	21	100	0	dead	prostate cancer	1	45 - 59
+286	74	4.19921875	0	8	31	normal	15.19921875	0	normal activity	13	1978-04-04	13	4	25	111	1	dead	prostate cancer	1	70 - 79
+287	65	2.19970703125	0	9	12	normal	15.5	0	normal activity	15	1978-05-22	11	4	19	102	1	dead	prostate cancer	1	60 - 69
+288	71	25.59765625	1	10	9	heart strain	13.599609375	0	normal activity	19	1978-05-22	13	4	24	119	0	dead	heart or vascular disease	0	70 - 79
+289	76	10.8984375	1	6	21	normal	10.599609375	0	normal activity	14	1978-10-18	11	4	24	94	0.2	dead	prostate cancer	1	70 - 79
+290	74	3.69970703125	1	5	19	heart block or conduction def	11.19921875	0	confined to bed	14	1978-11-28	11	4	2	74	5	dead	prostate cancer	1	70 - 79
+291	75	2.2998046875	0	7	51	old MI	13.798828125	0	normal activity	18	1979-05-24	11	4	22	114	1	alive	NA	NA	70 - 79
+292	73	0.5999755859375	0	10	71	heart strain	14	1	in bed < 50% daytime	22	1977-04-06	11	3	22	134	0	dead	prostate cancer	1	70 - 79
+293	74	0.39996337890625	0	7	76	normal	11.099609375	1	normal activity	17	1977-04-12	11	3	12	NA	1	alive	NA	NA	70 - 79
+294	72	0.5999755859375	0	8	46	normal	13	1	in bed < 50% daytime	16	1977-04-21	11	3	30	112	5	dead	prostate cancer	1	70 - 79
+295	75	1.099853515625	0	9	47	heart strain	16.19921875	1	normal activity	15	1977-05-05	9	3	7	107	0.2	dead	other cancer	0	70 - 79
+296	70	0.89990234375	0	7	75	normal	13.8984375	0	in bed < 50% daytime	12	1977-05-05	9	3	7	NA	0.2	alive	NA	NA	70 - 79
+297	61	0.7999267578125	0	7	75	heart strain	12	0	normal activity	12	1977-05-05	9	3	4	94	5	alive	NA	NA	60 - 69
+298	71	0.29998779296875	0	7	49	heart strain	15.599609375	1	normal activity	16	1977-05-05	9	3	9	94	1	dead	heart or vascular disease	0	70 - 79
+299	57	0.5	0	8	75	normal	13.8984375	0	normal activity	12	1977-05-10	8	3	6	84	5	alive	NA	NA	45 - 59
+300	65	0.7999267578125	0	8	75	old MI	13.69921875	0	normal activity	14	1977-05-15	9	3	15	111	5	alive	NA	NA	60 - 69
+301	78	0.199981689453125	0	11	31	normal	14.8984375	1	in bed < 50% daytime	17	1977-05-31	10	3	2	96	0	dead	heart or vascular disease	0	70 - 79
+302	60	0.5	0	9	69	normal	16.09765625	0	normal activity	13	1977-06-05	9	3	26	122	0	dead	prostate cancer	1	60 - 69
+303	72	0.29998779296875	0	8	74	normal	14	0	normal activity	16	1977-06-23	7	3	23	102	0.2	alive	NA	NA	70 - 79
+304	81	0.5	0	8	25	old MI	12.798828125	0	in bed < 50% daytime	15	1977-07-10	8	3	4	102	1	dead	other specified non-cancer	0	80 - 90
+305	70	0.29998779296875	0	8	72	normal	14.599609375	0	normal activity	15	1977-08-15	10	3	5	87	5	alive	NA	NA	70 - 79
+306	62	0.29998779296875	0	7	28	recent MI	13.5	1	normal activity	12	1977-08-21	8	3	10	88	0.2	dead	other specified non-cancer	0	60 - 69
+307	68	0.39996337890625	0	7	36	rhythmic disturb & electrolyte ch	13.298828125	0	normal activity	16	1977-08-25	9	3	40	98	1	dead	other specified non-cancer	0	60 - 69
+308	74	0.5	0	8	8	heart strain	13.599609375	0	normal activity	14	1977-08-31	8	3	14	97	0	dead	prostate cancer	1	70 - 79
+309	65	0.7999267578125	0	8	71	normal	16.5	1	normal activity	15	1977-09-28	9	3	9	117	0.2	alive	NA	NA	60 - 69
+310	74	0.699951171875	0	9	60	normal	9.798828125	1	normal activity	18	1977-10-10	8	3	2	95	0	dead	cerebrovascular disease/accident	0	70 - 79
+311	76	0.7999267578125	0	9	14	heart strain	12	1	normal activity	15	1977-10-30	11	3	9	NA	1	dead	pulmonary embolus	0	70 - 79
+312	70	0.199981689453125	0	7	22	rhythmic disturb & electrolyte ch	14.8984375	0	normal activity	14	1977-11-29	11	3	9	78	0.2	dead	other specified non-cancer	0	70 - 79
+313	73	0.5	0	6	67	rhythmic disturb & electrolyte ch	14.8984375	0	normal activity	13	1977-12-04	9	3	39	105	5	dead	unspecified non-cancer	0	70 - 79
+314	71	0.29998779296875	0	10	62	heart strain	14.5	1	normal activity	18	1977-12-15	8	3	9	107	0	dead	heart or vascular disease	0	70 - 79
+315	73	0.699951171875	0	9	68	heart block or conduction def	13.3984375	0	normal activity	17	1977-12-15	9	3	4	118	5	alive	NA	NA	70 - 79
+316	71	0.39996337890625	0	12	68	heart strain	14.099609375	0	normal activity	16	1977-12-20	9	3	7	108	0	alive	NA	NA	70 - 79
+317	75	0.5	0	8	27	benign	15.3984375	0	normal activity	13	1977-12-22	9	3	4	145	1	dead	cerebrovascular disease/accident	0	70 - 79
+318	70	0.5	0	7	68	heart strain	14.19921875	0	normal activity	11	1977-12-29	10	3	19	98	0.2	alive	NA	NA	70 - 79
+319	77	0.39996337890625	0	6	68	old MI	15.5	0	normal activity	12	1977-12-29	9	3	9	98	1	alive	NA	NA	70 - 79
+320	71	0.5999755859375	0	8	67	normal	15.599609375	0	normal activity	15	1978-01-04	8	3	8	87	0	alive	NA	NA	70 - 79
+321	75	0.5	0	7	67	heart block or conduction def	13.5	0	normal activity	14	1978-01-04	7	3	18	101	0	alive	NA	NA	70 - 79
+322	74	0.29998779296875	0	7	3	heart strain	14.099609375	1	normal activity	16	1978-01-04	11	3	10	105	0.2	dead	heart or vascular disease	0	70 - 79
+323	72	0.29998779296875	0	6	49	heart strain	15	0	normal activity	11	1978-01-15	11	3	8	100	5	dead	heart or vascular disease	0	70 - 79
+324	89	0.699951171875	0	6	12	old MI	13.599609375	1	normal activity	13	1978-01-16	9	3	8	92	5	dead	respiratory disease	0	80 - 90
+325	75	0.699951171875	0	6	30	heart strain	14.298828125	0	normal activity	12	1978-01-16	12	3	10	96	0.2	dead	respiratory disease	0	70 - 79
+326	71	0.5	0	8	67	heart strain	14.69921875	0	normal activity	14	1978-01-26	11	3	3	101	1	alive	NA	NA	70 - 79
+327	80	0.89990234375	0	10	5	heart strain	14.5	1	normal activity	16	1978-01-31	9	3	7	95	1	dead	other cancer	0	80 - 90
+328	51	0.5999755859375	0	8	65	normal	11.798828125	0	normal activity	13	1978-02-12	6	3	2	96	1	dead	other cancer	0	45 - 59
+329	71	0.39996337890625	0	4	24	normal	13.69921875	0	normal activity	9	1978-02-13	9	3	10	81	0	dead	other specified non-cancer	0	70 - 79
+330	72	0.699951171875	0	5	66	normal	14	1	normal activity	10	1978-02-19	8	3	8	95	0.2	alive	NA	NA	70 - 79
+331	70	1	0	9	36	heart block or conduction def	15.8984375	1	normal activity	16	1978-02-22	9	3	7	91	5	dead	heart or vascular disease	0	70 - 79
+332	55	0.7999267578125	0	10	66	old MI	16.69921875	0	normal activity	16	1978-02-26	8	3	2	103	0	alive	NA	NA	45 - 59
+333	76	0.5	0	7	40	heart strain	14.599609375	1	normal activity	15	1978-02-26	9	3	3	104	0.2	dead	cerebrovascular disease/accident	0	70 - 79
+334	68	0.5	0	9	13	heart strain	9.5	0	normal activity	17	1978-02-26	8	3	11	97	0.2	dead	other specified non-cancer	0	60 - 69
+335	75	0.39996337890625	0	8	40	old MI	15.5	1	normal activity	12	1978-03-21	8	3	14	81	5	dead	cerebrovascular disease/accident	0	70 - 79
+336	52	0.5999755859375	0	10	65	heart strain	14	1	normal activity	15	1978-03-27	NA	3	4	101	0.2	alive	NA	NA	45 - 59
+337	75	0.199981689453125	0	10	0	heart strain	11.798828125	0	normal activity	20	1978-04-02	11	3	3	91	0.2	dead	other specified non-cancer	0	70 - 79
+338	75	0.7999267578125	0	7	14	heart strain	17.5	1	normal activity	11	1978-04-12	9	3	15	94	1	dead	heart or vascular disease	0	70 - 79
+339	72	0.5	0	7	45	normal	11	0	normal activity	13	1978-04-12	8	3	4	77	1	dead	cerebrovascular disease/accident	0	70 - 79
+340	74	0.5999755859375	0	8	64	normal	14.19921875	0	normal activity	14	1978-04-12	6	3	4	118	1	alive	NA	NA	70 - 79
+341	75	0.5	0	7	13	rhythmic disturb & electrolyte ch	12.099609375	0	normal activity	13	1978-04-12	8	3	5	91	1	dead	respiratory disease	0	70 - 79
+342	75	0.39996337890625	0	9	24	old MI	10.8984375	1	normal activity	13	1978-04-19	8	3	8	79	0	dead	other cancer	0	70 - 79
+343	71	0.7999267578125	0	8	15	heart strain	17.296875	1	normal activity	12	1978-05-07	11	3	5	96	0	dead	heart or vascular disease	0	70 - 79
+344	76	0.5	0	9	26	heart strain	11.19921875	1	normal activity	15	1978-05-10	8	3	10	102	0	dead	heart or vascular disease	0	70 - 79
+345	70	0.29998779296875	0	7	5	old MI	11.69921875	0	normal activity	14	1978-05-10	13	3	33	83	1	dead	prostate cancer	1	70 - 79
+346	73	0.699951171875	0	11	63	heart strain	16.69921875	1	normal activity	21	1978-05-14	8	3	10	129	0.2	alive	NA	NA	70 - 79
+347	70	0.7999267578125	0	8	35	old MI	16.09765625	1	normal activity	13	1978-07-09	11	3	7	107	5	dead	heart or vascular disease	0	70 - 79
+348	75	0.0999908447265625	0	8	61	normal	13.69921875	0	normal activity	13	1978-07-09	12	3	10	93	0	alive	NA	NA	70 - 79
+349	70	0.5999755859375	0	7	61	normal	16.19921875	0	normal activity	14	1978-07-20	9	3	8	127	5	alive	NA	NA	70 - 79
+350	74	0.39996337890625	0	7	50	normal	12.298828125	1	normal activity	13	1978-07-25	8	3	1	97	5	dead	unknown	0	70 - 79
+351	72	0.699951171875	0	10	57	normal	17.5	0	normal activity	16	1978-08-01	9	3	8	109	5	dead	heart or vascular disease	0	70 - 79
+352	62	0.699951171875	0	8	21	heart strain	16.3984375	1	normal activity	16	1978-08-07	9	3	15	109	5	dead	cerebrovascular disease/accident	0	60 - 69
+353	72	0.5	0	8	26	normal	15.298828125	0	normal activity	14	1978-08-07	11	3	37	111	0	dead	prostate cancer	1	70 - 79
+354	77	0.5	0	6	11	rhythmic disturb & electrolyte ch	12.3984375	0	normal activity	12	1978-08-07	11	3	45	74	0	dead	respiratory disease	0	70 - 79
+355	52	0.5	0	7	59	heart strain	11.8984375	0	normal activity	12	1978-09-24	8	3	5	90	1	alive	NA	NA	45 - 59
+356	57	0.5	0	6	42	normal	13.8984375	0	normal activity	12	1978-09-26	12	3	24	89	0	dead	prostate cancer	1	45 - 59
+357	80	0.5999755859375	0	8	27	heart strain	14.298828125	1	normal activity	14	1978-10-01	8	3	9	90	1	dead	cerebrovascular disease/accident	0	80 - 90
+358	62	0.29998779296875	0	7	50	normal	13.69921875	1	normal activity	11	1978-11-28	9	3	6	85	0.2	dead	heart or vascular disease	0	60 - 69
+359	72	0.5	0	8	57	normal	14.599609375	0	normal activity	13	1978-11-28	10	3	8	101	1	alive	NA	NA	70 - 79
+360	72	0.7999267578125	0	8	57	heart strain	15.19921875	0	normal activity	14	1978-11-28	9	3	11	116	1	alive	NA	NA	70 - 79
+361	77	0.5	0	10	0	old MI	14.5	1	normal activity	14	1978-12-17	9	3	5	91	0	dead	heart or vascular disease	0	70 - 79
+362	72	0.699951171875	0	8	1	heart strain	14.798828125	1	normal activity	15	1978-12-20	9	3	23	134	0.2	dead	heart or vascular disease	0	70 - 79
+363	73	0.699951171875	0	10	54	old MI	11.69921875	0	normal activity	18	1979-03-01	9	3	8	100	1	alive	NA	NA	70 - 79
+364	74	1	0	8	53	old MI	13.798828125	1	normal activity	16	1979-03-13	8	3	11	98	0.2	dead	prostate cancer	1	70 - 79
+365	74	0.39996337890625	0	4	23	old MI	10.8984375	1	normal activity	17	1979-03-14	8	3	8	82	0.2	dead	heart or vascular disease	0	70 - 79
+366	72	0.7999267578125	0	8	8	normal	13.099609375	0	normal activity	15	1979-03-25	9	3	4	110	5	dead	heart or vascular disease	0	70 - 79
+367	76	0.89990234375	0	8	51	old MI	15.8984375	1	normal activity	14	1979-03-29	9	3	25	85	5	dead	pulmonary embolus	0	70 - 79
+368	78	0.5	0	7	27	heart strain	12.298828125	1	normal activity	15	1979-04-04	9	3	7	111	0	dead	other specified non-cancer	0	70 - 79
+369	83	0.5999755859375	0	8	52	old MI	10	1	normal activity	16	1979-04-08	7	3	1	88	5	alive	NA	NA	80 - 90
+370	80	0.5	0	7	52	heart strain	13	1	normal activity	13	1979-04-26	9	3	6	NA	0.2	alive	NA	NA	80 - 90
+371	76	0.39996337890625	0	8	52	heart block or conduction def	13.298828125	0	normal activity	15	1979-05-01	13	3	52	90	5	alive	NA	NA	70 - 79
+372	79	0.699951171875	0	8	45	old MI	15.3984375	0	normal activity	13	1979-05-01	11	3	7	126	0	dead	cerebrovascular disease/accident	0	70 - 79
+373	76	0.39996337890625	0	8	48	heart strain	16.8984375	1	normal activity	13	1979-05-17	9	3	2	116	0.2	dead	other specified non-cancer	0	70 - 79
+374	71	0.29998779296875	0	8	18	heart strain	13	1	normal activity	14	1979-05-21	11	3	7	110	0	dead	prostate cancer	1	70 - 79
+375	61	25.59765625	1	8	2	heart strain	11.5	0	normal activity	12	1977-04-06	12	4	37	95	0	dead	other specified non-cancer	0	60 - 69
+376	77	0.89990234375	1	7	2	heart strain	11.8984375	1	in bed < 50% daytime	14	1977-04-24	10	4	36	96	5	dead	heart or vascular disease	0	70 - 79
+377	76	9.298828125	1	6	35	heart strain	10.298828125	0	normal activity	10	1977-05-10	13	4	10	82	1	dead	cerebrovascular disease/accident	0	70 - 79
+378	71	10	0	8	75	normal	14.099609375	0	normal activity	15	1977-05-19	13	4	26	106	1	alive	NA	NA	70 - 79
+379	77	2.19970703125	0	6	75	benign	12.5	0	normal activity	11	1977-05-31	11	4	5	87	0	alive	NA	NA	70 - 79
+380	78	25.296875	1	8	9	rhythmic disturb & electrolyte ch	14.298828125	1	normal activity	18	1977-06-22	13	4	39	89	0	dead	pulmonary embolus	0	70 - 79
+381	58	10.798828125	1	8	39	heart strain	13.69921875	0	normal activity	12	1977-08-04	11	4	5	92	1	dead	prostate cancer	1	45 - 59
+382	74	2.2998046875	0	8	0	heart strain	14.19921875	1	normal activity	11	1977-08-04	13	4	41	113	5	dead	heart or vascular disease	0	70 - 79
+383	75	0.5	1	9	26	rhythmic disturb & electrolyte ch	16	1	normal activity	18	1977-10-06	11	4	26	116	0	dead	cerebrovascular disease/accident	0	70 - 79
+384	62	10.099609375	0	11	17	old MI	14.599609375	0	normal activity	18	1977-10-25	13	4	16	102	0	dead	pulmonary embolus	0	60 - 69
+385	80	1.099853515625	0	9	43	heart strain	13.099609375	0	normal activity	15	1977-11-27	13	4	0	92	0.2	dead	respiratory disease	0	80 - 90
+386	61	4	0	8	53	normal	10.298828125	0	in bed < 50% daytime	13	1977-12-04	11	4	14	79	5	dead	prostate cancer	1	60 - 69
+387	76	3.7998046875	0	9	47	old MI	13.3984375	1	normal activity	17	1977-12-29	11	4	19	98	1	dead	cerebrovascular disease/accident	0	70 - 79
+388	79	31.3984375	1	8	11	heart strain	9.099609375	0	in bed < 50% daytime	16	1978-03-29	13	4	38	NA	0.2	dead	prostate cancer	1	70 - 79
+389	66	58.09375	0	8	65	normal	14.8984375	0	normal activity	12	1978-03-29	12	4	18	116	0.2	alive	NA	NA	60 - 69
+390	61	38.5	1	6	16	rhythmic disturb & electrolyte ch	13.599609375	1	normal activity	12	1978-03-30	15	4	4	83	1	dead	prostate cancer	1	60 - 69
+391	79	6.099609375	0	9	21	heart strain	16.09765625	0	normal activity	17	1978-03-30	13	4	4	NA	5	dead	unspecified non-cancer	0	70 - 79
+392	70	1.099853515625	0	7	64	normal	14.19921875	1	normal activity	13	1978-04-24	11	4	11	NA	0.2	alive	NA	NA	70 - 79
+393	73	1.099853515625	0	7	7	heart block or conduction def	15.599609375	1	normal activity	15	1978-07-09	9	4	10	105	0.2	dead	prostate cancer	1	70 - 79
+394	72	1.5	0	8	38	heart strain	14.798828125	0	normal activity	11	1978-07-13	15	4	11	90	5	dead	prostate cancer	1	70 - 79
+395	81	8.69921875	1	6	55	normal	11.19921875	1	normal activity	13	1978-06-25	12	4	38	98	1	dead	prostate cancer	1	80 - 90
+396	77	0.5999755859375	0	9	5	heart strain	11.5	0	normal activity	15	1978-06-25	10	4	6	92	0	dead	respiratory disease	0	70 - 79
+397	76	1.7998046875	0	6	28	heart strain	14.798828125	0	normal activity	11	1978-08-10	13	4	29	76	0.2	dead	prostate cancer	1	70 - 79
+398	75	0.39996337890625	1	6	38	rhythmic disturb & electrolyte ch	13.298828125	1	normal activity	10	1978-08-17	13	4	9	113	0	dead	prostate cancer	1	70 - 79
+399	72	7.19921875	1	7	20	normal	12.19921875	0	normal activity	14	1978-08-17	11	4	24	79	0.2	dead	prostate cancer	1	70 - 79
+400	74	1.099853515625	0	9	24	normal	12.599609375	0	normal activity	16	1978-08-22	13	4	12	108	5	dead	prostate cancer	1	70 - 79
+401	70	1.7998046875	0	8	27	rhythmic disturb & electrolyte ch	16.3984375	0	normal activity	16	1978-08-24	13	4	9	85	5	dead	prostate cancer	1	70 - 79
+402	61	152.1875	1	8	31	benign	10.69921875	1	normal activity	14	1978-10-01	13	4	25	91	1	dead	prostate cancer	1	60 - 69
+403	77	47	0	8	9	rhythmic disturb & electrolyte ch	15.19921875	1	normal activity	14	1978-10-02	13	4	7	116	0	dead	prostate cancer	1	70 - 79
+404	60	17	1	8	9	NA	14.099609375	0	normal activity	11	1978-10-10	13	4	46	73	1	dead	prostate cancer	1	60 - 69
+405	72	1.099853515625	0	7	11	rhythmic disturb & electrolyte ch	14	0	in bed < 50% daytime	12	1978-11-13	15	4	50	86	1	dead	unspecified non-cancer	0	70 - 79
+406	64	2.39990234375	1	7	56	normal	12	0	normal activity	17	1978-11-28	13	4	43	104	5	dead	prostate cancer	1	60 - 69
+407	78	3.19970703125	0	9	36	heart strain	13.798828125	0	normal activity	15	1978-12-06	10	4	55	95	0	dead	prostate cancer	1	70 - 79
+408	74	1.099853515625	0	8	56	old MI	10.599609375	1	normal activity	14	1978-12-17	15	4	4	108	0.2	alive	NA	NA	70 - 79
+409	73	4.19921875	0	7	15	heart strain	11.19921875	1	normal activity	12	1978-12-17	11	4	0	83	5	dead	other cancer	0	70 - 79
+410	71	0.7999267578125	1	7	51	heart block or conduction def	16	0	normal activity	15	1979-05-23	11	4	26	104	5	alive	NA	NA	70 - 79
+411	75	0.699951171875	0	9	33	heart strain	13.798828125	1	normal activity	17	1977-09-25	9	3	9	113	0	dead	cerebrovascular disease/accident	0	70 - 79
+412	72	0.7999267578125	0	8	70	normal	13.798828125	0	normal activity	13	1977-10-09	9	3	3	105	1	alive	NA	NA	70 - 79
+413	68	0.5999755859375	0	10	32	heart strain	13.798828125	1	normal activity	19	1977-12-05	9	3	3	89	5	dead	heart or vascular disease	0	60 - 69
+414	74	0.39996337890625	0	8	5	normal	15.099609375	0	normal activity	15	1978-02-13	9	3	3	91	1	dead	other cancer	0	70 - 79
+415	72	0.199981689453125	0	8	23	heart strain	16.59765625	1	normal activity	16	1978-03-20	9	3	4	93	5	dead	heart or vascular disease	0	70 - 79
+416	79	0.699951171875	0	9	63	old MI	16.8984375	0	normal activity	15	1978-05-15	9	3	2	110	0	alive	NA	NA	70 - 79
+417	62	0.39996337890625	0	8	30	heart strain	16	1	normal activity	12	1978-06-06	11	3	32	104	0.2	dead	prostate cancer	1	60 - 69
+418	69	0.89990234375	0	7	12	old MI	15.5	1	normal activity	17	1978-06-11	NA	3	22	92	0.2	dead	prostate cancer	1	60 - 69
+419	62	0.5	0	11	53	heart strain	16.3984375	0	normal activity	19	1978-07-11	9	3	14	119	0	dead	heart or vascular disease	0	60 - 69
+420	72	0.5999755859375	0	8	12	heart strain	16.3984375	0	normal activity	15	1978-09-12	9	3	15	128	0	dead	heart or vascular disease	0	70 - 79
+421	72	0.5999755859375	0	8	58	heart strain	13.298828125	0	normal activity	13	1978-10-09	9	3	12	109	0	alive	NA	NA	70 - 79
+422	51	0.7999267578125	0	9	54	normal	15.798828125	0	normal activity	13	1979-02-05	8	3	7	112	1	alive	NA	NA	45 - 59
+423	72	0.5999755859375	0	10	36	normal	16.3984375	0	normal activity	18	1979-02-20	9	3	4	104	0	dead	prostate cancer	1	70 - 79
+424	81	0.7999267578125	0	8	20	normal	16.8984375	0	normal activity	15	1979-03-19	13	3	16	104	0.2	dead	respiratory disease	0	80 - 90
+425	71	11.798828125	0	7	74	old MI	13.099609375	0	normal activity	11	1977-06-07	11	4	29	81	5	alive	NA	NA	70 - 79
+426	77	1.2998046875	0	7	34	rhythmic disturb & electrolyte ch	14.298828125	0	normal activity	14	1977-06-19	11	4	35	103	0	dead	prostate cancer	1	70 - 79
+427	73	0.5	0	8	70	normal	14.69921875	1	normal activity	14	1977-10-03	11	4	26	114	0.2	alive	NA	NA	70 - 79
+428	56	50.59375	1	8	25	heart strain	13.798828125	0	normal activity	17	1978-02-21	11	4	30	100	0	dead	prostate cancer	1	45 - 59
+429	77	1.599853515625	0	9	65	heart strain	14.69921875	0	normal activity	14	1978-03-07	13	4	1	107	0.2	alive	NA	NA	70 - 79
+430	78	22.59765625	0	9	4	heart block or conduction def	12.69921875	0	normal activity	16	1978-04-11	11	4	27	104	0	dead	prostate cancer	1	70 - 79
+431	76	36	1	7	10	old MI	13.798828125	0	normal activity	12	1978-07-17	11	4	34	96	1	dead	prostate cancer	1	70 - 79
+432	68	1.199951171875	0	9	58	rhythmic disturb & electrolyte ch	13.3984375	0	normal activity	18	1978-10-11	11	4	9	79	1	alive	NA	NA	60 - 69
+433	73	5.099609375	0	9	37	benign	9.3984375	0	normal activity	14	1978-10-29	13	4	21	90	0	dead	prostate cancer	1	70 - 79
+434	56	3.19970703125	0	9	56	normal	14.69921875	0	normal activity	16	1978-12-24	10	4	10	135	5	alive	NA	NA	45 - 59
+435	74	21.296875	1	10	6	heart strain	13.099609375	1	normal activity	20	1979-04-16	11	4	9	112	1	dead	prostate cancer	1	70 - 79
+436	76	0.39996337890625	0	8	54	normal	12.599609375	1	normal activity	15	1977-06-13	NA	3	19	84	5	dead	prostate cancer	1	70 - 79
+437	69	0.0999908447265625	0	8	0	normal	11.298828125	1	normal activity	13	1977-09-14	9	3	1	113	5	dead	heart or vascular disease	0	60 - 69
+438	73	0.5	0	6	70	benign	15.599609375	1	normal activity	10	1977-10-24	9	3	1	84	1	alive	NA	NA	70 - 79
+439	71	0.199981689453125	0	8	70	normal	13.599609375	0	normal activity	12	1977-10-30	10	3	2	105	1	alive	NA	NA	70 - 79
+440	75	0.199981689453125	0	8	28	old MI	10.798828125	1	normal activity	14	1977-11-15	9	3	2	97	0.2	dead	heart or vascular disease	0	70 - 79
+441	69	0.29998779296875	0	7	40	old MI	5.8994140625	0	normal activity	15	1977-12-27	9	3	2	85	1	dead	heart or vascular disease	0	60 - 69
+442	73	0.39996337890625	0	7	67	normal	13.798828125	0	normal activity	11	1978-01-22	8	3	7	95	1	alive	NA	NA	70 - 79
+443	59	0.39996337890625	0	10	36	normal	16	0	normal activity	15	1978-06-04	9	3	2	81	0.2	dead	respiratory disease	0	45 - 59
+444	68	0.89990234375	0	7	23	normal	12.5	0	normal activity	13	1978-06-04	8	3	2	93	0	dead	respiratory disease	0	60 - 69
+445	78	0.0999908447265625	0	7	23	heart block or conduction def	13	1	normal activity	14	1978-06-04	8	3	2	115	0	dead	heart or vascular disease	0	70 - 79
+446	63	0.29998779296875	0	9	62	normal	13.19921875	0	normal activity	12	1978-06-04	8	3	3	95	0	alive	NA	NA	60 - 69
+447	74	0.39996337890625	0	9	62	heart block or conduction def	14.099609375	0	normal activity	12	1978-06-15	9	3	2	85	0.2	alive	NA	NA	70 - 79
+448	72	0.39996337890625	0	7	62	heart strain	14.298828125	0	normal activity	16	1978-06-28	5	3	0	103	0	alive	NA	NA	70 - 79
+449	78	0.5999755859375	0	7	2	old MI	11.19921875	0	normal activity	11	1978-08-07	6	3	0	103	5	dead	heart or vascular disease	0	70 - 79
+450	70	0.5999755859375	0	9	34	benign	14.8984375	0	normal activity	14	1978-09-06	12	3	2	85	0.2	dead	prostate cancer	1	70 - 79
+451	72	0.7999267578125	0	10	4	rhythmic disturb & electrolyte ch	16.3984375	0	normal activity	14	1978-10-11	9	3	1	101	1	dead	heart or vascular disease	0	70 - 79
+452	76	0.5	0	7	12	old MI	12.5	1	normal activity	13	1978-10-19	8	3	4	103	0.2	dead	prostate cancer	1	70 - 79
+453	66	0.5	0	9	56	old MI	15.5	0	normal activity	12	1978-12-05	9	3	4	106	0	alive	NA	NA	60 - 69
+454	88	0.699951171875	0	6	1	old MI	14.099609375	1	normal activity	13	1978-12-20	9	3	17	NA	5	dead	heart or vascular disease	0	80 - 90
+455	78	0.29998779296875	0	6	7	old MI	10.8984375	1	normal activity	11	1979-05-07	9	3	5	88	5	dead	other specified non-cancer	0	70 - 79
+456	79	3	0	7	4	normal	12.19921875	0	normal activity	12	1977-07-03	12	4	5	105	0	dead	prostate cancer	1	70 - 79
+457	77	2.19970703125	0	8	70	rhythmic disturb & electrolyte ch	16	1	normal activity	15	1977-10-12	9	4	1	106	0	alive	NA	NA	70 - 79
+458	71	1.5	0	7	65	normal	12.69921875	0	normal activity	12	1978-03-26	10	4	2	101	5	alive	NA	NA	70 - 79
+459	74	11.298828125	0	8	7	normal	12.599609375	1	normal activity	15	1978-06-28	13	4	8	91	0.2	dead	prostate cancer	1	70 - 79
+460	75	1.699951171875	0	10	30	rhythmic disturb & electrolyte ch	13.19921875	0	normal activity	15	1978-07-30	13	4	3	124	1	dead	heart or vascular disease	0	70 - 79
+461	77	8.19921875	0	6	40	heart block or conduction def	14.69921875	1	normal activity	10	1978-09-12	12	4	2	90	0.2	dead	heart or vascular disease	0	70 - 79
+462	75	1.099853515625	0	9	13	normal	15.798828125	1	normal activity	15	1978-12-20	11	4	4	74	0	dead	heart or vascular disease	0	70 - 79
+463	64	6.2998046875	1	10	22	rhythmic disturb & electrolyte ch	9.298828125	0	normal activity	16	1979-02-15	11	4	6	110	0.2	dead	prostate cancer	1	60 - 69
+464	79	2	1	10	0	heart block or conduction def	10.298828125	0	normal activity	17	1979-02-15	13	4	19	89	1	dead	heart or vascular disease	0	70 - 79
+465	60	1.199951171875	0	8	18	old MI	14.099609375	1	in bed > 50% daytime	16	1979-03-22	13	4	9	134	0	dead	prostate cancer	1	60 - 69
+466	70	0.199981689453125	0	9	64	heart strain	14.099609375	0	normal activity	14	1977-09-07	9	3	8	107	0.2	dead	unknown	0	70 - 79
+467	73	0.699951171875	0	8	13	heart strain	17	1	normal activity	15	1977-10-27	9	3	4	111	5	dead	heart or vascular disease	0	70 - 79
+468	61	0.39996337890625	0	9	26	rhythmic disturb & electrolyte ch	14.298828125	0	normal activity	14	1977-12-08	11	3	3	109	0	dead	prostate cancer	1	60 - 69
+469	79	0.5999755859375	0	8	1	heart strain	13.599609375	1	in bed < 50% daytime	16	1978-01-22	9	3	3	97	5	dead	pulmonary embolus	0	70 - 79
+470	78	0.39996337890625	0	7	16	NA	11.3984375	0	normal activity	12	1978-03-05	9	3	4	88	0	dead	heart or vascular disease	0	70 - 79
+472	72	0.5999755859375	0	8	33	old MI	16.5	1	normal activity	13	1978-12-12	11	3	17	106	0.2	dead	heart or vascular disease	0	70 - 79
+474	76	1.099853515625	0	8	16	rhythmic disturb & electrolyte ch	12	0	normal activity	13	1979-02-19	NA	3	5	90	0	dead	heart or vascular disease	0	70 - 79
+476	51	0.5999755859375	0	9	22	normal	14.599609375	0	normal activity	16	1977-05-22	13	4	5	100	0.2	dead	prostate cancer	1	45 - 59
+477	59	3	0	9	30	normal	15.099609375	1	normal activity	15	1977-06-06	13	4	32	87	0.2	dead	prostate cancer	1	45 - 59
+478	73	3.19970703125	0	9	53	rhythmic disturb & electrolyte ch	14.599609375	1	normal activity	16	1977-07-24	10	4	4	91	5	dead	cerebrovascular disease/accident	0	70 - 79
+479	74	1.2998046875	0	7	53	rhythmic disturb & electrolyte ch	11.798828125	1	normal activity	13	1977-09-07	13	4	5	90	0.2	dead	prostate cancer	1	70 - 79
+480	77	43	1	9	7	old MI	11.798828125	1	in bed > 50% daytime	14	1977-09-07	11	4	43	93	0	dead	prostate cancer	1	70 - 79
+481	74	24.3984375	0	7	61	rhythmic disturb & electrolyte ch	13.5	0	normal activity	15	1977-10-12	11	4	5	95	0.2	dead	prostate cancer	1	70 - 79
+482	60	1.2998046875	0	7	40	normal	14	0	normal activity	11	1977-10-23	11	4	9	125	0	dead	prostate cancer	1	60 - 69
+483	72	1.39990234375	1	8	9	rhythmic disturb & electrolyte ch	12.8984375	1	normal activity	14	1978-01-22	13	4	18	83	0	dead	heart or vascular disease	0	70 - 79
+484	79	1.39990234375	0	7	14	old MI	8.599609375	1	normal activity	12	1978-03-22	NA	4	20	88	1	dead	prostate cancer	1	70 - 79
+485	50	10.298828125	0	8	59	normal	15.298828125	0	normal activity	12	1978-09-05	13	4	NA	117	1	alive	NA	NA	45 - 59
+486	73	0.699951171875	1	8	59	normal	13.3984375	0	normal activity	16	1978-09-28	11	4	3	71	1	alive	NA	NA	70 - 79
+487	72	2.099609375	0	6	7	normal	13.69921875	0	normal activity	14	1978-10-26	11	4	4	110	5	dead	heart or vascular disease	0	70 - 79
+489	80	160	1	7	12	old MI	8.5	1	in bed > 50% daytime	14	1979-05-29	5	4	6	105	5	dead	prostate cancer	1	80 - 90
+490	69	1.39990234375	1	8	46	old MI	13.69921875	1	in bed < 50% daytime	11	1979-06-28	13	4	5	71	5	dead	cerebrovascular disease/accident	0	60 - 69
+491	75	4.5	0	8	50	normal	16	0	normal activity	14	1979-06-28	11	4	1	116	1	alive	NA	NA	70 - 79
+492	71	1.699951171875	0	8	0	heart block or conduction def	14.099609375	1	in bed < 50% daytime	14	1979-06-28	11	4	1	NA	5	dead	pulmonary embolus	0	70 - 79
+493	73	0.5	0	8	52	heart strain	13.599609375	1	normal activity	14	1979-04-11	8	3	8	114	5	alive	NA	NA	70 - 79
+494	76	0.199981689453125	0	9	19	heart block or conduction def	16	1	normal activity	15	1979-05-01	9	3	7	NA	1	dead	other cancer	0	70 - 79
+495	73	0.29998779296875	0	7	52	normal	11.69921875	0	normal activity	15	1979-05-01	9	3	5	114	0	alive	NA	NA	70 - 79
+496	76	0.5	0	18	51	heart strain	11.599609375	1	normal activity	30	1979-06-03	9	3	6	114	1	alive	NA	NA	70 - 79
+497	68	0.699951171875	0	8	51	normal	13.3984375	0	normal activity	14	1979-06-03	9	3	6	98	5	alive	NA	NA	60 - 69
+498	64	0.5999755859375	0	7	14	normal	14	0	in bed < 50% daytime	14	1979-04-19	11	4	23	100	0.2	dead	prostate cancer	1	60 - 69
+499	75	29.59765625	0	8	27	normal	14.19921875	0	normal activity	16	1979-05-24	11	4	5	102	0.2	dead	prostate cancer	1	70 - 79
+500	60	0.5	1	10	51	heart strain	14.5	1	normal activity	14	1979-05-23	8	4	6	123	1	alive	NA	NA	60 - 69
+501	73	2.89990234375	0	10	5	normal	16.796875	1	normal activity	19	1979-05-27	11	4	2	100	5	dead	heart or vascular disease	0	70 - 79
+502	78	0.5999755859375	0	6	0	normal	15.798828125	0	normal activity	11	1979-01-11	13	3	9	108	1	dead	other cancer	0	70 - 79
+503	78	0.5	0	10	41	heart strain	15.798828125	1	normal activity	16	1979-03-04	9	3	5	127	0.2	dead	unspecified non-cancer	0	70 - 79
+504	77	0.7999267578125	0	10	53	heart block or conduction def	16	0	normal activity	17	1979-03-12	9	3	11	93	1	alive	NA	NA	70 - 79
+505	82	8.3984375	0	6	19	heart strain	12.3984375	1	normal activity	12	1979-01-25	13	4	32	96	5	dead	prostate cancer	1	80 - 90
+506	74	22.19921875	1	6	4	normal	21.19921875	0	in bed < 50% daytime	15	1979-05-22	NA	4	33	97	1	dead	prostate cancer	1	70 - 79

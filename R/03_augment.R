@@ -38,7 +38,7 @@ prostate_data_clean_aug <- prostate_data_clean %>%
   na_if(99)
 
 # Remove column
-prostate_data_clean$status <- NULL
+prostate_data_clean_aug$status <- NULL
 
 
 # Write data

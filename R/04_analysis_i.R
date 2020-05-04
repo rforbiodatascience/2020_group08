@@ -233,7 +233,7 @@ prostate_data_clean_aug %>%
 
 prostate_model_data <- prostate_data_clean_aug %>% 
   filter(status_ == "dead") %>% 
-  select(-c(patno, sdate, status_, cause_of_death, Age_group)) %>% 
+  select(-c(patno, study_date, status_, cause_of_death, Age_group)) %>% 
   na.omit()
 
 # Make model and test which parameters are significant
