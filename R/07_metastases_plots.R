@@ -28,7 +28,7 @@ PA_death_plot <- prostate_data_clean_aug %>%
   na.omit() %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, PA_phosphatase, .fun = mean, .desc = T), y = PA_phosphatase, color = bone_metastases)) +
   geom_boxplot() + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
   labs(x = "Cause of death",
        y = "Prostatic acid phosphatase level")
 
@@ -189,7 +189,7 @@ estrogen_age_status_plot <- estrogen_age_percentage %>%
 # ------------------------------------------------------------------------------
 ggsave(filename = "results/07_PA_death_plot.png",
        plot = PA_death_plot,
-       height = 15,
+       height = 9,
        width = 15,
        units = "cm")
 

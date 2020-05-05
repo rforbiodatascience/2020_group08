@@ -1,0 +1,46 @@
+---
+title: "Group 8 report"
+subtitle: "Analysis of Byar and Greene's prostate cancer data set"
+author: "Mathias Fessler, Jeppe Samuelsen, Sehwa Lee, Imogen Garner"
+date: "5 5 2020"
+output: ioslides_presentation
+widescreen: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## The data set
+
+```{r load_data, include = FALSE}
+library(readr)
+library(knitr)
+prostate_data <- read_tsv(file = "/cloud/project/Data/03_prostate_data_clean_aug.tsv")
+```
+
+```{r prostate_data, echo = TRUE, size = "small"}
+head(prostate_data)
+```
+
+## Prostatic acid phosphatase and cause of death
+- <font size="4">PA phosphatase levels are increased in patients with bone metastases</font>
+- <font size="4">PA phosphatase levels are higher in patients that die from cancer</font>
+
+```{r  out.width = "60%", fig.align = "center"}
+include_graphics("/cloud/project/results/07_PA_death_plot.png") 
+```
+
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
