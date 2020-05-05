@@ -28,6 +28,8 @@ prostate_data_clean_aug[factor_columns] <- lapply(prostate_data_clean_aug[factor
 
 
 ### PA_phosphatase vs stage_grade_index
+# I dont think we need to include this plot, we already have a lot of plots in the presentation
+# and one of them has a similar message
 prostate_data_clean_aug %>% 
   ggplot(aes(y = PA_phosphatase, x = stage_grade_index, color = dead_from_prostate_cancer)) +
   geom_jitter()

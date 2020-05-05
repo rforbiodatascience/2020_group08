@@ -66,11 +66,9 @@ status_bm_plot <- prostate_data_clean_aug %>%
   ggplot(aes(x = bone_metastases, y = status_, color = dead_from_prostate_cancer)) +
   geom_jitter() + 
   annotate("text", x = 1:2, y = 2.55, label = c(nonmetastases_cancer_dead_percentage, metastases_cancer_dead_percentage)) +
-  annotate("text", x = 1:2, y = 2.475, label = "(percentage dead from prostate cancer)", size = 3.2) + 
+  annotate("text", x = 1:2, y = 2.475, label = "(percentage dead from prostate cancer)", size = 3) + 
   labs(x = "Bone metastases",
-       y = "Status") +
-  theme(legend.position = "bottom")
-
+       y = "Status")
 
 ## 3 - Activity percentage stratified by bone metastases
 
@@ -99,7 +97,7 @@ activity_bm_plot <- activity_percentage %>%
   ) %>% 
   ggplot(aes(x = activity, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
   labs(y = "%")
 
 
@@ -184,6 +182,7 @@ estrogen_age_status_plot <- estrogen_age_percentage %>%
   facet_wrap(~ status_) +
   labs(y = "%")
 
+estrogen_plots <- grid.arrange(estrogen_bm_status_plot, estrogen_age_status_plot, ncol = 2)
 
 # Export png files
 # ------------------------------------------------------------------------------
@@ -195,37 +194,32 @@ ggsave(filename = "results/07_PA_death_plot.png",
 
 ggsave(filename = "results/07_status_bm_plot.png",
        plot = status_bm_plot,
-       height = 15,
-       width = 15,
+       height = 9,
+       width = 20,
        units = "cm")
 
 ggsave(filename = "results/07_activity_bm_plot.png", 
        plot = activity_bm_plot,
-       height = 15,
+       height = 9,
        width = 15,
        units = "cm")
 
 ggsave(filename = "results/07_hemoglobin_bm_boxplot.png",
        plot = hemoglobin_bm_boxplot,
-       height = 15,
+       height = 9,
        width = 15,
        units = "cm")
 
 ggsave(filename = "results/07_size_bm_boxplot.png",
        plot = size_bm_boxplot,
-       height = 15,
+       height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_estrogen_bm_status_plot.png",
-       plot = estrogen_bm_status_plot,
-       height = 15,
-       width = 15,
+ggsave(filename = "results/07_estrogen_plots.png",
+       plot = estrogen_plots,
+       height = 9,
+       width = 25,
        units = "cm")
 
-ggsave(filename = "results/07_estrogen_age_status_plot.png",
-       plot = estrogen_age_status_plot,
-       height = 15,
-       width = 15,
-       units = "cm")
 
