@@ -84,8 +84,8 @@ glm_death_model_performance <- prostate_death_model_anova %>%
   rownames_to_column("variable") %>% 
   ggplot(aes(x = fct_reorder(variable, Deviance, .fun = max, .desc = T), y = Deviance)) +
   geom_col(width = 0.6) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        plot.title = element_text(size=12)) +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1),
+        plot.title = element_text(size=10)) +
   labs(x = "Variable",
        y = "Deviance (from ANOVA)",
        title = "Prediction of cause of death (prostate cancer vs other) with logistic regression") +
@@ -95,6 +95,6 @@ glm_death_model_performance <- prostate_death_model_anova %>%
 # ------------------------------------------------------------------------------
 ggsave(filename = "results/04_glm_death_model_performance.png",
        plot = glm_death_model_performance,
-       height = 15,
-       width = 16,
+       height = 10,
+       width = 14,
        units = "cm")

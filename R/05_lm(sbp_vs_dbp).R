@@ -47,7 +47,7 @@ lm_bp_model_fit <- bp_cause_glance %>%
   arrange(desc(adj.r.squared)) %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, adj.r.squared, .fun = max, .desc = T), y = adj.r.squared)) +
   geom_col(width = 0.6) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+  theme(axis.text.x = element_text(angle = 30, hjust = 1),
         plot.title = element_text(size=12)) +
   labs(x = "Cause of death",
        y = "Adjusted R^2",
@@ -62,17 +62,14 @@ sdp_vs_dbp_plot <- prostate_data_clean_aug %>%
   geom_smooth(method = lm, se = T ) + 
   facet_wrap(~ cause_of_death)
 
+lm_bp_plots <- grid.arrange(sdp_vs_dbp_plot, lm_bp_model_fit, ncol = 2)
+
 # Export png files
 # ------------------------------------------------------------------------------
-ggsave(filename = "results/05_lm_model_fit_plot.png",
-       plot = lm_bp_model_fit,
-       height = 15,
-       width = 15,
+ggsave(filename = "results/05_lm_bp_plots.png",
+       plot = lm_bp_plots,
+       height = 12,
+       width = 32,
        units = "cm")
 
-ggsave(filename = "results/05_sdp_vs_dbp_plot.png",
-       plot = sdp_vs_dbp_plot,
-       height = 15,
-       width = 16,
-       units = "cm")
 
