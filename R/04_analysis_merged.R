@@ -75,9 +75,6 @@ prostate_data_clean_aug %>%
 
 #observation: for the prostate cancer, the tumor size increases around the age of 70s
 ##
-prostate_data_clean_aug %>% 
-  na.omit() %>% 
-  ggplot(aes(x=))
 
 ###=======================================================================================
 ###=======================================================================================
@@ -107,6 +104,7 @@ glance_ps %>% unnest(glance)
 
 
 #plotting
+#Sehwa's comment: I think its fine to remove the next 4 plots
 prostate_data_clean_aug %>% 
   ggplot(mapping = aes(PA_phosphatase, systolic_bp))+
   geom_jitter() +
@@ -114,6 +112,7 @@ prostate_data_clean_aug %>%
   facet_wrap(~cause_of_death)
 
 #Bone metastasis+weight (cate+conti)
+
 prostate_data_clean_aug %>% 
   na.omit() %>% 
   ggplot(mapping = aes(bone_metastases, weight_index, color=dead_from_prostate_cancer))+
@@ -140,12 +139,7 @@ prostate_data_clean_aug %>%
   theme(legend.position = "bottom")
 
 
-#BONE METASDTASIS+STATUS (conti+disc)
 
-prostate_data_clean_aug %>% 
-  na.omit() %>% 
-  ggplot(mmapping = aes(status_, bone_metastases))+
-  geom_boxplot()
 
 #BONE METASDTASIS+ACTIVITY
 
@@ -283,6 +277,7 @@ prostate_data_clean_aug %>%
   geom_jitter()
 
 prostate_data_clean_aug %>% 
+  na.omit() %>% 
   ggplot(aes(activity, weight_index), color=status_)+
   geom_boxplot()+
   theme(axis.text.x = element_text(angle=50, hjust=1))
@@ -305,6 +300,7 @@ prostate_data_clean_aug %>%
 
 #activity
 prostate_data_clean_aug %>% 
+  na.omit() %>% 
   ggplot(aes(estrogen_mg,weight_index,color=activity))+
   geom_boxplot()+
   geom_smooth()+
@@ -373,7 +369,7 @@ prostate_data_clean_aug %>%
   na.omit() %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, tumor_size, .fun = mean, .desc = T), y = tumor_size, color = stage)) +
   geom_boxplot() + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(axis.text.x = element_text(angle = 10, hjust = 1)) +
   labs(x = "Cause of death",
        y = "tumor size
        ")+
