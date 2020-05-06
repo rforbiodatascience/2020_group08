@@ -259,27 +259,3 @@ ggsave(filename = "results/08_tumorsize_plot_png",
        width = 30,
        units = "cm")
 
-
-#WEIGHT+ESTROGEN
-#ekg
-prostate_data_clean_aug %>% 
-  ggplot(aes(estrogen_mg,weight_index,color=ekg))+
-  geom_boxplot()+
-  geom_smooth()+
-  theme(legend.position = "bottom")
-
-
-
-
-
-#
-
-prostate_data_clean_aug %>% 
-  na.omit() %>% 
-  ggplot(aes(x = fct_reorder(cause_of_death, weight_index, .fun = mean, .desc = T), y = weight_index, color = stage)) +
-  geom_boxplot() + 
-  theme(axis.text.x = element_text(angle = 15, hjust = 1)) +
-  labs(x = "Cause of death",
-       y = "weight index
-       ")+
-  theme(legend.position = "bottom")
