@@ -146,6 +146,7 @@ estrogen_bm_status_plot <- estrogen_metastases_percentage %>%
   facet_wrap(~ status_) +
   labs(y = "%")
 
+estrogen_bm_status_plot
 
 ## 7 - Age_group vs estrogen and status
 # This plot should be seen in relation to plot no. 6
@@ -183,6 +184,36 @@ estrogen_age_status_plot <- estrogen_age_percentage %>%
   labs(y = "%")
 
 estrogen_plots <- grid.arrange(estrogen_bm_status_plot, estrogen_age_status_plot, ncol = 2)
+
+
+##8. tumor size Vs cause of death stratified with stage.
+
+#start witb stage=3
+tumor_size_stage_3<-prostate_data_clean_aug %>% 
+  na.omit() %>%
+  filter(status_=="dead", cause_of_death=="prostate cancer", stage==3) %>% 
+  group_by(status_, cause_of_death, stage) %>% 
+  summarise(mean_tumor_size_for_stage_3=mean(tumor_size))
+
+
+tumor_size_stage_4<-prostate_data_clean_aug %>% 
+  na.omit() %>%
+  filter(status_=="dead", cause_of_death=="prostate cancer", stage==4) %>% 
+  group_by(status_, cause_of_death, stage) %>% 
+  summarise(mean_tumor_size_for_stage_4=mean(tumor_size))
+
+#plotting
+
+tumorsize_stage_plot<-prostate_data_clean_aug %>% 
+  na.omit() %>% 
+  ggplot(aes(x = fct_reorder(cause_of_death, tumor_size, .fun = mean, .desc = T), y = tumor_size, color = stage)) +
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 10, hjust = 1)) +
+  annotate("text", x=1.8, y=25, label=c(21.3))+
+  annotate("text", x=2.2, y=25, label=c(21.8))+
+  labs(x = "Cause of death",
+       y = "tumor size")+
+  theme(legend.position = "bottom")
 
 # Export png files
 # ------------------------------------------------------------------------------
@@ -222,4 +253,9 @@ ggsave(filename = "results/07_estrogen_plots.png",
        width = 25,
        units = "cm")
 
+ggsave(filename = "results/08_tumorsize_plot_png", 
+       plot=tumorsize_stage_plot, 
+       height = 9, 
+       width = 30,
+       units = "cm")
 

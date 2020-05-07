@@ -70,4 +70,20 @@ include_graphics("/cloud/project/results/07_activity_bm_plot.png")
 include_graphics("/cloud/project/results/07_estrogen_plots.png") 
 ```
 
+## Linear regression of blood pressure
+- <font size="4">The only linear regression model that fit well was for systolic blood pressure vs diastolic blood pressure, grouped by cause of death</font>
+- <font size="4">The best fit is for patients that have died from respiratory disease</font>
+
+```{r  out.width = "95%", fig.align = "center"}
+include_graphics("/cloud/project/results/05_lm_bp_plots.png") 
+```
+
+## Predicting death cause with logistic regression
+- <font size="4">The most important predictors for predicting if a patient died from prostate cancer (determined from ANOVA) were stage/grade index and prostatic acid phosphatase levels</font>
+- <font size="4">5-fold cross validation gave a model accuracy of 74.5%</font>
+
+```{r  out.width = "50%", fig.align = "center"}
+include_graphics("/cloud/project/results/04_glm_death_model_performance.png") 
+```
+
 
