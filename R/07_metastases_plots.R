@@ -259,3 +259,5 @@ ggsave(filename = "results/08_tumorsize_plot_png",
        width = 30,
        units = "cm")
 
+#added tumorsize plot
+
