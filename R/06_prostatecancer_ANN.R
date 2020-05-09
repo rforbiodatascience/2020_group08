@@ -13,12 +13,14 @@ prostate_data <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv") %>%
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
 
 # Dropping missing rows from the prostate_data and select only the 4 variables we use for the model
+#tThey are PA_phosphatase, Serum_hemoglobin, tumor_size, Estrogen level (x) and cause of death (y)
 prostate_data <- prostate_data %>% 
   select(-dead_from_prostate_cancer, -Age_group, -patno, -stage, -months_of_follow_up,
          -age, -weight_index, -activity, -history_of_CD, -systolic_bp, -diastolic_bp, 
          -ekg, -stage_grade_index, -bone_metastases, -study_date, -status_) %>% 
   drop_na()
 
+prostate_data
 # Then we define the functions needed to implement the ANN
 # ------------------------------------------------------------------------------
 
@@ -59,6 +61,9 @@ mse = function(O, t){
 
 # Feed forward algorithm
 # The process transforming the input vector to the prediction of the ANN
+#v= input weights
+#x= input
+#w= weights of hidden layer
 feed_forward = function(x, v, w){
   x = matrix(c(x, 1)) # Add bias neuron
   h = rbind(mat_mult(v, x), 1) # Add bias neuron
@@ -80,8 +85,8 @@ dim(prostate_data)
 # and cause_of_death (This is our y)
 #
 # We are going to model prostate cancer yes/no, so we will prepare the data as follows:
-X = prostate_data[,-5] # Remove the labels to get our X
-colnames(X) = paste0('x', seq(1, ncol(X))) # Create some nice column names
+X = prostate_data[,-5] # Remove the labels to get our X/ removing the 5th column of the prostate data
+colnames(X) = paste0('x', seq(1, ncol(X))) # Create some nice column names e.g. x1, x2, x3
 X = apply(X, 2, function(x){ return( as.numeric(scale(x)) ) }) # Scale obs
 y = ifelse(prostate_data$cause_of_death == 'prostate cancer', 1, 0) # Set the label prostate cancer yes/no
 i = sample(seq(1, length(y))) # shuffle the rows of the data
@@ -102,9 +107,9 @@ head(y)
 # ------------------------------------------------------------------------------
 
 # We start by setting the hyperparameters:
-n_hidden = 4    # Number of hidden neurons (Only 1 hidden layer here)
-epochs   = 200    # Number of epochs (Number of passes of entire data set)
-epsilon  = 0.01 # Learning rate (Step size, when adjusting the weights)
+n_hidden = 6    # Number of hidden neurons (Only 1 hidden layer here)
+epochs   = 400    # Number of epochs (Number of passes of entire data set)
+epsilon  = 0.1 # Learning rate (Step size, when adjusting the weights)
 
 # And defining and initialising the the needed weight matrices
 
@@ -194,54 +199,13 @@ cat("Using ", n_hidden, " hidden neurons, a learning rate of ", epsilon,
 
 # Plot results
 # ------------------------------------------------------------------------------
-par(mfrow=c(1,2))
-
-
-MSE<-plot(training, type = "l", xlab="epoch", ylab = "MSE")
-png(filename = "MSE.png", 
-    width = 5,
-    height = 9,
-    units = "cm", 
-)
+jpeg("ML.jpeg",
+     width = 480,
+     height = 480,
+     units = "px")
+par(mfrow=c(1,1))
 plot(training, type = "l", xlab="epoch", ylab = "MSE")
-dev.off()
-
-
-prediction<-plot(cbind(y_pred, y_true))
-
+plot(cbind(y_pred, y_true))
 abline(v = thres, lty = 2)
-
-library("grDevices")
-
-
-
-
-
-
-
-
-
-
-
-
-#save in the ggsave format
-library(ggplot2)
-
-
-
-
-###-------------------------
-ggsave(filename = "results/09_MSE.png",
-       plot = MSE, 
-       width = 4,
-       height = 5)
-
-ggsave(filename = "results/09_prediction.png",
-       plot = prediction, 
-       width = 4,
-       height = 5)
-
-
-
 
 
