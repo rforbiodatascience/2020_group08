@@ -195,6 +195,53 @@ cat("Using ", n_hidden, " hidden neurons, a learning rate of ", epsilon,
 # Plot results
 # ------------------------------------------------------------------------------
 par(mfrow=c(1,2))
+
+
+MSE<-plot(training, type = "l", xlab="epoch", ylab = "MSE")
+png(filename = "MSE.png", 
+    width = 5,
+    height = 9,
+    units = "cm", 
+)
 plot(training, type = "l", xlab="epoch", ylab = "MSE")
-plot(cbind(y_pred, y_true))
+dev.off()
+
+
+prediction<-plot(cbind(y_pred, y_true))
+
 abline(v = thres, lty = 2)
+
+library("grDevices")
+
+
+
+
+
+
+
+
+
+
+
+
+#save in the ggsave format
+library(ggplot2)
+
+
+
+
+###-------------------------
+ggsave(filename = "results/09_MSE.png",
+       plot = MSE, 
+       width = 4,
+       height = 5)
+
+ggsave(filename = "results/09_prediction.png",
+       plot = prediction, 
+       width = 4,
+       height = 5)
+
+
+
+
+

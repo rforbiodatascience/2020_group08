@@ -1,0 +1,174 @@
+---
+title: "Data analysis on prostate cancer"
+subtitle: "Group 8"
+author: "Seahwa Lee"
+date: "07/05/2020"
+output: 
+ioslides_presentation:
+  widescreen: true
+  smaller: true
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library('tidyverse')
+library('knitr')
+```
+
+## Introduction
+
+Topic: Prostate cancer data analysis
+Data source: Vanderbilt biostatistics dataset
+
+Main work we did:
+- Data cleaning
+- Data wrangling
+- Building linear regression models and logistic regression models
+- Nesting and mapping
+- Data visualisation
+- Machine learning and Artificial neural network
+- Principal Component Analysis (PCA)
+
+
+## Variables
+- Two types:-
+
+-Categorical          Numerical
+------------         ---------------
+"activity"              "PA_phosphatase"
+"status_"               "age"
+"cause_of_death"        "diastolic_bp"  
+"bone_metastases"       "months_of_follow_up"      
+"ekg"                   "serum_hemoglobin"  
+                        "history_of_CD"
+                        "tumor_size"            
+                        "study_date"
+                        "weight_index"              
+                        "estrogen_mg"
+                        "dead_from_prostate_cancer" 
+                        "Age_group"  
+                        "stage" 
+                        "systolic_bp"
+                        "stage_grade_index"
+
+
+## Data cleaning
+
+- Importing the file into data table format
+- Conversion of character types into numerical values for better analysis
+e.g. placebo--> '0' mg estrogen
+- Writing variables in more 'readable' format
+e.g. sz--> tumor size
+
+
+
+## Data analysis
+
+- Error and Trial method- built lots of linear models using different combinations of varibles
+- At the end, found out the linear model of the highest R squared value stratified on cause of death.
+- 
+
+## ANOVA test
+- Analysis of Variance (ANOVA) test is a statistical tool to measure how significant the effect of independent variables are within and between groups. 
+- 
+
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/04_glm_death_model_performance.png")
+
+```
+
+## Plots on linear regression models
+
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/05_lm_bp_plots.png")
+
+```
+
+- R. squared value is the statistical measure of how close the data fits into the linear regression mdoel. 
+- Out of all the trials, systolic_bp ~ diastolic_bp relationship gave the highest R-squared value ranging between 0.23 and 0.79.
+- The left figure shows the positive relationship between systolic and diastolic rates stratified on different causes of death.
+- The right figure shows the adjusted r-squared values for each cause of death in descending order. 
+
+
+## plots on activity
+- The patients with normal physical activity showed lowered case number with bone metastasis.
+
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/07_activity_bm_plot.png")
+
+```
+
+
+## plots on different doses of estrogen
+- 
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/07_estrogen_plots.png")
+
+```
+
+
+## Serum hemoglobin 
+- Generally, people with bone metastasis showed lower serum hemoglobin
+- People of age group 80-90 showed the lowest serum heoglobin. 
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/07_hemoglobin_bm_boxplot.png")
+
+```
+
+## Highest PA phosphatase observed in the prostate cancer patients 
+
+- The Highest PA phosphatase observed in the prostate cancer patients  with bone metastasis. 
+- Generally, the level of PA phosphatase is higher for bone mestasis than non-bone metastasis.
+
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/07_PA_death_plot.png")
+
+```
+
+## tumor size
+
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/07_size_bm_boxplot.png")
+
+knitr::include_graphics("/cloud/project/results/08_tumorsize_plot.png") 
+```
+
+
+```{r, out.width="500px", fig.align='center'}
+
+knitr::include_graphics("/cloud/project/results/08_tumorsize_plot.png") 
+```
+
+
+
+##v 
+
+```{r, out.width="500px", fig.align='center'}
+knitr::include_graphics("/cloud/project/results/07_status_bm_plot.png")
+
+```
+
+
+
+## Machine Learning 
+
+
+
+
+
+
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
