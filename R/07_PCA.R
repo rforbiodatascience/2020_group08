@@ -80,31 +80,37 @@ prostate_pca %>% tidy("samples")
 prostate_pca_aug <- prostate_pca %>% augment(prostate_data)
 
 # Visualizing the PCA based on cause of death
-p1 <- prostate_pca_aug %>%
+prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = cause_of_death)) +
-  geom_point()
+  geom_point() +
+  labs(x = "PC1", y = "PC2" , colour = "cause of death")
 
 # Visualizing the PCA based on status_
-p2 <- prostate_pca_aug %>%
+prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = status_)) +
-  geom_point()
+  geom_point() +
+  labs(x = "PC1", y = "PC2", colour = "status")
 
 # Visualizing the PCA based on ekg
 prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = ekg)) +
-  geom_point()
+  geom_point() +
+  labs(x = "PC1", y = "PC2", colour = "ekg")
 
 # Visualizing the PCA based on activity
 prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = activity)) +
-  geom_point()
+  geom_point() +
+  labs(x = "PC1", y = "PC2", "activity")
 
 # Visualizing the PCA based on status and activity
 prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = activity, shape = status_)) +
-  geom_point()
+  geom_point() +
+  labs(x = "PC1", y = "PC2")
 
 # Visualizing the PCA based on bone-metastases
 prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = bone_metastases)) +
-  geom_point()
+  geom_point() +
+  labs(x = "PC1", y = "PC2", colour = "bone metastases")
