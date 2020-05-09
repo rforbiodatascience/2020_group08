@@ -80,12 +80,12 @@ prostate_pca %>% tidy("samples")
 prostate_pca_aug <- prostate_pca %>% augment(prostate_data)
 
 # Visualizing the PCA based on cause of death
-prostate_pca_aug %>%
+p1 <- prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = cause_of_death)) +
   geom_point()
 
 # Visualizing the PCA based on status_
-prostate_pca_aug %>%
+p2 <- prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = status_)) +
   geom_point()
 
