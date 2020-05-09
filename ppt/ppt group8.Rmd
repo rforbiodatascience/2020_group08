@@ -12,7 +12,6 @@ ioslides_presentation:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-install.packages("knitr")
 
 library('tidyverse')
 library('knitr')
@@ -24,7 +23,13 @@ Topic: Prostate cancer data analysis
 Data source: Vanderbilt biostatistics dataset
 
 Main work we did:
-- 
+- Data cleaning
+- Data wrangling
+- Building linear regression models and logistic regression models
+- Nesting and mapping
+- Data visualisation
+- Machine learning and Artificial neural network
+- Principal Component Analysis (PCA)
 
 
 ## Variables
@@ -58,20 +63,16 @@ e.g. placebo--> '0' mg estrogen
 e.g. sz--> tumor size
 
 
+
 ## Data analysis
 
 - Error and Trial method- built lots of linear models using different combinations of varibles
-
-
-
-
-
-
-
 - At the end, found out the linear model of the highest R squared value stratified on cause of death.
 - 
 
-## 
+## ANOVA test
+- Analysis of Variance (ANOVA) test is a statistical tool to measure how significant the effect of independent variables are within and between groups. 
+- 
 
 ```{r, out.width="500px", fig.align='center'}
 knitr::include_graphics("/cloud/project/results/04_glm_death_model_performance.png")
@@ -133,6 +134,15 @@ knitr::include_graphics("/cloud/project/results/07_size_bm_boxplot.png")
 
 knitr::include_graphics("/cloud/project/results/08_tumorsize_plot.png") 
 ```
+
+
+```{r, out.width="500px", fig.align='center'}
+
+knitr::include_graphics("/cloud/project/results/08_tumorsize_plot.png") 
+```
+
+
+
 ##v 
 
 ```{r, out.width="500px", fig.align='center'}

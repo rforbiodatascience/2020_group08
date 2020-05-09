@@ -9,6 +9,7 @@ library(ggplot2)
 library(forcats)
 
 
+
 # Load data
 # ------------------------------------------------------------------------------
 prostate_data_clean_aug <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv")
@@ -98,7 +99,7 @@ activity_bm_plot <- activity_percentage %>%
   ggplot(aes(x = activity, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-  labs(y = "%")
+  labs(y = "Serum Hemoglobin (%)")
 
 
 ## 4 - Serum hemoglbin vs bone metastases stratified by age group
@@ -144,7 +145,8 @@ estrogen_bm_status_plot <- estrogen_metastases_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "%")
+  labs(y = "Serum Hemoglobin (%)")+
+  theme(legend.position = "bottom")
 
 estrogen_bm_status_plot
 
@@ -181,7 +183,8 @@ estrogen_age_status_plot <- estrogen_age_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = Age_group)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "%")
+  labs(y = "Serum Hemoglobin (%)")+
+  theme(legend.position = "bottom")
 
 estrogen_plots <- grid.arrange(estrogen_bm_status_plot, estrogen_age_status_plot, ncol = 2)
 
