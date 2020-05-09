@@ -10,6 +10,7 @@ library(dplyr)
 library(stringr)
 library(readr)
 library(ggplot2)
+library(broom)
 
 # Load data
 # ------------------------------------------------------------------------------
@@ -24,7 +25,7 @@ prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
 
 # Dropping missing rows from the prostate_data
 prostate_data <- prostate_data %>% 
-  select(-dead_from_prostate_cancer, -Age_group) %>% 
+  select(-study_date) %>% 
   drop_na()
 
 # We now need to normalize our data
@@ -46,16 +47,16 @@ prostate_data$tumor_size <- normalize(prostate_data$tumor_size)
 prostate_data$stage_grade_index <- normalize(prostate_data$stage_grade_index)
 prostate_data$PA_phosphatase <- normalize(prostate_data$PA_phosphatase)
 prostate_data$bone_metastases <- normalize(prostate_data$bone_metastases)
-prostate_data$sdate <- normalize(prostate_data$sdate)
 prostate_data$bone_metastases <- normalize(prostate_data$bone_metastases)
 prostate_data$estrogen_mg <- normalize(prostate_data$estrogen_mg)
 
 # Selecting only the numerical variables for the analysis
 pca_prostate_data <- prostate_data %>% 
   as_tibble %>% 
-  select(-patno, -activity, -ekg, -status_, -cause_of_death,) %>% 
+  select(-patno, -activity, -ekg, -status_, -cause_of_death, -status) %>% 
   drop_na
 
+# ------------------------------------------------------------------------------
 # PCA analysis
 # We are going to explore groupings in the data based on different variables
 
