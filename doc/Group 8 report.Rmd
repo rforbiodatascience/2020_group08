@@ -23,6 +23,15 @@ prostate_data <- read_tsv(file = "/cloud/project/Data/03_prostate_data_clean_aug
 head(prostate_data)
 ```
 
+## Before analysing the data
+- Individual dataframes joined
+- Splitting cells containing multiple variables
+- Convert strings to numbers
+- Grouping numerical varibales in intervals
+- Ensuring that all variables are correctly classified
+
+# Identifying and visualising trends with ggplot
+
 ## Prostatic acid phosphatase and cause of death
 - <font size="4">PA phosphatase levels are increased in patients with bone metastases</font>
 - <font size="4">PA phosphatase levels are higher in patients that die from cancer</font>
@@ -70,6 +79,16 @@ include_graphics("/cloud/project/results/06_activity_bm_plot.png")
 include_graphics("/cloud/project/results/06_estrogen_plots.png") 
 ```
 
+## Seahwa's tumor size boxplot...
+- <font size="4">Some point...</font>
+- <font size="4">Some point...</font>
+
+```{r  out.width = "80%", fig.align = "center"}
+include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
+```
+
+# Predictive models and ANN
+
 ## Linear regression of blood pressure
 - <font size="4">The only linear regression model that fit well was for systolic blood pressure vs diastolic blood pressure, grouped by cause of death</font>
 - <font size="4">The best fit is for patients that have died from respiratory disease</font>
@@ -87,10 +106,17 @@ include_graphics("/cloud/project/results/04_glm_death_model_performance.png")
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## PCA analysis shows if the data groups based on all the variables
 - <font size="4">A PCA analysis is carried out to search for groupings and patterns of the data based on all variables</font>
 - <font size="4">The plot shows the variance explained by the different principal components
 =======
+=======
+## ANN slide...
+
+# Clustering
+
+>>>>>>> 3edd1a31e490f8d5744984fa98cade1845ece448
 ## Identifying clustering with PCA
 - <font size="4">PCA analysis is not will suited for this data, since a single PCA cannot explain a lot of the variance levels</font>
 - <font size="4">PC #1 explains 22.5% of the variance</font>
@@ -107,8 +133,20 @@ include_graphics("/cloud/project/results/07_PC_variance_plot.png")
 include_graphics("/cloud/project/results/07_PCA_plots.png") 
 ```
 
+<<<<<<< HEAD
 >>>>>>> 78cf6351a73b71e0ce8858804eafdfe9de4a6a8a
 
 ```{r  out.width = "50%", fig.align = "center"}
 include_graphics("/cloud/project/results/PCs.png")
 ```
+=======
+## Conclusions
+- Prostatic acid (PA) phosphatase levels are higher in patients with metastases and have died from prostate cancer
+- The risk of dying from prostate cancer increases with larger tumors
+- Serum hemoglobin levels are lower in older patients with bone metastases
+- When the cancer has metastasized the patients are less active and there is a much bigger risk of dying
+- High doses of estrogen have negative effects for older patients
+- Logistic regression can predict with 75% accuracy if a patient have died from prostate cancer, with the most important predictors being stage/grade index and PA phosphatase levels
+- ANN conclusion here......
+- The data has no clearly seperated clusters
+>>>>>>> 3edd1a31e490f8d5744984fa98cade1845ece448
