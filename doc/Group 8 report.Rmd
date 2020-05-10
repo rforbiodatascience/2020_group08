@@ -79,6 +79,14 @@ include_graphics("/cloud/project/results/06_activity_bm_plot.png")
 include_graphics("/cloud/project/results/06_estrogen_plots.png") 
 ```
 
+## Seahwa's tumor size boxplot...
+- <font size="4">Some point...</font>
+- <font size="4">Some point...</font>
+
+```{r  out.width = "80%", fig.align = "center"}
+include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
+```
+
 # Predictive models and ANN
 
 ## Linear regression of blood pressure
