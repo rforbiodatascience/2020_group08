@@ -220,47 +220,45 @@ tumorsize_stage_plot<-prostate_data_clean_aug %>%
 
 # Export png files
 # ------------------------------------------------------------------------------
-ggsave(filename = "results/07_PA_death_plot.png",
+ggsave(filename = "results/06_PA_death_plot.png",
        plot = PA_death_plot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_status_bm_plot.png",
+ggsave(filename = "results/06_status_bm_plot.png",
        plot = status_bm_plot,
        height = 9,
        width = 20,
        units = "cm")
 
-ggsave(filename = "results/07_activity_bm_plot.png", 
+ggsave(filename = "results/06_activity_bm_plot.png", 
        plot = activity_bm_plot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_hemoglobin_bm_boxplot.png",
+ggsave(filename = "results/06_hemoglobin_bm_boxplot.png",
        plot = hemoglobin_bm_boxplot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_size_bm_boxplot.png",
+ggsave(filename = "results/06_size_bm_boxplot.png",
        plot = size_bm_boxplot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_estrogen_plots.png",
+ggsave(filename = "results/06_estrogen_plots.png",
        plot = estrogen_plots,
        height = 9,
        width = 25,
        units = "cm")
 
-ggsave(filename = "results/08_tumorsize_plot.png", 
+ggsave(filename = "results/06_tumorsize_plot.png", 
        plot=tumorsize_stage_plot, 
        height = 9, 
        width = 30,
        units = "cm")
-
-#added tumorsize plot
 
