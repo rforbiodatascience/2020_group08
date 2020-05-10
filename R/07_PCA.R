@@ -14,14 +14,22 @@ library(broom)
 
 # Load data
 # ------------------------------------------------------------------------------
-prostate_data <- read_tsv(file = "Data/02_prostate_data_clean.tsv") %>% 
-  as_tibble()
+prostate_data <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv")
+
 
 # ------------------------------------------------------------------------------
 # Wrangle data
 
-# Replacing missing values (NA) in the cause_of_death column with "none"
+# Replacing missing values (NA) in the cause_of_death and dead_from_prostate_cancer column with "none"
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
+prostate_data$dead_from_prostate_cancer <- replace_na(prostate_data$dead_from_prostate_cancer, "none")
+
+#Ensure that factorial variables are actually factors
+factor_columns <- c("stage", "activity", "history_of_CD", "ekg", "bone_metastases",
+                    "estrogen_mg", "status_", "cause_of_death", "dead_from_prostate_cancer",
+                    "Age_group")
+
+prostate_data[factor_columns] <- lapply(prostate_data[factor_columns], factor)
 
 # Dropping missing rows from the prostate_data
 prostate_data <- prostate_data %>% 
@@ -34,27 +42,23 @@ normalize <- function(x){
   return ((x-min(x))/(max(x)-min(x)))
 }
 
-# Normalizing all columns (variables)
-prostate_data$stage <- normalize(prostate_data$stage)
+# Normalizing all numerical columns (variables)
 prostate_data$months_of_follow_up <- normalize(prostate_data$months_of_follow_up)
 prostate_data$age <- normalize(prostate_data$age)
 prostate_data$weight_index <- normalize(prostate_data$weight_index)
-prostate_data$history_of_CD <- normalize(prostate_data$history_of_CD)
 prostate_data$systolic_bp <- normalize(prostate_data$systolic_bp)
 prostate_data$diastolic_bp <- normalize(prostate_data$diastolic_bp)
 prostate_data$serum_hemoglobin <- normalize(prostate_data$serum_hemoglobin)
 prostate_data$tumor_size <- normalize(prostate_data$tumor_size)
 prostate_data$stage_grade_index <- normalize(prostate_data$stage_grade_index)
 prostate_data$PA_phosphatase <- normalize(prostate_data$PA_phosphatase)
-prostate_data$bone_metastases <- normalize(prostate_data$bone_metastases)
-prostate_data$bone_metastases <- normalize(prostate_data$bone_metastases)
-prostate_data$estrogen_mg <- normalize(prostate_data$estrogen_mg)
 
 # Selecting only the numerical variables for the analysis
 pca_prostate_data <- prostate_data %>% 
   as_tibble %>% 
-  select(-patno, -activity, -ekg, -status_, -cause_of_death, -status) %>% 
-  drop_na
+  select(months_of_follow_up, age, weight_index, systolic_bp, diastolic_bp, serum_hemoglobin,
+         tumor_size, stage_grade_index, PA_phosphatase) %>% 
+  drop_na()
 
 # ------------------------------------------------------------------------------
 # PCA analysis
@@ -68,10 +72,13 @@ prostate_pca <- pca_prostate_data %>%
 prostate_pca %>% tidy("pcs")
 
 # Plotting the percentage of the variance explained for each principal component
-prostate_pca %>% tidy("pcs") %>% 
+PCs_plot <- prostate_pca %>% tidy("pcs") %>% 
   ggplot(mapping = aes(x = PC, y = percent)) +
   geom_col() +
-  theme_bw()
+  theme_bw() + 
+  labs(y = "% variance explained",
+       x = "Principal component #") +
+  scale_x_discrete(limits=c("1", "2", "3", "4", "5", "6", "7", "8", "9"))
 
 # Using broom to tidy
 prostate_pca %>% tidy("samples")
@@ -84,12 +91,6 @@ prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = cause_of_death)) +
   geom_point() +
   labs(x = "PC1", y = "PC2" , colour = "cause of death")
-
-# Visualizing the PCA based on status_
-prostate_pca_aug %>%
-  ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = status_)) +
-  geom_point() +
-  labs(x = "PC1", y = "PC2", colour = "status")
 
 # Visualizing the PCA based on ekg
 prostate_pca_aug %>%
@@ -109,8 +110,32 @@ prostate_pca_aug %>%
   geom_point() +
   labs(x = "PC1", y = "PC2")
 
+# Visualizing the PCA based on status_
+status_pca_plot <- prostate_pca_aug %>%
+  ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = status_)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "PC1", y = "PC2", colour = "status") +
+  theme(legend.position = "bottom")
+
 # Visualizing the PCA based on bone-metastases
-prostate_pca_aug %>%
+bone_pca_plot <- prostate_pca_aug %>%
   ggplot(mapping = aes(x = .fittedPC1, y = .fittedPC2, colour = bone_metastases)) +
-  geom_point() +
-  labs(x = "PC1", y = "PC2", colour = "bone metastases")
+  geom_point(alpha = 0.5) +
+  labs(x = "PC1", y = "PC2", colour = "bone metastases") +
+  theme(legend.position = "bottom")
+
+PCA_plots <- grid.arrange(status_pca_plot, bone_pca_plot, ncol = 2)
+
+# Export png files of relevant plots
+# ------------------------------------------------------------------------------
+ggsave(filename = "results/07_PC_variance_plot.png",
+       plot = PCs_plot,
+       height = 9,
+       width = 15,
+       units = "cm")
+
+ggsave(filename = "results/07_PCA_plots.png",
+       plot = PCA_plots,
+       height = 9,
+       width = 20,
+       units = "cm")

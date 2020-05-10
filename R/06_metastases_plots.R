@@ -99,19 +99,21 @@ activity_bm_plot <- activity_percentage %>%
   ggplot(aes(x = activity, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-  labs(y = "Serum Hemoglobin (%)")
+  labs(y = "Serum hemoglobin (g/100 ml)")
 
 
 ## 4 - Serum hemoglbin vs bone metastases stratified by age group
 hemoglobin_bm_boxplot <- prostate_data_clean_aug %>% 
   na.omit() %>% 
   ggplot(aes(y = serum_hemoglobin, x = bone_metastases, color = Age_group)) +
-  geom_boxplot()
+  geom_boxplot() + 
+  labs(y = "Serum hemoglobin (g/100 ml)")
 
 ## 5 - Tumor size vs bone metastases strafified by dead_from_prostate_cancer
 size_bm_boxplot <- prostate_data_clean_aug %>% 
   ggplot(aes(y = tumor_size, x = bone_metastases, color = dead_from_prostate_cancer)) +
-  geom_boxplot()
+  geom_boxplot() +
+  labs(y = "Tumor size (cm^2)")
 
 
 ## 6 - Bone metastases vs estrogen and status 
@@ -145,10 +147,9 @@ estrogen_bm_status_plot <- estrogen_metastases_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "Serum Hemoglobin (%)")+
+  labs(y = "Serum hemoglobin (g/100 ml)")+
   theme(legend.position = "bottom")
 
-estrogen_bm_status_plot
 
 ## 7 - Age_group vs estrogen and status
 # This plot should be seen in relation to plot no. 6
@@ -183,13 +184,13 @@ estrogen_age_status_plot <- estrogen_age_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = Age_group)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "Serum Hemoglobin (%)")+
+  labs(y = "Serum hemoglobin (g/100 ml)")+
   theme(legend.position = "bottom")
 
 estrogen_plots <- grid.arrange(estrogen_bm_status_plot, estrogen_age_status_plot, ncol = 2)
 
 
-##8. tumor size Vs cause of death stratified with stage.
+## 8 - tumor size vs cause of death stratified with stage
 
 #start witb stage=3
 tumor_size_stage_3<-prostate_data_clean_aug %>% 
@@ -220,47 +221,45 @@ tumorsize_stage_plot<-prostate_data_clean_aug %>%
 
 # Export png files
 # ------------------------------------------------------------------------------
-ggsave(filename = "results/07_PA_death_plot.png",
+ggsave(filename = "results/06_PA_death_plot.png",
        plot = PA_death_plot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_status_bm_plot.png",
+ggsave(filename = "results/06_status_bm_plot.png",
        plot = status_bm_plot,
        height = 9,
        width = 20,
        units = "cm")
 
-ggsave(filename = "results/07_activity_bm_plot.png", 
+ggsave(filename = "results/06_activity_bm_plot.png", 
        plot = activity_bm_plot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_hemoglobin_bm_boxplot.png",
+ggsave(filename = "results/06_hemoglobin_bm_boxplot.png",
        plot = hemoglobin_bm_boxplot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_size_bm_boxplot.png",
+ggsave(filename = "results/06_size_bm_boxplot.png",
        plot = size_bm_boxplot,
        height = 9,
        width = 15,
        units = "cm")
 
-ggsave(filename = "results/07_estrogen_plots.png",
+ggsave(filename = "results/06_estrogen_plots.png",
        plot = estrogen_plots,
        height = 9,
        width = 25,
        units = "cm")
 
-ggsave(filename = "results/08_tumorsize_plot.png", 
+ggsave(filename = "results/06_tumorsize_plot.png", 
        plot=tumorsize_stage_plot, 
        height = 9, 
-       width = 30,
+       width = 20,
        units = "cm")
-
-#added tumorsize plot
 
