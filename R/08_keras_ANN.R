@@ -7,22 +7,22 @@ rm(list = ls())
 library(tidyverse)
 library(keras)
 library(tensorflow)
-library(tidyverse)
 
 # Load data
 # ------------------------------------------------------------------------------
-prostate_data <- read_tsv(file = "Data/02_prostate_data_clean.tsv") %>% 
+prostate_data <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv") %>% 
   as_tibble()
 
 # ------------------------------------------------------------------------------
 # Building an ANN model to predict cause_of_death
 
-# Replacing missing values (NA) in the cause_of_death column with "none"
+# Replacing missing values (NA) in the cause_of_death and dead_from_prostate_cancer column with "none"
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
+prostate_data$dead_from_prostate_cancer <- replace_na(prostate_data$dead_from_prostate_cancer, "none")
 
 # Dropping missing rows from the prostate_data and select only the 4 variables we use for the model
 prostate_data <- prostate_data %>% 
-  select(-patno, -activity, -ekg, -status_, -study_date, -status) %>% 
+  select(-patno, -activity, -ekg, -status_, -study_date) %>% 
   drop_na()
 
 # Converting character labels for cause of death to numeric
