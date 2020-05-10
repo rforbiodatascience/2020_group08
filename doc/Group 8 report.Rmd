@@ -86,4 +86,10 @@ include_graphics("/cloud/project/results/05_lm_bp_plots.png")
 include_graphics("/cloud/project/results/04_glm_death_model_performance.png") 
 ```
 
+## PCA analysis shows if the data groups based on all the variables
+- <font size="4">A PCA analysis is carried out to search for groupings and patterns of the data based on all variables</font>
+- <font size="4">The plot shows the variance explained by the different principal components
 
+```{r  out.width = "50%", fig.align = "center"}
+include_graphics("/cloud/project/results/PCs.png")
+```
