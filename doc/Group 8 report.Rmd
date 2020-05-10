@@ -1,7 +1,7 @@
 ---
 title: "Group 8 report"
 subtitle: "Analysis of Byar and Greene's prostate cancer data set"
-author: "Mathias Fessler, Jeppe Samuelsen, Sehwa Lee, Imogen Garner"
+author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee, Imogen Garner"
 date: "5 5 2020"
 output: ioslides_presentation
 widescreen: TRUE
