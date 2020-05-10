@@ -60,7 +60,9 @@ sdp_vs_dbp_plot <- prostate_data_clean_aug %>%
   ggplot(aes(x = diastolic_bp, y = systolic_bp)) +
   geom_jitter() + 
   geom_smooth(method = lm, se = T ) + 
-  facet_wrap(~ cause_of_death)
+  facet_wrap(~ cause_of_death) +
+  labs(x = "diastolic blood pressure/10",
+       y = "systolic blood pressure/10")
 
 lm_bp_plots <- grid.arrange(sdp_vs_dbp_plot, lm_bp_model_fit, ncol = 2)
 
