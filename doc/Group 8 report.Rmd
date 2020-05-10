@@ -28,7 +28,7 @@ head(prostate_data)
 - <font size="4">PA phosphatase levels are higher in patients that die from cancer</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_PA_death_plot.png") 
+include_graphics("/cloud/project/results/06_PA_death_plot.png") 
 ```
 
 ## Tumor size and bone metastases
@@ -36,7 +36,7 @@ include_graphics("/cloud/project/results/07_PA_death_plot.png")
 - <font size="4">Tumors are larger in patients with metastases</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_size_bm_boxplot.png") 
+include_graphics("/cloud/project/results/06_size_bm_boxplot.png") 
 ```
 
 ## Serum hemoglobin and bone metastases
@@ -44,14 +44,14 @@ include_graphics("/cloud/project/results/07_size_bm_boxplot.png")
 - <font size="4">Serum hemoglobin levels drop with increased age</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_hemoglobin_bm_boxplot.png") 
+include_graphics("/cloud/project/results/06_hemoglobin_bm_boxplot.png") 
 ```
 
 ## Status and bone metastases
 - <font size="4">Risk of dying from prostate cancer doubles if the cancer spreads from the prostate</font>
 
 ```{r  out.width = "90%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_status_bm_plot.png") 
+include_graphics("/cloud/project/results/06_status_bm_plot.png") 
 ```
 
 ## Activity and bone metastases
@@ -59,7 +59,7 @@ include_graphics("/cloud/project/results/07_status_bm_plot.png")
 - <font size="4">Bone metastases leads to reduced activity</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_activity_bm_plot.png") 
+include_graphics("/cloud/project/results/06_activity_bm_plot.png") 
 ```
 
 ## Estrogen dose and status
@@ -67,7 +67,7 @@ include_graphics("/cloud/project/results/07_activity_bm_plot.png")
 - <font size="4">High estrogen dose has a negetive effect as age increase</font>
 
 ```{r  out.width = "100%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_estrogen_plots.png") 
+include_graphics("/cloud/project/results/06_estrogen_plots.png") 
 ```
 
 ## Linear regression of blood pressure

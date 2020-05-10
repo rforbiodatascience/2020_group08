@@ -99,19 +99,21 @@ activity_bm_plot <- activity_percentage %>%
   ggplot(aes(x = activity, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-  labs(y = "Serum Hemoglobin (%)")
+  labs(y = "Serum hemoglobin (g/100 ml)")
 
 
 ## 4 - Serum hemoglbin vs bone metastases stratified by age group
 hemoglobin_bm_boxplot <- prostate_data_clean_aug %>% 
   na.omit() %>% 
   ggplot(aes(y = serum_hemoglobin, x = bone_metastases, color = Age_group)) +
-  geom_boxplot()
+  geom_boxplot() + 
+  labs(y = "Serum hemoglobin (g/100 ml)")
 
 ## 5 - Tumor size vs bone metastases strafified by dead_from_prostate_cancer
 size_bm_boxplot <- prostate_data_clean_aug %>% 
   ggplot(aes(y = tumor_size, x = bone_metastases, color = dead_from_prostate_cancer)) +
-  geom_boxplot()
+  geom_boxplot() +
+  labs(y = "Tumor size (cm^2)")
 
 
 ## 6 - Bone metastases vs estrogen and status 
@@ -145,10 +147,9 @@ estrogen_bm_status_plot <- estrogen_metastases_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "Serum Hemoglobin (%)")+
+  labs(y = "Serum hemoglobin (g/100 ml)")+
   theme(legend.position = "bottom")
 
-estrogen_bm_status_plot
 
 ## 7 - Age_group vs estrogen and status
 # This plot should be seen in relation to plot no. 6
@@ -183,13 +184,13 @@ estrogen_age_status_plot <- estrogen_age_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = Age_group)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "Serum Hemoglobin (%)")+
+  labs(y = "Serum hemoglobin (g/100 ml)")+
   theme(legend.position = "bottom")
 
 estrogen_plots <- grid.arrange(estrogen_bm_status_plot, estrogen_age_status_plot, ncol = 2)
 
 
-##8. tumor size Vs cause of death stratified with stage.
+## 8 - tumor size vs cause of death stratified with stage
 
 #start witb stage=3
 tumor_size_stage_3<-prostate_data_clean_aug %>% 
