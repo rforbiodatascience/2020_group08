@@ -1,7 +1,7 @@
 ---
 title: "Group 8 report"
 subtitle: "Analysis of Byar and Greene's prostate cancer data set"
-author: "Mathias Fessler, Jeppe Samuelsen, Sehwa Lee, Imogen Garner"
+author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee"
 date: "5 5 2020"
 output: ioslides_presentation
 widescreen: TRUE
@@ -28,7 +28,7 @@ head(prostate_data)
 - <font size="4">PA phosphatase levels are higher in patients that die from cancer</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_PA_death_plot.png") 
+include_graphics("/cloud/project/results/06_PA_death_plot.png") 
 ```
 
 ## Tumor size and bone metastases
@@ -36,7 +36,7 @@ include_graphics("/cloud/project/results/07_PA_death_plot.png")
 - <font size="4">Tumors are larger in patients with metastases</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_size_bm_boxplot.png") 
+include_graphics("/cloud/project/results/06_size_bm_boxplot.png") 
 ```
 
 ## Serum hemoglobin and bone metastases
@@ -44,14 +44,14 @@ include_graphics("/cloud/project/results/07_size_bm_boxplot.png")
 - <font size="4">Serum hemoglobin levels drop with increased age</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_hemoglobin_bm_boxplot.png") 
+include_graphics("/cloud/project/results/06_hemoglobin_bm_boxplot.png") 
 ```
 
 ## Status and bone metastases
 - <font size="4">Risk of dying from prostate cancer doubles if the cancer spreads from the prostate</font>
 
 ```{r  out.width = "90%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_status_bm_plot.png") 
+include_graphics("/cloud/project/results/06_status_bm_plot.png") 
 ```
 
 ## Activity and bone metastases
@@ -59,7 +59,7 @@ include_graphics("/cloud/project/results/07_status_bm_plot.png")
 - <font size="4">Bone metastases leads to reduced activity</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_activity_bm_plot.png") 
+include_graphics("/cloud/project/results/06_activity_bm_plot.png") 
 ```
 
 ## Estrogen dose and status
@@ -67,7 +67,7 @@ include_graphics("/cloud/project/results/07_activity_bm_plot.png")
 - <font size="4">High estrogen dose has a negetive effect as age increase</font>
 
 ```{r  out.width = "100%", fig.align = "center"}
-include_graphics("/cloud/project/results/07_estrogen_plots.png") 
+include_graphics("/cloud/project/results/06_estrogen_plots.png") 
 ```
 
 ## Linear regression of blood pressure
@@ -86,9 +86,28 @@ include_graphics("/cloud/project/results/05_lm_bp_plots.png")
 include_graphics("/cloud/project/results/04_glm_death_model_performance.png") 
 ```
 
+<<<<<<< HEAD
 ## PCA analysis shows if the data groups based on all the variables
 - <font size="4">A PCA analysis is carried out to search for groupings and patterns of the data based on all variables</font>
 - <font size="4">The plot shows the variance explained by the different principal components
+=======
+## Identifying clustering with PCA
+- <font size="4">PCA analysis is not will suited for this data, since a single PCA cannot explain a lot of the variance levels</font>
+- <font size="4">PC #1 explains 22.5% of the variance</font>
+
+```{r  out.width = "60%", fig.align = "center"}
+include_graphics("/cloud/project/results/07_PC_variance_plot.png") 
+```
+
+## Identifying clustering with PCA
+- <font size="4">No clear clusters could be identified</font>
+- <font size="4">The best clusters are found when stratifying by status and if a person died from prostate cancer</font>
+
+```{r  out.width = "80%", fig.align = "center"}
+include_graphics("/cloud/project/results/07_PCA_plots.png") 
+```
+
+>>>>>>> 78cf6351a73b71e0ce8858804eafdfe9de4a6a8a
 
 ```{r  out.width = "50%", fig.align = "center"}
 include_graphics("/cloud/project/results/PCs.png")
