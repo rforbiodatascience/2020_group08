@@ -1,7 +1,7 @@
 ---
 title: "Group 8 report"
 subtitle: "Analysis of Byar and Greene's prostate cancer data set"
-author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee, Imogen Garner"
+author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee"
 date: "5 5 2020"
 output: ioslides_presentation
 widescreen: TRUE
@@ -84,6 +84,22 @@ include_graphics("/cloud/project/results/05_lm_bp_plots.png")
 
 ```{r  out.width = "50%", fig.align = "center"}
 include_graphics("/cloud/project/results/04_glm_death_model_performance.png") 
+```
+
+## Identifying clustering with PCA
+- <font size="4">PCA analysis is not will suited for this data, since a single PCA cannot explain a lot of the variance levels</font>
+- <font size="4">PC #1 explains 22.5% of the variance</font>
+
+```{r  out.width = "60%", fig.align = "center"}
+include_graphics("/cloud/project/results/07_PC_variance_plot.png") 
+```
+
+## Identifying clustering with PCA
+- <font size="4">No clear clusters could be identified</font>
+- <font size="4">The best clusters are found when stratifying by status and if a person died from prostate cancer</font>
+
+```{r  out.width = "80%", fig.align = "center"}
+include_graphics("/cloud/project/results/07_PCA_plots.png") 
 ```
 
 

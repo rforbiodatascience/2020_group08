@@ -260,6 +260,6 @@ ggsave(filename = "results/06_estrogen_plots.png",
 ggsave(filename = "results/06_tumorsize_plot.png", 
        plot=tumorsize_stage_plot, 
        height = 9, 
-       width = 30,
+       width = 20,
        units = "cm")
 
