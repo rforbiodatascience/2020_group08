@@ -43,6 +43,16 @@ normalize <- function(x){
 }
 
 # Normalizing all numerical columns (variables)
+prostate_data <- prostate_data %>% 
+  mutate(months_of_follow_up = normalize(months_of_follow_up),
+         age = normalize(age),
+         weight_index = normalize(weight_index),
+         systolic_bp = normalize(systolic_bp),
+         diastolic_bp = normalize(diastolic_bp),
+         serum_hemoglobin = normalize(serum_hemoglobin),
+         tumor_size = normalize(tumor_size),
+         stage_grade_index = normalize(stage_grade_index),
+         PA_phosphatase = normalize(PA_phosphatase))
 prostate_data$months_of_follow_up <- normalize(prostate_data$months_of_follow_up)
 prostate_data$age <- normalize(prostate_data$age)
 prostate_data$weight_index <- normalize(prostate_data$weight_index)
