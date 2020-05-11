@@ -80,8 +80,8 @@ include_graphics("/cloud/project/results/06_estrogen_plots.png")
 ```
 
 ## Seahwa's tumor size boxplot...
-- <font size="4">Some point...</font>
-- <font size="4">Some point...</font>
+- <font size="4">The prostate cancer was the second highest cause of death.</font>
+- <font size="4">The stages of the prostate cancer did not make significant difference in the tumor size.</font>
 
 ```{r  out.width = "80%", fig.align = "center"}
 include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
