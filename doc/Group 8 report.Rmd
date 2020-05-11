@@ -80,8 +80,8 @@ include_graphics("/cloud/project/results/06_estrogen_plots.png")
 ```
 
 ## Seahwa's tumor size boxplot...
-- <font size="4">Some point...</font>
-- <font size="4">Some point...</font>
+- <font size="4">The prostate cancer was the second highest cause of death.</font>
+- <font size="4">The stages of the prostate cancer did not make significant difference in the tumor size.</font>
 
 ```{r  out.width = "80%", fig.align = "center"}
 include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
@@ -105,8 +105,6 @@ include_graphics("/cloud/project/results/05_lm_bp_plots.png")
 include_graphics("/cloud/project/results/04_glm_death_model_performance.png") 
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## PCA analysis shows if the data groups based on all the variables
 - <font size="4">A PCA analysis is carried out to search for groupings and patterns of the data based on all variables</font>
 - <font size="4">The plot shows the variance explained by the different principal components
@@ -115,8 +113,6 @@ include_graphics("/cloud/project/results/04_glm_death_model_performance.png")
 ## ANN slide...
 
 # Clustering
-
->>>>>>> 3edd1a31e490f8d5744984fa98cade1845ece448
 ## Identifying clustering with PCA
 - <font size="4">PCA analysis is not will suited for this data, since a single PCA cannot explain a lot of the variance levels</font>
 - <font size="4">PC #1 explains 22.5% of the variance</font>
@@ -133,12 +129,6 @@ include_graphics("/cloud/project/results/07_PC_variance_plot.png")
 include_graphics("/cloud/project/results/07_PCA_plots.png") 
 ```
 
-<<<<<<< HEAD
->>>>>>> 78cf6351a73b71e0ce8858804eafdfe9de4a6a8a
-
-```{r  out.width = "50%", fig.align = "center"}
-include_graphics("/cloud/project/results/PCs.png")
-```
 =======
 ## Conclusions
 - Prostatic acid (PA) phosphatase levels are higher in patients with metastases and have died from prostate cancer
@@ -149,4 +139,3 @@ include_graphics("/cloud/project/results/PCs.png")
 - Logistic regression can predict with 75% accuracy if a patient have died from prostate cancer, with the most important predictors being stage/grade index and PA phosphatase levels
 - ANN conclusion here......
 - The data has no clearly seperated clusters
->>>>>>> 3edd1a31e490f8d5744984fa98cade1845ece448

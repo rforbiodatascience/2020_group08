@@ -189,6 +189,7 @@ ann_model_performance <- plot(history)
 # Final performance evaluation
 perf = model %>% evaluate(x_test, y_test)
 perf
+<<<<<<< HEAD
 
 # Export png files
 # ------------------------------------------------------------------------------
@@ -197,3 +198,5 @@ ggsave(filename = "results/08_ANN_model_performance.png",
        height = 10,
        width = 14,
        units = "cm")
+=======
+>>>>>>> 6aa4de0e9fab36c020834948f20e44c9d1558b8c
