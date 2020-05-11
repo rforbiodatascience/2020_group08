@@ -1,10 +1,12 @@
 ---
 title: "Group 8 report"
-subtitle: "Analysis of Byar and Greene's prostate cancer data set"
 author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee"
 date: "5 5 2020"
-output: ioslides_presentation
-widescreen: TRUE
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+subtitle: Analysis of Byar and Greene's prostate cancer data set
+widescreen: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -105,19 +107,23 @@ include_graphics("/cloud/project/results/05_lm_bp_plots.png")
 include_graphics("/cloud/project/results/04_glm_death_model_performance.png") 
 ```
 
-## PCA analysis shows if the data groups based on all the variables
-- <font size="4">A PCA analysis is carried out to search for groupings and patterns of the data based on all variables</font>
-- <font size="4">The plot shows the variance explained by the different principal components
-=======
-=======
-## ANN slide...
+## Predicting cause of death with ANN
+
+- <font size="4">The ANN predicts on 10 different outcomes</font>
+- <font size="4">The ANN has an accuracy of ~30% with 200 epochs</font>
+
+```{r  out.width = "50%", fig.align = "center"}
+include_graphics("/cloud/project/results/08_ANN_model_performance.png") 
+```
 
 # Clustering
-## Identifying clustering with PCA
-- <font size="4">PCA analysis is not will suited for this data, since a single PCA cannot explain a lot of the variance levels</font>
-- <font size="4">PC #1 explains 22.5% of the variance</font>
 
-```{r  out.width = "60%", fig.align = "center"}
+## Identifying clustering with PCA
+- <font size="4">A PCA analysis is used to look for groupings and patterns of the data based on all variables</font>
+- <font size="4">PCA analysis is not well suited for this data, since a single PCA cannot explain a lot of the variance levels</font>
+- <font size="4">PC #1 only explains 22.5% of the variance</font>
+
+```{r  out.width = "50%", fig.align = "center"}
 include_graphics("/cloud/project/results/07_PC_variance_plot.png") 
 ```
 
@@ -129,7 +135,6 @@ include_graphics("/cloud/project/results/07_PC_variance_plot.png")
 include_graphics("/cloud/project/results/07_PCA_plots.png") 
 ```
 
-=======
 ## Conclusions
 - Prostatic acid (PA) phosphatase levels are higher in patients with metastases and have died from prostate cancer
 - The risk of dying from prostate cancer increases with larger tumors

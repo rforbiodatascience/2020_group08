@@ -16,10 +16,10 @@ prostate_data <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv") %>%
 # ------------------------------------------------------------------------------
 # Building an ANN model to predict cause_of_death
 
-# Replacing missing values (NA) in the cause_of_death and dead_from_prostate_cancer column with "none"
+# Replacing missing values (NA) in the cause_of_death column with "none"
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
 
-# Dropping missing rows from the prostate_data and select only the 4 variables we use for the model
+# Dropping missing rows from the prostate_data and select only the variables we use for the model
 prostate_data <- prostate_data %>% 
   select(-patno, -status_, -study_date, -dead_from_prostate_cancer, -Age_group) %>% 
   drop_na()
@@ -189,7 +189,6 @@ ann_model_performance <- plot(history)
 # Final performance evaluation
 perf = model %>% evaluate(x_test, y_test)
 perf
-<<<<<<< HEAD
 
 # Export png files
 # ------------------------------------------------------------------------------
@@ -198,5 +197,4 @@ ggsave(filename = "results/08_ANN_model_performance.png",
        height = 10,
        width = 14,
        units = "cm")
-=======
->>>>>>> 6aa4de0e9fab36c020834948f20e44c9d1558b8c
+
