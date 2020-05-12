@@ -11,6 +11,7 @@ library(stringr)
 library(readr)
 library(ggplot2)
 library(broom)
+library(gridExtra)
 
 # Load data
 # ------------------------------------------------------------------------------
