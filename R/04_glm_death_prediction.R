@@ -27,7 +27,7 @@ prostate_data_clean_aug[factor_columns] <- lapply(prostate_data_clean_aug[factor
 # Predicting if a patient died from prostate cancer or not with logistic regression
 
 # Remove all the rows where the patients are still alive and rows containing NA's as 
-# the model cant deal with these as well as irrelevant columns
+# the model cant deal with these, as well as irrelevant columns
 
 prostate_model_data <- prostate_data_clean_aug %>% 
   filter(status_ == "dead") %>% 

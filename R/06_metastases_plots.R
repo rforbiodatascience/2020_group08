@@ -99,8 +99,7 @@ activity_bm_plot <- activity_percentage %>%
   ggplot(aes(x = activity, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-  labs(y = "Serum hemoglobin (g/100 ml)")
-
+  labs(y = "%")
 
 ## 4 - Serum hemoglbin vs bone metastases stratified by age group
 hemoglobin_bm_boxplot <- prostate_data_clean_aug %>% 
@@ -121,7 +120,7 @@ size_bm_boxplot <- prostate_data_clean_aug %>%
 # but at the same time, the higher dose seems to be bad if you have bone metastases
 
 # Group and count for each group, and then transform to wide
-# Pivot_wide to have percentage for each bone_metastases group and just the total count
+# Pivot_wide to have percentage for each bone_metastases group and not just the total count
 estrogen_metastases_percentage <- prostate_data_clean_aug %>% 
   group_by(estrogen_mg, bone_metastases, status_)%>% 
   summarise(counts = n()) %>% 
@@ -147,9 +146,8 @@ estrogen_bm_status_plot <- estrogen_metastases_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = bone_metastases)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "Serum hemoglobin (g/100 ml)")+
+  labs(y = "%")+
   theme(legend.position = "bottom")
-
 
 ## 7 - Age_group vs estrogen and status
 # This plot should be seen in relation to plot no. 6
@@ -184,7 +182,7 @@ estrogen_age_status_plot <- estrogen_age_percentage %>%
   ggplot(aes(x = estrogen_mg, y = percentage, fill = Age_group)) +
   geom_bar(stat = "identity", position=position_dodge()) +
   facet_wrap(~ status_) +
-  labs(y = "Serum hemoglobin (g/100 ml)")+
+  labs(y = "%")+
   theme(legend.position = "bottom")
 
 estrogen_plots <- grid.arrange(estrogen_bm_status_plot, estrogen_age_status_plot, ncol = 2)
@@ -216,7 +214,7 @@ tumorsize_stage_plot<-prostate_data_clean_aug %>%
   annotate("text", x=1.8, y=25, label=c(21.3))+
   annotate("text", x=2.2, y=25, label=c(21.8))+
   labs(x = "Cause of death",
-       y = "tumor size")+
+       y = "Tumor size (cm^2)")+
   theme(legend.position = "bottom")
 
 # Export png files

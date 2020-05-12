@@ -22,8 +22,7 @@ prostate_data <- read_tsv(file = "Data/01_prostate_data.tsv") %>%
 # ------------------------------------------------------------------------------
 
 # Change "rx" column and split "status" column in to two
-prostate_data_clean <- 
-  prostate_data %>%
+prostate_data_clean <- prostate_data %>%
       mutate(estrogen_mg = case_when(rx == "0.2 mg estrogen" ~ 0.2,
                                  rx == "1.0 mg estrogen" ~ 1,
                                  rx == "5.0 mg estrogen" ~ 5,
