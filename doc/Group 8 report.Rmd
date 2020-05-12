@@ -4,6 +4,7 @@ author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee"
 date: "5 5 2020"
 output:
   ioslides_presentation: default
+  beamer_presentation: default
   slidy_presentation: default
 subtitle: Analysis of Byar and Greene's prostate cancer data set
 widescreen: yes
@@ -33,6 +34,16 @@ head(prostate_data)
 - Ensuring that all variables are correctly classified
 
 # Identifying and visualising trends with ggplot
+
+## Approach
+
+- <font size="4">A large number of plots were generated quickly to more efficiently identify interesting trends</font>
+- <font size="4">For this purpose the same plot was stratified on different factor columns, and in addition pivot_longer() and facet_wrap() was used</font>
+
+```{r  out.width = "90%", fig.align = "center"}
+include_graphics("/cloud/project/results/00_flow_chart.png") 
+```
+
 
 ## Prostatic acid phosphatase and cause of death
 - <font size="4">PA phosphatase levels are increased in patients with bone metastases</font>
