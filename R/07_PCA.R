@@ -54,15 +54,6 @@ prostate_data <- prostate_data %>%
          tumor_size = normalize(tumor_size),
          stage_grade_index = normalize(stage_grade_index),
          PA_phosphatase = normalize(PA_phosphatase))
-prostate_data$months_of_follow_up <- normalize(prostate_data$months_of_follow_up)
-prostate_data$age <- normalize(prostate_data$age)
-prostate_data$weight_index <- normalize(prostate_data$weight_index)
-prostate_data$systolic_bp <- normalize(prostate_data$systolic_bp)
-prostate_data$diastolic_bp <- normalize(prostate_data$diastolic_bp)
-prostate_data$serum_hemoglobin <- normalize(prostate_data$serum_hemoglobin)
-prostate_data$tumor_size <- normalize(prostate_data$tumor_size)
-prostate_data$stage_grade_index <- normalize(prostate_data$stage_grade_index)
-prostate_data$PA_phosphatase <- normalize(prostate_data$PA_phosphatase)
 
 # Selecting only the numerical variables for the analysis
 pca_prostate_data <- prostate_data %>% 
