@@ -2,9 +2,11 @@
 title: "Group 8 report"
 author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee"
 date: "13 5 2020"
-output: ioslides_presentation
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
 subtitle: Analysis of Byar and Greene's prostate cancer data set
-widescreen: yes
 ---
 
 ```{r setup, include=FALSE}
