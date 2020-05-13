@@ -52,8 +52,7 @@ include_graphics("/cloud/project/results/00_flow_chart.png")
 ## Tumor size and cause of death
 - <font size="4">Prostate cancer showed the second largest tumor size</font>
 - <font size="4">Other than prostate cancer, all other causes of death showed difference in stage leads to difference in the tumor size</font>
-
-```{r  out.width = "80%", fig.align = "center"}
+```{r  out.width = "70%", fig.align = "center"}
 include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
 ```
 <font size="4">[Repo](https://github.com/rforbiodatascience/2020_group08/blob/master/R/06_metastases_plots.R) (plot #8)</font>

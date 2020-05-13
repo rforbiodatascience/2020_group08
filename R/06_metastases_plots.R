@@ -211,12 +211,11 @@ tumorsize_stage_plot<-prostate_data_clean_aug %>%
   na.omit() %>% 
   ggplot(aes(x = fct_reorder(cause_of_death, tumor_size, .fun = mean, .desc = T), y = tumor_size, color = stage)) +
   geom_boxplot() + 
-  theme(axis.text.x = element_text(angle = 10, hjust = 1)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   annotate("text", x=1.8, y=25, label=c(21.3))+
   annotate("text", x=2.2, y=25, label=c(21.8))+
   labs(x = "Cause of death",
-       y = "Tumor size (cm^2)")+
-  theme(legend.position = "bottom")
+       y = "Tumor size (cm^2)")
 
 # Export png files
 # ------------------------------------------------------------------------------
@@ -258,7 +257,7 @@ ggsave(filename = "results/06_estrogen_plots.png",
 
 ggsave(filename = "results/06_tumorsize_plot.png", 
        plot=tumorsize_stage_plot, 
-       height = 9, 
+       height = 10, 
        width = 20,
        units = "cm")
 
