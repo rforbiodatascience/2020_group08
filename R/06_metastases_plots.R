@@ -214,8 +214,8 @@ tumorsize_stage_plot <- prostate_data_clean_aug %>%
   ggplot(aes(x = fct_reorder(cause_of_death, tumor_size, .fun = mean, .desc = T), y = tumor_size, color = stage)) +
   geom_boxplot() + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  annotate("text", x = 1.8, y = 25, label = c(21.3), size = 4)+
-  annotate("text", x = 2.2, y = 25, label = c(21.8), size = 4)+
+  annotate("text", x = 1.8, y = 25, label = c(21.3), size = 3)+
+  annotate("text", x = 2.2, y = 25, label = c(21.8), size = 3)+
   labs(x = "Cause of death",
        y = "Tumor size (cm^2)")
 
