@@ -14,7 +14,7 @@ prostate_data <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv") %>%
   as_tibble()
 
 # ------------------------------------------------------------------------------
-# Building an ANN model to predict cause_of_death
+# Building an ANN model to predict cause of death
 
 # Replacing missing values (NA) in the cause_of_death column with "none"
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
@@ -38,7 +38,8 @@ prostate_data <- prostate_data %>%
                          ekg == "recent MI" ~ 5,
                          ekg == "rhythmic disturb & electrolyte ch" ~ 6))
 
-# We now do one-hot encoding for the categorical variables in the dataset
+# One-hot encoding for the categorical variables in the dataset
+# All the categorical variables are made as individual tibbles, and later merged with the rest of the dataset
 bone_metastases_cat <- prostate_data %>% 
   pull(bone_metastases) %>% 
   to_categorical %>% 
@@ -95,7 +96,7 @@ ekg_cat <- prostate_data %>%
          ekg_feat_6 = V6,
          ekg_feat_7 = V7)
 
-# Converting character labels for cause of death to numeric
+# Converting the character labels for cause of death to numeric values
 nn_dat = prostate_data %>%
   rename(PA_phosphatase_feat = PA_phosphatase,
          tumor_size_feat = tumor_size,
@@ -128,9 +129,8 @@ nn_dat <- nn_dat %>%
   add_column(history_of_CD_cat) %>% 
   add_column(stage_cat)
 
-nn_dat %>% head(3)
-
-# Splitting the data into a training and a test data set, setting aside 20 % of the data for left out data partition, to be used for final performance evaluation
+# Splitting the data into a training and a test data set
+# 20 % of the data is left out and will be used to evaluate the performance of the model
 test_f = 0.20
 nn_dat = nn_dat %>%
   mutate(partition = sample(x = c('train','test'),
@@ -139,7 +139,7 @@ nn_dat = nn_dat %>%
                             prob = c(1 - test_f, test_f)))
 nn_dat %>% count(partition)
 
-# Based on the partition, we now create a training and test data
+# We can now create a training and a test based on the partition column
 x_train = nn_dat %>%
   filter(partition == 'train') %>%
   select(contains("feat")) %>%
@@ -174,7 +174,7 @@ model %>%
 model %>%
   summary
 
-# Fit the model and save the training progres in the history object
+# Fitting model and saving training progress
 history = model %>%
   fit(x = x_train,
       y = y_train,
@@ -183,7 +183,7 @@ history = model %>%
       validation_split = 0
   )
 
-# Inspect the training process
+# Plotting training process
 ann_model_performance <- plot(history)
 
 # Final performance evaluation
