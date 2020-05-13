@@ -153,7 +153,7 @@ include_graphics("/cloud/project/results/04_glm_death_model_performance.png")
 ## Predicting cause of death with ANN
 
 - <font size="4">The ANN predicts on 10 different outcomes</font>
-- <font size="4">The ANN has an accuracy of 30 - 40% with 200 epochs</font>
+- <font size="4">The ANN was trained through 200 epochs, accuracy is shown in the plot</font>
 
 ```{r  out.width = "50%", fig.align = "center"}
 include_graphics("/cloud/project/results/08_ANN_model_performance.png") 
@@ -196,5 +196,5 @@ include_graphics("/cloud/project/results/07_PCA_plots.png")
 - When the cancer has metastasized the patients are less active and there is a much bigger risk of dying
 - High doses of estrogen have negative effects for older patients
 - Logistic regression can predict with 75% accuracy if a patient have died from prostate cancer, with the most important predictors being stage/grade index and PA phosphatase levels
-- An ANN is able to predict the cause of death with 30 - 40% accuracy 
+- An ANN was created with the aim of predicting the cause of death
 - The data has no clearly seperated clusters
