@@ -61,7 +61,7 @@ include_graphics("/cloud/project/results/06_tumorsize_plot.png")
 
 ## Prostatic acid phosphatase and cause of death
 - <font size="4">PA phosphatase levels are increased in patients with bone metastases</font>
-- <font size="4">PA phosphatase levels are higher in patients that die from cancer</font>
+- <font size="4">PA phosphatase levels are highest in patients that die from prostate cancer</font>
 
 ```{r  out.width = "60%", fig.align = "center"}
 include_graphics("/cloud/project/results/06_PA_death_plot.png") 
