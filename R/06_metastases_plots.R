@@ -106,7 +106,8 @@ hemoglobin_bm_boxplot <- prostate_data_clean_aug %>%
   na.omit() %>% 
   ggplot(aes(y = serum_hemoglobin, x = bone_metastases, color = Age_group)) +
   geom_boxplot() + 
-  labs(y = "Serum hemoglobin (g/100 ml)")
+  labs(y = "Serum hemoglobin (g/100 ml)") + 
+  ylim(0, 17)
 
 ## 5 - Tumor size vs bone metastases strafified by dead_from_prostate_cancer
 size_bm_boxplot <- prostate_data_clean_aug %>% 

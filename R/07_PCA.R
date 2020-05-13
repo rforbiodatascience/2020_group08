@@ -74,7 +74,8 @@ prostate_pca <- pca_prostate_data %>%
 prostate_pca %>% tidy("pcs")
 
 # Plotting the percentage of the variance explained for each principal component
-PCs_plot <- prostate_pca %>% tidy("pcs") %>% 
+PCs_plot <- prostate_pca %>% 
+  tidy("pcs") %>% 
   ggplot(mapping = aes(x = PC, y = percent)) +
   geom_col() +
   theme_bw() + 

@@ -1,13 +1,12 @@
 ---
 title: "Group 8 report"
 author: "Mathias Fessler, Jeppe Samuelsen, Seahwa Lee"
-date: "5 5 2020"
+date: "13 5 2020"
 output:
-  ioslides_presentation: default
-  beamer_presentation: default
-  slidy_presentation: default
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
 subtitle: Analysis of Byar and Greene's prostate cancer data set
-widescreen: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -47,6 +46,17 @@ head(prostate_data)
 ```{r  out.width = "90%", fig.align = "center"}
 include_graphics("/cloud/project/results/00_flow_chart.png") 
 ```
+
+
+
+## Seahwa's tumor size boxplot...
+- <font size="4">The prostate cancer was the second highest cause of death.</font>
+- <font size="4">The stages of the prostate cancer did not make significant difference in the tumor size.</font>
+
+```{r  out.width = "80%", fig.align = "center"}
+include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
+```
+<font size="4">[Repo](https://github.com/rforbiodatascience/2020_group08/blob/master/R/06_metastases_plots.R) (plot #8)</font>
 
 
 
@@ -112,17 +122,6 @@ include_graphics("/cloud/project/results/06_activity_bm_plot.png")
 include_graphics("/cloud/project/results/06_estrogen_plots.png") 
 ```
 <font size="4">[Repo](https://github.com/rforbiodatascience/2020_group08/blob/master/R/06_metastases_plots.R) (plot #6 and #7)</font>
-
-
-
-## Seahwa's tumor size boxplot...
-- <font size="4">The prostate cancer was the second highest cause of death.</font>
-- <font size="4">The stages of the prostate cancer did not make significant difference in the tumor size.</font>
-
-```{r  out.width = "80%", fig.align = "center"}
-include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
-```
-<font size="4">[Repo](https://github.com/rforbiodatascience/2020_group08/blob/master/R/06_metastases_plots.R) (plot #8)</font>
 
 
 
