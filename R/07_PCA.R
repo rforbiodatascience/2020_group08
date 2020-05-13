@@ -25,16 +25,15 @@ prostate_data <- read_tsv(file = "Data/03_prostate_data_clean_aug.tsv")
 prostate_data$cause_of_death <- replace_na(prostate_data$cause_of_death, "none")
 prostate_data$dead_from_prostate_cancer <- replace_na(prostate_data$dead_from_prostate_cancer, "none")
 
-#Ensure that factorial variables are actually factors
+# Ensure that factorial variables are actually factors
 factor_columns <- c("stage", "activity", "history_of_CD", "ekg", "bone_metastases",
                     "estrogen_mg", "status_", "cause_of_death", "dead_from_prostate_cancer",
                     "Age_group")
 
 prostate_data[factor_columns] <- lapply(prostate_data[factor_columns], factor)
 
-# Dropping missing rows from the prostate_data
-prostate_data <- prostate_data %>% 
-  select(-study_date) %>% 
+# Dropping missing rows from the prostate_data and deleselecting 
+prostate_data <- prostate_data %>%
   drop_na()
 
 # We now need to normalize our data
@@ -70,7 +69,7 @@ pca_prostate_data <- prostate_data %>%
 prostate_pca <- pca_prostate_data %>% 
   prcomp(center = TRUE, scale. = TRUE)
 
-# Using broom to tidy data
+# Using broom to tidy the data
 prostate_pca %>% tidy("pcs")
 
 # Plotting the percentage of the variance explained for each principal component
@@ -83,10 +82,10 @@ PCs_plot <- prostate_pca %>%
        x = "Principal component #") +
   scale_x_discrete(limits=c("1", "2", "3", "4", "5", "6", "7", "8", "9"))
 
-# Using broom to tidy
+# Using broom to tidy the pca data
 prostate_pca %>% tidy("samples")
 
-# Using broom to augment
+# Using broom to augment the pca data
 prostate_pca_aug <- prostate_pca %>% augment(prostate_data)
 
 # Visualizing the PCA based on cause of death
