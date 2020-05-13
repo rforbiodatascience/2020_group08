@@ -49,9 +49,9 @@ include_graphics("/cloud/project/results/00_flow_chart.png")
 
 
 
-## Seahwa's tumor size boxplot...
-- <font size="4">Prostate cancer showed the second largest tumor size.</font>
-- <font size="4">Other than prostate cancer, all other causes of death showed difference in stage leads to difference in the tumor size.</font>
+## Tumor size and cause of death
+- <font size="4">Prostate cancer showed the second largest tumor size</font>
+- <font size="4">Other than prostate cancer, all other causes of death showed difference in stage leads to difference in the tumor size</font>
 
 ```{r  out.width = "80%", fig.align = "center"}
 include_graphics("/cloud/project/results/06_tumorsize_plot.png") 
