@@ -29,7 +29,7 @@ head(prostate_data)
 ## Before analysing the data
 - Individual dataframes joined
 - Splitting cells containing multiple variables
-- Convert strings to numbers
+- Converting strings to numbers
 - Grouping numerical varibales in intervals
 - Ensuring that all variables are correctly classified
 
@@ -131,7 +131,7 @@ include_graphics("/cloud/project/results/06_tumorsize_plot.png")
 
 
 ## Linear regression of blood pressure
-- <font size="4">The only linear regression model that fit well was for systolic blood pressure vs diastolic blood pressure, grouped by cause of death</font>
+- <font size="4">The only linear regression model that fit well was for diastolic blood pressure vs systolic blood pressure, grouped by cause of death</font>
 - <font size="4">The best fit is for patients that have died from respiratory disease</font>
 
 ```{r  out.width = "90%", fig.align = "center"}
@@ -168,7 +168,7 @@ include_graphics("/cloud/project/results/08_ANN_model_performance.png")
 
 
 
-## Identifying clustering with PCA
+## Identifying clusters with PCA
 - <font size="4">A PCA analysis is used to look for groupings and patterns of the data based on all variables</font>
 - <font size="4">PCA analysis is not well suited for this data, since a single PCA cannot explain a lot of the variance levels</font>
 - <font size="4">PC #1 only explains 22.5% of the variance</font>
@@ -180,9 +180,9 @@ include_graphics("/cloud/project/results/07_PC_variance_plot.png")
 
 
 
-## Identifying clustering with PCA
+## Identifying clusters with PCA
 - <font size="4">No clear clusters could be identified</font>
-- <font size="4">The best clusters are found when stratifying by status and if a person died from prostate cancer</font>
+- <font size="4">The best clusters are found when stratifying by status and if a person developed bone metastases</font>
 
 ```{r  out.width = "80%", fig.align = "center"}
 include_graphics("/cloud/project/results/07_PCA_plots.png") 
@@ -192,7 +192,7 @@ include_graphics("/cloud/project/results/07_PCA_plots.png")
 
 
 ## Conclusions
-- Prostatic acid (PA) phosphatase levels are higher in patients with metastases and have died from prostate cancer
+- Prostatic acid (PA) phosphatase levels are higher in patients with metastases and that have died from prostate cancer
 - The risk of dying from prostate cancer increases with larger tumors
 - Serum hemoglobin levels are lower in older patients with bone metastases
 - When the cancer has metastasized the patients are less active and there is a much bigger risk of dying
